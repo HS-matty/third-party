@@ -1,0 +1,98 @@
+CREDITS for PHP-NUKE
+====================
+
+
+* PHP-Nuke
+Copyright (c) 2001 by Francisco Burzi (fbc@mandrakesoft.com)
+http://phpnuke.org
+
+
+* MandrakeSoft Inc.
+Special mention to the very cool folks at MandrakeSoft, creators or Linux
+Mandrake. Now they sponsor PHP-Nuke and thanks to this I can dedicate
+100% to this free software project for all you. Special thanks goes to
+Gael Duval (Co-Founder), Joel Flores Carpio (Community Management), Jacques
+LeMarois (President) and Charles Davant (System Administrator).
+http://www.mandrakesoft.com
+
+
+* Thatware
+Copyright (c) 2000 by David Norman
+http://thatware.org
+Note: Most of the code was based initialy on Thatware, PHP-Nuke 5.0 is
+practicaly a complete rewrite of the code to improve speed, performance,
+security, etc.
+
+
+* Multilingual system
+Copyright (c) 2001 by John De Jonge aka Crocket
+http://www.webmasters.be
+Note: This allows to split up your site into different languages.
+
+
+* File Manager
+Copyright (c) 2000 by Sune Alexandersen
+http://www.suneworld.com
+Note: File Manager is based on the excelent WebExplorer script, and was
+integrated into PHP-Nuke and adopted our GPL distribution model with the
+author permission. You can obtain this software in separate distribution
+from SuneWorld home page.
+
+
+* Web Links Hacks
+Copyright (c) 2000 by James Knickelbein
+Journey Milwaukee (http://www.journeymilwaukee.com)
+James did a very good job hacking on my initial Web Links code and added
+a lot of new and very cool features. I just take his changes and re-added
+to the core code.
+
+
+* FAQ Manager and Private Messages
+Copyright (c) 2000 by Richard Tirtadji
+http://www.nukeaddon.com
+Note: Richard is a very cool guy that ported phpBB to PHP-Nuke and did a very
+nice job. He also is the creator of Addons Website at http://www.nukeaddon.com
+So, if you want PHP-Nuke Addons you will love Richard's site.
+
+
+* Download Manager
+Copyright (c) 2001 by Francisco Burzi
+http://phpnuke.org
+Based on the Web Links hack
+Copyright (c) 2000 by James Knickelbein
+Journey Milwaukee (http://www.journeymilwaukee.com)
+
+
+* Multi Tier Admin
+Based on Multi Tier Admin addon
+Copyright (c) 2000 by Richard Tirtadji
+http://www.nukeaddon.com
+
+
+* Translations
+Thanks to all the people that translated PHP-Nuke, please see each
+translation file for credits.
+
+
+* PHP
+Just a few words to the people who developed PHP: Thanks folks you're the
+best! PHP is easy to install, extremely easy to learn and use. Perl Sucks!
+http://www.php.net
+
+
+* MySQL
+One of the best database software I've ever seen. Flexible and powerfull.
+Thanks!!! for releasing it under GPL!!!
+http://www.mysql.com
+
+
+* Apache
+What can I say? The best Web server software.
+http://www.apache.org
+
+
+* Linux
+This software was made thanks to my love for Linux.
+Linux is a registered trademark of Linus Torvalds
+
+

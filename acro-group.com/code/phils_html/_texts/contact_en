@@ -1,0 +1,62 @@
+<?
+  if ($message=="sent"):
+    include "_data/mail";
+    $aaabbb=new_email("acrogroup@hotmail.com","Message from web site","$text","$mail");
+    if ($aaabbb == true):
+      $status = "sent";
+    elseif ($aaabbb == false):
+      $status = "error";
+    else:
+      $status = false;
+    endif;
+  endif;
+?>
+<form method="post" action="index.php?page=contact&lang=<?echo $lang?>&message=sent">
+  <table width="402" align="center" border="0" cellpadding="0" cellspacing="0" background="_images/bgtext.gif">
+    <tr valign="top">
+      <td width="402" colspan="3"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+    </tr>
+      <?
+        if ($status=="sent"):
+          echo "
+            <tr valign=\"top\">
+              <td width=\"402\" colspan=\"3\"><div class=\"mail\">Message sent</div></td>
+            </tr>";
+        elseif($status=="error"):
+          echo "
+            <tr valign=\"top\">
+              <td width=\"402\" colspan=\"3\"><div class=\"mail\">Your message can't been send.</div></td>
+            </tr>";
+        else:
+          echo " ";
+        endif;
+      ?>
+    <tr valign="top">
+      <td width="20">&nbsp;</td>
+      <td width="382">
+        <span class="contact_nadpis">Adress:</span><br>
+        <span class="contact_text">Žirovnická&nbsp;2389</span><br>
+        <span class="contact_text">106&nbsp;00&nbsp;Prague&nbsp;10</span><br>
+        <span class="contact_text">Czech&nbsp;Republic</span><br>
+               &nbsp;<br>
+        <span class="contact_nadpis">Mobil:</span><br><span class="contact_nadpis">+420&nbsp;728&nbsp;212&nbsp;685</span><br><span class="contact_text">English speaking</span><br>
+        <span class="contact_nadpis">Tel.:</span><br><span class="contact_nadpis">+420&nbsp;272&nbsp;770&nbsp;032</span><br>
+        <span class="contact_nadpis">Fax:</span><br><span class="contact_nadpis">+420&nbsp;272&nbsp;770&nbsp;010</span><br>
+        <span class="contact_nadpis">E-mail:</span><br><a href="mailto:info@acro-group.com" class="contact_text">info@acro-group.com</a><br>
+        <a href="mailto:acrogroup@hotmail.com" class="contact_text">acrogroup@hotmail.com</a>
+      </td>
+      <td>
+        <span class="contact_nadpis">E-mail:</span><br>
+        <input type="text" name="mail" class="pol"><br>
+        &nbsp;<br>
+        <span class="contact_nadpis">Message:</span><br>
+        <textarea rows="10" cols="25" name="text" wrap="virtual">
+        </textarea><br>
+        <input type="submit" value="  SEND   ">
+      </td>
+    </tr>
+    <tr valign="top">
+      <td width="402" colspan="3"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+    </tr>
+  </table>
+</form>

@@ -1,0 +1,61 @@
+<form>
+<fields>
+		<field>
+				<id>password</id>
+				<type>string</type>
+				<title>
+					<en>Password</en>
+				</title>
+				<length>4-32</length>	
+			
+		</field>
+		<field>
+				<id>login</id>
+				<type>string</type>
+				<title>
+					<en>Login</en>
+				</title>
+				<length>4-32</length>	
+			
+		</field>
+		<field not_required="1">
+				<id>phone_number</id>
+				<type>string</type>
+				<title>
+					<en>Phone</en>
+				</title>
+			
+			
+		</field>
+
+		<field class="email">
+				<id>email</id>
+				<type>string</type>
+				<title>
+					<en>Email</en>
+				</title>
+			
+			
+		</field>
+		<field not_required="1">
+				<id>first_name</id>
+				<type>string</type>
+				<title>
+					<en>First name</en>
+				</title>
+			<length>0-32</length>	
+			
+		</field>
+		<field not_required="1">
+				<id>last_name</id>
+				<type>string</type>
+				<title>
+					<en>Last name</en>
+				</title>
+			<length>0-32</length>	
+			
+		</field>
+
+
+	</fields>
+	</form>	

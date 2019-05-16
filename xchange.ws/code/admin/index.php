@@ -1,0 +1,125 @@
+<?
+
+// Admin page
+
+
+define('WE_ARE_HERE',true);
+
+include('../includes/template.php');
+include('../includes/head.php');
+include('../includes/functions.php');
+include('../includes/cfg.php');
+
+
+
+//если мы решили выйти....
+if( isset($_GET['logout']) && ($_GET['logout'] != 0) ) $log_out = 1;
+else $log_out = 0;
+
+
+//проверка на наличие sid
+if(!isset($_GET['u_sid']) && (!isset($_POST['u_sid'])) ) die();
+else {
+	if(isset($_GET['u_sid'])) $u_sid = $_GET['u_sid'];
+	else $u_sid = $_POST['u_sid'];
+}
+
+$currs = array(); // массив = $currs[id] = sname;
+
+global	$db;
+$db = mysql_connect("$host","$user","$password") OR die(mysql_error());
+mysql_select_db("$db_name") OR die (mysql_error());
+
+$u_sid = check_admin_session($u_sid);
+if($log_out == 1){
+	$query = mysql_query("UPDATE users_sessions SET time_logout = unix_timestamp() WHERE u_sid = '$u_sid'") OR die(mysql_error());
+	print("<div align='center'>вы ушли,удачи!</div>");
+	mysql_close($db);
+	exit();
+
+
+}
+
+
+
+$template = new Template("../templates/admin386sx/");
+
+if( isset($_POST['time_sort'])) $time_sort = $_POST['time_sort'];
+else $time_sort = 24*6000;
+
+
+//выводим данные о остатках по всем валютам
+
+$sql = "SELECT cur_id,cur_sname,money_left,status FROM currencies ORDER BY cur_sname DESC";
+$query = mysql_query($sql) OR die(mysql_error());
+while($db_array = mysql_fetch_array($query)){
+	if ($db_array['status'] == 0) $status = '<font color=\'red\'>disabled</font>';
+	else $status = '<font color=\'green\'>enabled</font>';
+	$currs[$db_array['cur_id']] = $db_array['cur_sname'];
+	$template->assign_block_vars('MONEY_LEFT',	array(
+		"cur_name" => $db_array['cur_sname'],
+		"money_left" => $db_array['money_left'],
+		"cur_id"   => $db_array['cur_id'],
+		"status" => $status)
+		);
+}
+
+//выводин курсы обмена
+
+$query = mysql_query("SELECT * FROM RATES ORDER BY in_cur_id") OR die(mysql_error());
+while($db_array = mysql_fetch_array($query) ){
+	$template->assign_block_vars('RATES',	array(
+		"in_cur_name" => $currs[$db_array['in_cur_id']],
+		"out_cur_name" => $currs[$db_array['out_cur_id']],
+		"in_cur_id" => $db_array['in_cur_id'],
+		"out_cur_id" => $db_array['out_cur_id'],
+		"rate_id" => $db_array['rate_id'],
+		"rate" => $db_array['rate'])
+		);
+}
+
+
+//выводим информацию о транзакциях
+
+$sql = "SELECT count(t.status) as total,s.descr FROM transactions AS t,t_status AS s WHERE  t.time_start > unix_timestamp()-'$time_sort' AND t.status = s.status  GROUP BY t.status";
+$query = mysql_query($sql) OR die(mysql_error());
+if(mysql_num_rows($query)){
+	while($db_array = mysql_fetch_array($query)){
+
+		$template->assign_block_vars('TRANS',	array(
+			"descr" => $db_array['descr'],
+			"num" => $db_array['total'])
+			);
+
+
+
+	}
+}else{
+		$template->assign_block_vars('TRANS',	array(
+			"descr" => 'транзакции отсутствуют',
+			"num" => '!'));
+}
+	
+$template->assign_vars(array(
+		"TITLE" => 'e-Base.ru/admin',
+		"U_SID" => $u_sid)
+	);
+
+$template->set_filenames(array(
+	'admin_index' => 'admin_index.tpl',
+	'header' => 'head.tpl')
+	);
+
+$template->assign_var_from_handle('HEADER','header');
+$template->pparse('admin_index');
+
+
+
+
+
+
+mysql_close($db);
+
+
+
+?>

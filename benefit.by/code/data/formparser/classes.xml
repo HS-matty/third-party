@@ -1,0 +1,20 @@
+<?xml version='1.0' standalone='yes'?>
+<classes>
+	<class id='common'>
+			<title>Common class</title>
+	</class>
+
+	<class id='user'>
+			<title>Managing users forms</title>
+	</class>
+	
+	
+	<class id='directory'>
+			<title>Directory</title>
+	</class>
+	
+
+	
+
+</classes>
+

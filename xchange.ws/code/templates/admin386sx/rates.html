@@ -1,0 +1,30 @@
+<body bgcolor="#FFFFFF" text="#000000">
+<form name="rates" method="post" action="change_fin.php">
+  <table width="459" border="0">
+    <tr>
+      <td width="70%">
+        <div align="center">currencies</div>
+      </td>
+      <td>
+        <div align="center">rates</div>
+      </td>
+    </tr>
+    <!-- BEGIN CHANGE_RATES -->
+    <tr>
+      <td>
+        <div align="center">{RATES.in_cur_id}---&gt;{RATES.out_cur_id}</div>
+      </td>
+      <td>
+        <div align="center">
+          <input type="text" name="rate" maxlength="5" value="{RATES.rate}">
+        </div>
+      </td>
+    </tr>
+    <!-- END CHANGE_RATES -->
+  </table>
+  <p>
+    <input type="submit" name="Submit" value="Submit">
+  </p>
+</form>
+</body>
+</html>

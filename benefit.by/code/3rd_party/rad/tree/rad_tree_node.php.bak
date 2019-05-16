@@ -1,0 +1,100 @@
+<?php
+class Rad_Tree_Node implements iRad_Form {
+	public $Data;
+
+	public $NodeId;
+
+	public $Id;
+	public function getFormData(){
+		return $this->Data;
+	}
+	public function updateFormObject($Data){
+		$tree = new DirectoryTree();
+		return $tree->updateCategoryData($Data);
+
+	}
+	public function init($NodeId){
+		$Tree = new DirectoryTree();
+		if($this->Data = $Tree->getCategory($NodeId)){
+			$this->NodeId = $this->Data['category_id'];
+			return true;
+		}
+		return false;
+	}
+	public function initByAlias($Alias){
+		$Tree = new DirectoryTree();
+		$NodeId = $Tree->getCategoryIdByAlias($Alias);
+		$this->NodeId = $NodeId;
+		if($NodeId && $this->Data = $Tree->getCategory($NodeId)) return true;
+		return false;
+	}
+	public function initByData($Data){
+		if(!$this->NodeId = $Data['category_id']) return false;
+		$this->Data = $Data;
+		return true;
+		
+	}
+	public function insertFormObject($Data){
+
+		$cid = $this->Id;
+
+		$tree = new DirectoryTree();
+		return $tree->insertCategory($cid,$Data);
+
+
+	}
+
+	public function insertRecord(Rad_Directory_Record $Item){
+
+
+		CategoryContent::addCategoryContentItem($Item->getItemId(),$this->NodeId);
+
+		//get category path for caching
+		$Tree = new DirectoryTree();
+		$Path = $Tree->getPathArrayToCidString($this->NodeId);
+
+		$Item->UpdateItemCategoryCache($Item->getItemId(),$Path);
+
+	}
+	public function getId(){
+		return $this->Data['category_id'];
+	}
+	public function getChildNodes(){
+		$Tree = new DirectoryTree();
+		$Nodes = array();
+		$Cats =& $Tree->getCategories($this->NodeId);
+		if($Cats){
+			foreach ($Cats as &$c) {
+				$Node = new Rad_Page_Node(); 
+				if($Node->initByData($c)) $Nodes[] = $Node;
+				
+			}
+		}
+		return $Nodes;
+	}
+	public function getItems($type = null ,$records_number = 10){
+		$Item = new Rad_Directory_Record();
+		return $Item->getItemsSimpleExt(array('cid'=>$this->NodeId,'limit'=>$records_number,'order'=>'creation_date'));
+	}
+
+
+
+}
+class Rad_Page_Node extends Rad_Tree_Node implements iRad_Page_Item  {
+	public function getTitle(){
+		return $this->Data['short_description'];
+
+	}
+	public function getBody(){
+		return $this->Data['body'];
+
+	}
+	public function getType(){
+		return $this->Data['node_type'];
+	}
+
+
+}
+
+
+?>

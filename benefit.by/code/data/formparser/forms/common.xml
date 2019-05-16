@@ -1,0 +1,62 @@
+<?xml version='1.0' standalone='yes'?>
+<forms>
+
+
+	<form id="contact">
+	<fields>
+
+			<field not_required="1">
+				<id>name</id>
+				<type>string</type>
+				<title>
+					<en>Name</en>
+				</title>
+			<length>2-40</length>
+			</field>
+			<field class="email">
+				<id>email</id>
+				<type>string</type>
+				<title>
+					<en>Email</en>
+				</title>
+			<length>4-40</length>
+			</field>
+			<field not_required="1">
+				<id>phone_number</id>
+				<type>string</type>
+				<title>
+					<en>Phone Number</en>
+				</title>
+			<length>4-40</length>
+			</field>
+			<field not_required="1">
+				<id>subject</id>
+				<type>string</type>
+				<title>
+					<en>Subject</en>
+				</title>
+			<length>4-40</length>
+			</field>
+			<field>
+				<id>text</id>
+				<type>string</type>
+				<title>
+					<en>Subject</en>
+				</title>
+			<length>4-512</length>
+			</field>
+		<field> 
+			<id>captcha</id>
+			<type>captcha</type>
+			<title>
+				<en>Code</en>
+			</title>
+			<length>1-2048</length>
+			
+		</field>
+	</fields>
+	
+		
+	
+	</form>	
+</forms>

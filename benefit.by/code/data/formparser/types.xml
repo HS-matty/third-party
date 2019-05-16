@@ -1,0 +1,65 @@
+<types>
+	<type id="int">
+		<error>
+			<en>must be a numeric</en>
+			<ru>должно быть числом</ru>
+		</error>
+	</type>
+	<type id="bool">
+		<error>
+			<en>must be a YES or NO</en>
+			<ru>должно быть числом</ru>
+		</error>
+	</type>
+	<type id="float">
+		<error>
+			<en>must be a numeric</en>
+			<ru>должно быть числом</ru>
+		</error>
+	</type>
+	<type id="file">
+		<error>
+			<en>File loading error</en>
+			
+		</error>
+	</type>
+	<type id="list">
+		<error>
+			<en>must be a numeric</en>
+			<ru>должно быть числом</ru>
+		</error>
+	</type>
+
+
+	<type id="string">
+		<error>
+			<en>must be a string</en>
+			<ru>должно быть строкой</ru>
+		</error>
+	</type>
+	<type id="path">
+		<regexp value="/^([a-zA-Z0-9\-\_\/]){1,128}$/" />
+		<error>
+			<en>Only letters,numbers (_-)</en>
+		</error>
+	</type>
+	<type id="group_title">
+		<regexp value="/^([a-zA-Z0-9\_])*$/" />
+		<error>
+			<en>Only letters, numbers and _</en>
+		</error>
+	</type>
+	<type id="date">
+		<regexp value="/^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/" />
+		<error>
+			<en>Wrong format - dd/mm/yyyy</en>
+		</error>
+	</type>
+	<type id="captcha">
+		<error>
+			<en>Bad code</en>
+			<ru>Плохой код</ru>
+		</error>
+	</type>
+
+</types>

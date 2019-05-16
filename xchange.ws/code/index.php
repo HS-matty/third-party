@@ -1,0 +1,151 @@
+<?
+///////////////////////////////////////////////////
+//////////////////////////////////////////////////
+/// Главная страница, /www/index.php
+/// 
+///
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+
+
+define('WE_ARE_HERE',true);
+
+
+
+include('includes/template.php');
+include('includes/head.php');
+include('includes/functions.php');
+
+if (isset($_GET['p_id'])) $p_id = $_GET['p_id'];
+else $p_id = 0;
+
+//varz
+
+$in_cur_id = 0;
+$out_cur_id = 0; 
+$db_array = array();
+$curs = array();
+$money_left = "0";
+$user_ip = "";
+$user_time = 0;
+$session_id = 0;
+$result = 0;
+$sql = "";
+
+
+
+$user_ip = encode_ip(check_user_ip());
+
+
+$db = mysql_connect("localhost") OR die(mysql_error());
+mysql_select_db('xchange') OR die (mysql_error());
+
+if(!$query=mysql_query("SELECT * FROM config")) die();
+$db_array = mysql_fetch_array($query);
+if($db_array['active'] != 1) exit;
+//another varz from config
+$session_lifetime = $db_array['session_lifetime'];
+
+
+
+kill_inactive_sessions ($session_lifetime);
+
+//////////////////
+// Partner block//
+/////////////////
+
+//сперва проверим на правильность $p_id
+$p_id = htmlspecialchars($p_id);
+if(($p_id) && (is_numeric($p_id) == TRUE)){
+	$p_id = substr ($p_id,0,2);
+	// проверка на наличие указанного партнера
+	$sql = "SELECT partner_id from partners where partner_id=$p_id";
+    if (!$result = mysql_query("$sql")) die(mysql_error());
+	$num_rows = mysql_num_rows($result);
+     
+	 if($num_rows == 1)    $session_id = create_session($p_id,$user_ip);
+	 else $p_id = 0;
+	 
+}
+
+else $p_id = 0;
+///////////////////////
+//END partner block //
+/////////////////////
+
+
+
+
+
+$template = new Template("./templates/");
+$template->set_filenames(array(
+	'body' => 'main_index.tpl')
+);
+
+$template->assign_vars(array(
+		"TITLE" => 'e-Base.ru')
+	);
+
+
+
+// получаем имена валют
+// curs[cur_id][name] - name
+//			    [sname]  - short name
+//				 [money_left]  - money left
+
+
+$sql = "SELECT cur_id,cur_name,cur_sname,money_left FROM currencies WHERE status=1";
+if (!$result = mysql_query("$sql")) die(mysql_error());
+
+while($db_array = mysql_fetch_array($result)){
+        $curs[$db_array['cur_id']]['cur_name'] = $db_array['cur_name'];
+		$curs[$db_array['cur_id']]['cur_sname'] = $db_array['cur_sname'];
+		$curs[$db_array['cur_id']]['money_left'] = $db_array['money_left'];
+
+}
+
+//проверка на необходимость внесения SID'a в строку, это делается только в том случае, если
+// пользователь пришел от партнера
+if(!$session_id)	$sid = "";
+else $sid = "&sid=$session_id";
+
+
+//Запрос на котировки валют
+
+$sql = "SELECT in_cur_id,out_cur_id, rate FROM rates ORDER BY in_cur_id,out_cur_id ASC";
+
+if(!$result = mysql_query("$sql")) die(mysql_error());
+
+while($db_array = mysql_fetch_array($result)){
+//проверка на наличие валюты в списке
+	
+	if(isset($curs[$db_array['in_cur_id']]) && isset($curs[$db_array['out_cur_id']])){
+
+			$template->assign_block_vars('IN_BODY',	array(
+						"in_cur_sname" => $curs[$db_array['in_cur_id']]['cur_sname'],
+						"out_cur_sname" => $curs[$db_array['out_cur_id']]['cur_sname'],
+						"in_left" => $curs[$db_array['in_cur_id']]['money_left'],
+						"out_left" => $curs[$db_array['out_cur_id']]['money_left'],
+						"rate" => $db_array['rate'],
+						"in_cur_id" => $db_array['in_cur_id'],
+						"out_cur_id" => $db_array['out_cur_id'],
+						"sid" => $sid)
+			);
+			 		
+
+        }
+}
+
+
+print("p_id = $p_id<br>");
+print("user ip is: $user_ip<br>");
+print("session_id is $session_id");
+
+
+mysql_close($db);
+
+$template->pparse("body");
+
+
+?>

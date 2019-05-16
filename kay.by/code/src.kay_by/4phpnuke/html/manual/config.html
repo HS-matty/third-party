@@ -1,0 +1,243 @@
+<html>
+<title>General Preferences</title>
+<head>
+</head>
+<body bgcolor=FFFFFF text=000000>
+<font face=Verdana,Arial,Helvetica size=2>
+<center><b>General Preferences</b></center>
+<br><br>
+This is the most important area when you start or maintain
+your PHP-Nuke site. In this section you can modify all the
+relevant information for your site. One of the best features
+of PHP-Nuke is that you can customize your site to fit your
+needs.<br><br>
+
+Now, we try to help you with all these options.<br><br>
+
+<b>Site Name:</b> Your new site needs a name. Is supposed
+that you already have your site name, or not?<br><br>
+
+<font color=Red size=3><li><b>General Site Info</b><font color=Black size=2><br><br>
+
+<b>Site URL:</b> Type here your complete URL including the
+<i>http://</i> also.<br>
+<i>Samples:</i>
+<ul>
+http://www.yourdomain.com<br><br>
+<i>or</i><br><br>
+http://www.yourdomain.com/~username/MySite
+</ul>
+
+<b>Site Logo:</b> This logo will be located in <i>images</i>
+directory, and is used to be displayed "just" in the <i>Printer
+Friendly Page</i>. The best option is a grayscale graphic with
+the logo of your site. This logo has nothing to do with your
+theme logo witch you need to include for each theme.<br><br>
+
+<b>Site Slogan:</i> If you have a slogan, just type it in the
+form, The slogan will be displayed under your logo in all the
+pages for your site. If you don't want a slogan just leave it
+blank.<br><br>
+
+<b>Site Start Date:</b> You can write here the start date of
+your web activities. You can write for example: <i>July 1st, 2000</i>
+or <i>July 2000</i> or whatever you want. This information will
+be visible to the users only in the stats page (stats.php).<br><br>
+
+<b>Administrator Email:</b> Just write here your email address.
+This is used when the system send emails to the users in order to
+let them answer you if needed.<br><br>
+
+<b>Number of Item in TOP Page:</b> You have a TOP page (top.php)
+where the visitors can view what are the top read articles, most
+commented, the best poll, etc. If you select for example <i>10</i>
+you will have a TOP 10 page.<br><br>
+
+<b>Stories Number in the Home:</b> How many stories you want to
+display in your Home page? A good number is 10, but you can select
+this depending of your activity. Remember that registered users
+can change this value to whatever they want. So, this is just a
+default value for non-registered users.<br><br>
+
+<b>Stories in Old Articles Box:</b> At the right of your home page
+you can see a box called <i>Past Articles</i>, right? This is the
+number of stories to show in that box.<br><br>
+
+<b>Activate Ultramode?:</b> Ultramode is a plain text file located
+at root dir of your site. By default this value is set to <i>No</i>,
+if you change this be sure to chmod 666 the file in order to write it.
+In this file will be the last 10 news headlines of your site with
+assorted info, fields (or news) separated by %%. This file is used
+to let other sites to put your news in their home. The best method is
+to deactivate this feature and use <i>backend.php</i> file, witch is
+RDF/XML format.<br><br>
+
+<b>Allow Anonymous to Post?:</b> If you want that anonymous (non-registered
+users) can post comments, select <i>Yes</i>, otherwise select <i>No</i>.<br><br>
+
+<b>Default Theme for your site:</b> Select the default theme for your entire site.
+Registered users has the hability to change the theme as well. This value is valid
+only for non-registered users, or registered users who have not selected a theme.<br><br>
+
+<b>Select Language for your site:</b> No explanation is needed here, select the language
+you want in your site.<br><br>
+
+<b>Locale Time Format:</b> Select the Locale format you want. Locales are little databases
+with the date, time, and other stuff in our language. Some Unix/Linux system has the locales
+already installed, if this is the case just select the one you want, otherwise install
+the Locales you need. Usualy, the Locales are installed under <i>/usr/share/locale</i>
+directory.<br><br>
+
+<font color=Red size=3><li><b>Multilingual Options</b><font color=Black size=2><br><br>
+
+<b>Activate Multilinugal features? :</b> If you select <i>Yes</i> and thus activate this you will be able to use PHP-Nuke
+in a Multilingual environment. Only Articles, sections, polls, ... that are corresponding to the
+language selected by the visitor will be shown. In short you will have a seperate site per language.
+If you set this to <i>No</i>, all articles, sections ... will be shown like in a standard PHP-Nuke regardless of
+what language they were written in..<br><br>
+
+<b>Display flags instead of a dropdown box? :</b> If you select <i>Yes</i>, flags will be used in the fixed language block
+ to display the available languages of the site. If set to <i>No</i> a dropdown box will be used from which a visitor can select
+ his prefered language.<br><br>
+
+<font color=Red size=3><li><b>Banners</b><font color=Black size=2><br><br>
+
+<b>Activate Banners in your Site?:</b> Just select if you want banners or no in your site.
+PHP-Nuke has incorporated a basic banners system. If you active the banners, the reload the
+Administration page you will see a new menu called <i>Banner Administration</i> where you
+can configure whatever you want. If you want to use another banners software,
+just select <i>No</i>.<br><br>
+
+<b>You IP to not count the hits:</b> If you select <i>Yes</i> to the above question, you
+need to put your IP number to prevent the system to count your hits for the banner displayed.
+If you are administrator you will have a high number of pages views in your own site, so if
+a client pays you for impressions will not be fair to count you. Be honest here!<br><br>
+
+<font color=Red size=3><li><b>Footer Messages</b><font color=Black size=2><br><br>
+
+<b>Foot Lines 1, 2, 3 and 4:</b> These are the text, or HTML commands that will be show
+in each page at the foot. Just write what you want. Usualy here will be powered buttons,
+copyright messages, webmaster email, etc. If you want only 2 or 3 lines instead of 4, just
+leave blank from bottom to top.<br><br>
+
+<font color=Red size=3><li><b>Backend</b><font color=Black size=2><br><br>
+
+<b>Backend Title:</b> Your site has now a auto-generated XML/RDF file with the lat 10 news.
+This file is configured here, so just write your page Title or site name here. You can
+put also your slogan after the title.<br><br>
+
+<b>Backend Language:</b> The format of your site's language.<br><br>
+
+<b>Backend Image URL:</b> The complete URL of the image/logo of your site. This is usefull if
+you will have a MyNetscape Channel. Be sure to include the <i>http://</i> at the begining.<br><br>
+
+<b>Backend Image Width:</b> The width of the Backend Image.<br><br>
+
+<b>Backend Image Height:</b> The height of the Backend Image.<br><br>
+
+<font color=Red size=3><li><b>Web Links</b><font color=Black size=2><br><br>
+
+<b>Links per Page:</b> The maximum links to show on each page of Web Links section.<br><br>
+
+<b>Hits to be Popular:</b> The number of hits a link needs to have to be listed as <i>popular</i>.
+Popular (Best) links will show a little graphic star and will be listed in The Best
+Links page.<br><br>
+
+<b>Number of Links as New:</b> The number of link to show in the <i>New Links</i> page. In that
+page the links will be sorted by creation date.<br><br>
+
+<b>Number of Links as Best:</b> How many links you want in <i>The Best Links</i> page. In Best Links
+page will be the most Popular ones.<br><br>
+
+<b>Links in Search Results:</i> The number of links to show in the results page after a search has
+been performed.<br><br>
+
+<font color=Red size=3><li><b>Mail New Stories</b><font color=Black size=2><br><br>
+
+PHP-Nuke has the ability to send an email to the administrator each time a user submit a new news.
+In this section you can configure the options for this email.<br><br>
+
+<b>Notify new submissions by email?:</b> Just select <i>Yes</i> or <i>No</i> if you want receive the
+email notification.<br><br>
+
+<b>Email to send the message:</b> To what email you want to send the notification?<br><br>
+
+<b>Email Subject:</b> The subject of the email.<br><br>
+
+<b>Email Message:</b> Write here the message you want to receive in the email.<br><br>
+
+<b>Email Account:</b> The email account to show in the <i>From</i> field of the email.<br><br>
+
+<font color=Red size=3><li><b>Comments Moderation</b><font color=Black size=2><br><br>
+
+Moderation doesn't work properly yet. So, you may want to leave this option as is.<br><br>
+
+<b>Type of Moderation:</b> Select if you want No moderation, Moderation by administrator or by
+registered users.<br><br>
+
+<font color=Red size=3><li><b>Comments Options</b><font color=Black size=2><br><br>
+
+<b>Comments Limit in Bytes:</b> Write the ammount of bytes a comment will have for maximum. If
+the comment is bigger than this, the comment will show a link with the text <i>Read the rest
+of this comment...</i> witch goes to a separate page for that comment.<br><br>
+
+<b>Anonymous Default Name:</b> Non registered users are Anonymous, and you need to assign a
+name for those people. This will show in the name sender for the stories and in comments. So
+you now can have Anonymous, Anonymous Cowards, Guests, Visitors, etc. users.<br><br>
+
+<font color=Red size=3><li><b>Voting Booth Options</b><font color=Black size=2><br><br>
+
+<b>Max Poll Options:</b> Set the maximum number of options the Poll can have.<br><br>
+
+<b>Scale of Result Bar:</b> Set a number, multiple of 100. This will be base the percentage
+to that number and change the width for the results bars. If you set <i>3</i> your poll will
+be based on 300%... in the 99.9% of the cases you may want to leave this value to 1.<br><br>
+
+<b>Allow users to vote twice?:</b> If yes, the system will set a cookie with 24 hour duration
+to prevent the user to vote twice in that period. Also the user will see a little message in
+the poll result window informing of this option. If no, users can vote as many times as they
+wants. This can affect the real serious results of the poll.<br><br>
+
+<font color=Red size=3><li><b>Some Graphics Stuff</b><font color=Black size=2><br><br>
+
+In future version, Images Paths will be fixed, there isn't any reason to change these options.<br><br>
+
+<b>Topics Images Path:</b> The path in your server from where to read the topics images.<br><br>
+
+<b>User Menu Images Path:</b> The path in your server from where to read all the buttons, also
+the buttons that are in the user page.<br><br>
+
+<b>Admin Menu Images Path:</b> The path in your server from where to read the images for admin
+section.<br><br>
+
+<b>Graphics in Administration Menu?:</b> If you want a graphic menu in the administration section
+set this value to <i>Yes</i>, otherwise set to <i>No</i>.<br><br>
+
+<b>Site Font:</b> You can control the font of the entire site. This value will be used in the CSS
+stylesheets for the body and tables.<br><br>
+
+<font color=Red size=3><li><b>Miscelaneous:</b><font color=Black size=2><br><br>
+
+<b>Articles Number in Admin:</b> Maximum articles ammount in the Admin section. Used to show some
+lists of articles, sections, etc.<br><br>
+
+<b>Minimum users password length:</b> Minimum length in characters for the user's passwords.<br><br>
+
+<b>Activate HTTP Referers?:</b> You can know who link to your site with this feature. Just Active or
+deactive it as you want.<br><br>
+
+<b>How many rerefers you want as Maximum?:</b> If the above option is was set to yes, you need to
+delete automaticaly the database. Select the number of referers to have as maximum.<br><br>
+
+<b>Activate Comments in Polls?:</b> Select if you want or not comments in Polls.<br><br>
+
+<b>Activate Ephemerids System?:</b> Select yes/no to activate or deactivate Ephemerids system.<br><br>
+
+<b>Activate Advanced Stats Page?:</b> Administrators can view a most complete stats page. If you active
+this option you will see another box called <i>Server Info</i> in the stats.php file.<br><br>
+
+
+<center><img src=../../../images/manual.jpg border=0></center>
+</font>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿{include file=$View->getIndexTmpl('standart_form/form.tpl')}

@@ -1,0 +1,32 @@
+FONT		{FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px}
+TD		{FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px}
+BODY		{FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px}
+P		{FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px}
+DIV		{FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px}
+INPUT		{FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px}
+TEXTAREA	{FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px}
+FORM 		{FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px}
+SELECT		{FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px}
+A:link          {BACKGROUND: none; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+A:active        {BACKGROUND: none; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+A:visited       {BACKGROUND: none; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+A:hover         {BACKGROUND: none; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline}
+.title 		{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 16px; FONT-WEIGHT: bold; FONT-FAMILY: VVerdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+.content 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.storytitle 	{BACKGROUND: none; COLOR: #363636; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+.storycat	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline}
+.boxtitle 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+.boxcontent 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.option 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+.tiny		{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+.cellbox {
+     border-top: 1px #374646 solid; 
+     border-left: 1px #374646 solid; 
+     border-right: 1px #374646 solid; 
+     border-bottom: 1px #374646 solid;
+     font-family: Verdana, Arial, Helvetica, sans-serif; 
+     font-size: 8pt; 
+     font-weight: normal;}
+     
+body { scrollbar-face-color: #96A096; scrollbar-shadow-color: #96A096; scrollbar-highlight-color: #96A096; scrollbar-3dlight-color: #9AB6C4; scrollbar-darkshadow-color: #20253A; scrollbar-track-color: #738278; scrollbar-arrow-color: #000000 }
+.formtexts {  text-decoration: none; background-color: #96A096; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight : normal; }

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>phpBB 2.0.0 :: Extras</title>
+<link rel="stylesheet" href="../templates/subSilver/subSilver.css" type="text/css" />
+<style type="text/css">
+<!--
+p,ul,td {font-size:10pt;}
+h2 {font-size:15pt;font-weight:bold;}
+h3 {font-size:12pt;}
+//-->
+</style>
+</head>
+<body bgcolor="#E5E5E5" text="#000000" link="#006699" vlink="#006699">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" align="center"> 
+	<tr> 
+		<td class="bodyline"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+				
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><img src="../templates/subSilver/images/logo_phpBB.gif" border="0" alt="phpBB2 : Creating Communities" vspace="1" /></a></td>
+		<td align="center" width="100%" valign="middle"><span class="maintitle">phpBB 2.0.x Contrib</span></td>
+	</tr>
+</table>
+
+<p>This directory contains a couple extra <i>add-ons</i> for phpBB 2.0.x.</p>
+
+<p align="center"><u>Please note none of these are directly supported by phpBB Group</u></p>
+
+<p>You should contact the author/s (via our forums) if you want further information. A large number of additional mods are available introducing increased funtionality to the standard phpBB2 release. You can find many additional mods at our main site:</p>
+
+<p><a href="http://www.phpbb.com/mods/" target="_new">http://www.phpbb.com/mods/</a></p>
+
+<p><b>NOTE</b>: Once you have made use of files contained in this directory it should be deleted from your server. You should <b>NOT</b> leave this directory in place!</p>
+
+<h2><u>Template cacheing</u></h2>
+
+<p><b>Authors: Crimsonbane, psoTFX and nathan</b></p>
+
+<p>During development of phpBB2 a recurring issue of server load has cropped up. phpBB 2.0.0 differs from many of its contemporaries by doing many more tasks at runtime. While this allows for simpler upgrade and modification paths it also leads to a greater strain being placed on the server. To help reduce this issue a cacheing template system was created based on work by Crimsonbane. This stores a compiled version of each template resulting in a generally significant reduction in server load and perhaps page generation time.</p>
+
+<p>Two versions of the cacheing system are contained in this directory, one uses flat files the other a MySQL database. Testing has shown that, in general, the average virtual host seems to show better performance with the flat file solution. However this may not be the case for your system, so please feel free to try both.</p>
+
+<p>In both cases you need to rename your existing template.php script (in includes/) and replace it with whichever template_*.php you want to try.</p>
+
+<h3>template_file_cache.php</h3>
+
+<p>To use the flat file system you need to add the following folders to templates/subSilver (or whatever template/s you are using): </p>
+
+<pre>cache/ 
+cache/admin/</pre>
+
+<p>And give both of them global write access (ie. chmod a+w, or if you prefer chmod 777). <b>Please note</b> that creating a world writeable directory is of course a potential security issue. Most of the time this is not a great issue, however on virtual hosting accounts there may be users who have nothing better to do than cause problems. Therefore you should monitor the status of these directories regularly and report any problems to your hosting provider (who will be in a position to take action against any offending user).</p>
+
+<h3>template_db_cache.php</h3>
+
+<p>To use the database system (note that this is <b>only</b> compatible with MySQL at present) you need to create the following table (replacing the phpbb_ prefix with your own if you used something different):</p>
+
+<pre>
+CREATE TABLE phpbb_template_cache ( 
+  template_name char(255) NOT NULL default '', 
+  template_handle char(50) NOT NULL default '', 
+  template_cached int(11) NOT NULL default '0', 
+  template_echo tinyint(1) NOT NULL default '1', 
+  template_compile text NOT NULL, 
+  PRIMARY KEY  (template_name) 
+) 
+</pre>
+
+<p>These files should not be incorporated into any mod or other plug-in, etc. They have been tested quite thoroughly but we cannot guarantee their stability in all cases. The system is based on work by Crimsonbane and of course Nathan's original templating system.</p>
+
+<h2><u>Database Informer</u></h2>
+
+<p><b>Authors: Blade, AL, Techie-Michael, Black Fluffy Lion</b></p>
+
+<h3>dbinformer.php</h3>
+
+<p>Following a large number of people reporting <i>could not connect to database</i> errors with phpBB, especially on installations, this script has been compiled by the Support Team. To use it, enter your database server hostname, database name, database username, your database password, and the prefix you would like dbinformer.php to use. (e.g. phpbb_) in the space provided. Select whether you want to generate a config.php file and submit the data.</p>
+
+<p>The script will then report whether a connection to MySQL and your database was established. If it was then it will list the tables in your database, tables which start with your chosen prefix will appear bold. If you choose to generate a new config file (useful if your file was accidently deleted, was not sent, etc) the code for that will appear at the bottom of the page. Simply copy that code over and save it as config.php. Making sure it has only 19 lines in it and upload it to your phpBB root directory. It is important to note that dbinformer.php currently <b>only</b> works with MySQL. We are working on adding a DBAL in our spare time.</p>
+
+<p>Please also note that this file (in common with the contrib directory as a whole) should be <b>deleted</b> after use. Do not leave this file in place if it is not needed.</b>
+
+<h2><u>Copyright and disclaimer</u></h2>
+
+<p>This application is opensource software released under the <a href="http://www.gnu.org/licenses/gpl.html" target="_new">GPL</a>. Please see source code and the <u>docs/</u> directory for more details. The phpBB2 package, its contents and the template cacheing files are Copyright © 2002 <a href="http://www.phpbb.com/" target="_new">phpBB Group</a>, All Rights Reserved. Other packages are the copyright of their respective authors.</p>
+
+				</td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+
+</body>
+</html>

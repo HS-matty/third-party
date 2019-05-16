@@ -1,0 +1,28 @@
+<?xml version='1.0' standalone='yes'?>
+
+<grid id="comments">
+	<fields>
+
+		
+		
+	
+	
+		<field id="short_description" >
+			<title>
+				<en>Categories assigned</en>
+			</title>
+		</field>
+
+		<field id="long_description" >
+			<title>
+				<en>Categories assigned</en>
+			</title>
+		</field>
+		
+
+
+	</fields>
+	
+	
+	
+</grid>

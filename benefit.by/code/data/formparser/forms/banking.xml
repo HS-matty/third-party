@@ -1,0 +1,252 @@
+<?xml version='1.0' standalone='yes'?>
+<forms>
+
+
+	<form id="custom_item_step1">
+
+	<fields>
+
+		<field>
+				<id>short_description</id>
+				<type>string</type>
+				<title>
+					<en>Short Description</en>
+					<ru>Название услуги</ru>
+				</title>
+			<length>2-30</length>	
+			
+		</field>
+
+		<field>
+				<id>fields_num</id>
+				<type>int</type>
+				<title>
+					<en>Short Description</en>
+					<ru>Количество полей</ru>
+				</title>
+			<length>1-20</length>	
+			
+		</field>
+		<!-- field>
+				<id>category_id</id>
+				<type>list</type>
+				<title>
+					<en>Service type</en>
+					<ru>Тип услуги</ru>
+				</title>
+		
+			<list  not_null="1">
+				<key_title>category_id</key_title>
+				<value_title>short_description</value_title>
+				
+			</list>	
+			
+		</field-->
+		
+	</fields>
+</form>
+
+	<form id="category">
+	<title>
+		<en>Category</en>
+	</title>
+	<fields>
+		<field primary_key="1">
+				<id>category_id</id>
+				<type>int</type>
+				<title>
+					<en>ID</en>
+				</title>
+			<length>1-a</length>	
+			
+		</field>
+		<field >
+				<id>short_description</id>
+				<type>string</type>
+				<title>
+					<en>Short Description</en>
+					<ru>Заголовок</ru>
+				</title>
+			<length>2-128</length>	
+			
+		</field>
+		<field not_required="1">
+				<id>alias</id>
+				<type>string</type>
+				<title>
+					<en>Short Path</en>
+					<ru>Короткий путь (/go/путь/)</ru>
+				</title>
+			<length>2-128</length>	
+			
+		</field>
+		<field>
+			<id>node_type</id>
+					
+				<type>string</type>
+				<title>
+					<en>Node Type</en>
+					<ru>Тип категории</ru>
+				</title>
+				
+			<enum>
+				<fields>
+				<field>
+						<title>
+							<en>Category</en>
+							<ru>Категория</ru>
+						</title>
+						<value>category</value>
+					</field>
+					<field>
+						<title>
+							<en>Static pages</en>
+							<ru>Статическая страница</ru>
+						</title>
+						<value>static_page</value>
+					</field>
+
+				</fields>
+				
+			</enum>
+		
+
+		</field>
+		<field not_required="1">
+			<id>body</id>
+			<type>string</type>
+			<title>
+				<en>Long description</en>
+				<ru>Страница</ru>
+			</title>
+			<view>editor</view>
+		</field>
+		
+
+	</fields>
+</form>
+
+<form id="credit_item">
+	<title>
+		<en></en>
+	</title>
+
+	<fields>	
+		<field primary_key="1">
+			<id>listing_id</id>
+			<type>int</type>
+			<title>
+				<en>DirectoryId</en>
+				<ru>DirectoryId</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		<field>
+				<id>bluser_id</id>
+				<type>list</type>
+				<title>
+					<en>Owner</en>
+					<ru>Владелец</ru>
+				</title>
+		
+			<list  not_null="1">
+				<key_title>bluser_id</key_title>
+				<value_title>company</value_title>
+				
+			</list>	
+			
+		</field>
+		<field>
+			<id>is_active</id>
+			<type>bool</type>
+			<title>
+				<en>Is active</en>
+				<ru>Активен</ru>
+			</title>
+		
+		</field>
+		<field>
+			<id>short_description</id>
+			<type>string</type>
+			<title>
+				<en>Short description</en>
+				<ru>Описание</ru>
+			</title>
+		
+		</field>
+		
+		
+		<field not_required="1">
+			<id>long_description</id>
+			<type>string</type>
+			<title>
+				<en>Long description</en>
+				<ru>Описание</ru>
+			</title>
+			<view>editor</view>
+		</field>
+		<field>
+			<id>rate</id>
+			<type>float</type>
+			<title>
+				<en>Rate%</en>
+				<ru>Ставка%</ru>
+			</title>
+		
+		</field>
+		<field>
+			<id>sum</id>
+			<type>float</type>
+			<title>
+				<en>Sum</en>
+				<ru>Сумма</ru>
+			</title>
+		
+		</field>
+		<field>
+			<id>term</id>
+			<type>float</type>
+			<title>
+				<en>Term</en>
+				<ru>Срок</ru>
+			</title>
+		
+		</field>
+		
+		<field>
+				<id>currency_id</id>
+				<type>list</type>
+				<title>
+					<en>Currency</en>
+					<ru>Валюта</ru>
+				</title>
+		
+			<list  not_null="1">
+				<key_title>currency_id</key_title>
+				<value_title>cur_title_ru</value_title>
+				
+			</list>	
+			
+		</field>
+		<field>
+				<id>purpose_id</id>
+				<type>list</type>
+				<title>
+					<en>Purpose</en>
+					<ru>Назначение</ru>
+				</title>
+		
+			<list  not_null="1">
+				<key_title>purpose_id</key_title>
+				<value_title>purpose_title_ru</value_title>
+				
+			</list>	
+			
+		</field>
+
+	</fields>
+</form>
+
+
+</forms>
+	

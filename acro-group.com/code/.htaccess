@@ -1,0 +1,26 @@
+# Copy this file to a new file called .htaccess in your eZ publish root
+# to make the site more secure in non-virtualhost mode (index.php used in urls).
+#
+
+#<FilesMatch ".">
+#order allow,deny
+#deny from all
+#</FilesMatch>
+
+
+#<FilesMatch "(index\.php|\.(gif|jpe?g|png|css|swf|js|html)|var(.+)storage.pdf(.+)\.pdf)$">
+#order allow,deny
+#allow from all
+#</FilesMatch>
+
+RewriteEngine On
+Options +FollowSymlinks 
+#RewriteRule !\.(gif|jpe?g|png|css|js|swf|html)|var(.+)storage.pdf(.+)\.pdf$ index.php
+#RewriteRule ^([^./]+)/?$ /index.php/$1
+RewriteRule !\.(ico|gif|css|jpg|png|jar|js|pdf|swf) index.php
+
+
+DirectoryIndex index.php
+
+
+

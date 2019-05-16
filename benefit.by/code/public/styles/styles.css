@@ -1,0 +1,601 @@
+/* BarefootStyles.css */
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFFF;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+a {
+	font-size: 11px;
+	color: #444444;
+	font-weight: normal;
+	text-decoration: none;
+}
+a:visited {
+	color: #444444;
+}
+a:hover {
+	color: #0066cc;
+	text-decoration: underline;
+}
+a:active {
+	color: #000000;
+}
+
+h1 {
+	font-size: 18px;
+	color: #555555;
+	margin: 0px;
+	border-top: 1px solid #555555;
+	border-bottom: 1px solid #555555;
+	padding: 3px;
+	font-weight: normal;
+}
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #000000;
+	display: inline;
+	margin-left: 13px;
+	padding: 3px;
+	background-color: #FFFFFF;
+}
+h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #0066cc;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+h4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #000000;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+h4.blue {
+	color: #0066cc;
+}
+h5 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	background-color: #555555;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding: 3px;
+}
+h6 {
+	font-size: 10px;
+	color: #000000;
+}
+form {
+	margin: 0px;
+	padding: 0px;
+}
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+option.main {
+	font-weight: bold;
+}
+option.sub {
+}
+
+
+ul {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+/* IDs */
+
+#container {
+	width: 100%;
+	text-align: left;
+}
+#containerFull {
+	width: 100%;
+	text-align: left;
+}
+#header {
+	padding: 17px 10px 5px 5px;
+	border-bottom: 10px solid #555555;
+}
+#location {
+	font-size: 17px;
+	color: #0066cc;
+	margin: 0px;
+	border-bottom: 1px solid #555555;
+	padding: 5px 3px 5px 10px;
+	font-weight: normal;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+}
+#locationBubble {
+	background-image: url(../../images/location_bubble.gif);
+	background-repeat: no-repeat;
+	/* behavior: url(/iepngfix.htc); */
+	width: 244px;
+	height: 164px;
+	position: absolute;
+	padding: 28px 10px 10px 40px;
+}
+#leftColumn {
+	width: 155px;
+	padding: 59px 0px 0px 0px;
+	background-image: url(../../images/search_top.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+	border-top: 23px solid #FFFFFF;
+}
+#search {
+	background-color: #EFEFEF;
+	padding: 10px;
+	border-bottom: 3px solid #333333;
+	border-left: 1px solid #CCCCCC;
+}
+#searchNew {
+	padding-top: 17px;
+}
+#login, #yourAccount {
+	background-color: #EFEFEF;
+	padding: 10px;
+	border-bottom: 10px solid #333333;
+	border-left: 1px solid #CCCCCC;
+	line-height: 150%;
+}
+#login .button {
+	margin-top: 5px;
+}
+#post {
+	background-color: #EFEFEF;
+	padding: 10px;
+	border-bottom: 3px solid #333333;
+	border-left: 1px solid #CCCCCC;
+}
+#content {
+	line-height: 160%;
+	padding: 20px 10px 20px 25px;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+	width: 558px;
+	min-height: 350px;
+}
+#contentFull {
+	line-height: 160%;
+	padding: 20px;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+	min-height: 350px;
+}
+#footer {
+	border-top: 10px solid #555555;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 5px;
+	line-height: 170%;
+	clear: both;
+}
+
+#map {
+	background-image: url(../images/map_sd.gif);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	border: 1px solid #555555;
+}
+#mapSmall {
+	background-image: url(../images/map_sd.gif);
+	background-repeat: no-repeat;
+	width: 480px;
+	height: 400px;
+	overflow: hidden;
+	border: 1px solid #555555;
+	margin-left: 10px;
+}
+#mapSmall_DND {
+	background-image: url(../images/dnd_map.gif);
+	background-repeat: no-repeat;
+	width: 480px;
+	height: 400px;
+	overflow: hidden;
+	border: 1px solid #555555;
+	margin-left: 10px;
+}
+#infoWindowSmall {
+	position: relative;
+	top: 30px;
+	left: 280px;
+	background-image: url(../../images/info_bubble_small.png);
+	background-repeat: no-repeat;
+	/*behavior: url(http://briedemkiw.com/barefoot/css/iepngfix.htc);*/
+	width: 309px;
+	height: 182px;
+	padding: 0px 10px 10px 15px;
+}
+#infoWindowSmallContent {
+	width: 300px;
+	line-height: 130%;
+	font-size: 10px;
+}
+#infoTitleSmall {
+	color: #0066cc;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 3px 0px 3px 0px;
+}
+#infoWindowFull {
+	position: relative;
+	top: 10px;
+	left: 280px;
+	background-image: url(../../images/info_bubble_full.png);
+	background-repeat: no-repeat;
+	/*behavior: url(/iepngfix.htc);*/
+	width: 465px;
+	height: 385px;
+	padding: 0px 10px 10px 18px;
+}
+.infoWindowFullContent {
+	width: 411px;
+	height: 288px;
+	line-height: 130%;
+	font-size: 11px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0px 10px 10px 0px;
+}
+#fullListingContent {
+	width: 700px;
+	line-height: 130%;
+	font-size: 11px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0px 10px 10px 0px;
+}
+#infoTitle {
+	color: #0066cc;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 3px 0px 3px 0px;
+}
+
+
+#flagBubble {
+	background-image: url(../../images/flag_bubble.gif);
+	background-repeat: no-repeat;
+ 	/* behavior: url(http://barefoot_zend/iepngfix.htc); */
+	width: 121px;
+	height: 88px;
+	position: absolute;
+	padding: 10px 10px 10px 30px;
+}
+
+#saveBubble {
+/*	background-image: url(../images/save_bubble.png);
+	background-image: url(../../images/flag_bubble.gif);
+	background-repeat: no-repeat;
+behavior: url(http://briedemkiw.com/barefoot/css/iepngfix.htc);
+	width: 185px;
+	height: 146px;
+	position: absolute;
+	padding: 10px 10px 10px 30px;*/
+}
+#saveBubble input {
+	margin-top: 5px;
+}
+#searchForm {
+	border: 1px solid #555555;
+}
+#resultSet {
+	padding-right: 0px;
+}
+#results {
+	padding: 5px 5px 10px 5px;
+	line-height: 130%;
+	font-size: 11px;
+	height: 300px; 
+	overflow-y: auto;	
+	border: 1px solid #555555;
+	border-right: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#results_middle {
+	padding: 5px 5px 10px 5px;
+	line-height: 150%;
+	font-size: 11px;
+	height: 400px; 
+	overflow-y: auto;	
+	border: 1px solid #555555;
+	border-right: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#results_ajax {
+	padding: 5px 5px 10px 5px;
+	line-height: 130%;
+	font-size: 11px;
+	height: 300px; 
+	overflow-y: auto;	
+	border: 1px solid #555555;
+	border-right: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#results_ajax a,#results a, #mySearches a, #myPostings a {
+	font-size: 11px;
+	color: #0066cc;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#results_ajax .smallText, #results .smallText, #mySearches .smallText, #myPostings .smallText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+#mySearches {
+	padding: 5px 5px 10px 5px;
+	line-height: 130%;
+	font-size: 11px;
+	height: 361px;
+	overflow-y: auto;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+#myPostings {
+	padding: 5px 5px 10px 5px;
+	line-height: 130%;
+	 height: 230px;
+	 overflow: auto;
+
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#postPage {
+	width: 700px;
+}
+#tagline {
+	color: #555555;
+	font-size: 12px;
+	padding-left: 40px;
+	font-weight: bold;
+}
+
+/* Custom Styles */
+
+a.smallInfoLink {
+	font-size: 10px;
+	color: #0066cc;
+}
+a.blueLink {
+	color: #0066cc;
+	text-decoration: underline;
+}
+.infoImage {
+	border: 1px solid #555555;
+}
+.infoWindowDesc {
+	border-top: 2px solid #555555;
+	margin-top: 10px;
+	padding-top: 10px;
+	color: #555555;
+	font-size: 10px;
+}
+.contactInfo {
+	border-top: 2px solid #555555;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+a.smallLink {
+	font-size: 9px;
+}
+
+.submenuBubble {
+	background-image: url(../images/submenu_bubble.png);
+	background-repeat: no-repeat;
+	behavior: url(http://briedemkiw.com/barefoot/css/iepngfix.htc);
+	width: 265px;
+	height: 226px;
+	position: absolute;
+	padding: 15px 10px 10px 40px;
+}
+.submenuBubbleSmall {
+	background-image: url(../images/submenu_bubble_small.png);
+	background-repeat: no-repeat;
+	behavior: url(http://briedemkiw.com/barefoot/css/iepngfix.htc);
+	width: 289px;
+	height: 170px;
+	position: absolute;
+	padding: 15px 10px 10px 40px;
+}
+.bubbleContent {
+	border-right: 2px solid #555555;
+	margin-top: 2px;
+	padding: 15px 0px 10px 20px;
+	width: 197px;
+}
+
+.categoriesList {
+	/*max-width: 800px;
+	min-width: 500px;*/
+}
+.categoryHeading {
+	background-image: url(../../images/corners_top.gif);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+.categorySet {
+	width: 238px;
+	padding: 10px 0px 10px 10px;
+	border-right: 1px solid #0066cc;
+	border-left: 1px solid #0066cc;
+}
+.categoryFooter {
+	background-image: url(../../images/corners_bottom.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 250px;
+	height: 8px;
+}
+
+.indent {
+	padding-left: 30px;
+	line-height: 150%;
+}
+
+.tableHeading {
+	background-color: #555555;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.resultNums {
+	background-color: #555555;
+	color: #FFFFFF;
+	padding: 3px;
+	text-align: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.pagination {
+	background-color: #555555;
+	color: #FFFFFF;
+	padding: 3px;
+	text-align: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.pagination a {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+.smallText {
+	font-size: 9px;
+}
+.oddRow {
+	background-color: #EFEFEF;
+}
+#tabs {
+	float: left;
+}
+#tabsHidden {
+	float: left;
+}
+#prevTabSet {
+	float: left;
+	padding: 8px 5px 2px 5px;
+	height: 15px;
+	background-image: url(../../images/prev_tabs_arrow_gray.gif);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	border-right: 2px solid #FFFFFF;
+}
+#nextTabSet {
+	float: left;
+	padding: 8px 5px 2px 5px;
+	height: 15px;
+	background-image: url(../../images/more_tabs_arrow.gif);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	cursor: pointer;
+}
+.tab {
+	cursor: pointer;
+	padding: 6px 5px 4px 5px;
+	float: left;
+	text-align: center;
+	border-right: 2px solid #FFFFFF;
+	height: 15px;
+	background-image: url(../../images/tab.gif);
+	background-repeat: no-repeat;
+	width: 90px;
+}
+.tabCurrent {
+	cursor: pointer;
+	padding: 6px 5px 4px 5px;
+	float: left;
+	text-align: center;
+	border-right: 2px solid #FFFFFF;
+	height: 15px;
+	background-image: url(../../images/tab_current.gif);
+	background-repeat: no-repeat;
+	width: 90px;
+	color: #FFFFFF;
+}
+.tabCurrent input, .tab input { 
+	padding: 0px;
+}
+.tabBar {
+	padding: 3px 3px 3px 10px;
+	background-color: #333333;
+	clear: both;
+	color: #666666;
+}
+.tabBar a, .tabBar a:hover, .tabBar a:visited, .tabBar a:active{
+	color: #FFFFFF;
+	font-size: 9px;
+	text-decoration: underline;
+}
+.tabSection {
+	border: 1px solid #333333;
+	padding: 10px;
+}
+
+.red {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.submenu {
+	padding-left: 9px;
+	background-image: url(../../images/dots.gif);
+	background-repeat: no-repeat;
+	background-position: left 2px;
+}
+
+.headRow {
+	background-color: #CCCCCC;
+	padding: 3px;
+	font-weight: bold;
+}
+.green {
+	color: #009900;
+	font-weight: bold;
+}
+.red {
+	color: #FF0000;
+	font-weight: bold;
+}
+.gray {
+	color: #777777;
+	font-weight: bold;
+}
+
+#flaggedDetail {
+	background-image: url(../../images/flag_desc_bubble.png);
+	background-repeat: no-repeat;
+/*	background-image: url(../../images/flag_bubble.gif); */
+
+	width: 209px;
+	height: 170px;
+	position: absolute;
+	padding: 15px 45px 10px 35px;
+}
+.error_message{
+	color: #FF0000;
+	
+
+}

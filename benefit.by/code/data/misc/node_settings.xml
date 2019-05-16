@@ -1,0 +1,15 @@
+<form>
+<fields>
+		<field>
+			<id>is_article_allowed</id>
+			<type>bool</type>
+			<title>
+				<en>Is articles allowed</en>
+				
+			</title>
+			<length>1-255</length>
+			<value>true</value>
+		</field>
+		
+</fields>
+</form>

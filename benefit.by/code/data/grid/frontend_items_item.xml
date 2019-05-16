@@ -1,0 +1,117 @@
+<?xml version='1.0' standalone='yes'?>
+
+<grid id="frontend_items_house">
+	<fields>
+	
+
+		<field id="item_title">
+			<title>
+				<en>Item</en>
+			</title>
+			
+			<link>
+				<module>directory</module>
+				<params>
+					<param value="item" />
+				
+				</params>
+				<urlparams>
+					<param title="item_id" data_field = "ditem_id" />
+				</urlparams>
+			</link>
+
+		
+		</field>	
+		
+		<field id="item_description">
+			<title>
+				<en>Description</en>
+			</title>
+			
+			<link>
+				<module>directory</module>
+				<params>
+					<param value="item" />
+				
+				</params>
+				<urlparams>
+					<param title="item_id" data_field = "ditem_id" />
+				</urlparams>
+			</link>
+
+		
+		</field>
+	<field id="item_address">
+			<title>
+				<en>Address</en>
+			</title>
+			
+			<link>
+				<module>directory</module>
+				<params>
+					<param value="item" />
+				
+				</params>
+				<urlparams>
+					<param title="item_id" data_field = "ditem_id" />
+				</urlparams>
+			</link>
+
+		
+		</field>
+		
+		<field id="item_city">
+			<title>
+				<en>City</en>
+			</title>
+			
+			<link>
+				<module>directory</module>
+				<params>
+					<param value="item" />
+				
+				</params>
+				<urlparams>
+					<param title="item_id" data_field = "ditem_id" />
+				</urlparams>
+			</link>
+
+		
+		</field>
+		
+		<field id="creation_date" type="date" table="di">
+			<title>
+				<en>Date</en>
+			</title>
+
+			
+
+
+		
+		</field>
+
+		
+
+	<field id="#edit" type="additional">
+			<title>
+				<en>full listing</en>
+			</title>
+			<link>
+				<module>directory</module>
+				<params>
+					<param value="item" />
+				
+				</params>
+				<urlparams>
+					<param title="item_id" data_field = "ditem_id" />
+				</urlparams>
+			</link>
+		</field>
+		
+		
+
+	</fields>
+	
+	
+	
+</grid>

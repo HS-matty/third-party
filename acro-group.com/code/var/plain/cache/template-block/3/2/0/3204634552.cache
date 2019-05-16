@@ -1,0 +1,53 @@
+<div style="width: 100%; padding-right: 4px; padding-left: 15px; padding-top: 4px; padding-bottom: 4px; margin-bottom:1px; background-image:url('/design/admin/images/bgtiledark.gif'); background-repeat: repeat;">
+<a class="leftmenuitem" href="/index.php/admin_acro/setup/cache">Cache management</a>
+</div>
+
+<div style="width: 100%; padding-right: 4px; padding-left: 15px; padding-top: 4px; padding-bottom: 4px; margin-bottom:1px; background-image:url('/design/admin/images/bgtiledark.gif'); background-repeat: repeat;">
+<a class="leftmenuitem" href="/index.php/admin_acro/setup/menuconfig">Menu management</a>
+</div>
+
+<div style="width: 100%; padding-right: 4px; padding-left: 15px; padding-top: 4px; padding-bottom: 4px; margin-bottom:1px; background-image:url('/design/admin/images/bgtiledark.gif'); background-repeat: repeat;">
+<a class="leftmenuitem"  href="/index.php/admin_acro/search/stats">Search statistics</a>
+</div>
+
+<div style="width: 100%; padding-right: 4px; padding-left: 15px; padding-top: 4px; padding-bottom: 4px; margin-bottom:1px; background-image:url('/design/admin/images/bgtiledark.gif'); background-repeat: repeat;">
+<a class="leftmenuitem"  href="/index.php/admin_acro/setup/info">System information</a>
+</div>
+
+<div style="width: 100%; padding-right: 4px; padding-left: 15px; padding-top: 4px; padding-bottom: 4px; margin-bottom:1px; background-image:url('/design/admin/images/bgtiledark.gif'); background-repeat: repeat;">
+<a class="leftmenuitem" href="/index.php/admin_acro/setup/toolbarlist">Toolbar management</a>
+</div>
+
+<div style="width: 100%; padding-right: 4px; padding-left: 15px; padding-top: 4px; padding-bottom: 4px; margin-bottom:1px; background-image:url('/design/admin/images/bgtiledark.gif'); background-repeat: repeat;">
+<a class="leftmenuitem" href="/index.php/admin_acro/url/list">URL management</a>
+</div>
+
+<div style="width: 100%; padding-right: 4px; padding-left: 15px; padding-top: 4px; padding-bottom: 4px; margin-bottom:1px; background-image:url('/design/admin/images/bgtiledark.gif'); background-repeat: repeat;">
+<a class="leftmenuitem" href="/index.php/admin_acro/content/urltranslator">URL translator</a>
+</div>
+
+<div style="width: 100%; padding-right: 4px; padding-left: 15px; padding-top: 4px; padding-bottom: 4px; margin-bottom:1px; background-image:url('/design/admin/images/bgtiledark.gif'); background-repeat: repeat;"> <a class="leftmenuitem" href="/index.php/admin_acro/user/preferences/set/advanced_menu/off">Advanced</a>
+ <a href="/index.php/admin_acro/user/preferences/set/advanced_menu/off"><img src="/design/admin/images/down.gif" alt="" width="11" height="6" /></a>
+</div>
+<ul class="leftmenu">
+<li><p>&#187; <a href="/index.php/admin_acro/class/grouplist">Classes</a></p></li>
+<li><p>&#187; <a href="/index.php/admin_acro/setup/extensions">Extension setup</a></p></li>
+<li><p>&#187; <a href="/index.php/admin_acro/settings/view">Ini settings</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/notification/runfilter">Notification</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/pdf/list">PDF export</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/package/list">Packages</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/setup/rad">RAD</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/rss/list">RSS</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/section/list">Sections</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/setup/session">Sessions</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/setup/systemupgrade">System upgrade</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/setup/templatelist">Templates</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/content/translations">Translations</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/trigger/list">Triggers</a></li>
+<li><p>&#187; <a href="/index.php/admin_acro/workflow/grouplist">Workflows</a></li>
+</ul>
+
+
+
+</td>
+    <td class="mainarea" colspan="12"  valign="top"  style="background-color: #ffffff; background-image:url('/design/admin/images/corner.gif'); background-repeat: no-repeat; background-position: left top;">

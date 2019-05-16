@@ -1,0 +1,132 @@
+<html>
+
+<head>
+{include file=$Page->getIndexTmpl('css.tpl')}
+<title>test</title>
+
+{if $map_}
+
+   {$map_->printHeaderJS()}
+   {$map_->printMapJS()}
+
+
+{/if}
+
+{if $map}
+{literal}
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA5-vSh2iyrojP8PT68j5eqBSbmzrMatK6EhngkTgz7wW4zp_32hR3xv2vUl6aSk5mpAcHxw3OPVHj2A"
+      type="text/javascript"></script>
+       <script type="text/javascript">
+    //<![CDATA[
+
+    var map = null;
+    var geocoder = null;
+
+    function load() {
+    return;
+      if (GBrowserIsCompatible()) {
+        map = new GMap2(document.getElementById("map"));
+     //   map.setCenter(new GLatLng(37.4419, -122.1419), 13);
+       	 map.addControl(new GLargeMapControl());
+        geocoder = new GClientGeocoder();
+        showAddress("San Diego CA");
+        setMarker("La Mesa CA");
+      
+
+
+      }
+    }
+
+        // Creates a marker at the given point with the given number label
+
+
+    function showAddress(address) {
+    
+      if (geocoder) {
+        geocoder.getLatLng(
+          address,
+          function(point) {
+            if (!point) {
+              alert(address + " not found");
+            } else {
+              map.setCenter(point, 10);
+              var marker = new GMarker(point);
+              map.addOverlay(marker);
+              marker.openInfoWindowHtml(address);
+            }
+          }
+        );
+      }
+    }
+     function setMarker(address) {
+
+      if (geocoder) {
+        geocoder.getLatLng(
+          address,
+          function(point) {
+            if (!point) {
+              alert(address + " not found");
+            } else {
+            
+              var marker = new GMarker(point);
+              map.addOverlay(marker);
+              marker.openInfoWindowHtml(address);
+            }
+          }
+        );
+      }
+    }
+    
+    //]]>
+    </script>
+
+{/literal}
+{/if}
+</head>
+<body style="padding:30px" {if $map}onload="load()" onunload="GUnload()"{/if}>
+
+
+
+<br>
+<a href="{$StartLink}/">Main</a> | <a href="{$StartLink}/directory/add/">Add listing</a>
+<br>
+
+
+{if  $Path}
+
+{include file="$Path"}
+
+	{else}
+	No page!
+{/if}
+
+<br><br>
+<a href="{$StartLink}/cms/index/36/">Terms of use </a> |
+<a href="{$StartLink}/cms/index/37/">Faq </a> |
+<a href="{$StartLink}/cms/index/38/">Privacy policy </a> |
+
+
+{if $debug}
+<div id="debug">
+	<h3>Common debug</h3>
+	
+		<ol>
+		{foreach from=$DebugLog item=log}
+			<li>{$log}</li>
+		{/foreach}
+		</ol>
+	<hr>
+	<h3>SQL debug</h3>
+	
+		<ol>
+		{foreach from=$DebugSql item=sql}
+			<li>{$sql}</li>
+		{/foreach}
+		</ol>
+		
+		<font color='red'>Generated {$generated} sec</font>
+</div>
+	
+{/if}
+</body>
+</html>

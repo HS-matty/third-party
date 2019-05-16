@@ -1,0 +1,26 @@
+<table width="402" align="center" border="0" cellpadding="3" cellspacing="0" background="_images/bgtext.gif">
+  <tr valign="top">
+    <td>
+      <span class="contact_nadpis">Adress:</span><br>
+      <span class="contact_text">Žirovnická&nbsp;2389</span><br>
+      <span class="contact_text">160&nbsp;00&nbsp;Prague&nbsp;10</span><br>
+      <span class="contact_text">Czech&nbsp;Republic</span><br>
+      &nbsp;<br>
+      <span class="contact_nadpis">Mobil:</span><br><span class="contact_text">+420&nbsp;728&nbsp;212&nbsp;685</span><br>
+      <span class="contact_nadpis">Tel.:</span><br><span class="contact_text">+420&nbsp;272&nbsp;770&nbsp;032</span><br>
+      <span class="contact_nadpis">Fax:</span><br><span class="contact_text">+420&nbsp;272&nbsp;770&nbsp;010</span><br>
+      <span class="contact_nadpis">E-mail:</span><br><span class="contact_text">info@acro-group.com</span><br>
+      <span class="contact_text">wangjinlai@hotmail.com</span>
+    </td>
+    <td>
+      <span class="contact_nadpis">E-mail:</span><br>
+      <input type="text" class="pol"><br>
+      &nbsp;<br>
+      <span class="contact_nadpis">Message:</span><br>
+      <textarea rows="10" cols="25" wrap="virtual">
+      </textarea><br>
+      <input type="submit" value="  SEND   ">
+
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,312 @@
+<? //файл-заголовок -- здесь описание некоторых функций, создание теблицы с формой входа, реализация входа и т.д.
+
+//некоторые функции
+
+function categoryIndexInArray($list, $id) { //ищет категорию c данным $id в массиве категорий $list и возвращает индекс найденного элемента
+
+	$j = 0;
+	while ($j<count($list) && $list[$j][0]!=$id) $j++;
+	if ($j == count($list)) return 0;
+	else return $j;
+
+};
+
+function processCategories($list, $level, $path, $sel) { //добавляет элементы в таблицу категорий
+						//$list[] - массив категорий
+						//$level - текущий уровень категорий: 0 для главных категорий, 1 для их подкатегорий и т.д.
+						//$path - путь из CID категорий, ведущих к выделенной
+						//$sel -- CID выбранной категории
+
+	for ($i=0; $i<count($list); $i++) {
+
+		//показать категорию, если ее родителем является категория, стоящая в пути ($path) раньше (т.е. на 1 элемент левее)
+		if ($list[$i][2] == $path[$level]) {
+			echo "<tr><td>";
+			for ($j=0; $j<$level; $j++) echo "&nbsp;&nbsp;";
+
+			if ($list[$i][0] == $sel) { //не делать ссылку на выбранную категорию
+				echo "<b>".$list[$i][1]."</b>\n";
+				echo "</td></tr>\n";
+			}
+			else {
+				echo "<a href=\"index.php?CID=".$list[$i][0]."\"";
+				if ($level) echo " class=standard";
+				echo ">".$list[$i][1]."</a></td></tr>\n";
+			};
+		};
+
+		//если данная категория встретилась в $path, то рекурсивно вызываем processCategories, только уже на уровень выше (+1)
+		if ($level+1<count($path) && $list[$i][0] == $path[$level+1]) processCategories($list,$level+1,$path,$sel);
+
+	};
+
+};
+
+function calculatePath($categories, $CID) {
+
+	//вычисляет "путь" (т.е. последовательный набор из CID категорий), ведущий от корня, до категории c CID=$selected
+	//и записывает его в массив $path в обратном порядке (т.к. ищем от $selected до корня), а затем перевернем его
+	//Этот массив необходим для того, чтобы "раскрывать" все директории до выбранной. Например: Спорт/Сноуборды/Forum/
+
+	$path = array();
+	$i = $CID;
+	if ($i) do {
+		$c = categoryIndexInArray($categories,$i);
+		$path[count($path)] = $categories[$c][0];
+		$i = $categories[$c][2];
+	} while ($i);
+	$path[count($path)]=0; //последний элемент -- корень. Его CID считается 0
+	$path = array_reverse($path); //переворачиваем...
+
+	return $path;
+
+};
+
+
+function showNavigation($sn) { //показывает навигационные ссылки: витрина, корзина, регистрация и т.д.
+?>
+<hr width="30%" noshade size="1">
+<div align=center class="menu"> <font color="#336699"> <a href="index.php" class=mleft>Main page </a>
+		| <a href="register.php" class=mleft>Registration </a> 
+  | <a href="javascript:open_window('cart.php',400,300)" class=mleft>Your shopping basket ]</a></font></div>
+<div align="center"><br>
+</div>
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td bgcolor="#7890b8" height="12" > 
+      <div align="center"></div>
+    </td>
+  </tr>
+</table>
+
+<div align="center"><font color="#6699CC">&copy; cdshoponline.net 2002. All rights 
+  reserved.</font></div>
+  <?
+	$q = mysql_query("SELECT Email FROM Users WHERE Login='MANAGER'") or die (mysql_error());
+	if (!($r = mysql_fetch_row($q))) { $r[0]="yourname"; };
+	};
+
+
+
+	session_start(); //создать сеанс для пользователя
+
+	//соединиться с БД
+	include ("cfg/connect.inc");
+	mysql_connect($DB_HOST,$DB_USER,$DB_PASS) or die (mysql_error());
+	mysql_select_db($DB_NAME) or die (mysql_error());
+
+	include("checklogin.php");
+
+	if (isset($logout)) { //выйти из сеанса
+		unset($log);
+		session_destroy();
+	} else
+	if (isset($enter) && !isset($log)) { //была нажата кнопка входа пользователя? -- проверить правильность входа
+					//делать это будем до тэга <html>, т.к. именно до него можно пользоавться header(), с помощью которой
+					//переходим на admin.php
+
+		if (!isset($user_login)) $user_login = $log;
+
+		$q = mysql_query("SELECT * FROM Users WHERE Login='".$user_login."'") or die (mysql_error());
+		//проверить зарегистрирован ли пользователь
+		if (($row = mysql_fetch_row($q)) && (!strcmp($row[0],stripslashes($user_login))) && (!strcmp($row[1],stripslashes($user_pw)))) {
+			//ползователь существет -- зарегистрировать сессию
+
+			$log = $user_login;
+			$pass = stripslashes($user_pw);
+			session_register("log"); //$log -- переменная-сеанса, характеризующая текущего пользователя
+			session_register("pass");
+			if (!strcmp($log,"MANAGER")) { header("Location: admin.php"); };
+
+			$wrongLoginOrPw = false;
+			unset($enter);
+			unset($logging);
+
+			//оформление заказа опять начинать с 1ого этапа
+			if (isset($order_step)) {
+				session_unregister("order_step");
+				unset($order_step);
+			};
+
+		}
+		else //ошибка входа!
+			$wrongLoginOrPw = true;
+	};
+
+	//# текущей категории (выбранной)
+	if (!isset($CID)) $CID=0;
+
+	//этап оформления заказа
+	if (!isset($order_step)) $order_step=0;
+
+	if (isset($killuser) && isset($log) && strcmp($log, "MANAGER")) { //удалить пользователя из базы данных
+		mysql_query("DELETE FROM Users WHERE Login='$log'") or die (mysql_error());
+		mysql_query("DELETE FROM Carts WHERE User='$log'") or die (mysql_error()); //и очистить его корзину
+		unset($log);
+		unset($pass);
+		session_unregister("log");
+		session_unregister("pass");
+		session_unregister("order_step");
+		$order_step=0;
+	};
+
+	include("cfg/settings.inc");
+?>
+
+<html>
+
+<head>
+
+<link rel=STYLESHEET href="style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>
+cdshoponline.net
+</title>
+</head>
+
+<script> //java-скрипт, открывающий новое окно со спсиком товаров в корзине
+	function open_window(link,w,h) {
+		var win = "width="+w+",height="+h+",menubar=no,location=no,resizable=yes,scrollbars=yes";
+		newWin = window.open(link,'newWin',win);
+	};
+	function confirmDelete() { //подтверждение удаления пользователя
+		temp = window.confirm('You really want to cancel registration in our shop?');
+		if (temp) { //удалить
+			window.location="index.php?killuser=yes";
+		};
+	};
+</script>
+
+<body bgcolor=white text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!-- таблица с логотипом, поиском и нгекоторыми ссылками -->
+
+
+
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+  <tr>
+		<td>
+			<img src="images/cd2_01.jpg" width=207 height=73></td>
+		
+    <td rowspan=3 background="images/cd2_02.jpg" width="100%">&nbsp; </td>
+		<td rowspan=3>
+			<img src="images/cd2_03.jpg" width=149 height=127></td>
+		<td rowspan=3>
+			<img src="images/cd2_04.jpg" width=1 height=127></td>
+		<td rowspan=2>
+			<img src="images/cd2_05.jpg" width=393 height=97></td>
+		<td>
+			<img src="images/spacer.gif" width=1 height=73></td>
+	</tr>
+	<tr>
+		
+    <td rowspan=2 bgcolor="C8D0D8">
+	  <form name="form" method="post" action="index.php">
+
+        <input type="text" class="ss" name="searchstring" size="10" maxlength="25">
+		<input type="submit" class="redbutton" value="Search">
+	  </form>
+    </td>
+		<td>
+			<img src="images/spacer.gif" width=1 height=24></td>
+	</tr>
+	<tr>
+		
+    <td bgcolor="#7890b8"> 
+      <table width="100%" border="0" cellspacing="1" cellpadding="1" align="center" bgcolor="#7890b8" bordercolor="#666699">
+        <tr> 
+  <td bgcolor="#8BA0C2" width="34%" align="center">
+	   <?
+	if (!isset($log))
+		echo "<a  href=\"index.php?logging=yes\">Login</a>";
+	else echo "<div align=\"center\" class=\"menu\"><a href=\"index.php?logout=yes\">Logout</a></div>";
+?>
+          </td>		  
+		
+
+
+          <td bgcolor="#8BA0C2" width="33% align="center"> 
+            <div align="center" class="menu"><a href="register.php?newUser=true">Registration</a></div>
+          </td>
+          <td bgcolor="#8BA0C2" width="33% align="center"> 
+            <div align="center" class="menu"><a href="javascript:open_window('cart.php',400,300);">Shopping basket</a></div>
+          </td>
+        </tr>
+      </table>
+    </td>
+		
+    <td background="#7890b8"> <img src="images/spacer.gif" width=1 height=30></td>
+	</tr>
+</table>
+
+<div align=center class=mleft>Your shopping basket status:
+
+<? //написать общую стоимость корзины
+
+	$k=0;
+	if (isset($log)) {
+		$q = mysql_query("SELECT * FROM Carts WHERE User='$log'") or die (mysql_error());
+		while ($row = mysql_fetch_row($q)) {
+			$t = mysql_query("SELECT Price FROM GoodsList WHERE ID='$row[1]'") or die (mysql_error());
+			$rr = mysql_fetch_row($t);
+			$k += $row[2]*$rr[0];
+		};
+	}
+	else if (isset($gids)) {
+		for ($i=0; $i<count($gids); $i++)
+		  if ($gids[$i]) {
+			$t = mysql_query("SELECT Price FROM GoodsList WHERE ID='$gids[$i]'") or die (mysql_error());
+			$rr = mysql_fetch_row($t);
+			$k += $counts[$i]*$rr[0];
+		  };
+	};
+	if ($k) echo "<nobr><b>($k$)</nobr></div>";
+	else echo "<b>empty</b><br>";
+
+?>
+
+<?
+	if (isset($log) /*&& strcmp($log,"MANAGER")*/)
+			echo "<div align=center class=mleft><a href=\"register.php?edit=true\">Registration info</a></div>";
+
+	//этап оформления заказа -- это переменная сеанса $order_step. Если корзина пуста, то очевидно, это 1ый этап -- "проверка корзины"
+	//поэтому ссылка на оформление заказа будет различна в зависимости от $order_step
+	//Посчитаем количество товаров в корзине $k:
+	$k=0;
+	if (!isset($log)) {
+		if (isset($gids))
+		  for ($i=0; $i<count($gids); $i++)
+			if ($gids[$i]) $k++;
+	}
+	else {
+		$q = mysql_query("SELECT * FROM Carts WHERE User='".$log."'") or die (mysql_error());
+		while ($row = mysql_fetch_row($q)) $k++;
+	};
+
+	//теперь создать ссылку
+	//echo "<div align=center><a href=\"";
+	//if ($k) { //корзина не пустая
+	//	if ($order_step<=0) //первый этап
+	//		 echo "order.php";
+	//	else echo "register.php"; //второй/третий этапы (вход в магазин, выбор оплаты)
+	//}
+	//else echo "order.php";
+	//echo "\">Continue ordering</a></div>";
+
+?>
+
+<?
+	if (isset($log) && !strcmp($log,"MANAGER"))
+		echo "<center><a class=small href=\"admin.php\"><font color=red>>> <u>РЕДАКТИРОВАТЬ</u> &lt;&lt;</font></a></center>\n";
+	
+
+?>
+
+<?
+	//теперь загрузить список всех категорий из таблицы Categories в массив $categories, чтобы не делать постоянные запросы в БД
+	$categories = array();
+	$i=0;
+	$q = mysql_query("SELECT * FROM Categories ORDER BY Name") or die (mysql_error());	
+	while ($row = mysql_fetch_row($q)) $categories[$i++] = $row;
+
+?>

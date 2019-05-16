@@ -1,0 +1,507 @@
+PHP-Nuke: Web Portal System
+===========================
+
+November 2001: Version 5.3.1
+============================
+- Fixed bad/broken links in top.php for downloads
+- Added missing $dbi in a database call on comments.php
+- Fixed bad variable name in sql_layer.php
+- Fixed bad/broken links in downloads module
+- Removed duplicated _LANGUAGE translation definition from language files
+- Fixed a Read More text bug for the articles
+- Fixed a bad sum in polls list
+- Fixed Top voted polls in top.php
+- Added topics path to show topics graphics in config.php
+- Added footmsg() function in footer.php to make old themes compatible
+- Now old themes really works 100% (More CSS dependant themes in future versions)
+- Added broken link report to downloads & links sub-categories
+- Fixed author's name and link on articles (Posted by)
+- Added missing line break tag in faq.php and some minor cosmetic changes
+- Added new 3D-Fantasy.com theme based on Kaput
+- Decreased the login box fields size to avoid problems with some themes
+- Added links to Edit/Add polls from main administration page
+- Fixed Users database's calls in Users Administration to use the shared table
+- Added Newsletter and Massive Email functions (New options in User and Admin pages)
+- Little cosmetic changes in users page (plus admin functions to edit selected user)
+- Removed that annoying "A Problem Ocurred" message by validating user's cookie
+- Fixed a parse error in Dutch language file
+- Web Links now fully support SQL abstraction layer and 100% modular
+- Downloads module 100% modular now
+- Fixed Author's rename to also rename them into stories table
+
+
+November 2001: Version 5.3
+==========================
+- Fixed blocks weight change when editing
+- Fixed security holes in admin.php (upload functions)
+- Created HTML templates for themes. (Yes! new themes system!) Old themes are 100% compatible ;) See the
+  new HTML templates on the NukeNews theme.
+- Added SQL database abstraction layer with support for 8 Database's Servers (see config.php)
+- Added different table prefix for user's table, this lets you share users database in the same server
+- Changed ALL MySQL Database calls to match the new SQL abstraction layer. To use it declare $dbi as
+  global and be sure your database queries looks like:
+
+    $result = sql_query("select uid from nuke_users", $dbi);
+    list($uid) = sql_fetch_row($result, $dbi);
+
+  pretty easy and transparent to use and implement, valid for fetch arrays, numrows, object, row, etc. You can
+  take a look at sql_layer.php file in /includes/ directory. Addons and Blocks authors, please start using it!
+
+- Changed Polls votes sums to properly match the new SQL abstraction layer
+- Modularized the user.php page. Separated pages for login, password lost and new user's registration
+- Modularized Downloads script with independent configuration file
+- Modularized Web Links script with independent configuration file
+- Created Modules Administration system to activate or deactivate it with some options for Admins
+- Separated Modules block from Main Menu block
+- Optimized a lot the huge $morelink variable construction on index.php (From 136 lines to just 15!)
+- Optimized a lot the huge $morelink variable construction on categories.php
+- Ephemerids block replaced by Modules block on Database
+- Ephemerids included now as independent Block
+- Fixed BR tags bug in submit.php
+- Added missed global variable declaration in submissions function for "delete all" link
+- Fixed submissions translations bug
+- Fixed voters sum counter on table nuke_poll_desc (not used now, maybe in the future)
+- Fixed a bug in pollBooth.php for article's polls display
+- Fixed security hole in index.php to prevent the inclusion of any file outside web root
+- Added Total Hits block (Author: C. Verhoef, cverhoef@gmx.net)
+- A lot of minor bug fixes
+
+
+August 2001: Version 5.2
+========================
+- Submissions form now checks for Allowable HTML, plain text or Extrans format
+- Removed that stupid and useless duplicated comments check and the troll check
+- Submissions Delete function set only for SuperUser
+- Fixed display of MembersList HomePage URL link
+- Fixed a misconfiguration with automated news
+- Added extended text field on Submission
+- Fixed more anonymous comments stuff when deny it
+- Anonymous posts $anonpost variable in config set with "0" by default
+- Added feature to attach a Poll with an article
+- PollBoth now show general poll and article's attached polls
+- Removed Poll cookies, all the duplicate votes check is made by IP
+- Fixed table align on Poll block options
+- Polls order changed. Newest Polls goes first now in pollBoth.php
+- Added feature to announce new Poll as article
+- Added missing enctype to all stories.php form in admin for images uploads
+- Fixed blocks weight bug when edit and change the position
+- Fixed Topics Manager images selection box
+- Fixed backend html special characters bug
+- Fixed HTML validation problems with the new Poll html table and language selection block
+- Fixed banners bug when adding with unlimited impressions
+- Added the possibility to load plain HTML files from index.php by using the URL:
+    http:/yoursite.com?file=path/to/file.html or http://yoursite.com?file=file.html
+    You need to add "?file=" after index.php followed by the HTML format filename,
+    for your security all "." and "/" at the begining will not be accepted.
+- Fixed blocks position selection when editing
+- Changed font size on submission completition message
+- Fixed quotes problem on stories.php in administration
+- Fixed quotes problem on submit.php
+- Printer friendly page now show centered content
+- Added AvantGo module (Author: Tim Litwiller - http://linux.made-to-order.net)
+- Fixed a typo in languages files, replaced "downloads.php" with "download.php"
+- Added language definitions on all translation files
+
+
+August 2001: Version 5.1
+========================
+- Removed Anonymous user entry from Members List
+- Fixed a bug in headlines
+- Added $system variable check in Edit Users on administration page to crypt the password
+- Fixed a syntax error on links.php and download.php (changed mathod with method)
+- Fixed the useless javascript load on all pages, will load only when needed (again)
+- Added Multilanguage content support (by John De Jonge aka Crocket
+ from www.webmasters.de)
+- Topics images now are automaticaly loaded when adding/editing a topic
+- Polls edit function added
+- Added new feature to Blocks, now you can have PHP files added as normal blocks (see /blocks/ directory)
+- Added two sample blocks, one for top10 downloads and other one for top10 links
+- Added feature to prevent comments on certains articles
+- Added upload image for each article stored in /images/articles/ directory
+- Added config variable to completly remove comments from articles
+- Added a table to Poll items to align it
+- Added some new translations
+- Fixed a big on the preview stories that will not go in homepage
+- Removed "Post Anonymously" when anonymous posts are not allowed
+- Fixed login block show on article.php file when you have it active at the left side
+- Many, many little bug fixes
+
+
+July 2001: Version 5.0.1
+========================
+- Fixed the useless javascript load on all pages, will load only when needed
+- Extended default CSS for each theme, declared some classes
+- Removed ALL hardcoded font sizes and added CSS style to all scripts
+- Created a "Delete" button to delete all the submissions in one step
+- Submissions reordered descending by date
+- Fixed a bug on headlines language error messages
+- Fixed old translation on NukeNews theme
+- Added missed quotes on downloads administration mysql function
+- Removed a bad global declaration on comments.php
+- Fixed some colors on comments.php
+- Fixed a language bug on the headlines that stored incorrect "read more" translation
+- Added missing submissions link on administration main section
+- Fixed an unclosed B tag on download.php
+- Fixed anonymous block option for links and downloads scripts
+
+
+June 2001: Version 5.0
+======================
+- Konqueror and Opera browsers now get the hit on stats page
+- All database tables now has the nuke_ prefix to avoid conflicts with other scripts
+- New $prefix variable in config.php to setup multiple Nuke sites sharing one database
+- New and improved download system (Based on Web Links)
+- Improved security on user.php in save* functions
+- Ephemerids variable removed from config.php, activation now controled from blocks system
+- Members list is now modular, same for FAQ section
+- Better users authentication check (appending &user=x on the URL doesn't work anymore)
+- Comments deletion functions now removes all childs comments (Thanks to [Dark Pastor] from www.rolemancer.ru)
+- Optimized a little the code on stats.php
+- Changed the search results format, more informative and complete
+- Added robots.txt for search engines
+- New registered users page, eliminated all english graphic buttons
+- Added Messages System
+- Changed == by >= on referers automatic deletion code
+- Added multiple languages selection box
+- Added multiple pages on sections articles (Thanks to Leonardo Teo from Planet3DArt.com)
+- Added multiple pages on reviews (Thanks to Leonardo Teo from Planet3DArt.com)
+- 100% working Web Links (At last! Based on JourneyLinks hack on the original files)
+- New themes system. All in just one file, more easy, efficient and fastest
+- Added Message System with usefull options to publish important stuff in the Homepage
+- Unused priviledges table removed from downloads
+- Admin Menu alphabeticaly ordered
+- Removed $site_font variable from all scripts to let CSS style file setup it
+- Now each theme has a file style.css on /style/ directory for CSS configuration
+- New translation system created, more efficient and fastest
+- Automated news administration are now part of story administration
+- Fixed almost all HTML bugs on administration interface
+- New blocks system created (100% configurable and user friendly, just amazing! ;))
+- Headlines grabber has been moved to the new Blocks system
+- Added Random Headlines block. Last 10 news on random selected topic (Inactive by default))
+- Removed blocks administration for multiple admins, only Super User can do this now
+- Other site's Headlines are now integrated on the new blocks system
+- Added timeout and error detection on headlines grabber
+- Created modularized Administration system
+- Fixed a lot of bugs on Multi-admin system (100% working now)
+- Admins can now edit/delete their own stories only
+- Delete authors now check for author's published stories and let you re-assign its stories
+- All password fields now are masked with "*" on edit users and edit authors
+- Added some more option on the user's pages
+- Admin stuff now pass thru is_admin() function to check if you are really an admin
+- Text filters now works, and deleted two filter unused variables from config.php
+- Little improvements on Private Messages scripts
+- Added ability to send email or private message to users in news submissions
+- Programmed stories queue are now visible on admin home page
+- Fixed bad global variable declaration on pollcomments.php
+- Added a modular addons system (see ADDONS-MODULES or /modules/readme.txt for more info)
+- Link to an Addon module is automaticaly added on Main block
+- Removed javascript scroller on articles page
+- Added a multidimensional array that puts automaticaly related links on articles pages
+- Little cleanup on backend.php file (eliminated <image> from backend)
+- Fixed security vulnerability on user.php, cookiedecode() function (Thanks to Obrie)
+- Fixed a little bug in upgrade43-44.php file (Thanks to Mr. kl0nk Manson)
+- Fixed a bug in banners.php to prevent anyone to change a banner url
+- Fixed a lot of hardcoded text (missing translations)
+- Removed all <LI> tags from blocks and HTML code to fit standards. <LI> tags has been replaced
+  with: <strong><big>&middot;</big></strong>&nbsp;
+- Submit news (submit.php) has changed to fit themes colors
+- Little changes on the send comments and reply function's look
+- Themes selection now are alphabeticaly ordered (Thanks to goghs@sina.com)
+- Language selection in settings.php now check for files on languages directory (Thanks to AmigaPhil)
+- Removed an extra "," on the SendStory function in friend.php
+- Removed graphics vote and results buttoms from Poll block
+- IMPORTANT: Added graphics for polls and stats bars for each theme, black bar by default. The bars
+  graphics names are leftbar.gif, mainbar.gif and rightbar.gif and are under /themes/yourtheme/images/
+  directory. Please check this out and customize your bars.
+- Added $uimages missing global variable declaration on comments.php and pollcomments.php in modthree()
+- Changed mysql_pconnect with mysql_connect in mainfile.php, the result is a fastest pages render
+- Fixed user comment post on reviews.php
+- Removed Advanced Stats (OS's compatibility reasons)
+- Fixed a lot of HTML code on sections.php
+- Fixed horrible bug in poll results HTML tables
+- All pages now are HTML 4.01 Transitional compatible
+- A lot of cosmetic changes in whole site including administration system
+- Fixed hundreds of little but annoying bugs
+- FileManager need some more dedication to work 100%, anyway it's functional
+- Themes Developers just look at NukeNews theme. HTML compliant and simple
+
+
+February 2001: Version 4.4.1
+============================
+- $band changed by $title on admin/reviews.php
+- Download bug for categories list fixed
+- Removed DIV command on AllowableHTML array in config.php
+- Fixed quotes and HTML commands for reviews.php
+- Fixed global variable declariations on comments.php when comments is too long
+- Send to friend now send the URL instead of the whole story (you'll get one more page view ;))
+- Fixed security hole on all save functions on user.php file to prevent other users modify our info
+- Fixed blank spaces for download description field on DownloadEdit function
+- Fixed authors.php under admin to prevent other admins change the info
+- Fixed the BarScale on the Polls
+- Fixed some missed translations on some forums files
+- Fixed security hole on File Manager to prevent the admin to view others directory on server
+- Only Superuser can now edit authors table
+- Check and strip for IMG tags on check_html funtion in mainfile.php
+- Fixed security vulnerabilities on bbcode_ref.php and bb_smilies.php files
+
+
+January 2001: Version 4.4
+=========================
+- Added Red Hat theme
+- Added Kuro5hin theme
+- Added Freshmeat theme
+- Added Linux.com theme
+- Added Aqua theme
+- Added Icelandic translation
+- Fixed the comments count on polls page
+- Fixed some missing $slogan global declaration
+- Added Web Based Forums and more configurable users page (From phpBB integration by KingRichard)
+- Added Download manager (Based on files from myPHPortal)
+- Added FAQ manager (From Addon by KingRichard)
+- Added Reviews Manager
+- Fixed all hard coded white tables to match the theme in use
+- Improved Members List (Some hacks are from myPHPortal)
+- If you delete a theme the user will get the default theme instead of a bunch of errors
+- Fixed more than 100 little bugs: HTML bad code, quotes, blank spaces after ?>, variables quotes, etc.
+- Added quotes on all the HTML code
+- Cleaned almost all HTML code (needs a re-check)
+- Cleaned some PHP code (more on future version)
+- Now $anonpost works 100% on comments.php and pollcomments.php
+- Fixed bug that prevents to show the poster's name on Polls Comments
+- Reorganized Admin menus internals (not visual change, just cleaned the code)
+- Repackage. Now you need to download basic code and additional parts like themes and languages.
+- IMPORTANT: Removed themepreview() function from theme.php files and added on mainfile.php, to avoid
+  a blank page with a "cannot redeclare function themepreview()" error, just remove the function from
+  your theme.php files for each theme you have.
+
+
+December 2000: Version 4.3
+==========================
+- Created modular admin to facilitate add-ons integration (Thanks to Pascal Riva for the first idea!)
+- Added Unlimited MultiAdmin Add-on (Thanks to KingRichard from http://www.phpnuke.web.id)
+- Improved Web Links, based on JourneyLinks modifications (needs more work!)
+- Topics ordered by Name instead of ID in topics.php and admin.php
+- Removed all config.php includes and replaced by global declarations (result: good performance)
+- Initial HTML code fixes (Added some \n when needed, but there are much work with this yet)
+- Fixed bug in Send this Story to a Friend
+- New submissions now have a separate section in admin
+- Improved Members List
+- Added Arabic translation
+- Added Barrapunto Theme
+- Added Today's Big Story Box
+- Added Who's Online Box
+- Added Automated Articles System
+- Fixed cookies recognition for articles and poll comments
+- Moved Languages files to language directory and changed the call from mainfile.php
+- Cosmetic changes in Preview function of submit.php file
+- Fixed all needed updates for ultramode.txt file
+- Fixed some anonymous post options in comments and pollcomments (global declarations troubles)
+- Finaly Fixed counter.php to avoid that Unknown stats
+- Added poll title on the navigation bar in pollcomments.php
+- Fixed some minor translation errors in all language files (Thanks to all translators!)
+- Added missing translation text for sections search results
+- Fixed votes number display for polls
+
+
+October 2000: Version 4.2
+=========================
+- Linux Mandrake 7.2 includes PHP-Nuke in Web Development Category
+- Fixed one more bug in the Send This Story to a Friend
+- Added stripslashes(fixquotes()) to text type inputs in preferences
+- Removed all config includes from themes
+- config.php now stores the data into plain text and not in database
+- Fixed bug in the Preferences: Articles Numbers in Admin selection
+- Fixed Quotes display for scroll bar in Related Links
+- Removed global variable on KDE theme
+- Minor improvements in the Metal Theme
+- Added NewsForge Theme
+- Added AnalogX Theme
+- Added Ethereal Theme
+- Added NiH Theme
+- Added Sunset Theme
+- Added Slackware Theme
+- Added 0ri0n Theme
+- Added Croatian translation
+- Added Members List feature (memberslist.php)
+- Removed some nl2br in comments.php and admin.php
+- Fixed some visual stuff for comments reply
+- Fixed the admin graphics path in the database
+- All themes now use the same logo.gif filename for logo, but one GIF per theme
+   to match the theme background, texture, colors, whatever.
+
+
+October 2000: Version 4.1
+=========================
+- Added missing "related" table in upgrade35-4.php file
+- Fixed the parse error in upgrades files
+- Fixed bug in the Send this Story to a Friend scripts
+- Initial work to fix the multiple includes of config.php
+- Added a test fix for the high number of unkown Browsers and OS in stats.php
+
+
+October 2000: Version 4.0
+=========================
+- PHP-Nuke now has its own domain name! (http://phpnuke.org)
+- Changed INSTALL and README files
+- Fixed double apostrophes bug in comments.php and pollcomments.php
+- Added $notes in the preview of the submitted news
+- Added nl2br to the Extended text of the story ($bodytext)
+- Removed Spanish GPL license file (saved some space)
+- Added Recommend This Site Option
+- Changed lang-english to not translate english from english
+- Created lang-TEMPLATE.php as translators guide
+- Random links in Web Links now count the hits
+- Increased to int(3) the topicid in topics table
+- Added 10 last news submissions and comments in users page
+- Added a complete full featured File Manager based in WebExplorer
+- Added Advanced Stats for Admins only on stats.php
+- All site configuration now is done in Administration script
+- Fixed tables colors in comments.php
+- Added search for comments, sections and users in search.php
+- Fixed error messages when activate banners for the first time
+- Added Headlines Grabber to put news from other sites
+- All themes changed, first step for the future Theme Builder addon
+- Increased to 40 the encrypted password field for users table
+- Added Images Upload System
+- Added control for number of stories to show in the Home via config.php
+- Removed all "<>" in language files comments due to a bug in the headers
+- More documented text in config.php
+- All Links in links.php now open a new browser window
+- Fixed url to "/cookie.php" in user.php
+- Fixed "/" url in the themes. Now points to $nuke_url
+- Added possibility to allow/disallow anonymous to post comments
+- Added Administrators Online Manual with javascript functions
+- Default theme is now selectable in config.php (many requests for this one!)
+- Users login box added to all themes
+- Users login box text added in translation system
+- Added a little/nice easter egg (You have the code, but can you find it?)
+- Removed the useless titletag and titlebar from config.php and themes
+- Added $slogan in config.php
+- Fixed a spanish hard text in pollBooth.php and in stats.php
+- Changed bar graphics for surveys and stats, cool Aqua button ;)
+- Fixed wrong width graphic in stats.php
+- Removed Email display for password lost functions, more privacy for users
+- Banners deactivated by default in config.php
+- Hits to be Popular Link upped to 500 by default in config.php
+- Initial use of CSS Stylesheet code in header.php
+- Cleaned each themes files to match changes in header.php
+- Deleted all fonts face commands (reduced 15+ Kb from code!)
+- Site Font is now customizable from config.php (yes!)
+- Fixed some typos in banners.php
+- Many cosmetic changes in admin html tables
+- Added Related Links for each article page
+- Added Related Links manager in administration under Topics Manager
+- Added javascript scroll box in related links box with last news
+- "Post your comment" button moved inside related links box
+- Added "The most read story about" for each article page
+- Changed to fixed white table color in search.php
+- Added Older Articles link in the Old Articles box
+- Fixed a bad translation in user.php
+- Added PHP-Nuke version number in statistics page
+- Added "Send To Friend" functions for stories
+- Removed common header on all themes
+- Added common header functions in header.php
+- Added nice style class to all input text forms
+- Added Printer Friendly Page for each article/story
+- $site_logo from config.php now works for printer friendly page
+- Fixed that "s" for comment plural in index.php
+- Added Korean translation
+- Added Quebec/French translation
+- Added Norwegian translation
+- Added Indonesian translation
+- Added Slovak translation
+- Added Latvian translation + graphics
+- Added Metal theme (Thanks to Tim Litwiller)
+- Added BlackRoad theme (First with attempt with a Black background)
+- Added Xeron theme (Thanks to the folks at Xeron.org)
+- Added missing </select> in events maintenance
+- Renamed all "Events" words to "Ephemerids"
+- Removed Important Note at the end of README file, be happy
+
+
+September 2000: Version 3.6
+===========================
+- Fixed some very little bugs in index.php
+- Fixed some forgotten stuff in upgrade files
+
+
+September 2000: Version 3.5
+===========================
+- Added Events system with full admin menu
+- Changed font size for Survey Block
+- Added Polish translation
+- Added Japanese Translation
+- Fixed some language files for typos
+- Renamed all .php3 files to .php
+- Removed hits counter for links in stories
+- Removed redirect.php3 due to high number of problems
+- Added compatibility for new MySQL version renaming reserved words
+- Fixed more bugs in admin login functions
+- Fixed a bug that prevents to change sections
+- Some english language file typos corrected (that "readed" stuff)
+- Fixed Header bug for some languages files
+- Added Important Note at the end of README file
+NOTE: This is the last release in SourceForge, next versions will be available
+only in the official site at http://www.ncc.org.ve/php-nuke.php3
+
+
+August 2000: Version 3.0
+========================
+- Fixed security bug in admin.php3 that allows anyone to enter to the
+  admin section without login and password
+- Fixed themes functions bug reported in PHP4
+- PHP-Nuke is now 99% PHP4 compatible, thanks God! (report any issue)
+
+
+August 2000: Version 2.5
+========================
+- Added Comments for Polls/Surveys
+- Posters IP now show full hostname, if not detected show IP number (only for admin)
+- Fixed bug that prevents to vote in past polls
+- Added Dutch translation
+- Added Simplified and traditional Chinese translation and buttons
+- Added missing links.gif in admin section
+- Added graphics buttons for German and French languages
+
+
+July 2000: Version 2.02
+=======================
+- Added Yahoo! like web resources system with categories (reason for the 2.0)
+- Banner Client now can Email himself a complete stats report
+- Some cosmetic stuff in banners.php3 for clients display
+- New ultramode.txt news headlines file generator (a general purpose text file)
+    (You need to chmod 777 your web main directory. File usefull for some things)
+- Redirect works now, for links in stories don't use quotation marks ("")
+    (This is good: <a href=http://www.mysite.com>MySite</a>)
+    (This is NOT good: <a href="http://www.mysite.com">MySite</a>)
+    (If you put the "" hits will not be updated!)
+- Edit User in admin section now works
+- Fixed "/" in some themes to point to correct path for .php3 files
+- Fixed a table bug in Slash theme
+- Cosmetic stuff in some themes
+- Changed the logo for all themes to see the PHP-Nuke logo insteed of Linux Preview one
+- Fixed bug in articles.php3 to point to search with correct Topic
+- Added German, Italian, Danish, Portuguese, Russian, Swedish and French translations
+- Added translation text to no results page in search.php3
+- Translated some hard words in the code
+- Improved function to order topics in groups of 5 from admin.php3 and topics.php3
+- Added more statistics data in the stats.php3
+- Added a News Submissions alert in the Home of Default Theme for Admins only
+- Older Articles block now have news divided by day (more elegant)
+- Added support for Locales Date/Time functions to have better multilingual support
+    (for this function you need to have locales databases installed, most Linux
+    distributions already install all the locales needed)
+- More efectively random function for banners display
+- Added some missing html tables in Admin
+- Added graphics to sections main page and admin (Remember to edit "sections/template.gif")
+    (and remember to add the graphic for each section in admin)
+- Added one new theme, SlashOcean based on Slash
+- Fixed some PHP4 issues (need more tests but it's a first step)
+- Reduced space between images in the top of Slashdot theme
+- Some more I don't remember...
+- For sure added more bugs, or no? ;)
+
+
+June 2000: Version 1.0
+======================
+First Release

@@ -1,0 +1,27 @@
+<table width="402" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+  <tr valign="top">
+    <td width="20">&nbsp;</td>
+    <td width="382" background="_images/bgtext.gif" class="text">
+      <table width=290 border=0 cellpadding=0 cellspacing=0>
+      	<tr>
+      		<td>
+      			<a href="index.php?page=products_engine&lang=<?echo $lang;?>"><img src="_images/products_01.gif" width=146 height=101 border="0"></a></td>
+      		<td>
+      			<a href="index.php?page=products_transmission&lang=<?echo $lang;?>"><img src="_images/products_02.gif" width=144 height=101 alt="" border="0"></a></td>
+      	</tr>
+      	<tr>
+      		<td>
+      			<a href="index.php?page=products_chassis&lang=<?echo $lang;?>"><img src="_images/products_03.gif" width=146 height=101 alt="" border="0"></a></td>
+      		<td>
+      			<a href="index.php?page=products_accessories&lang=<?echo $lang;?>"><img src="_images/products_04.gif" width=144 height=101 alt="" border="0"></a></td>
+      	</tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+</table>

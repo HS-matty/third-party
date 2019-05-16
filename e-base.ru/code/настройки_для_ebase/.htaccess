@@ -1,0 +1,4 @@
+AuthName "For Registered Users Only"
+AuthType Basic
+AuthUserFile /home/ebaseru/public_html/.htpasswd
+require valid-user

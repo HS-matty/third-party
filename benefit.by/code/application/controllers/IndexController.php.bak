@@ -1,0 +1,127 @@
+
+<?php
+global $Config;
+
+require_once $Config->SitePath.'/application/models/directory.php';
+require_once $Config->SitePath.'/application/models/directoryuser.php';
+require_once $Config->SitePath.'/application/models/directoryitem.php';
+require_once $Config->SitePath.'/application/models/location.php';
+
+
+class IndexController extends Zend_Controller_Action
+{
+	protected $_view = null;
+
+	public function init()
+	{
+		// maps to arg 'view' from: $frontController->setParam('view', $view);
+		$this->_view = $this->getInvokeArg('view');
+		$Locations =& Location::getLocations();
+		$this->_view->Locations = $Locations;
+		/*		if(@$_SESSION['user'] && is_object($User= unserialize($_SESSION['user']))){
+
+
+		$this->_view->User = $User;
+
+
+		}else $this->_view->User = new FrontendUser();*/
+
+
+		
+	}
+
+	// the default action is "indexAction", unless explcitly set to something else
+	public function indexAction(){
+		$this->_forward('node',null,null,array('alias'=>'main'));
+	}
+	public function categoriesAction()
+	{
+
+		global $Config;
+
+		global $InOut;
+		// STAGE 3.  Choose, create, and optionally update models using business logic.
+		$this->_view->Types = DirectoryItem::getItemTypes();
+
+		$this->_view->StartLink  =  $Config->Hostname;
+
+		$this->_view->HostName  =   $Config->Hostname;
+
+
+
+
+		$DirTree = new DirectoryTree();
+		$Cats =& $DirTree->getConvertedTreeArray(true);
+
+
+		//print_r($Cats[-1]);
+		$Cid = $InOut->gvar('cid');
+		$Search = $InOut->gvar('search');
+		$this->_view->cid  = $Cid;
+		$Housing =& $Cats[-1]['a_tree'][0];
+
+		$SaleItems =& $Cats[-1]['a_tree'][1];
+		$Jobs =& $Cats[-1]['a_tree'][2];
+
+		$this->_view->Page = 'index';
+		$this->_view->Housing = $Housing;
+		$this->_view->Jobs = $Jobs;
+		$this->_view->SaleItems = $SaleItems;
+
+		$this->_view->Tree = $Cats[-1];
+
+
+
+		// STAGE 5. Choose view and submit presentation model to view.
+		$this->_response->appendBody($this->_view->render('index.tpl'));
+	}
+
+	// redirect bogus URLs back to the application's "home" page
+	public function noRouteAction()
+	{
+		$this->_redirect('/');
+	}
+	public function nodeAction(){
+		
+		$nodeId = (int) $this->_getParam('node_id');
+		$Alias = $this->_getParam('alias');
+		
+		$NewsNode = new Rad_Page_Node();
+		$NewsNode->initByAlias('news');
+		$this->_view->NewsNode = $NewsNode;
+		
+		$Node = new Rad_Page_Node();
+		
+		if($Alias){
+			 if(!$Node->initByAlias($Alias)) $this->_redirect('/');
+		}
+		elseif ($nodeId) {
+			
+			
+			
+			if(!$Node->init($nodeId)) $this->_redirect('/');
+			
+		}
+	//	$Node->getItems(null,null);
+		$this->_view->Record = $Node;
+		
+		$this->_response->appendBody($this->_view->render('index.tpl'));
+
+	}
+	public function recordAction(){
+		$id = (int) $this->_getParam('record_id');
+		if(!$id) $this->_redirect('/');
+		$Record = Rad_Directory_Record::getInstanceById($id);
+
+		
+		$Record->init($id);
+		$this->_view->Record = $Record;
+		$this->_response->appendBody($this->_view->render('index.tpl'));
+
+	}
+	public function testAction(){
+		$this->_response->appendBody($this->_view->render('wow.tpl'));
+
+	}
+}
+?>

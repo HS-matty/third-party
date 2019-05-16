@@ -1,0 +1,107 @@
+<?php /* #?ini charset="iso-8859-1"? 
+[Session]
+SessionNameHandler=custom
+
+[URLTranslator]
+Translation=enabled
+NodeTranslation=enabled
+
+
+[DatabaseSettings]
+DatabaseImplementation=ezmysql
+Server=localhost
+User=root
+Password=
+Database=acro
+Charset=
+Socket=disabled
+
+[InformationCollectionSettings]
+EmailReceiver=
+
+[SiteSettings]
+SiteName=Acro Group Web Site
+SiteURL=acro
+LoginPage=embedded
+DefaultAccess=news
+SiteList[]=acro
+SiteList[]=acro_admin
+ 
+[UserSettings]
+RegistrationEmail=
+
+[SiteAccessSettings]
+RequireUserLogin=false
+ForceVirtualHost=true
+CheckValidity=false
+
+[DesignSettings]
+SiteDesign=acro
+AdditionalSiteDesignList[]=base
+
+[RegionalSettings]
+Locale=eng-GB
+ContentObjectLocale=eng-GB
+TextTranslation=disabled
+
+[FileSettings]
+VarDir=var/ez
+
+[ContentSettings]
+TranslationList=
+ViewCaching=disabled
+
+[MailSettings]
+AdminEmail=ss@fff.com
+EmailSender=
+
+[TemplateSettings]
+TemplateCache=disabled
+AutoloadPath=lib/eztemplate/classes/;kernel/common/
+Debug=enabled
+NodeTreeCaching=disabled
+ProcessCaching=disabled
+[DebugSettings]
+DebugOutput=enabled
+ 
+[DebugSettings]
+DebugByIP=enabled
+Debug=inline
+DebugRedirection=disabled
+
+[SiteSettings]
+# Name of the site, will be used in default templates in titles.
+SiteName=eZ publish
+   # URL of site, often used to link to site in emails etc.
+SiteURL=acro
+   # List of metadata to set in pagelayout
+MetaDataArray[author]=eZ systems
+MetaDataArray[copyright]=eZ systems
+MetaDataArray[description]=Content Management System
+MetaDataArray[keywords]=cms, publish, e-commerce, content management, development framework
+Dir=
+   # Which page to show when the root index (/) is accessed
+IndexPage=/content/view/full/2/
+   # What to do when a module does not exists, use either defaultpage or displayerror
+   # If defaultpage is used, the DefaultPage will be shown when an error occured
+ErrorHandler=displayerror
+   # The default page to show, e.g. after user login this will be used for default redirection
+DefaultPage=/content/view/full/2/
+   # Default access is needed when uri type matching is done, this is
+   # because with empty urls it's not possible to fetch the access
+DefaultAccess=admin
+   # How the login page should be handled, use embedded to show inside default pagelayout
+   # or custom for loginpagelayout.tpl
+LoginPage=custom
+  # The SSL port, the default should be OK for most sites but can be
+   # changed if different. If the port is detect all redirects will
+   # be done with https protocol.
+SSLPort=443
+   # A list of sites this server provides, this usually the
+   # siteaccess for the user view when installing multiple packages.
+   # e.g.
+   # SiteList[]=news
+   # SiteList[]=plain
+SiteList[]
+   */ ?>
+   

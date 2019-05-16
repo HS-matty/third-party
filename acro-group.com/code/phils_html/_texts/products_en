@@ -1,0 +1,103 @@
+<table width="402" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+  <tr valign="top">
+    <td width="20">&nbsp;</td>
+    <td width="382" background="_images/bgtext.gif" class="text">
+      <table width=290 border=0 cellpadding=0 cellspacing=0>
+      	<tr>
+      		<td>
+      			<a href="index.php?page=products_engine&lang=<?echo $lang;?>"><img src="_images/products_01.gif" width=146 height=101 border="0"></a></td>
+      		<td>
+      			<a href="index.php?page=products_transmission&lang=<?echo $lang;?>"><img src="_images/products_02.gif" width=144 height=101 alt="" border="0"></a></td>
+      	</tr>
+      	<tr>
+      		<td>
+      			<a href="index.php?page=products_chassis&lang=<?echo $lang;?>"><img src="_images/products_03.gif" width=146 height=101 alt="" border="0"></a></td>
+      		<td>
+      			<a href="index.php?page=products_accessories&lang=<?echo $lang;?>"><img src="_images/products_04.gif" width=144 height=101 alt="" border="0"></a></td>
+      	</tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+</table>
+<h1>Product Catalogue</h1>
+<table width="402" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+  <tr valign="top">
+    <td width="20">&nbsp;</td>
+    <td width="382" background="_images/bgtext.gif" class="text">
+      <table width=370 border=0 cellpadding=0 cellspacing=0>
+      	<tr>
+      		<td width="146">
+      			<img src="_images/catalogue.gif" width=146 height=101 border="0" class="cer"></td>
+      		<td width=224 align="center">
+            <a href="#" class="link" onclick="window.open('download.php?1','pdf','width=750,height=450,top=0,left=0,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes')">Open</a>
+      			&nbsp;|&nbsp;
+      			<a href="download.php?2" class="link">Download</a>
+            <br>[ 2,08 MB ]
+          </td>
+      	</tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+</table>
+<h1>Certificates</h1>
+<table width="402" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+  <tr valign="top">
+    <td width="20">&nbsp;</td>
+    <td width="382" background="_images/bgtext.gif" class="text">
+      <table width=382 border=0 cellpadding=0 cellspacing=0>
+      	<tr>
+      		<td align="middle" valign="top">
+            <span style="cursor: hand" onclick="window.open('_images/okno.php?img=cert_iso9002','img','width=641,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes')"><img src="_images/cert_iso9002_sm.jpg" border="0" hspace="0" vspace="7" class="cer"></span>
+      		</td>
+      		<td align="middle" valign="top">
+            <span style="cursor: hand" onclick="window.open('_images/okno.php?img=cert_qs9000','img','width=573,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes')"><img src="_images/cert_qs9000_sm.jpg" border="0" hspace="0" vspace="7" class="cer"></span>
+      		</td>
+      		<td align="middle" valign="top">
+            <span style="cursor: hand" onclick="window.open('_images/okno.php?img=cert_vda','img','width=673,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes')"><img src="_images/cert_vda_sm.jpg" border="0" hspace="0" vspace="7" class="cer"></span>
+      		</td>
+      	</tr>
+      </table>
+      <table width=382 border=0 cellpadding=0 cellspacing=0>
+      	<tr>
+      		<td align="right" valign="top">
+            <img src="_images/cert_faw_sm.jpg" border="0" hspace="10" vspace="7" class="cer">
+      		</td>
+      		<td align="left" valign="top">
+            <img src="_images/cert_daewoo_sm.jpg" border="0" hspace="10" vspace="7" class="cer">
+      		</td>
+      	</tr>
+      	<tr>
+      		<td align="right" valign="top">
+            <img src="_images/cert_tuv_sm.jpg" border="0" hspace="10" vspace="7" class="cer">
+      		</td>
+      		<td align="left" valign="top">
+            <img src="_images/cert_tuv2_sm.jpg" border="0" hspace="10" vspace="7" class="cer">
+      		</td>
+      	</tr>
+      	<tr>
+      		<td align="center" valign="top" colspan="2">
+            <img src="_images/cert_dhec.jpg" border="0" hspace="10" vspace="7" class="cer">
+      		</td>
+      	</tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+</table>

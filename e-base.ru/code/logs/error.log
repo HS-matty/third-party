@@ -1,0 +1,63 @@
+[Sat Apr 10 16:10:30 2004] [error] [client 127.0.0.5] PHP Warning:  Unknown(): Unable to load dynamic library './php_curl.dll' - Не найден указанный модуль.
+
+[Sat Apr 10 16:10:30 2004] [error] [client 127.0.0.5]  in Unknown on line 0
+
+[Sat Apr 10 16:10:35 2004] [error] [client 127.0.0.5] PHP Warning:  Unknown(): Unable to load dynamic library './php_curl.dll' - Не найден указанный модуль.
+
+[Sat Apr 10 16:10:35 2004] [error] [client 127.0.0.5]  in Unknown on line 0
+
+[Sat Apr 10 16:10:36 2004] [error] [client 127.0.0.5] PHP Warning:  Unknown(): Unable to load dynamic library './php_curl.dll' - Не найден указанный модуль.
+
+[Sat Apr 10 16:10:36 2004] [error] [client 127.0.0.5]  in Unknown on line 0
+
+[Sat Apr 10 16:12:03 2004] [error] [client 127.0.0.5] PHP Warning:  Unknown(): Unable to load dynamic library './php_curl.dll' - Не найден указанный модуль.
+
+[Sat Apr 10 16:12:03 2004] [error] [client 127.0.0.5]  in Unknown on line 0
+
+[Sat Apr 10 16:12:06 2004] [error] [client 127.0.0.5] PHP Warning:  Unknown(): Unable to load dynamic library './php_curl.dll' - Не найден указанный модуль.
+
+[Sat Apr 10 16:12:06 2004] [error] [client 127.0.0.5]  in Unknown on line 0
+
+[Sat Apr 10 16:12:06 2004] [error] [client 127.0.0.5] PHP Warning:  Unknown(): Unable to load dynamic library './php_curl.dll' - Не найден указанный модуль.
+
+[Sat Apr 10 16:12:06 2004] [error] [client 127.0.0.5]  in Unknown on line 0
+
+[Sun Apr 18 22:55:05 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/images/1_01.gif
+[Sun Apr 18 22:55:05 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/images/atlant-6900.jpg
+[Sun Apr 18 22:55:05 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/images/4enet-10hours.jpg
+[Sun Apr 18 22:55:05 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/images/solo-5000.jpg
+[Sun Apr 18 22:56:38 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/g
+[Mon Apr 19 00:12:59 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/images/aichyna-5000.jpg  alt=
+[Mon Apr 19 00:12:59 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/images/solo-5000.jpg  alt=
+[Mon Apr 19 00:12:59 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/images/4enet-10hours.jpg  alt=
+[Mon Apr 19 00:14:18 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/images/aichyna-5000.jpg  alt=
+[Mon Apr 19 00:14:18 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/images/4enet-10hours.jpg  alt=
+[Mon Apr 19 00:14:18 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/images/solo-5000.jpg  alt=
+[Mon Apr 19 00:54:19 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info
+[Mon Apr 19 00:58:17 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info
+[Mon Apr 19 01:08:05 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info
+[Mon Apr 19 13:16:22 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info
+[Mon Apr 19 23:05:58 2004] [error] [client 127.0.0.5] client denied by server configuration: d:/work/apache/root/home/ebase/www/index.html
+[Mon Apr 19 23:05:58 2004] [error] [client 127.0.0.5] client denied by server configuration: d:/work/apache/root/home/ebase/www/index.htm
+[Mon Apr 19 23:05:58 2004] [error] [client 127.0.0.5] client denied by server configuration: d:/work/apache/root/home/ebase/www/index.php
+[Mon Apr 19 23:05:58 2004] [error] [client 127.0.0.5] client denied by server configuration: d:/work/apache/root/home/ebase/www/index.phtml
+[Mon Apr 19 23:05:58 2004] [error] [client 127.0.0.5] client denied by server configuration: d:/work/apache/root/home/ebase/www/index.php3
+[Tue Apr 20 01:58:06 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:58:13 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:58:14 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:58:14 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:58:52 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:58:54 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:58:55 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:58:56 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:58:57 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:59:12 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:59:14 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:59:16 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:59:17 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:59:44 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:59:46 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Tue Apr 20 01:59:56 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/images/1_01.gif
+[Mon May 03 21:35:50 2004] [error] [client 127.0.0.5] File does not exist: d:/work/apache/root/home/ebase/www/info/styles.css
+[Tue May 04 18:49:59 2004] [error] [client 127.0.0.5] Filename is not valid: d:/work/apache/root/home/ebase/www/images/wm.gif border="0" alt=
+[Tue May 04 18:50:16 2004] [error] [client 127.0.0.5] Filename is not valid: d:/work/apache/root/home/ebase/www/images/wm.gif border="0" alt=

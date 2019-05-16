@@ -1,0 +1,28 @@
+PHP-NUKE: Web Portal System
+===========================
+
+For the Next Version you can expect:
+
+- Complete themes code cleanup and reorganization to fit HTML standard
+- IMAP/SMTP Web based mail reader
+- Newsletter
+- Mail users functions
+
+For the future versions I'll add some cool features, basicaly:
+
+- Glossary
+- Themes Builder
+- Encyclopedia Generator
+- Quotes system
+- Walk in the code to add/remove shit when needed
+- Users online help system
+- Better and 100% "working" moderation system
+- Registered users only blocks
+- Some other cool features. Do you have any ideas on how to improve PHP-Nuke?
+
+In the long-long future I'd like to add:
+
+- Virtual Store (e-Shopping)
+
+If you have any ideas, modification, suggestion, etc, please email
+me at: fbc@mandrakesoft.com (Francisco Burzi)

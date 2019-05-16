@@ -1,0 +1,75 @@
+<table width="402" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+  <tr valign="top">
+    <td width="20">&nbsp;</td>
+    <td width="382" background="_images/bgtext.gif" class="text">
+      <table width=290 border=0 cellpadding=0 cellspacing=0>
+      	<tr>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=chasis_01','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/chasis_01.jpg" border="0" hspace="0" vspace="0"><br>
+            Tatra Brake Drum</div>
+      		</td>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=chasis_02','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/chasis_02.jpg" border="0" hspace="0" vspace="0"><br>
+            Tatra Brake Drum</div>
+      		</td>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=chasis_03','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/chasis_03.jpg" border="0" hspace="0" vspace="0"><br>
+            Wheel screws set</div>
+      		</td>
+      	</tr>
+      	<tr>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=chasis_04','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/chasis_04.jpg" border="0" hspace="0" vspace="0"><br>
+            Tatra Disk wheel </div>
+      		</td>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=chasis_05','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/chasis_05.jpg" border="0" hspace="0" vspace="0"><br>
+            Tatra Disk wheel</div>
+      		</td>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=chasis_06','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/chasis_06.jpg" border="0" hspace="0" vspace="0"><br>
+            Tatra Hanger Yoke</div>
+      		</td>
+      	</tr>
+      	<tr>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=chasis_07','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/chasis_07.jpg" border="0" hspace="0" vspace="0"><br>
+            Tatra Loading sets</div>
+      		</td>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=chasis_08','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/chasis_08.jpg" border="0" hspace="0" vspace="0"><br>
+            Tatra Spring Yoke</div>
+      		</td>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=chasis_09','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/chasis_09.jpg" border="0" hspace="0" vspace="0"><br>
+            wheel screws</div>
+      		</td>
+      	</tr>
+      	<tr>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=chasis_10','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/chasis_10.jpg" border="0" hspace="0" vspace="0"><br>
+            Part of<br>Tatra-Torsion-Bar</div>
+      		</td>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=chasis_11','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/chasis_11.jpg" border="0" hspace="0" vspace="0"><br>
+            Tatra-Torsion-Bar</div>
+      		</td>
+      		<td align="middle" valign="top">
+            &nbsp;
+      		</td>
+      	</tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+  <tr>
+    <td valign="top" align="right" colspan="2">
+      <span onClick="history.back()" style="cursor: hand"><img src="_images/back.gif" border="0" height="30" width="75" hspace="0" vspace="0"></span>
+    </td>
+  </tr>
+</table>

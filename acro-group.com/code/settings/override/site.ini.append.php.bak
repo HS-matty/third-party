@@ -1,0 +1,26 @@
+<?php /* #?ini charset="iso-8859-1"?
+
+[Session]
+SessionNameHandler=custom
+
+[SiteSettings]
+DefaultAccess=user_acro
+SiteList[]
+SiteList[]=user_acro
+
+[SiteAccessSettings]
+CheckValidity=false
+AvailableSiteAccessList[]
+AvailableSiteAccessList[]=user_acro
+AvailableSiteAccessList[]=admin_acro
+MatchOrder=uri
+HostMatchMapItems[]
+
+[MailSettings]
+Transport=SMTP
+TransportServer=
+TransportUser=
+TransportPassword=
+AdminEmail=
+EmailSender=
+*/ ?>

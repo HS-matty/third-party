@@ -1,0 +1,422 @@
+<html>
+<head>
+<title>WMExample (PHP)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style type="text/css">
+<!--
+p
+{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 9pt; 
+font-style: normal; 
+color: #000000
+}
+
+a
+{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 9pt; 
+text-decoration: none; 
+color: #3371AF
+}
+
+a:hover	
+{color: #3371AF;
+ text-decoration: underline
+ }
+-->
+</style>
+</head>
+
+<body bgcolor="#FDF6E2">
+<div align="center"> 
+  <h2><font face="Arial, Helvetica, sans-serif">WMExample (PHP)</font></h2>
+  <div align="left">
+    <p>Пример использования интерфейсов автоматического управления электронным 
+      кошельком системы <b>webmoney.</b> Кошелек и WMидентификатор магазина настраивается 
+      внутри примера (см. <a href="html/readme.txt">readme.txt</a>, прилагаемый к примеру).</p>
+    <p>При выполнении операций параметры магазина, а также сроки существования счетов
+       определяются константами скрипта, их необходимо настроить в модуле wmconst.pm.
+       Также необходимо изменить файл wmsigner.ini, настроив его на ваш файл ключей.</p>
+    <table width="95%" border="3" cellspacing="0" cellpadding="0" height="137" bordercolorlight="3371AF" bordercolordark="3371AF">
+      <tr valign="top"> 
+        <td>
+          <table width="58%" border="0" cellspacing="0" cellpadding="1">
+            <tr bgcolor="3371AF"> 
+              <td height="34"><font color="#FDF6E2"> <b>Сформировать элемент &quot;Касса&quot;</b></font></td>
+            </tr>
+          </table>
+          <br>
+          <form method="post" action="cass.php">
+            <table width="97%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="9">&nbsp; </td>
+                <td width="175">№ счета магазина</td>
+                <td width="322"> 
+                  <input type="text" name="invc_n">
+                </td>
+              </tr>
+              <tr> 
+                <td width="9">&nbsp;</td>
+                <td width="175">WMид. покупателя</td>
+                <td width="322"> 
+                  <input type="text" name="wmid">
+                </td>
+              </tr>
+              <tr> 
+                <td width="9">&nbsp;</td>
+                <td width="175">Сумма</td>
+                <td width="322"> 
+                  <input type="text" name="summ">
+                  WM (разделитель &quot;.&quot;)</td>
+              </tr>
+              <tr> 
+                <td width="9">&nbsp;</td>
+                <td width="175">Описание покупки</td>
+                <td width="322"> 
+                  <textarea name="goodname" cols="40"></textarea>
+                </td>
+              </tr>
+              <tr> 
+                <td width="9">&nbsp;</td>
+                <td width="175">&nbsp;</td>
+                <td width="322"> 
+                  <input type="submit" name="Submit" value="OK">
+                </td>
+              </tr>
+            </table>
+          </form>
+          
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <table width="95%" border="3" cellspacing="0" cellpadding="0" height="137" bordercolorlight="3371AF" bordercolordark="3371AF">
+      <tr valign="top"> 
+        <td> 
+          <table width="58%" border="0" cellspacing="0" cellpadding="1">
+            <tr bgcolor="3371AF"> 
+              <td height="34"><font color="#FDF6E2"> <b>HTTPS-интерфейсы</b></font></td>
+            </tr>
+          </table>
+          <br>
+          <table width="58%" border="0" cellspacing="0" cellpadding="1">
+            <tr bgcolor="3371AF">
+              <td height="34" width="20">&nbsp;</td>
+              <td height="34"><font color="#FDF6E2"> Интерфейс 1. Выписывание 
+                счета от одного участника (магазина, ресурса) другому участнику 
+                (покупателю) системы</font></td>
+            </tr>
+          </table>
+          <form method="post" action="invc_create.php">
+            <table width="97%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">№ счета магазина</td>
+                <td width="314"> 
+                  <input type="text" name="invc_n">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">WMid покупателя</td>
+                <td width="314"> 
+                  <input type="text" name="wmid">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">Сумма</td>
+                <td width="314"> 
+                  <input type="text" name="summ">
+                  WM (разделитель .)</td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">Описание покупки</td>
+                <td width="314"> 
+                  <textarea name="dsc" cols="40"></textarea>
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">Адрес доставки</td>
+                <td width="314"> 
+                  <textarea name="addr" cols="40"></textarea>
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">&nbsp;</td>
+                <td width="314"> 
+                  <input type="submit" name="Submit" value="OK">
+                </td>
+              </tr>
+            </table>
+            </form>
+          <hr size="1">
+          <p>&nbsp;</p><table width="58%" border="0" cellspacing="0" cellpadding="1">
+            <tr bgcolor="3371AF"> 
+              <td height="34" width="20">&nbsp;</td>
+              <td height="34"><font color="#FDF6E2"> Интерфейс 2. Проверка состояния 
+                выписанного ранее счета (оплачен счет или нет).</font></td>
+            </tr>
+          </table>
+          <form method="post" action="invc_chk.php">
+            <table width="97%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">№ счета магазина</td>
+                <td width="314"> 
+                  <input type="text" name="invc_n">
+                  (*) </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">№ счета webmoney</td>
+                <td width="314"> 
+                  <input type="text" name="wminvc_n">
+                  (*) </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">WMid покупателя</td>
+                <td width="314"> 
+                  <input type="text" name="wmid">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">&nbsp;</td>
+                <td width="314">(*) - можно задать только один из параметров</td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">&nbsp;</td>
+                <td width="314"> 
+                  <input type="submit" name="Submit" value="OK">
+                </td>
+              </tr>
+            </table>
+          </form>
+          <hr size="1">
+          <p>&nbsp;</p>
+          <table width="58%" border="0" cellspacing="0" cellpadding="1">
+            <tr bgcolor="3371AF"> 
+              <td height="34" width="20">&nbsp;</td>
+              <td height="34"><font color="#FDF6E2"> Интерфейс 3. Перевод средств 
+                с одного кошелька на другой.</font></td>
+            </tr>
+          </table>
+          <form method="post" action="trans_create.php">
+            <table width="97%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">№ транзакции магазина</td>
+                <td width="314"> 
+                  <input type="text" name="trn_n">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">WM кошелек покупателя</td>
+                <td width="314"> 
+                  <input type="text" name="wmpurse">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">Сумма</td>
+                <td width="314"> 
+                  <input type="text" name="summ">
+                  WM (разделитель .) </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">Примечание</td>
+                <td width="314"> 
+                  <input type="text" name="dsc" value="">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">&nbsp;</td>
+                <td width="314"> 
+                  <input type="submit" name="Submit" value="OK">
+                </td>
+              </tr>
+            </table>
+          </form>
+          <hr size="1">
+          <p>&nbsp;</p>
+          <table width="58%" border="0" cellspacing="0" cellpadding="1">
+            <tr bgcolor="3371AF"> 
+              <td height="34" width="20">&nbsp;</td>
+              <td height="34"><font color="#FDF6E2"> Интерфейс 4. Перевод средств 
+                с одного кошелька на другой с протекцией сделки.</font></td>
+            </tr>
+          </table>
+          <form method="post" action="trans_create_pr.php">
+            <table width="97%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">№ транзакции магазина</td>
+                <td width="314"> 
+                  <input type="text" name="trn_n">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">WM кошелек покупателя</td>
+                <td width="314"> 
+                  <input type="text" name="wmpurse">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">Сумма</td>
+                <td width="314"> 
+                  <input type="text" name="summ">
+                  WM (разделитель .) </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">Примечание</td>
+                <td width="314"> 
+                  <input type="text" name="dsc" value="">
+                </td>
+              </tr>
+              <tr>
+                <td width="10">&nbsp;</td>
+                <td width="180">Код протекции</td>
+                <td width="314">
+                  <input type="text" name="prcode" value="">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">&nbsp;</td>
+                <td width="314"> 
+                  <input type="submit" name="Submit2" value="OK">
+                </td>
+              </tr>
+            </table>
+          </form>
+          <hr size="1">
+          <p>&nbsp;</p>
+          <table width="58%" border="0" cellspacing="0" cellpadding="1">
+            <tr bgcolor="3371AF"> 
+              <td height="34" width="20">&nbsp;</td>
+              <td height="34"><font color="#FDF6E2"> Интерфейс 5. Проверка выполнения 
+                операции по переводу средств между кошельками.</font></td>
+            </tr>
+          </table>
+          <form method="post" action="trans_chk.php">
+            <table width="97%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">№ транзакции магазина</td>
+                <td width="314"> 
+                  <input type="text" name="trn_n">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">&nbsp;</td>
+                <td width="314"> 
+                  <input type="submit" name="Submit" value="OK">
+                </td>
+              </tr>
+            </table>
+          </form>
+          <hr size="1">
+          <p>&nbsp;</p>
+          <table width="58%" border="0" cellspacing="0" cellpadding="1">
+            <tr bgcolor="3371AF"> 
+              <td height="34" width="20">&nbsp;</td>
+              <td height="34"><font color="#FDF6E2"> Интерфейс 6. Отправка сообщения 
+                произвольному WM-идентификатору по внуренней почте WMT</font></td>
+            </tr>
+          </table>
+          <form method="post" action="msg.php">
+            <table width="97%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">WMid получателя</td>
+                <td width="314"> 
+                  <input type="text" name="wmid">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">Сообщение</td>
+                <td width="314"> 
+                  <textarea name="msg" cols="40"></textarea>
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">&nbsp;</td>
+                <td width="314"> 
+                  <input type="submit" name="Submit" value="OK">
+                </td>
+              </tr>
+            </table>
+          </form>
+          <hr size="1">
+          <p>&nbsp;</p>
+          <table width="58%" border="0" cellspacing="0" cellpadding="1">
+            <tr bgcolor="3371AF"> 
+              <td height="34" width="20">&nbsp;</td>
+              <td height="34"><font color="#FDF6E2"> Интерфейс 7. Идентификация 
+                и аутентификация клиента - владельца WebMoney Keeper Classic на 
+                стороннем сайте, проекте, ресурсе.</font></td>
+            </tr>
+          </table>
+          <p><a href="prot_in1.htm">Вход в защищенную зону (с идентификацией 
+            WMid пользователя)</a></p>
+          <hr size="1">
+          <p>&nbsp;</p>
+          <table width="58%" border="0" cellspacing="0" cellpadding="1">
+            <tr bgcolor="3371AF"> 
+              <td height="34" width="20">&nbsp;</td>
+              <td height="34"><font color="#FDF6E2"> Интерфейс 8. Получение информации 
+                о принадлежности кошелька wm-идентификатору.</font></td>
+            </tr>
+          </table>
+          <form method="post" action="wmpurse_chk.php">
+            <table width="97%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">WMid</td>
+                <td width="314"> 
+                  <input type="text" name="wmid">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180"> WM кошелек</td>
+                <td width="314"> 
+                  <input type="text" name="wmpurse">
+                </td>
+              </tr>
+              <tr> 
+                <td width="10">&nbsp;</td>
+                <td width="180">&nbsp;</td>
+                <td width="314"> 
+                  <input type="submit" name="Submit4" value="OK">
+                </td>
+              </tr>
+            </table>
+          </form>
+          <hr size="1">
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+</div>
+</body>
+</html>

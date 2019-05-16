@@ -1,0 +1,2 @@
+= "width=185,height=300,top=20,left=20,resizable=yes,scrollbars=no,location=no,directories=no,status=no,menubar=no,toolbar=no";
+										newWindow=window.open(url,"",extra);}

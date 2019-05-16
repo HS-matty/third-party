@@ -1,0 +1,679 @@
+<?xml version='1.0' standalone='yes'?>
+<forms>
+
+	<form id="login">
+	<fields>
+
+			<field>
+				<id>login</id>
+				<type>string</type>
+				<title>
+					<en>Login</en>
+				</title>
+			<length>4-40</length>
+			</field>
+			<field>
+				<id>password</id>
+				<type>string</type>
+				<title>
+					<en>Password</en>
+				</title>
+			<length>4-40</length>
+			<view>password</view>
+			</field>
+		<!-- field> 
+			<id>captcha</id>
+			<type>captcha</type>
+			<title>
+				<en>Code</en>
+			</title>
+			<length>1-2048</length>
+			
+		</field -->
+	</fields>
+	
+		
+	
+	</form>
+
+
+	<form id="password_recover">
+	<fields>
+
+			<field class="email">
+				<id>email</id>
+				<type>string</type>
+				<title>
+					<en>Email</en>
+				</title>
+			<length>4-40</length>
+			</field>
+		<field> 
+			<id>captcha</id>
+			<type>captcha</type>
+			<title>
+				<en>Code</en>
+			</title>
+			<length>1-2048</length>
+			
+		</field>
+	</fields>
+	
+		
+	
+	</form>	
+	<form id="location">
+	<title>
+		<en>Location</en>
+	</title>
+	<fields>
+		<field primary_key="1">
+				<id>location_id</id>
+				<type>int</type>
+				<title>
+					<en>ID</en>
+				</title>
+			<length>1-a</length>	
+			
+		</field>
+		<field >
+				<id>short_description</id>
+				<type>string</type>
+				<title>
+					<en>Short Description</en>
+				</title>
+			<length>2-30</length>	
+			
+		</field>
+	</fields>
+</form>
+	<form id="category">
+	<title>
+		<en>Category</en>
+	</title>
+	<fields>
+		<field primary_key="1">
+				<id>category_id</id>
+				<type>int</type>
+				<title>
+					<en>ID</en>
+				</title>
+			<length>1-a</length>	
+			
+		</field>
+		<field >
+				<id>short_description</id>
+				<type>string</type>
+				<title>
+					<en>Short Description</en>
+					<ru>Заголовок</ru>
+				</title>
+			<length>2-128</length>	
+			
+		</field>
+		<field not_required="1">
+				<id>alias</id>
+				<type>string</type>
+				<title>
+					<en>Short Path</en>
+					<ru>Короткий путь (/go/путь/)</ru>
+				</title>
+			<length>2-128</length>	
+			
+		</field>
+		<!--field>
+			<id>node_type</id>
+					
+				<type>string</type>
+				<title>
+					<en>Node Type</en>
+					<ru>Тип категории</ru>
+				</title>
+				
+			<enum>
+				<fields>
+				<field>
+						<title>
+							<en>Category</en>
+							<ru>Категория</ru>
+						</title>
+						<value>category</value>
+					</field>
+					<field>
+						<title>
+							<en>Static pages</en>
+							<ru>Статическая страница</ru>
+						</title>
+						<value>static_page</value>
+					</field>
+
+				</fields>
+				
+			</enum>
+		
+
+		</field -->
+		<field not_required="1">
+			<id>body</id>
+			<type>string</type>
+			<title>
+				<en>Long description</en>
+				<ru>Страница</ru>
+			</title>
+			<view>editor</view>
+		</field>
+				<field>
+				<id>is_active</id>
+				<type>bool</type>
+				<title>
+					<ru>Активна</ru>
+					<en>Is Active?</en>
+					
+				</title>
+			<length>3-64</length>	
+			
+		</field>
+		
+
+	</fields>
+</form>
+<form id="user">
+	<title>
+		<en>User</en>
+	</title>
+	<fields>
+		<field primary_key="1">
+				<id>bluser_id</id>
+				<type>int</type>
+				<title>
+					<en>ID</en>
+				</title>
+			<length>1-a</length>	
+			
+		</field>
+
+
+		<field>
+				<id>company</id>
+				<type>string</type>
+				<title>
+					<en>Company</en>
+					<ru>Организация</ru>
+				</title>
+			<length>4-30</length>	
+			
+		</field>
+				<field  not_required="1">
+				<id>first_name</id>
+				<type>string</type>
+				<title>
+					<en>First Name</en>
+					<ru>Имя</ru>
+					
+				</title>
+			<length>2-30</length>	
+			
+		</field>
+				<field  not_required="1">
+				<id>last_name</id>
+				<type>string</type>
+				<title>
+					<en>Last Name</en>
+						<ru>Фамилия</ru>
+				</title>
+			<length>2-30</length>	
+			
+		</field>
+		<field not_required="1">
+				<id>phone_number</id>
+				<type>string</type>
+				<title>
+					<en>Phone</en>
+					<ru>Телефон</ru>
+				</title>
+			<length>4-30</length>	
+			
+		</field>
+		<field class="email">
+				<id>email</id>
+				<type>string</type>
+				<title>
+					<en>Email</en>
+				</title>
+			<length>3-64</length>	
+			
+		</field>
+				<field>
+		<id>user_type</id>
+		<type>string</type>
+		<title>
+			<en>Type</en>
+			<ru>Тип пользователя</ru>
+				
+		</title>
+		<enum>
+			<values>
+				<value>user</value>
+				<value>partner</value>
+			</values>
+		</enum>
+		</field>
+		<field>
+				<id>user_is_active</id>
+				<type>bool</type>
+				<title>
+					<ru>Активен</ru>
+					<en>Is Active?</en>
+					
+				</title>
+			<length>3-64</length>	
+			
+		</field>
+		<field >
+				<id>login</id>
+				<type>string</type>
+				<title>
+					<en>Login</en>
+					<ru>Login</ru>
+				</title>
+			<length>4-30</length>	
+			
+		</field>
+	<field  not_required="1"> 
+			<id>sha_password</id>
+			<type>string</type>
+			<title>
+				<en>Password</en>
+				<ru>Пароль</ru>
+			</title>
+			<length>5-32</length>
+			
+		</field>
+		<!--field > 
+			<id>captcha</id>
+			<type>captcha</type>
+			<title>
+				<en>Code</en>
+			</title>
+			<length>1-2048</length>
+			
+		</field-->
+		
+	</fields>
+</form>
+
+<form id="listing">
+	<title>
+		<en>Directory Listing</en>
+		<ru>Запись</ru>
+	</title>
+
+	<fields>	
+		<field primary_key="1">
+			<id>listing_id</id>
+			<type>int</type>
+			<title>
+				<en>DirectoryId</en>
+				<ru>DirectoryId</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+
+		<field>
+			<id>short_description</id>
+			<type>string</type>
+			<title>
+				<en>Short description</en>
+				<ru>Описание</ru>
+			</title>
+		
+		</field>
+		<field not_required="1">
+			<id>main_image</id>
+			<type>file</type>
+			<file>
+				<filetype>image</filetype>
+				<size>1-8192</size>
+				<path>/images/items/</path>
+			</file>
+			<title>
+				<en>Logo</en>
+				<ru>Изображение</ru>
+			</title>
+		</field>
+		
+		<field not_required="1">
+			<id>long_description</id>
+			<type>string</type>
+			<title>
+				<en>Long description</en>
+				<ru>Расширенное описание</ru>
+			</title>
+			<view>editor</view>
+		</field>
+		
+
+		<field>
+			<id>is_active</id>
+			<type>bool</type>
+			<title>
+				<en>Is active</en>
+				<ru>Активна</ru>
+			</title>
+			<length>1-4</length>	
+		
+		</field>
+	
+		
+		<field>
+			<id>is_advert</id>
+			<type>bool</type>
+			<title>
+				<en>Is advert</en>
+				<ru>Рекламное предложение</ru>
+			</title>
+		
+		</field>
+		<field not_required="1">
+				<id>bluser_id</id>
+				<type>list</type>
+				<title>
+					<en>Owner</en>
+					<ru>Владелец</ru>
+				</title>
+		
+			<list  not_null="1">
+				<key_title>bluser_id</key_title>
+				<value_title>company</value_title>
+				
+			</list>	
+			
+		</field>
+
+		
+
+		<!-- field>
+			<id>address</id>
+			<type>string</type>
+			<title>
+				<en>Address</en>
+			
+			</title>
+			<length>3-100</length>	
+			<expr></expr>
+		</field>
+		<field>
+			<id>zip</id>
+			<type>string</type>
+			<title>
+				<en>Postal code</en>
+			</title>
+			
+			<expr></expr>
+		</field>
+
+
+
+
+		
+		<field>
+			<id>city</id>
+			<type>string</type>
+			<title>
+				<en>City</en>
+			</title>					
+		</field>
+		<field >
+			<id>state</id>
+			<type>string</type>
+			<title>
+				<en>State</en>
+			</title>					
+		</field>
+		<field not_required="1"> >
+			<id>tags</id>
+			<type>string</type>
+			<title>
+				<en>Tags</en>
+			</title>					
+		</field>
+		<field >
+			<id>price</id>
+			<type>float</type>
+			<title>
+				<en>Price</en>
+			</title>					
+		</field>
+		<field>
+				<id>is_active</id>
+				<type>bool</type>
+				<title>
+					<en>Is Active</en>
+				</title>
+			<length>3-64</length>	
+			
+		</field>
+		<field>
+				<id>is_closed</id>
+				<type>bool</type>
+				<title>
+					<en>Is Closed</en>
+				</title>
+				<length>3-64</length>	
+			
+		</field>
+			<field>
+				<id>is_approved</id>
+				<type>bool</type>
+				<title>
+					<en>Is Approved</en>
+				</title>
+				<length>3-64</length>	
+			
+		</field>
+			<field>
+				<id>is_expired</id>
+				<type>bool</type>
+				<title>
+					<en>Is Expired</en>
+				</title>
+				<length>3-64</length>	
+			
+		</field>
+		
+		
+		<field skip="1">
+				<id>user</id>
+				<type>string</type>
+				<title>
+					<en>User</en>
+				</title>
+				<view>
+					<type>text</type>
+				</view>
+				<link includeObligatoryParams="0">
+					<module>admin</module>
+					<params>
+						<param value="browse_locations" />
+					</params>
+				</link>
+		
+		</field>
+
+	
+		
+				<field id="share_email" not_required="1">
+			<title>
+				<en>Share email</en>
+			</title>
+			
+		<type>bool</type>
+		<view>checkbox</view>
+		</field>
+		
+		<field id="share_phone" not_required="1">
+			<title>
+				<en>Share phone</en>
+			</title>
+			
+		<type>bool</type>
+
+		</field>
+
+	<field>
+		<id>flag</id>
+		<type>string</type>
+		<title>
+			<en>Type</en>
+				
+		</title>
+		<enum>
+			<values>
+				<value>none</value>
+				<value>misclassified</value>
+				<value>forbidden</value>
+				<value>spam</value>
+				
+			</values>
+		</enum>
+		</field-->
+	
+	
+
+	</fields>	
+
+</form>
+<form id="credit_item">
+	<title>
+		<en></en>
+	</title>
+
+	<fields>	
+		<field primary_key="1">
+			<id>listing_id</id>
+			<type>int</type>
+			<title>
+				<en>DirectoryId</en>
+				<ru>DirectoryId</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		<field>
+				<id>bluser_id</id>
+				<type>list</type>
+				<title>
+					<en>Owner</en>
+					<ru>Владелец</ru>
+				</title>
+		
+			<list  not_null="1">
+				<key_title>bluser_id</key_title>
+				<value_title>company</value_title>
+				
+			</list>	
+			
+		</field>
+		<field>
+			<id>is_active</id>
+			<type>bool</type>
+			<title>
+				<en>Is active</en>
+				<ru>Активен</ru>
+			</title>
+		
+		</field>
+				
+		<field>
+			<id>is_advert</id>
+			<type>bool</type>
+			<title>
+				<en>Is advert</en>
+				<ru>Рекламное предложение</ru>
+			</title>
+		
+		</field>
+		<field>
+			<id>short_description</id>
+			<type>string</type>
+			<title>
+				<en>Short description</en>
+				<ru>Описание</ru>
+			</title>
+		
+		</field>
+		
+		
+		<field not_required="1">
+			<id>long_description</id>
+			<type>string</type>
+			<title>
+				<en>Long description</en>
+				<ru>Расширенное описание</ru>
+			</title>
+			<view>editor</view>
+		</field>
+		<field>
+			<id>rate</id>
+			<type>float</type>
+			<title>
+				<en>Rate%</en>
+				<ru>Ставка%</ru>
+			</title>
+		
+		</field>
+		<field>
+			<id>sum</id>
+			<type>float</type>
+			<title>
+				<en>Sum</en>
+				<ru>Сумма</ru>
+			</title>
+		
+		</field>
+		<field>
+			<id>term</id>
+			<type>float</type>
+			<title>
+				<en>Term</en>
+				<ru>Срок</ru>
+			</title>
+		
+		</field>
+		
+		<field>
+				<id>currency_id</id>
+				<type>list</type>
+				<title>
+					<en>Currency</en>
+					<ru>Валюта</ru>
+				</title>
+		
+			<list  not_null="1">
+				<key_title>currency_id</key_title>
+				<value_title>cur_title_ru</value_title>
+				
+			</list>	
+			
+		</field>
+		<field>
+				<id>purpose_id</id>
+				<type>list</type>
+				<title>
+					<en>Purpose</en>
+					<ru>Назначение</ru>
+				</title>
+		
+			<list  not_null="1">
+				<key_title>purpose_id</key_title>
+				<value_title>purpose_title_ru</value_title>
+				
+			</list>	
+			
+		</field>
+
+	</fields>
+</form>
+
+
+</forms>
+	

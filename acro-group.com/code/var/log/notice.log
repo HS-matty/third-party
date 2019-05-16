@@ -1,0 +1,14 @@
+[ Aug 11 2004 22:18:33 ] [127.0.0.13] Timing Point: Module start 'content'
+[ Aug 11 2004 22:18:33 ] [127.0.0.13] PDF: Added header: test2, size: 24, align: center, level: 1
+[ Aug 11 2004 22:18:33 ] [127.0.0.13] PDF: Added frame Footer: <ezGroup:callFrame:location:footer:justification:left:page:all:newline:0:pageOffset:0:size:10>test2<C:callSpace>short<C:callSpace>title</ezGroup:callFrame>
+[ Aug 11 2004 22:18:33 ] [127.0.0.13] PDF: Added frame Footer: <ezGroup:callFrame:location:footer:justification:right:page:all:newline:0:pageOffset:0:size:10>#page<C:callSpace>of<C:callSpace>#total</ezGroup:callFrame>
+[ Aug 11 2004 22:18:33 ] [127.0.0.13] PDF: Added frame Footer: <ezGroup:callFrame:location:footer:page:all:newline:0:pageOffset:0></ezGroup:callFrame><C:callFrameLine:location:footer:margin:80:pageOffset:0:page:all:thicknes:1>
+[ Aug 11 2004 22:18:34 ] [127.0.0.13] PDF: File created
+[ Aug 11 2004 22:18:34 ] [127.0.0.13] Execute text in PDF, length: "1050"
+[ Aug 11 2004 22:18:35 ] [127.0.0.13] Timing Point: Module start 'content'
+[ Aug 11 2004 22:18:35 ] [127.0.0.13] PDF: Added header: test2, size: 24, align: center, level: 1
+[ Aug 11 2004 22:18:35 ] [127.0.0.13] PDF: Added frame Footer: <ezGroup:callFrame:location:footer:justification:left:page:all:newline:0:pageOffset:0:size:10>test2<C:callSpace>short<C:callSpace>title</ezGroup:callFrame>
+[ Aug 11 2004 22:18:35 ] [127.0.0.13] PDF: Added frame Footer: <ezGroup:callFrame:location:footer:justification:right:page:all:newline:0:pageOffset:0:size:10>#page<C:callSpace>of<C:callSpace>#total</ezGroup:callFrame>
+[ Aug 11 2004 22:18:35 ] [127.0.0.13] PDF: Added frame Footer: <ezGroup:callFrame:location:footer:page:all:newline:0:pageOffset:0></ezGroup:callFrame><C:callFrameLine:location:footer:margin:80:pageOffset:0:page:all:thicknes:1>
+[ Aug 11 2004 22:18:35 ] [127.0.0.13] PDF: File created
+[ Aug 11 2004 22:18:35 ] [127.0.0.13] Execute text in PDF, length: "1050"

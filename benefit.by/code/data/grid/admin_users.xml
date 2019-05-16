@@ -1,0 +1,59 @@
+<?xml version='1.0' standalone='yes'?>
+
+<grid id="admin_users">
+	<fields>
+		<field id="bluser_id" table="bluser">
+			<title>
+				<en>ID</en>
+			</title>
+			<conditions>
+				<condition type="orderby" default="1" />
+			</conditions>
+		</field>
+		<field id="company">
+			<title>
+				<en>Company</en>
+			</title>
+		</field>	
+		<field id="first_name">
+			<title>
+				<en>First Name</en>
+				<ru>Имя</ru>
+			</title>
+		</field>
+		
+		<field id="last_name">
+			<title>
+				<en>Last Name</en>
+				<ru>Фамилия</ru>
+			</title>
+		</field>
+		
+	
+
+
+		
+		<field id="#edit" type="additional" >
+			<title>
+				<en>edit</en>
+			</title>
+			<link>
+				<module>admin</module>
+				<params>	<param value="index" />
+					<param value="user" />
+					
+				</params>
+				
+				<urlparams>
+					<param title="bluser_id" data_field = "bluser_id" />
+						<param title="act" value="edit" />
+				</urlparams>
+			</link>
+		</field>
+		
+
+	</fields>
+	
+	
+	
+</grid>

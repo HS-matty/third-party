@@ -1,0 +1,67 @@
+<?xml version='1.0' standalone='yes'?>
+
+<grid id="directory_items">
+	<fields>
+		<field id="listing_id" table="listing">
+			<title>
+				<en>ID</en>
+			</title>
+			<conditions>
+				<condition type="orderby" default="1" />
+			</conditions>
+		</field>	
+		<field id="item_title">
+			<title>
+				<en>Title</en>
+			</title>
+		</field>
+		
+		
+	
+		<field id="creation_date" type="timedate" table="listing">
+			<title>
+				<en>Created</en>
+			</title>
+			<conditions>
+				<condition type="orderby"/>
+			</conditions>
+		</field>
+				<field id="fuser_name">
+			<title>
+				<en>Owner</en>
+			</title>
+
+		</field>
+		<field id="count" >
+			<title>
+				<en>Categories assigned</en>
+			</title>
+			<conditions>
+				<condition type="orderby"/>
+			</conditions>
+		</field>
+
+		
+		<field id="#edit" type="additional" >
+			<title>
+				<en>edit</en>
+			</title>
+			<link>
+				<module>directory</module>
+				<params>
+					<param value="item" />
+					<param value="edit" />
+				</params>
+				
+				<urlparams>
+					<param title="item_id" data_field = "ditem_id" />
+				</urlparams>
+			</link>
+		</field>
+		
+
+	</fields>
+	
+	
+	
+</grid>

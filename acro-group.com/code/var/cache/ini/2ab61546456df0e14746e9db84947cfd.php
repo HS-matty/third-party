@@ -1,0 +1,40 @@
+<?php
+$eZIniCacheCodeDate = 1043407542;
+$charset = "iso-8859-1";
+$groupArray["RepositoryDirectories"] = array();
+$groupArray["RepositoryDirectories"][0] = "kernel/classes/workflowtypes";
+$groupArray["ExtensionDirectories"] = array();
+$groupArray["AvailableEventTypes"] = array();
+$groupArray["AvailableEventTypes"][0] = "event_ezapprove";
+$groupArray["AvailableEventTypes"][1] = "event_ezwaituntildate";
+$groupArray["AvailableEventTypes"][2] = "event_ezsimpleshipping";
+$groupArray["AvailableEventTypes"][3] = "event_ezmultiplexer";
+$blockValues["EventSettings"] =& $groupArray;
+unset( $groupArray );
+$groupArray["AvailableOperations"] = "content_publish;shop_confirmorder;shop_checkout";
+$blockValues["OperationSettings"] =& $groupArray;
+unset( $groupArray );
+$groupArray["ShippingCost"] = "12";
+$groupArray["ShippingDescription"] = "Shipping";
+$blockValues["SimpleShippingWorkflow"] =& $groupArray;
+unset( $groupArray );
+$groupPlacementArray["RepositoryDirectories"] = array();
+$groupPlacementArray["RepositoryDirectories"][0] = "settings/workflow.ini";
+$groupPlacementArray["ExtensionDirectories"] = array();
+$groupPlacementArray["ExtensionDirectories"][0] = "settings/workflow.ini";
+$groupPlacementArray["AvailableEventTypes"] = array();
+$groupPlacementArray["AvailableEventTypes"][0] = "settings/workflow.ini";
+$groupPlacementArray["AvailableEventTypes"][1] = "settings/workflow.ini";
+$groupPlacementArray["AvailableEventTypes"][2] = "settings/workflow.ini";
+$groupPlacementArray["AvailableEventTypes"][3] = "settings/workflow.ini";
+$blockValuesPlacement["EventSettings"] =& $groupPlacementArray;
+unset( $groupPlacementArray );
+$groupPlacementArray["AvailableOperations"] = "settings/workflow.ini";
+$blockValuesPlacement["OperationSettings"] =& $groupPlacementArray;
+unset( $groupPlacementArray );
+$groupPlacementArray["ShippingCost"] = "settings/workflow.ini";
+$groupPlacementArray["ShippingDescription"] = "settings/workflow.ini";
+$blockValuesPlacement["SimpleShippingWorkflow"] =& $groupPlacementArray;
+unset( $groupPlacementArray );
+
+?>

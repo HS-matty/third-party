@@ -1,0 +1,40 @@
+<?xml version='1.0' standalone='yes'?>
+
+<grid id="admin_users">
+	<fields>
+
+		<field id="short_description">
+			<title>
+				<en>Short description</en>
+			</title>
+		</field>
+	
+
+
+		
+		<field id="#edit" type="additional" >
+			<title>
+				<en>edit</en>
+				<ru>Редактировать</ru>
+			</title>
+			<link>
+				<module>user</module>
+				<params>	<param value="item" />
+				
+					
+				</params>
+				
+				<urlparams>
+					<param title="listing_id" data_field = "listing_id" />
+					<param title="act" value="edit" />
+					
+				</urlparams>
+			</link>
+		</field>
+		
+
+	</fields>
+	
+	
+	
+</grid>

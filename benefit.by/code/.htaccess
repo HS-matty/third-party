@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^(.*).css$
+RewriteCond %{REQUEST_URI} !^(.*).(jpg|gif|png|js|css|txt)$
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !/public.*
+RewriteCond %{REQUEST_URI} !^image.php
+RewriteCond %{REQUEST_URI} !/javascript.*
+
+RewriteRule ^(.*)$ index.php/$1

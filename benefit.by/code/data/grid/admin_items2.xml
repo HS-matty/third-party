@@ -1,0 +1,39 @@
+<?xml version='1.0' standalone='yes'?>
+
+<grid id="admin_users">
+	<fields>
+
+		<field id="short_description">
+			<title>
+				<en>Short description</en>
+			</title>
+		</field>
+	
+
+
+		
+		<field id="#edit" type="additional" >
+			<title>
+				<en>edit</en>
+			</title>
+			<link>
+				<module>admin</module>
+				<params>	<param value="node" />
+					<param value="node" />
+					
+				</params>
+				
+				<urlparams>
+					<param title="cid" data_field = "category_id" />
+					<param title="a" value="edit" />
+					<param title="s" value="1" />
+				</urlparams>
+			</link>
+		</field>
+		
+
+	</fields>
+	
+	
+	
+</grid>

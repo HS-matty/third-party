@@ -1,0 +1,45 @@
+<?xml version='1.0' standalone='yes'?>
+
+<grid id="admin_locations">
+	<fields>
+		<field id="location_id" table="location">
+			<title>
+				<en>ID</en>
+			</title>
+
+		</field>	
+		<field id="short_description">
+			<title>
+				<en>Title</en>
+			</title>
+
+		</field>
+
+		
+	
+
+
+		
+		<field id="#edit" type="additional" >
+			<title>
+				<en>edit</en>
+			</title>
+			<link>
+				<module>admin</module>
+				<params>
+					<param value="location" />
+					
+				</params>
+				
+				<urlparams>
+					<param title="location_id" data_field = "location_id" />
+				</urlparams>
+			</link>
+		</field>
+		
+
+	</fields>
+	
+	
+	
+</grid>

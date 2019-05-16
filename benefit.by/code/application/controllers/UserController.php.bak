@@ -1,0 +1,344 @@
+<?php
+global $Config;
+require_once $Config->SitePath.'/application/models/directory.php';
+require_once $Config->SitePath.'/application/models/directoryuser.php';
+require_once $Config->SitePath.'/application/models/directoryitem.php';
+require_once $Config->SitePath.'/application/models/location.php';
+require_once $Config->SitePath.'/3rd_party/rad/rad_menu.php';
+
+
+class UserController extends Rad_Zend_Controller_Action {
+
+
+	/**
+	 * User object
+	 *
+	 * @var RegisteredUser
+	 */
+	protected $User;
+	protected $_view = null;
+
+
+	public function init()
+	{
+		global $Config;
+
+
+
+
+		parent::init();
+	
+		if(!$this->User->isLogined('RegisteredUser') && $this->_view->action != 'login'){
+				$this->_redirect('/auth/login/');
+		}
+
+
+
+	}
+
+	/*	public function clearAction(){
+	$dir = new DirectoryTree();
+	$dir->createRootRecord();
+	}*/
+	
+	
+	public function editAction(){
+		
+		
+		
+		$Id = (int) $this->User->getUserId();
+
+		$NodeId = (int) $this->_getParam('node_id');
+		$Params = new Rad_Form_Params();
+
+		
+
+		$Params->Action = Form2::UpdateAction ;
+
+
+
+	
+
+
+
+
+
+
+		$Source = new Rad_Form_Xml_Source();
+		$Source->Class = 'ucenter';
+		$Source->FormName = 'frontend_register';
+
+
+
+		$Params->setSource($Source);
+
+
+
+		
+
+		$Params->setObject($this->User);
+
+		if($Result  = $this->parseForm($Params)){
+			if($Params->Action = Form2::UpdateAction ){
+				
+				
+				
+
+			}
+
+		}
+
+		$this->_response->appendBody($this->_view->render('form.tpl'));
+		
+		
+	}
+	public function nodesAction(){
+
+
+
+		$Menu = new Rad_Menu();
+
+		$GridName  = 'admin_categories';
+		$defaultNamespace = new Zend_Session_Namespace();
+		if($this->_getParam('node_id')){
+			$Params = $this->_getAllParams();
+			$defaultNamespace->$GridName = $Params;
+
+		}elseif ($this->_getParam('clear')){
+			$Params = $this->_getAllParams();
+			$defaultNamespace->$GridName = null;
+		}else $Params = $defaultNamespace->$GridName;
+
+		$this->_view->Params = $Params;
+
+		$cid = (int) $Params['node_id'];
+		if(!$cid) $cid = 1;
+		global $InOut;
+		$InOut->setObligatoryUrlParam('node_id',$cid);
+		$Menu->addActionMenuItem('add category',new Rad_Link(array('admin','node','node'),array('a'=>'add','cid'=>$cid)));
+		$Menu->addActionMenuItem('add static page',new Rad_Link(array('admin','node','listing'),array('type'=>'static','a'=>'add','node_id'=>$cid)));
+		$this->_view->Actions = $Menu->getActionsMenu();
+
+		$Grid = new CGrid($GridName);
+		$Tree = new DirectoryTree();
+		$Cats =& $Tree->getCategories($cid);
+		$this->_view->TreePath = $Tree->getPathArrayToCid($cid,1);
+
+
+		$this->_view->cid = $cid;
+		$Grid->addData($Cats);
+		$this->_view->Grid= $Grid;
+
+
+		if($this->_getParam('error') == 'has_childs'){
+			$this->_view->Message  = 'This category has childs!';
+		}
+		$this->_response->appendBody($this->_view->render('nodes.tpl'));
+
+
+	}
+
+
+	public function nodeAction(){
+
+		$Id = (int) $this->_getParam('cid');
+		if(!$Id) $this->_redirect('/error/');
+
+		$Menu = new Rad_Menu();
+		$Menu->addActionMenuItem('Back',new Rad_Link(array('admin','node','nodes')));
+		$this->_view->Actions = $Menu->getActionsMenu();
+		global $InOut;
+
+		$Tree = new DirectoryTree();
+		if($this->_getParam('delete')){
+			//check for childs
+
+			global $Db;
+			$Db->DoNotUseListQuery = 1;
+			$Cats =& $Tree->getBranch($Id);
+			$Parent =& $Tree->getParentCategory($Id);
+			$ParentId = $Parent['category_id'];
+
+			//if true  - error
+			if($Cats){
+				$this->_redirect('/admin/node/nodes/?error=has_childs&node_id='.$ParentId);
+			}
+			$Tree->deleteCategory($Id);
+			$this->_redirect('/admin/node/nodes/?node_id='.$ParentId);
+		}
+
+		$Node= new Rad_Tree_Node();
+
+
+		$Params = new Rad_Form_Params();
+
+
+		if($this->_getParam('a') == 'add' ){
+
+			$Params->Action = Form2::InsertAction;
+
+		}else {
+
+			$Params->Action = Form2::UpdateAction;
+			$Node->Data = $Tree->getCategory($Id);
+
+		}
+
+		$Node->Id = $Id;
+		$Source = new Rad_Form_Xml_Source();
+		$Source->Class = 'admin';
+		$Source->FormName = 'category';
+		$Params->setSource($Source);
+
+
+		$Params->setObject($Node);
+
+		if($Result  = $this->parseForm($Params)){
+
+			if($Params->Action == Form2::InsertAction ){
+				$this->_redirect('/admin/node/nodes/?node_id='.$Id);
+			}
+
+
+
+		}
+
+		$this->_response->appendBody($this->_view->render('node.tpl'));
+	}
+	public function listingsAction(){
+
+		$DirTree = new DirectoryTree();
+		$Cats =& $DirTree->getConvertedTreeArray(true);
+		$this->_view->Cats = $Cats[-1];
+
+		$GridName = 'admin_items';
+		$Grid = new CGrid($GridName);
+		$item = new Barefoot_Item();
+
+		global $InOut;
+		$cid = (int) $this->_getParam('cid');
+		$InOut->setObligatoryUrlParam('node_id',$cid);
+		global $InOut;
+		$Menu = new Rad_Menu();
+		$Menu->addActionMenuItem('Clear search params',new Rad_Link(array('admin','node','nodes'),array('clear'=>1)));
+		$this->_view->Actions = $Menu->getActionsMenu();
+
+
+		$defaultNamespace = new Zend_Session_Namespace();
+		if($this->_getParam('post')){
+			$Params = $this->_getAllParams();
+			$defaultNamespace->$GridName = $Params;
+
+		}elseif ($this->_getParam('clear')){
+			$Params = $this->_getAllParams();
+			$defaultNamespace->$GridName = null;
+		}else $Params = $defaultNamespace->$GridName;
+
+
+		$this->_view->Params = $Params;
+		$Result = $item->getItemsSimple($Params);
+
+
+
+
+
+		$Grid->addData($Result->Data);
+		$this->_view->Grid= $Grid;
+
+		/*@var  $this->_view Zend_View_Smarty*/
+		$this->_view->UseIndexTemplate = false;
+		$this->_response->appendBody($this->_view->render('listings.tpl'));
+
+
+	}
+
+
+
+	public function listingAction(){
+
+		$Id = (int) $this->_getParam('listing_id');
+
+		$NodeId = (int) $this->_getParam('node_id');
+		$Params = new Rad_Form_Params();
+
+		if(!$Id ){
+			$Listing = new Article_Item();
+
+			$Params->Action = Form2::InsertAction;
+
+
+
+		}else {
+
+
+			$Params->Action = Form2::UpdateAction;
+			$Listing = Rad_Directory_Record::getInstanceById($Id);
+
+			$Listing->init($Id);
+
+
+
+		}
+
+
+
+
+
+		if($this->_getParam('delete')){
+			$Listing->deleteItem();
+
+			$this->_redirect('/admin/node/nodes/?node_id='.$NodeId);
+		}
+		$Menu = new Rad_Menu();
+		$Menu->addActionMenuItem('Back',new Rad_Link(array('admin','node','nodes')));
+		$Menu->addActionMenuItem('Delete',new Rad_Link(array('admin','node','nodes'),array('listing_id'=>$Id,'delete'=>1)));
+		$this->_view->Actions = $Menu->getActionsMenu();
+
+
+
+		$Source = new Rad_Form_Xml_Source();
+		$Source->Class = 'admin';
+		$Source->FormName = 'listing';
+
+		$AddXml = $Listing->getXmlAdditionalFields();
+
+		$Params->AdditionalXml = $AddXml;
+
+
+		$Params->setSource($Source);
+
+
+
+		if($Params->Action == Form2::UpdateAction ){
+
+			$User = new RegisteredUser();
+
+			$User->authUserById($Listing->Data['bluser_id']);
+
+			$UserInfo  = $User->getUserInfoString();
+
+			$Params->setPredefinedFieldValue('user',$UserInfo);
+
+		}
+		$Params->setObject($Listing);
+
+
+		if($Result  = $this->parseForm($Params)){
+			if($Params->Action = Form2::InsertAction){
+				//add to Tree
+				$Node = new Rad_Tree_Node();
+				$Node->NodeId = $NodeId;
+				$Node->insertRecord($Listing);
+				$this->_redirect('/admin/node/nodes/',array('node_id'=>$NodeId));
+
+			}
+
+		}
+
+		$this->_response->appendBody($this->_view->render('listing.tpl'));
+	}
+
+
+}
+
+?>

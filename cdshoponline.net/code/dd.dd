@@ -1,0 +1,203 @@
+E:\WORK\ROOT\USR\LOCAL\BIN\MYSQLD.EXE  Ver 3.23.49-max-debug for Win95/Win98 on i32
+Copyright (C) 2000 MySQL AB, by Monty and others
+This software comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to modify and redistribute it under the GPL license
+Starts the MySQL server
+
+Usage: E:\WORK\ROOT\USR\LOCAL\BIN\MYSQLD.EXE [OPTIONS]
+
+  --ansi		Use ANSI SQL syntax instead of MySQL syntax
+  -b, --basedir=path	Path to installation directory. All paths are
+			usually resolved relative to this
+  --big-tables		Allow big result sets by saving all temporary sets
+			on file (Solves most 'table full' errors)
+  --bind-address=IP	Ip address to bind to
+  --bootstrap		Used by mysql installation scripts
+  --character-sets-dir=...
+                        Directory where character sets are
+  --chroot=path		Chroot mysqld daemon during startup
+  --core-file		Write core on errors
+  -h, --datadir=path	Path to the database root
+  -#, --debug[=...]     Debug log. Default is 'd:t:i:O,\mysqld.trace'
+  --skip-safemalloc     Don't use the memory allocation checking
+  --default-character-set=charset
+			Set the default character set
+  --default-table-type=type
+			Set the default table type for tables
+  --delay-key-write-for-all-tables
+			Don't flush key buffers between writes for any MyISAM
+			table
+  --enable-locking	Enable system locking
+  -T, --exit-info	Used for debugging;  Use at your own risk!
+  --flush		Flush tables to disk between SQL commands
+  -?, --help		Display this help and exit
+  --init-file=file	Read SQL commands from this file at startup
+  -L, --language=...	Client error messages in given language. May be
+			given as a full path
+  -l, --log[=file]	Log connections and queries to file
+  --log-bin[=file]      Log queries in new binary format (for replication)
+  --log-bin-index=file  File that holds the names for last binary log files
+  --log-update[=file]	Log updates to file.# where # is a unique number
+			if not given.
+  --log-isam[=file]	Log all MyISAM changes to file
+  --log-long-format	Log some extra information to update log
+  --low-priority-updates INSERT/DELETE/UPDATE has lower priority than selects
+  --log-slow-queries=[file]
+			Log slow queries to this log file.  Defaults logging
+                        to hostname-slow.log
+  --pid-file=path	Pid file used by safe_mysqld
+  --myisam-recover[=option[,option...]] where options is one of DEAULT,
+			BACKUP or FORCE.
+  --memlock		Lock mysqld in memory
+  -n, --new		Use very new possible 'unsafe' functions
+  -o, --old-protocol	Use the old (3.20) protocol
+  -P, --port=...	Port number to use for connection
+
+  --one-thread		Only use one thread (for debugging under Linux)
+
+  -O, --set-variable var=option
+			Give a variable an value. --help lists variables
+  -Sg, --skip-grant-tables
+			Start without grant tables. This gives all users
+			FULL ACCESS to all tables!
+  --safe-mode		Skip some optimize stages (for testing)
+  --safe-show-database  Don't show databases for which the user has no
+                        privileges
+  --safe-user-create	Don't new users cretaion without privileges to the
+		        mysql.user table
+  --skip-concurrent-insert
+		        Don't use concurrent insert with MyISAM
+  --skip-delay-key-write
+			Ignore the delay_key_write option for all tables
+  --skip-host-cache	Don't cache host names
+  --skip-locking	Don't use system locking. To use isamchk one has
+			to shut down the server.
+  --skip-name-resolve	Don't resolve hostnames.
+			All hostnames are IP's or 'localhost'
+  --skip-networking	Don't allow connection with TCP/IP.
+  --skip-new		Don't use new, possible wrong routines.
+
+  --skip-stack-trace    Don't print a stack trace on failure
+  --skip-show-database  Don't allow 'SHOW DATABASE' commands
+  --skip-thread-priority
+			Don't give threads different priorities.
+  --socket=...		Socket file to use for connection
+  -t, --tmpdir=path	Path for temporary files
+  --sql-mode=option[,option[,option...]] where option can be one of:
+                        REAL_AS_FLOAT, PIPES_AS_CONCAT, ANSI_QUOTES,
+                        IGNORE_SPACE, SERIALIZE, ONLY_FULL_GROUP_BY.
+  --transaction-isolation
+		        Default transaction isolation level
+  --temp-pool           Use a pool of temporary files
+  -u, --user=user_name	Run mysqld daemon as user
+  -V, --version		output version information and exit
+  -W, --warnings        Log some not critical warnings to the log file
+
+NT and Win32 specific options:
+  --console		Don't remove the console window
+  --install		Install mysqld as a service (NT)
+  --remove		Remove mysqld from the service list (NT)
+  --standalone		Dummy option to start as a standalone program (NT)
+--use-symbolic-links	Enable symbolic link support
+
+  --bdb-home=  directory  Berkeley home direcory
+  --bdb-lock-detect=#	  Berkeley lock detect
+                          (DEFAULT, OLDEST, RANDOM or YOUNGEST, # sec)
+  --bdb-logdir=directory  Berkeley DB log file directory
+  --bdb-no-sync		  Don't synchronously flush logs
+  --bdb-no-recover	  Don't try to recover Berkeley DB tables on start
+  --bdb-shared-data	  Start Berkeley DB in multi-process mode
+  --bdb-tmpdir=directory  Berkeley DB tempfile name
+  --skip-bdb		  Don't use berkeley db (will save memory)
+
+  --innodb_data_home_dir=dir   The common part for Innodb table spaces
+  --innodb_data_file_path=dir  Path to individual files and their sizes
+  --innodb_flush_method=#  With which method to flush data
+  --innodb_flush_log_at_trx_commit[=#]
+			       Set to 0 if you don't want to flush logs
+  --innodb_log_arch_dir=dir    Where full logs should be archived
+  --innodb_log_archive[=#]     Set to 1 if you want to have logs archived
+  --innodb_log_group_home_dir=dir  Path to innodb log files.
+  --skip-innodb		       Don't use Innodb (will save memory)
+
+
+Default options are read from the following files in the given order:
+C:\WINZ\my.ini C:\my.cnf 
+The following groups are read: mysqld server
+The following options may be given as the first argument:
+--print-defaults	Print the program argument list and exit
+--no-defaults		Don't read default options from any options file
+--defaults-file=#	Only read default options from the given file #
+--defaults-extra-file=# Read this file after the global files are read
+
+To see what values a running MySQL server is using, type
+'mysqladmin variables' instead of 'mysqld --help'.
+The default values (after parsing the command line arguments) are:
+
+basedir:     E:\WORK\ROOT\USR\LOCAL\
+datadir:     E:\WORK\ROOT\USR\LOCAL\data\
+tmpdir:      C:\WINZ\TEMP\
+language:    E:\WORK\ROOT\USR\LOCAL\share\english\
+TCP port:    3306
+
+system locking is not in use
+
+Possible variables for option --set-variable (-O) are:
+back_log              current value: 50
+bdb_cache_size        current value: 8388572
+bdb_log_buffer_size   current value: 0
+bdb_max_lock          current value: 10000
+bdb_lock_max          current value: 10000
+binlog_cache_size     current value: 32768
+connect_timeout       current value: 5
+delayed_insert_timeout  current value: 300
+delayed_insert_limit  current value: 100
+delayed_queue_size    current value: 1000
+flush_time            current value: 1800
+innodb_mirrored_log_groups  current value: 1
+innodb_log_files_in_group  current value: 2
+innodb_log_file_size  current value: 5242880
+innodb_log_buffer_size  current value: 1048576
+innodb_buffer_pool_size  current value: 8388608
+innodb_additional_mem_pool_size  current value: 1048576
+innodb_file_io_threads  current value: 4
+innodb_lock_wait_timeout  current value: 50
+innodb_thread_concurrency  current value: 8
+innodb_force_recovery  current value: 0
+interactive_timeout   current value: 28800
+join_buffer_size      current value: 131072
+key_buffer_size       current value: 8388572
+long_query_time       current value: 10
+lower_case_table_names  current value: 1
+max_allowed_packet    current value: 1048576
+max_binlog_cache_size  current value: 4294967295
+max_binlog_size       current value: 1073741824
+max_connections       current value: 100
+max_connect_errors    current value: 10
+max_delayed_threads   current value: 20
+max_heap_table_size   current value: 16777216
+max_join_size         current value: 4294967295
+max_sort_length       current value: 1024
+max_tmp_tables        current value: 32
+max_user_connections  current value: 0
+max_write_lock_count  current value: 4294967295
+myisam_max_extra_sort_file_size  current value: 256
+myisam_max_sort_file_size  current value: 2047
+myisam_sort_buffer_size  current value: 8388608
+net_buffer_length     current value: 16384
+net_retry_count       current value: 10
+net_read_timeout      current value: 30
+net_write_timeout     current value: 60
+open_files_limit      current value: 0
+query_buffer_size     current value: 0
+record_buffer         current value: 131072
+record_rnd_buffer     current value: 0
+slave_net_timeout     current value: 3600
+slow_launch_time      current value: 2
+sort_buffer           current value: 2097116
+table_cache           current value: 64
+thread_concurrency    current value: 10
+thread_cache_size     current value: 0
+tmp_table_size        current value: 33554432
+thread_stack          current value: 65536
+wait_timeout          current value: 28800

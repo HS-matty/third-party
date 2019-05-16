@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<form name="form1" method="post" action="">
+  <table width="50%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr> 
+      <td> 
+        <div align="center"> 
+          <p>Заказ:</p>
+        </div>
+      </td>
+    </tr>
+    <tr> 
+      <td>Товар: 
+        <?echo $pin_name?>
+        , Стоимость: 
+        <?echo $pin_price?>
+      </td>
+    </tr>
+    <tr> 
+      <td>Webmoney ID 
+        <input type="text" name="wid">
+        <input type="hidden" name="order" value="<?echo $PinT_id?>">
+      </td>
+    </tr>
+    <tr>
+      <td>email:
+        <input type="text" name="email">
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="center"> 
+          <input type="submit" name="Submit" value="Submit">
+        </div>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<?xml version='1.0' standalone='yes'?>
+
+<grid id="admin_items">
+	<fields>
+		<field id="category_id" table="category">
+			<title>
+				<en>ID</en>
+			</title>
+
+		</field>	
+		<field id="short_description">
+			<title>
+				<en>Title</en>
+			</title>
+				<link>
+				<module>admin</module>
+				<params>
+					<param value="node" />
+						<param value="nodes" />
+				
+				</params>
+				
+				<urlparams>
+					<param title="node_id" data_field = "category_id" />
+				</urlparams>
+			</link>
+		</field>
+
+		
+	
+
+
+		
+		<field id="#edit" type="additional" >
+			<title>
+				<en>edit</en>
+			</title>
+			<link>
+				<module>admin</module>
+				<params>
+					<param value="node" />
+					<param value="node" />
+					
+				</params>
+				
+				<urlparams>
+					<param title="cid" data_field = "category_id" />
+				</urlparams>
+			</link>
+		</field>
+				
+		<field id="#delete" type="additional" >
+			<title>
+				<en>del</en>
+			</title>
+
+			<link>
+				<module>admin</module>
+				<params>
+					<param value="node" />
+					<param value="node" />
+					
+				</params>
+				
+				<urlparams>
+					<param title="cid" data_field = "category_id" />
+						<param title="delete" value="1" />
+				</urlparams>
+			</link>
+		</field>
+		
+
+	</fields>
+	
+	
+	
+</grid>

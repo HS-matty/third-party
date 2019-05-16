@@ -1,0 +1,2368 @@
+[ Aug 11 2004 22:02:25 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 11 2004 22:02:25 ] [127.0.0.13] parser error @ design/base/override/templates/full/flash.tpl:16[12]
+Extra characters found in expression, they will be ignored.
+¦attribute(show)' ($node.object)
+[ Aug 11 2004 22:28:07 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 11 2004 22:28:07 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:22[0]
+Unterminated tag "section" does not match tag "let"
+[ Aug 11 2004 22:28:35 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 11 2004 22:28:35 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:22[0]
+Unterminated tag "section" does not match tag "let"
+[ Aug 11 2004 22:50:54 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 11 2004 22:50:54 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:16[0]
+Unterminated tag "node_view_attribute" does not match tag "section"
+[ Aug 11 2004 22:50:54 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:17[0]
+Unterminated tag "section" does not match tag "let"
+[ Aug 12 2004 20:17:26 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 12 2004 20:17:26 ] [127.0.0.13] No such function 'parent_node_id' in module 'content'
+[ Aug 12 2004 20:17:26 ] [127.0.0.13] Unknown template variable 'node_id' in namespace ''
+[ Aug 12 2004 20:17:26 ] [127.0.0.13] No such function 'parent_node_id' in module 'content'
+[ Aug 12 2004 20:17:44 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 12 2004 20:17:44 ] [127.0.0.13] No such function 'parent_node_id' in module 'content'
+[ Aug 12 2004 20:17:44 ] [127.0.0.13] No such function 'parent_node_id' in module 'content'
+[ Aug 12 2004 20:18:24 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 12 2004 20:18:24 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:5[8]
+Extra characters found, should have been a whitespace or the end of the expression
+Characters: 'fetch('content',tree,hash('parent_node_id',2)'
+[ Aug 13 2004 00:04:12 ] [127.0.0.13] Timing Point: Module start 'content'
+[ Aug 13 2004 00:04:12 ] [127.0.0.13] Custom match file: path 'welcomearticle.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 13 2004 00:04:12 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(44) "design/standard/templates/welcomearticle.tpl"
+  [1]=>
+  string(53) "design/standard/override/templates/welcomearticle.tpl"
+  [2]=>
+  string(49) "design/base/override/templates/welcomearticle.tpl"
+  [3]=>
+  string(40) "design/base/templates/welcomearticle.tpl"
+  [4]=>
+  string(49) "design/acro/override/templates/welcomearticle.tpl"
+  [5]=>
+  string(40) "design/acro/templates/welcomearticle.tpl"
+}
+
+[ Aug 13 2004 00:39:18 ] [127.0.0.13] Undefined module: test2 short title
+[ Aug 15 2004 16:58:28 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 16:58:28 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 16:58:34 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 16:58:34 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 16:58:50 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 16:58:50 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 16:59:00 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 16:59:00 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 16:59:51 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 16:59:51 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 17:00:18 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:00:18 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 17:00:44 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:00:44 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 17:00:45 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:00:45 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 17:00:46 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:00:46 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 17:00:47 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:00:47 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 17:00:48 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:00:48 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 17:01:18 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:01:18 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 17:01:30 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:01:30 ] [127.0.0.13] Failed executing compiled template 'var/plain/cache/template/compiled/pagelayout-09b49ac5e20a6760d71649bce0968e78.php'
+[ Aug 15 2004 17:03:55 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:03:55 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:6[12]
+Extra characters found, should have been a whitespace or the end of the expression
+Characters: 'fetch(content,list,hash(parent_node_id,$lp:item.node_id)
+			
+			{/let'
+[ Aug 15 2004 17:03:55 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:9[1]
+Unterminated tag "let" does not match tag "section"
+[ Aug 15 2004 17:03:55 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:10[0]
+Unterminated tag "section" does not match tag "let"
+[ Aug 15 2004 17:04:07 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:04:07 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:8[3]
+Invalid parameter characters in function 'let': '{/let'
+[ Aug 15 2004 17:04:07 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:9[1]
+Unterminated tag "let" does not match tag "section"
+[ Aug 15 2004 17:04:07 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:10[0]
+Unterminated tag "section" does not match tag "let"
+[ Aug 15 2004 17:14:28 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:14:28 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl\[23]
+No variable name found, this is most likely a bug in the template parser.
+[ Aug 15 2004 17:14:28 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:10[1]
+Invalid parameter characters in function 'section': '{/section'
+[ Aug 15 2004 17:14:28 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:11[0]
+Unterminated tag "section" does not match tag "let"
+[ Aug 15 2004 17:49:12 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:49:12 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:39[31]
+Invalid parameter characters in function '': '//reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; '
+[ Aug 15 2004 17:49:12 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:47[27]
+Invalid parameter characters in function '': '//v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);'
+[ Aug 15 2004 17:49:12 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:55[30]
+Invalid parameter characters in function '': '//v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; '
+[ Aug 15 2004 17:49:48 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:49:48 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:39[31]
+Invalid parameter characters in function '': '//reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; '
+[ Aug 15 2004 17:49:48 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:47[27]
+Invalid parameter characters in function '': '//v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);'
+[ Aug 15 2004 17:49:48 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:55[30]
+Invalid parameter characters in function '': '//v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; '
+[ Aug 15 2004 17:50:46 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:50:46 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:9[31]
+Invalid parameter characters in function '': '//reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; '
+[ Aug 15 2004 17:50:46 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:17[27]
+Invalid parameter characters in function '': '//v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);'
+[ Aug 15 2004 17:50:46 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:25[30]
+Invalid parameter characters in function '': '//v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; '
+[ Aug 15 2004 17:51:55 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 17:51:55 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:9[31]
+Invalid parameter characters in function '': '//reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; '
+[ Aug 15 2004 17:51:55 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:17[27]
+Invalid parameter characters in function '': '//v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);'
+[ Aug 15 2004 17:51:55 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:25[30]
+Invalid parameter characters in function '': '//v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; '
+[ Aug 15 2004 19:46:20 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 19:46:20 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:28[51]
+Extra characters found in expression, they will be ignored.
+>
+        <param name=quality value=high>
+        <embed src="images/main.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="355" height="251">
+        </embed> 
+      </object></td>
+    <td height="164" colspan="2"><img src={"index_06.gif"|ezimage' ("main.swf"|ezimages)
+[ Aug 15 2004 19:47:58 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 19:47:58 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:28[58]
+Extra characters found in expression, they will be ignored.
+>
+        <param name=quality value=high>
+        <embed src="images/main.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="355" height="251">
+        </embed> 
+      </object></td>
+    <td height="164" colspan="2"><img src={"index_06.gif"|ezimage' ("images/main.swf"|ezdesign)
+[ Aug 15 2004 20:06:26 ] [127.0.0.13] Timing Point: Module end 'content'
+[ Aug 15 2004 20:06:26 ] [127.0.0.13] parser error @ design/acro/templates/pagelayout.tpl:129[72]
+Extra characters found, should have been a whitespace or the end of the expression
+Characters: '{"2_08.gif"|ezimage'
+[ Aug 17 2004 00:10:22 ] [127.0.0.13] Undefined module: news
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] Timing Point: Module start 'content'
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:27 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:28 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:28 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:28 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:28 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:28 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:28 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:28 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:28 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:29 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:29 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:29 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:29 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:29 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:29 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:29 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:29 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:31 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:32 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:32 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:32 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:32 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:32 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:32 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:32 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:32 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:34 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:34 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:34 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:34 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:35 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:35 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:35 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:35 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:35 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:35 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:35 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:35 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:36 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:36 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:36 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:36 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:36 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:36 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:36 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:36 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:37 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:37 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:37 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:37 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:38 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:38 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:38 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:38 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:38 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:38 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:38 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:38 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:39 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:39 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:39 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:39 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:39 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:39 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:39 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:39 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:40 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:41 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:42 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:43 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:43 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:43 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:43 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:43 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:43 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:43 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:43 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:44 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:44 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:44 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:44 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:44 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:44 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:44 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:44 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:45 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:48 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:49 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:50 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:50 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:50 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:50 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:50 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:50 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:50 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:50 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:51 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:52 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:53 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:54 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:54 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:54 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:54 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:54 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:54 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:54 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:54 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:55 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:56 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:56 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:56 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:56 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:56 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:56 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:56 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:56 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:57 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:57 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:57 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:57 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:57 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:57 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:57 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:57 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:58 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:58 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:26:58 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:26:58 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:33:12 ] [127.0.0.13] Timing Point: Module start 'content'
+[ Aug 17 2004 00:33:12 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:33:12 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:33:12 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:33:12 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+
+[ Aug 17 2004 00:36:49 ] [127.0.0.13] Timing Point: Module start 'content'
+[ Aug 17 2004 00:36:49 ] [127.0.0.13] Custom match file: path 'node/view/news_full_view.tpl' not found in any resource. Check template settings in settings/override.ini
+[ Aug 17 2004 00:36:49 ] [127.0.0.13] array(6) {
+  [0]=>
+  string(54) "design/standard/templates/node/view/news_full_view.tpl"
+  [1]=>
+  string(63) "design/standard/override/templates/node/view/news_full_view.tpl"
+  [2]=>
+  string(59) "design/base/override/templates/node/view/news_full_view.tpl"
+  [3]=>
+  string(50) "design/base/templates/node/view/news_full_view.tpl"
+  [4]=>
+  string(59) "design/acro/override/templates/node/view/news_full_view.tpl"
+  [5]=>
+  string(50) "design/acro/templates/node/view/news_full_view.tpl"
+}
+

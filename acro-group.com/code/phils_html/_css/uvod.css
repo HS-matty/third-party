@@ -1,0 +1,143 @@
+  	h1 {
+  		font-family: Tahoma CE, Verdana CE, Arial CE, sans-serif;
+  		font-size: 17px;
+  		color: #336699;
+  		font-weight: bold;
+  		margin-top: 20px;
+  		margin-bottom: 0px;
+  		margin-left: 0px;
+  		margin-right: 0px;
+  		padding: 0px;
+  		position: relative;
+  		top: 6px;
+  	}
+
+  	.text {
+  		font-family: Tahoma CE, Verdana CE, Arial CE, sans-serif;
+  		font-size: 10pt;
+  		font-weight: normal;
+  		color: #003366;
+  		padding: 5px;
+  		margin: 0px;
+  		border: 0px;
+  		cursor: default
+  	}
+
+  	.intro_head {
+  		font-family: Tahoma CE, Verdana CE, Arial CE, sans-serif;
+  		font-size: 13pt;
+  		font-weight: bold;
+  		color: #666699;
+  		padding: 5px;
+  		margin: 0px;
+  		border: 0px;
+  		cursor: default
+  	}
+
+  	.intro_language {
+  		font-family: Tahoma CE, Verdana CE, Arial CE, sans-serif;
+  		font-size: 10pt;
+  		font-weight: normal;
+  		color: #666699;
+  		padding: 5px;
+  		margin: 0px;
+  		border: 0px;
+  		cursor: default
+  	}
+
+  	.contact_nadpis {
+  		font-family: Tahoma CE, Verdana CE, Arial CE, sans-serif;
+  		font-size: 9pt;
+  		font-weight: bold;
+  		color: #666699;
+  		padding: 5px;
+  		margin: 0px;
+  		border: 0px;
+  		cursor: default
+  	}
+
+  	.contact_text {
+  		font-family: Tahoma CE, Verdana CE, Arial CE, sans-serif;
+  		font-size: 9pt;
+  		font-weight: normal;
+  		color: #666699;
+  		padding: 5px;
+  		margin: 0px;
+  		border: 0px;
+  		cursor: default
+  	}
+
+  	.products_toppage {
+  		font-family: Tahoma CE, Verdana CE, Arial CE, sans-serif;
+  		font-size: 10pt;
+  		font-weight: bold;
+  		color: #666699;
+  		padding: 0px;
+  		margin: 0px;
+  		cursor: default
+  	}
+
+  	.mail {
+  		font-family: Tahoma CE, Verdana CE, Arial CE, sans-serif;
+  		font-size: 12pt;
+  		font-weight: bold;
+  		color: #990033;
+  		text-align: center;
+  		cursor: default
+  	}
+
+  	form {
+  		margin: 0px;
+  		padding: 0px;
+  		cursor: default
+  	}
+
+  	.contact_toppage {
+  		margin: 0px;
+  		padding: 0px;
+  		text-align: left;
+  		vertical-align: bottom;
+  		cursor: default
+  	}
+
+  	.galery {
+  		cursor: hand;
+  		font-family: Tahoma CE, Verdana CE, Arial CE, sans-serif;
+  		font-size: 10px;
+  		font-weight: bold;
+  		font-color: #990033;
+  		line-height: 10px;
+  		margin-top: 0px;
+  		margin-bottom: 10px;
+  		margin-left: 0px;
+  		margin-right: 0px
+  	}
+
+  	textarea, input.pol {
+  		border: 1px solid #336699;
+  		background: #FFFFFF;
+  		font-family: Tahoma CE, Verdana CE, Arial CE, sans-serif;
+  		font-size: 13px;
+  		color: #336699;
+  		width: 200px;
+  		overflow: auto;
+  	}
+
+  	.cer {
+  		border: 1px solid #000000;
+  		padding: 0px;
+  		margin: 0px;
+  	}
+
+  	.bggr {
+  		background-image : url('../_images/left_cara.gif');
+  		background-position : left;
+  		background-repeat : repeat-y;
+  	}
+  	
+  	a:link.link, a:visited.link, a:active.link, a:hover.link {
+      color: #000099;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+    }

@@ -1,0 +1,18 @@
+.nav {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #003399; text-decoration: none}
+a:hover {  text-decoration: underline}
+.txt1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; text-decoration: none; color: #000066; padding-top: 0px; margin-right: 0px; font-weight: lighter; word-spacing: 2pt; border-style: none; letter-spacing: 0px; text-align: justify}
+.nav_smaller { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #003399; text-decoration: none }
+a:visited {  }
+.c { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #666666; text-decoration: none }
+.redbutton
+{ BORDER-BOTTOM:		black 1px solid;	
+  BORDER-LEFT:		white 1px solid;
+  BORDER-RIGHT:		black 1px solid;	
+  BORDER-TOP:		white 1px solid;
+  margin:			1px;
+  font-family:		Verdana, Arial;
+  font-size:		11px;
+  background-color:	#E6CDCD;
+  color:			black;
+}
+.txt2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; text-decoration: none; color: #EAEAEA}

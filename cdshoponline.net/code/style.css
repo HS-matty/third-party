@@ -1,0 +1,86 @@
+p, td, font
+{ font-family:		Verdana, Arial;
+  font-size:		12px;
+}
+font.average
+{ font-family:		Verdana, Arial;
+  font-size:		11px;
+}
+font.cat
+{ font-family:		Verdana, Arial;
+  font-size:		16px;
+}
+font.big
+{ font-family:		Verdana, Arial;
+  font-size:		24px;
+}
+h1
+{ font-family:	Verdana, Arial;
+  font-size:	18px;
+  color:	black;
+}
+a
+{ text-decoration:	none;
+  font-family:		Verdana, Arial;
+
+  font-size:		12px;
+  color:		navy;
+}
+a.small
+{ text-decoration:	none;
+  font-family:		Verdana, Arial;
+  font-size:		11px;
+  font-weight:		bold;
+  color:		navy;
+}
+a:hover
+{ color:		red;
+  text-decoration:	none;
+}
+a.standard
+{ font-family:		Verdana, Arial;
+  font-size:		12px;
+  font-weight:		normal;
+}
+a.cat
+{ font-family:		Verdana, Arial;
+  font-size:		16px;
+  font-weight:		bold;
+}
+.bluebutton
+{ BORDER-BOTTOM:		black 0px solid;
+  BORDER-LEFT:		white 0px solid;
+  BORDER-RIGHT:		black 0px solid;
+  BORDER-TOP:		white 0px solid;
+  margin:			0px;
+  font-family:		Verdana, Arial;
+  font-size:		12px;
+  font-weight:		bold;
+  background-color:	#E1E6FC;
+  color:			black;
+}
+.redbutton
+{ BORDER-BOTTOM:		black 1px solid;	
+  BORDER-LEFT:		white 1px solid;
+  BORDER-RIGHT:		black 1px solid;	
+  BORDER-TOP:		white 1px solid;
+  margin:			1px;
+  font-family:		Verdana, Arial;
+  font-size:		12px;
+  font-weight:		bold;
+  background-color:	#E6CDCD;
+  color:			black;
+}
+.ss
+{ BORDER-BOTTOM:		black 1px solid;	
+  BORDER-LEFT:		black 1px solid;
+  BORDER-RIGHT:		black 1px solid;	
+  BORDER-TOP:		black 1px solid;
+  margin:			1px;
+  font-family:		Verdana, Arial;
+  font-size:		12px;
+  font-weight:		bold;
+  color:			black;
+}
+.menu {  font-family: Georgia, "Times New Roman", Times, serif; font-size: 14px; font-style: normal; line-height: normal; color: #FFFFFF; text-decoration: none}
+.mleft {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; line-height: normal; text-decoration: underline; color: #3973AC}

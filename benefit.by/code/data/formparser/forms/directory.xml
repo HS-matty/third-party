@@ -1,0 +1,808 @@
+<?xml version='1.0' standalone='yes'?>
+<forms class="directory">
+
+<form id="search">
+	<title>
+		<en>Search</en>
+	</title>
+	
+	<fields>
+		<field>
+			<id>search</id>
+			<type>string</type>
+			<title>
+				<en>Search string</en>
+				
+			</title>
+					
+		</field>
+	</fields>
+	
+	
+</form>
+
+<form id="contact_form">
+	<title>
+		<en>Contact Form</en>
+	</title>
+	
+	<fields>
+		<field>
+			<id>name</id>
+			<type>string</type>
+			<title>
+				<en>Your name</en>
+				
+			</title>
+			<length>1-255</length>
+		</field>
+		<field class="email"> 
+			
+			<id>email</id>
+			<type>string</type>
+			<title>
+				<en>Email</en>
+				
+			</title>
+			
+		</field>
+		<field> 
+			<id>body</id>
+			<type>string</type>
+			<title>
+				<en>Message</en>
+			</title>
+			<view>textarea</view>
+		</field>
+		<field > 
+			<id>captcha</id>
+			<type>captcha</type>
+			<title>
+				<en>Code</en>
+			</title>
+			<length>1-2048</length>
+			
+		</field>
+	</fields>
+	
+	
+</form>
+
+
+	<form id="category" show_xmlfields = "false">
+
+	<title>
+		<en>Category</en>
+	</title>
+	
+
+	<fields>	
+		<field primary_key="1">
+			<id>cid</id>
+			<type>int</type>
+			<title>
+				<en>CategoryId</en>
+				<ru>CategoryId</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		
+
+		<field>
+			<id>title</id>
+			<type>string</type>
+			<title>
+				<en>Category title</en>
+				<ru>Наименоване категории</ru>
+			</title>
+			<length>3-100</length>	
+			<expr></expr>
+		</field>
+		
+		<field>
+			<id>type</id>
+			<type>string</type>
+			<title>
+				<en>Type</en>
+				
+			</title>
+			<enum>
+				<values>
+					<value>subject</value>
+					<value>source</value>
+				</values>
+			</enum>
+		</field>
+		<field>
+			<id>description</id>
+			<type>string</type>
+			<title>
+				<en>Description</en>
+				<ru>Наименоване категории</ru>
+			</title>
+			<view>editor</view>
+		</field>
+		
+		
+
+
+
+	</fields>	
+
+</form>
+
+
+	<form id="location">
+
+	<title>
+		<en>Location</en>
+	</title>
+	
+
+	<fields>	
+		<field primary_key="1">
+			<id>lid</id>
+			<type>int</type>
+			<title>
+				<en>Location Id</en>
+				<ru>Location Id</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		
+		<field>
+			<id>loc_title</id>
+			<type>string</type>
+			<title>
+				<en>Location title</en>
+				<ru>Наименоване категории</ru>
+			</title>
+			<length>3-100</length>	
+			<expr></expr>
+		</field>
+
+
+	</fields>	
+
+</form>
+
+
+
+
+<form id="item">
+	<title>
+		<en>Directory Item</en>
+	</title>
+
+	<fields>	
+		<field primary_key="1">
+			<id>listing_id</id>
+			<type>int</type>
+			<title>
+				<en>DirectoryId</en>
+				<ru>DirectoryId</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		<field>
+			<id>email</id>
+			<type>string</type>
+			<title>
+				<en>Email</en>
+				
+			</title>
+		</field>
+		<field>
+			<id>short_description</id>
+			<type>string</type>
+			<title>
+				<en>Short description</en>
+				
+			</title>
+		</field>
+		
+		<field not_required="1">
+			<id>long_description</id>
+			<type>string</type>
+			<title>
+				<en>Long description</en>
+			</title>
+			
+		</field>
+
+	
+		
+		<field not_required="1" class="password2"> 
+			<id>password1</id>
+			<type>string</type>
+			<title>
+				<en>Is active</en>
+			</title>
+		
+			
+		</field>
+		
+		<field not_required="1" class="password2"> 
+			<id>password_retyped</id>
+			<type>string</type>
+			<title>
+				<en>Retype Password</en>
+			</title>
+		
+			
+		</field>
+		
+
+		<field>
+			<id>address</id>
+			<type>string</type>
+			<title>
+				<en>Address</en>
+			
+			</title>
+			<length>3-100</length>	
+			<expr></expr>
+		</field>
+		<field>
+			<id>zip</id>
+			<type>string</type>
+			<title>
+				<en>Postal code</en>
+			</title>
+			
+			<expr></expr>
+		</field>
+
+
+
+
+		
+		<field>
+			<id>city</id>
+			<type>string</type>
+			<title>
+				<en>City</en>
+			</title>					
+		</field>
+		<field >
+			<id>state</id>
+			<type>string</type>
+			<title>
+				<en>State</en>
+			</title>					
+		</field>
+		<field not_required="1"> >
+			<id>tags</id>
+			<type>string</type>
+			<title>
+				<en>Tags</en>
+			</title>					
+		</field>
+		<field >
+			<id>price</id>
+			<type>float</type>
+			<title>
+				<en>Price</en>
+			</title>					
+		</field>
+		
+		<field>
+				<id>bluser_id</id>
+				<type>list</type>
+				<title>
+					<en>Owner</en>
+				</title>
+		
+			<list  not_null="1">
+				<key_title>bluser_id</key_title>
+				<value_title>last_name</value_title>
+				
+			</list>	
+			
+		</field>
+
+		<field >
+			<id>category_id</id>
+			<view_value_id>short_description</view_value_id>
+			<type>int</type>
+			<title>
+				<en>Category</en>
+			</title>
+			<datasource type="popup" >
+				<link includeObligatoryParams="0">
+					<module>directory</module>
+					<params>
+						<param value="browse_categories" />
+					</params>
+				</link>
+			</datasource>
+			<length>1-a</length>	
+		</field>
+		
+				<field id="share_email" not_required="1">
+			<title>
+				<en>Share email</en>
+			</title>
+			
+		<type>bool</type>
+		<view>checkbox</view>
+		</field>
+		
+		<field id="share_phone" not_required="1">
+			<title>
+				<en>Share phone</en>
+			</title>
+			
+		<type>bool</type>
+
+		</field>
+		
+		<field id="captcha">
+	<type>captcha</type>
+		<title><en>Code</en></title>
+	</field>
+	
+
+	</fields>	
+
+</form>
+
+
+<form id="directory_item_banners">
+<fields>
+		<field primary_key="1">
+			<id>ditem_id</id>
+			<type>int</type>
+			<title>
+				<en>DirectoryId</en>
+				<ru>DirectoryId</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		<field>
+			<id>item_logo</id>
+			<type>file</type>
+			<file>
+				<filetype>image</filetype>
+				<size>1-8192</size>
+				<path>/images/items/</path>
+			</file>
+			<title>
+				<en>Logo</en>
+				<ru>Logo</ru>
+			</title>
+		</field>
+		<field>
+			<id>banner1</id>
+			<type>file</type>
+			<file>
+				<filetype>image</filetype>
+				<size>1-8192</size>
+				<path>/images/items/</path>
+			</file>
+			<title>
+				<en>Top Banner</en>
+				<ru>Top Banner</ru>
+			</title>
+		</field>
+		<field>
+			<id>banner2</id>
+			<type>file</type>
+			<file>
+				<filetype>image</filetype>
+				<size>1-8192</size>
+				<path>/images/items/</path>
+			</file>
+			<title>
+				<en>Side Banner</en>
+				<ru>Side Banner</ru>
+			</title>
+		</field>
+</fields>
+</form>
+
+<form id="user">
+
+	<title>
+		<en>User</en>
+	</title>
+	
+	<fields>
+		<field primary_key="1">
+			<id>duser_id</id>
+			<type>int</type>
+			<title>
+				<en>User Id</en>
+				<ru>User Id</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		
+		
+	<field>
+			<id>name</id>
+			<type>string</type>
+			<title>
+				<en>User name</en>
+				<ru>Имя пользователя</ru>
+			</title>
+			<length>3-100</length>	
+		</field>
+		
+		<field>
+			<id>last_name</id>
+			<type>string</type>
+			<title>
+				<en>User lastname</en>
+				<ru>Фамилия пользователя</ru>
+			</title>
+			<length>3-100</length>	
+		</field>
+		
+		<field class="email">
+			<id>email</id>
+			<type>string</type>
+			<title>
+				<en>Email</en>
+				<ru>Email</ru>
+			</title>
+			<length>3-100</length>	
+		</field>
+		
+		<field>
+			<id>login</id>
+			<type>string</type>
+			<title>
+				<en>Login</en>
+				<ru>Login</ru>
+			</title>
+			<length>3-100</length>	
+		</field>
+	<!--	<field class="password">
+			<id>password</id>
+			<type>string</type>
+			<title>
+				<en>Password</en>
+				
+			</title>
+		
+		</field>-->
+				
+
+	<field>
+			<id>items_limit</id>
+			<type>int</type>
+			<title>
+				<en>Items Limit</en>
+				<ru>Лимит записей</ru>
+			</title>
+			<length>0-a</length>	
+		</field>
+
+		
+		
+		
+	</fields>	
+	
+</form>
+
+<form id="membership">
+
+	<title>
+		<en>Membership</en>
+	</title>
+	
+	<fields>
+		<field primary_key="1">
+			<id>mid</id>
+			<type>int</type>
+			<title>
+				<en>ID</en>
+				<ru>ID</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		
+		
+
+		
+		<field>
+			<id>flag</id>
+			<type>string</type>
+			<title>
+				<en>Flag</en>
+				
+			</title>
+			<length>1-3</length>	
+		</field>
+		
+		<field>
+			<id>name</id>
+			<type>string</type>
+			<title>
+				<en>Name</en>
+				<ru>Name</ru>
+			</title>
+			<length>3-100</length>	
+		</field>
+		
+		<field>
+			<id>is_enabled</id>
+			<type>bool</type>
+			<title>
+				<en>Is enabled?</en>
+			</title>
+			
+		</field>
+		
+		<field>
+			<id>price</id>
+			<type>float</type>
+			<title>
+				<en>Price</en>
+			</title>
+			<length>0-a</length>	
+		</field>
+		<field>
+			<id>period</id>
+			<type>string</type>
+			<title>
+				<en>Billing period</en>
+			</title>
+			<enum>
+				<values>
+					<value>day</value>
+					<value>month</value>
+					<value>year</value>
+				</values>
+			</enum>
+			
+		</field>
+		
+		<field>
+			<id>expiration</id>
+			<type>int</type>
+			<title>
+				<en>Number of periods</en>
+			</title>
+			<length>0-a</length>	
+		</field>	
+		
+		<field>
+			<id>description</id>
+			<type>bool</type>
+			<title>
+				<en>description</en>
+			</title>
+		</field>
+		<field>
+			<id>address</id>
+			<type>bool</type>
+			<title>
+				<en>Address</en>
+			</title>
+		</field>
+		<field>
+			<id>zip</id>
+			<type>bool</type>
+			<title>
+				<en>Zip</en>
+			</title>
+		</field>
+		<field>
+			<id>phone_number</id>
+			<type>bool</type>
+			<title>
+				<en>Phone</en>
+			</title>
+		</field>
+		<field>
+			<id>fax</id>
+			<type>bool</type>
+			<title>
+				<en>Fax</en>
+			</title>
+		</field>
+		<field>
+			<id>mobile</id>
+			<type>bool</type>
+			<title>
+				<en>Mobile</en>
+			</title>
+		</field>
+		<field>
+			<id>im</id>
+			<type>bool</type>
+			<title>
+				<en>IM</en>
+			</title>
+		</field>
+		<field>
+			<id>email</id>
+			<type>bool</type>
+			<title>
+				<en>Email</en>
+			</title>
+		</field>
+		<field>
+			<id>www</id>
+			<type>bool</type>
+			<title>
+				<en>WWW</en>
+			</title>
+		</field>
+		
+		<field>
+			<id>map</id>
+			<type>bool</type>
+			<title>
+				<en>Map</en>
+			</title>
+		</field>
+		
+		<field>
+			<id>logo</id>
+			<type>bool</type>
+			<title>
+				<en>Logo</en>
+			</title>
+		</field>
+		
+		
+		<field>
+			<id>banner</id>
+			<type>bool</type>
+			<title>
+				<en>Top Banner</en>
+			</title>
+		</field>
+		<field>
+			<id>banner2</id>
+			<type>bool</type>
+			<title>
+				<en>Side Banner</en>
+			</title>
+		</field>
+		
+		<field>
+			<id>products</id>
+			<type>bool</type>
+			<title>
+				<en>Products</en>
+			</title>
+		</field>
+
+		<field>
+			<id>products_images</id>
+			<type>bool</type>
+			<title>
+				<en>Products Images </en>
+			</title>
+		</field>
+
+		<field>
+			<id>products_thumbs</id>
+			<type>bool</type>
+			<title>
+				<en>Products thumbs</en>
+			</title>
+		</field>
+		
+		<field>
+			<id>products_set_products</id>
+			<type>int</type>
+			<title>
+				<en># of Products</en>
+			</title>
+			
+			<length>0-a</length>	
+		</field>
+		
+
+
+		<field>
+			<id>gallery</id>
+			<type>bool</type>
+			<title>
+				<en>Image gallery</en>
+			</title>
+		</field>
+		<field>
+			<id>set_gallery_images</id>
+			<type>int</type>
+			<title>
+				<en># of Images</en>
+			</title>
+			
+			<length>0-a</length>	
+		</field>
+		
+		<field>
+			<id>documents</id>
+			<type>bool</type>
+			<title>
+				<en>Document Gallery</en>
+			</title>
+		</field>
+		<field>
+			<id>set_documents</id>
+			<type>int</type>
+			<title>
+				<en># of Documents</en>
+			</title>
+			
+		<length>0-a</length>	
+		</field>
+
+
+		<field>
+			<id>description_size</id>
+			<type>string</type>
+			<title>
+				<en>Description Size</en>
+	
+			</title>
+			<length>0-a</length>	
+		</field>
+		<field>
+			<id>max_categories</id>
+			<type>int</type>
+			<title>
+				<en>Max Categories Selectable</en>
+	
+			</title>
+			<length>0-a</length>	
+		</field>		
+		
+
+
+
+		
+		
+		
+	</fields>	
+	
+</form>
+
+<form id="settings" width="90%">
+
+	<title>
+		<en>Settings</en>
+	</title>
+	
+	<fields>
+		<field primary_key="1">
+			<id>set_id</id>
+			<type>int</type>
+			<title>
+				<en>ID</en>
+				<ru>ID</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		
+		
+
+		
+		<field access="read">
+			<id>set_description</id>
+			<type>string</type>
+			<title>
+				<en>Setting</en>				
+			</title>
+		</field>
+		<field>
+			<id>set_value</id>
+			<type>string</type>
+			<title>
+				<en>Value</en>				
+			</title>
+			<length>1-255</length>
+		</field>
+		
+	</fields>
+</form>
+
+
+</forms>
+	

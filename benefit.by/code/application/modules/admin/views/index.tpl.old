@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>NextFramework / {$Obj->name->ru}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+{include file=$Page->getIndexTmpl('css.tpl')}
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><p>&nbsp;</p>
+
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td id="menu"><a href='/admin/backend/index/{$Lang}/?sid={$Sid}' class='menu' >Главная страница</a></td>
+
+    {foreach from=$Modules item=m}
+    
+    	<td id="menu"><a href='{$m.url}' class='menu' >{$m.name}</a></td>
+    
+    {/foreach}
+
+    
+<td id='menu'><a href='/admin/backend/index/{$Lang}/?sid=<%echo Sid%>&action=logout' class='menu' >Выйти</a></td>
+
+		<td id='menu2'>&nbsp;</td>
+  </tr>
+</table>
+
+{if $Objects}
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+  	{foreach from=$Objects item=obj}
+    <td id="menu3"> <a href="{$obj.url}" >{$obj.name}</a></td>
+	
+	{/foreach}
+	<td >&nbsp;</td>
+  </tr>
+</table>
+{/if}
+
+{if $Errors}
+<br>
+<h4 ><font color="#FF0000">Ошибки!</font></h4>
+<ul>
+{foreach from=$Errors item=error}
+	
+	
+	<li><b>{$error.FieldTitle}</b>,  {$error.Msg}{if $error.Req}, требования: {$error.Req}{/if}
+	
+{/foreach}
+</ul>
+{/if}
+{if $Messages}
+<br>
+<h4 ><font color="#FF0000">Сообщения!</font></h4>
+<ul>
+{foreach from=$Messages item=msg}
+	
+	
+	<li>{$msg}</li>
+	
+{/foreach}
+</ul>
+{/if}
+
+
+<table width="95%" height="300px" style="margin-left: 40px; margin-top: 40px;" border=0 ><tr><td valign=top >
+{if  $Path}
+
+
+	{include file="$Path"}
+
+	{else}
+	No page!
+ 
+{/if}
+</td></tr></table>
+
+<br><br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="10" id="menu2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td ><div align="center" class="copy"> 
+
+         
+      </div></td>
+  </tr>
+</table>
+
+{if $debug}
+	<h3>Common debug</h3>
+	
+		<ol>
+		{foreach from=$DebugLog item=log}
+			<li>{$log}</li>
+		{/foreach}
+		</ol>
+	<hr>
+	<h3>SQL debug</h3>
+	
+		<ol>
+		{foreach from=$DebugSql item=sql}
+			<li>{$sql}</li>
+		{/foreach}
+		</ol>
+		
+		<font color='red'>Generated {$generated} sec</font>
+	
+{/if}
+

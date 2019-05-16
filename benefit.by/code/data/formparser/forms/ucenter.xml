@@ -1,0 +1,134 @@
+<?xml version='1.0' standalone='yes'?>
+<forms>
+
+
+	<form id="password_recover">
+	<fields>
+
+			<field class="email">
+				<id>email</id>
+				<type>string</type>
+				<title>
+					<en>Email</en>
+				</title>
+			<length>4-40</length>
+			</field>
+		<field> 
+			<id>captcha</id>
+			<type>captcha</type>
+			<title>
+				<en>Code</en>
+			</title>
+			<length>1-2048</length>
+			
+		</field>
+	</fields>
+	
+		
+	
+	</form>	
+<form id="frontend_register">
+	<fields>
+		<field primary_key="1">
+				<id>bluser_id</id>
+				<type>int</type>
+				<title>
+					<en>ID</en>
+				</title>
+			<length>1-a</length>	
+			
+		</field>
+		<!-- field  not_required="1">
+				<id>company</id>
+				<type>string</type>
+				<title>
+					<en>Компания</en>
+				</title>
+			<length>2-30</length>	
+			
+		</field -->
+		<field  not_required="1">
+				<id>first_name</id>
+				<type>string</type>
+				<title>
+					<en>First Name</en>
+					<ru>Имя</ru>
+				</title>
+			<length>2-30</length>	
+			
+		</field>
+		<!-- field  not_required="1">
+				<id>last_name</id>
+				<type>string</type>
+				<title>
+					<en>Last Name</en>
+					<ru>Фамилия</ru>
+				</title>
+			<length>2-30</length>	
+			
+		</field-->
+		<field not_required="1">
+				<id>phone_number</id>
+				<type>string</type>
+				<title>
+					<en>Phone</en>
+					<ru>Телефон</ru>
+				</title>
+			<length>4-30</length>	
+			
+		</field>
+		<field class="email">
+				<id>email</id>
+				<type>string</type>
+				<title>
+					<en>Email</en>
+				
+				</title>
+			<length>3-64</length>	
+			
+		</field>
+		<field>
+				<id>login</id>
+				<type>string</type>
+				<title>
+					<en>Login</en>
+				</title>
+			<length>3-64</length>	
+			
+		</field>
+		<field class="password2">
+				<id>password</id>
+				<type>string</type>
+				<title>
+					<en>Password</en>
+				</title>
+			<length>5-64</length>	
+			
+		</field>
+		<field id="confirm_password" class="password2">
+				
+				<type>string</type>
+				<title>
+					<en>Password</en>
+				</title>
+			<length>5-64</length>	
+			
+		</field>
+		<!-- field > 
+			<id>captcha</id>
+			<type>captcha</type>
+			<title>
+				<en>Code</en>
+			</title>
+			<length>1-2048</length>
+			
+		</field-->
+		
+	</fields>
+</form>
+
+
+
+
+</forms>
+	

@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>WMExample (PHP) - вход в защищенную зону</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style type="text/css">
+<!--
+p
+{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 9pt; 
+font-style: normal; 
+color: #000000
+}
+
+a
+{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 9pt; 
+text-decoration: none; 
+color: #3371AF
+}
+
+a:hover	
+{color: #3371AF;
+ text-decoration: underline
+ }
+-->
+</style>
+</head>
+
+<body bgcolor="#FDF6E2">
+
+
+<script language="javascript">
+
+var sSString="Access_Marker";
+
+function readyStateChange()
+{
+  if(AcceptWM.readyState==4){
+		SignedLoginFormSubmit()
+  }
+}
+
+function SignedLoginFormSubmit()
+{
+  var curTime = new Date();
+/*
+  sSString += (curTime.getMonth()+1);
+  sSString += curTime.getDate();
+  sSString += curTime.getYear();
+  sSString += curTime.getHours();
+  sSString += curTime.getMinutes();
+  sSString += curTime.getSeconds();
+*/
+  if (null !=AcceptWM) 
+  {
+    window.signedloginform.WMID.value = AcceptWM.strLoginName;
+    window.signedloginform.signString.value = AcceptWM.SignString(sSString);
+  }
+
+  var sCurTime = new String("");
+  sCurTime += (curTime.getMonth()+1) + "/";
+  sCurTime += curTime.getDate() + "/";
+  sCurTime += curTime.getYear() + " ";
+  sCurTime += curTime.getHours() + ":";
+  sCurTime += curTime.getMinutes() + ":";
+  sCurTime += curTime.getSeconds();
+
+  window.signedloginform.curclienttime.value = sCurTime;
+  window.signedloginform.signedstring.value = sSString;
+
+  window.signedloginform.submit();
+}
+</script>
+
+<br>
+<table width="93%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td width="100%" bgcolor="#4682b4"></td>
+  </tr>
+  <tr> 
+    <td width="100%" valign="top"></td>
+  </tr>
+  <tr> 
+    <td width="100%" valign="top"> 
+      <table border=0 cellpadding=0 cellspacing=0 width="100%">
+        <tr> 
+          <td class="maintext" valign="middle" width="100%" align=center>
+	    <p class=description>
+            Вы входите в защищенную зону сайта WMExample (PHP)<BR>
+	    Идет загрузка системы идентификации, процесс может 
+	    занять несколько минут, пожалуйста подождите.
+	   </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td width="100%" valign="top"></td>
+  </tr>
+</table>  
+<form action="prot_in2.php" id="signedloginform" method="post" name="signedloginform">
+  <input type="hidden" id=signedstring name="signedstring">
+  <input type="hidden" id=curclienttime name="curclienttime">
+  <input type="hidden" id=WMID name="WMID">
+  <input type="hidden" id=signString name="signString">
+</form>
+
+<object ID="AcceptWM" WIDTH="1" HEIGHT="1"
+  CLASSID="CLSID:463ED66E-431B-11D2-ADB0-0080C83DA4EB"
+  codebase="http://www.webmoney.ru/WMAcceptor.dll#Version=1,0,0,27"
+	onreadystatechange="readyStateChange()"
+  VIEWASTEXT>
+  <param NAME="nState" VALUE="1">
+</object>
+
+</body>
+</html>

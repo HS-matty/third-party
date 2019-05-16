@@ -1,0 +1,48 @@
+	<form id="node">
+	<title>
+		<en>Category</en>
+	</title>
+	<fields>
+		<field primary_key="1">
+				<id>category_id</id>
+				<type>int</type>
+				<title>
+					<en>ID</en>
+				</title>
+			<length>1-a</length>	
+			
+		</field>
+		<field >
+				<id>short_description</id>
+				<type>string</type>
+				<title>
+					<en>Short Description</en>
+					<ru>Заголовок</ru>
+				</title>
+			<length>2-128</length>	
+			
+		</field>
+		<field not_required="1">
+				<id>alias</id>
+				<type>string</type>
+				<title>
+					<en>Short Path</en>
+					<ru>Короткий путь (/go/путь/)</ru>
+				</title>
+			<length>2-128</length>	
+			
+		</field>
+	
+		<field not_required="1">
+			<id>body</id>
+			<type>string</type>
+			<title>
+				<en>Long description</en>
+				<ru>Страница</ru>
+			</title>
+			<view>editor</view>
+		</field>
+		
+
+	</fields>
+</form>

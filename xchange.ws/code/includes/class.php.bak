@@ -1,0 +1,209 @@
+<?
+if(!defined('WE_ARE_HERE'))  die();
+
+include("wm.inc");
+include("wmconst.inc");
+define('UPDATE_TRANS_TIME',30);
+define('ADD_TIME',60);//время, которое дается сверх того, что установлено для транзакции
+
+
+class trans{
+	
+	var	$is_true=0;//перем-ая, показывающая загрузили ли мы информацию о транзакции
+	var	$user_ip;  // ip клиента
+	var	$sid;     // session_id клиента 
+	var $in_cur_id; // id входящей валюты
+	var $in_account; // входящий номер счета
+	var $in_sum; // входящая сумма
+	var $out_cur_id; // исход. id
+	var $out_account;
+	var $out_sum;
+	var $status; //текущее состояние транзакции
+	var $current_rate; //текущий курс обмена
+	var $time_end; //время окончания действия транзакции
+	var $time_start; //время начала транзакции.
+	var $trans_id; // id транзакции
+	var	$db;
+	var $wait_trans = 60; //время жизни транзакции, пока не выписан счет.
+	var $trans_ok = 1; // 1 - транзакция может прод. 0 - не может продолжать работу.
+
+	function	trans ($db){
+		$this->db = $db;
+		$this->user_ip = encode_ip(check_user_ip());
+		
+			
+
+	}
+
+	
+	// создание новой транзакции.
+	function create_trans($sid,$in_cur_id = 0, $in_account = 0,$in_sum = 0, $out_cur_id = 0, $out_account = 0,$out_sum = 0,$current_rate = 0,&$time_wait){
+		//добавляем транзакцию в БД.
+		$status = 20; //20 - 'Инициализирована новая транзакция'
+		$sql = "INSERT INTO transactions (session_id,in_cur_id,in_account,in_sum,out_cur_id,out_account,out_sum,session_ip,status,current_rate,time_start,time_end) values('$sid', '$in_cur_id', '$in_account', '$in_sum', '$out_cur_id', '$out_account','$out_sum','$this->user_ip','$status','$current_rate',unix_timestamp(),unix_timestamp()+'$time_wait')";
+		if(!$query = mysql_query($sql)) die(mysql_error());
+		$id = mysql_insert_id();		
+		//удалаяем из сессий текущую.
+		$query = mysql_query("DELETE  from sessions WHERE session_id = '$sid'");
+
+		$this->send_t_msg("Транзакция №$id создана!",$sid);
+
+
+	}
+
+	function send_invoice($sid){
+	$wm_z = 'Z498072289702';
+	$wm_r = 'R994925331415';
+	$wm_e = 'E871619364539';
+
+		//проверяем, были ли извлечены данные о транзакции.
+		if(!($this->is_true)) $this->get_trans($sid);//
+		//узнаем, в какой валюте будет invoice
+		$query = mysql_query("SELECT cur_sname FROM currencies WHERE cur_id = '$this->in_cur_id'") OR die(mysql_error());
+		$db_array = mysql_fetch_row($query);
+		
+		if(($db_array[0] == 'wmz') || ($db_array[0] == 'wmr')){  //если invoice в ПС webmoney
+
+			//определяем в какой валюте выписывать счет.
+			if($db_array[0] == 'wmz') $wmconst__shop_wmpurse = $wm_z; //WebmoneyZ
+			if($db_array[0] == 'wmr') $wmconst__shop_wmpurse = $wm_r; //WebmoneyR
+			if($db_array[0] == 'wme') $wmconst__shop_wmpurse = $wm_e; //WebmoneyE
+
+			$wmid   = $this->in_account;
+			$summ   = $this->in_sum;
+			$inv_id = $this->trans_id;
+			$dsc    = "e-base.ru online exchange";
+			$adr    = "http://www.e-base.ru/change.php?sid=$sid";
+
+			// Вызов сервисной функции модуля wm
+			list($wminvc_n, $err) = InvCreate($wmid, $summ, $inv_id, $dsc, $adr);
+			//исключаем из времени, которое было выделено на транзакцию, время между создание транзакции и выпиской invoice
+//			$query = mysql_query("UPDATE transactions SET ") OR die(mysql_error()); 
+
+
+			if ($wminvc_n>0)
+				{ 
+				$this->send_t_msg("Счет №$this->trans_id выписан успешно ,№ счета WebMoney: $wminvc_n",$sid); 
+				print("<br>id  = $this->trans_id");
+			
+				$query = mysql_query("UPDATE transactions SET status ='0',time_end = (unix_timestamp() - '$this->time_start') + '$this->time_end' WHERE trans_id = '$this->trans_id'") OR die(mysql_error());
+
+				}
+			else
+				{ 
+				//сохраняем сообщение
+				$this->send_t_msg("Ошибка выписки счета №$this->trans_id : $err",$sid); 
+				//удаляем транзакцию
+
+
+			}
+
+
+		}
+	
+	return $err;
+	}
+
+
+	//Извлечение данных о существующей транзакции
+	function	get_trans(&$sid){
+
+		$sql = "SELECT t.trans_id, t.in_cur_id,t.in_account,t.in_sum,t.out_cur_id,t.out_account,t.out_sum,t.status,t.current_rate,t.time_start,t.time_end FROM transactions AS t WHERE session_id = '$sid'limit 1";
+		$query = mysql_query($sql) OR die(mysql_error());
+		$db_array = mysql_fetch_array($query);
+		$this->in_cur_id = $db_array['in_cur_id'];
+		$this->in_account = $db_array['in_account'];
+		$this->in_sum = $db_array['in_sum'];
+		$this->out_cur_id = $db_array['out_cur_id'];
+		$this->out_account = $db_array['out_account'];
+		$this->out_sum = $db_array['out_sum'];
+		$this->status = $db_array['status'];
+		$this->current_rate = $db_array['current_rate'];
+		$this->time_end = $db_array['time_end'];
+		$this->time_start = $db_array['time_start'];
+		$this->trans_id = $db_array['trans_id'];
+		$this->is_true = 1;
+		$this->check_trans_time(); //проверим, истекло ли время действия транзакции без выписки invoice
+		$this->check_unpayed_trans(); //установим статус "неоплаченные в срок" (-1) тем, кто не оплатил.
+		
+		
+
+	}
+
+	/*
+	Функция, проверяющая истекло ли время действия транзакции,
+	у которой не выписан invoice(т.е $status = 20)
+	*/
+	function check_trans_time(){
+		if( ($this->status == 20) && ( ($this->time_start+$this->wait_trans) < time() ) ){ //если время ожидания вышло..		
+					$this->trans_ok = 0;
+		}
+	}
+	/*
+	Функция, устанавливающая статус транзакциям,
+	которым был выслан invoice и он был не оплачен 
+	в течении определнного времени , в -1 (т.е. 
+	неоплаченные в срок)
+	*/
+
+	function check_unpayed_trans(){
+		//делаем проверку каждые 5 min
+		$query = mysql_query("SELECT time_trans_clr FROM config") OR die(msql_error());
+		$row = mysql_fetch_row($query);
+		if( ($row[0] + UPDATE_TRANS_TIME) <  time()  ) {
+
+			$sql = "UPDATE transactions SET status = '-1' WHERE time_end + 60 < unix_timestamp() AND status='0'";
+			$query  = mysql_query($sql) OR die(mysql_error());
+			$query = mysql_query("UPDATE config SET time_trans_clr = unix_timestamp()") OR die(mysql_error());
+		}
+			
+	}
+	
+	
+	
+	function	get_trans_status(){
+		return $this->trans_ok;
+	}
+	
+	function get_in_cur() {
+		return array($this->in_cur_id,$this->in_account,$this->in_sum);
+	}
+	
+	function get_out_cur() {
+		return array($this->out_cur_id, $this->out_account, $this->out_sum);
+	}
+	
+	function	get_rate(){
+		return $this->current_rate;
+	}
+	
+	function	get_timing(){
+		return array($this->time_start,$this->time_end);
+	}
+	function	get_status(){
+		return	$this->status;
+	}
+	
+
+	function test(){
+	die();
+
+	}
+
+	function	send_t_msg($t_message,&$sid){
+	
+		
+		$sql = "INSERT INTO t_messages (session_id,session_ip,t_message,t_time) values ('$sid','$this->user_ip','$t_message', unix_timestamp())";
+		$query = mysql_query($sql) OR die(mysql_error());
+
+	}
+
+
+
+
+}
+
+
+
+
+?>

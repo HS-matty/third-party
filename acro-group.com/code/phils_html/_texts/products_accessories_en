@@ -1,0 +1,43 @@
+<table width="402" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+  <tr valign="top">
+    <td width="20">&nbsp;</td>
+    <td width="382" background="_images/bgtext.gif" class="text">
+      <table width=290 border=0 cellpadding=0 cellspacing=0>
+      	<tr>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=accessories_01','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/accessories_01.jpg" border="0" hspace="0" vspace="0"><br>
+            &nbsp;</div>
+      		</td>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=accessories_02','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/accessories_02.gif" border="0" hspace="0" vspace="0"><br>
+            &nbsp;</div>
+      		</td>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=accessories_03','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/accessories_03.gif" border="0" hspace="0" vspace="0"><br>
+            &nbsp;</div>
+      		</td>
+      	</tr>
+      	<tr>
+      		<td align="middle" valign="top">
+            <div class="galery" onclick="window.open('_images/okno.php?img=accessories_04','img','width=550,height=450,top=100,left=100,fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no')"><img src="_images/accessories_04.gif" border="0" hspace="0" vspace="0"></div>
+      		</td>
+      		<td align="middle" valign="top">&nbsp;
+      		</td>
+      		<td align="middle" valign="top">&nbsp;
+      		</td>
+      	</tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td width="402" colspan="2"><img src="_images/cara.gif" border="0" height="6" width="402" hspace="0" vspace="0"></td>
+  </tr>
+  <tr>
+    <td valign="top" align="right" colspan="2">
+      <span onClick="history.back()" style="cursor: hand"><img src="_images/back.gif" border="0" height="30" width="75" hspace="0" vspace="0"></span>
+    </td>
+  </tr>
+</table>

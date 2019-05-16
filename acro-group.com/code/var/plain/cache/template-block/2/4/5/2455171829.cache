@@ -1,0 +1,282 @@
+
+
+    <link rel="stylesheet" type="text/css" href="/design/standard/stylesheets/core.css" />
+    <link rel="stylesheet" type="text/css" href="/design/admin/stylesheets/admin.css" />
+    <link rel="stylesheet" type="text/css" href="/design/standard/stylesheets/debug.css" />
+
+
+</head>
+
+<body>
+
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #4272b4; background-image:url('/design/admin/images/bgimage.gif'); background-position: right top; background-repeat: no-repeat;">
+<tr>
+    <td style="padding: 4px" colspan="13">
+    <table width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+        <td width="5" style="background-image:url('/design/admin/images/tbox-top-left.gif'); background-repeat: no-repeat;">
+        <img src="/design/standard/images/1x1.gif" alt="" width="5" height="6" /></td>
+        <td style="border-top: solid 1px #789dce;" width="99%">
+        <img src="/design/standard/images/1x1.gif" alt="" width="1" height="1" /></td>
+        <td width="5" style="background-image:url('/design/admin/images/tbox-top-right.gif'); background-repeat: no-repeat;">
+        <img src="/design/standard/images/1x1.gif" alt="" width="5" height="6" /></td>
+    </tr>
+    <tr>
+        <td style="border-left: solid 1px #789dce;">
+        <img src="/design/standard/images/1x1.gif" alt="" width="5" height="6" /></td>
+        <td>
+        <table width="100%">
+        <tr> 
+            <td>
+	    <img src="/design/admin/images/logo.gif" alt="" /></td>
+            <td>
+            &nbsp;&nbsp;
+            </td>
+            <td valign="top">
+                <form action="/index.php/admin_acro/content/search" method="get" style="margin-top: 0px; margin-bottom: 0px; padding: 0px;">
+                    <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                        <td>
+                            <input class="searchbox" type="text" size="20" name="SearchText" id="Search" value="" />
+                        </td>  
+                        <td>
+                            <input class="searchbutton" name="SearchButton" type="submit" value="Search" />
+                        </td>
+                    </tr>
+                    </table>
+                </form>
+            </td>
+            <td valign="center">
+	        	        <form method="post" action="/index.php/admin_acro/content/action">
+                    <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                        <td>
+                        <select name="ClassID" class="classcreate">
+	                                                <option value="1">Folder</option>
+                                                        <option value="2">Article</option>
+                                                        <option value="3">User group</option>
+                                                        <option value="4">User</option>
+                                                        <option value="5">Image</option>
+                                                        <option value="11">Link</option>
+                                                        <option value="12">File</option>
+                                                        <option value="13">Comment</option>
+                                                        <option value="14">Common ini settings</option>
+                                                        <option value="15">Template look</option>
+                                                        <option value="17">News</option>
+                                                     </select>
+                        </td>
+			<td>
+                            <input class="classbutton" type="submit" name="NewButton" value="New" />
+                        </td>
+                    </tr>
+                    </table>    
+                </form>
+                            </td>  
+            <td align="right">
+            <a class="leftmenuitem" href="/index.php/admin_acro/user/logout">Logout (Administrator User) </a> 
+                  </td> 
+        </tr>  
+        </table>
+        </td>
+        <td style="border-right: solid 1px #789dce;">
+        <img src="/design/standard/images/1x1.gif" alt="" width="5" height="6" /></td>
+    </tr>
+    <tr>
+        <td style="background-image:url('/design/admin/images/tbox-bottom-left.gif'); background-repeat: no-repeat;">
+        <img src="/design/standard/images/1x1.gif" alt="" width="5" height="6" /></td>
+        <td style="border-bottom: solid 1px #789dce;">
+        <img src="/design/standard/images/1x1.gif" alt="" width="1" height="1" /></td>
+        <td style="background-image:url('/design/admin/images/tbox-bottom-right.gif'); background-repeat: no-repeat;">
+        <img src="/design/standard/images/1x1.gif" alt="" width="5" height="6" /></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+<tr>
+    <td colspan="13">
+    <img src="/design/standard/images/1x1.gif" alt="" width="3" height="5" /></td>
+</tr>
+<tr>
+    <td class="headlogo" width="130">
+    
+    &nbsp;
+     </td>
+    <td class="headlink" width="66">
+    
+
+        
+<table width="66" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td class="menuheadgraygfx" width="3">
+    <img src="/design/admin/images/dark-left-corner.gif" alt=""/></td>
+    <td class="menuheadgraytopline" width="60">
+    <img src="/design/standard/images/1x1.gif" alt="" width="60" height="1" /></td>
+    <td class="menuheadgraygfx" width="3">
+    <img src="/design/admin/images/dark-right-corner.gif" alt=""/></td>
+</tr>
+<tr>
+    <td class="menuheadgrayleftline" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="15" /></td>
+    <td class="menuheadgray">
+    <p class="menuheadselected">
+    <a class="menuheadlinkgray" href="/index.php/admin_acro/content/view/full/2">Content</a>
+    </p>
+    </td>
+    <td class="menuheadgrayrightline" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="15" /></td>
+</tr>
+</table></td>
+    
+    <td class="menuheadspacer" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="3" height="1" /></td>
+    <td class="headlink" width="66">
+    
+        
+<table width="66" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td class="menuheadgraygfx" width="3">
+    <img src="/design/admin/images/dark-left-corner.gif" alt=""/></td>
+    <td class="menuheadgraytopline" width="60">
+    <img src="/design/standard/images/1x1.gif" alt="" width="60" height="1" /></td>
+    <td class="menuheadgraygfx" width="3">
+    <img src="/design/admin/images/dark-right-corner.gif" alt=""/></td>
+</tr>
+<tr>
+    <td class="menuheadgrayleftline" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="15" /></td>
+    <td class="menuheadgray">
+    <p class="menuheadselected">
+    <a class="menuheadlinkgray" href="/index.php/admin_acro/content/view/full/43">Media</a>
+    </p>
+    </td>
+    <td class="menuheadgrayrightline" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="15" /></td>
+</tr>
+</table></td>
+    
+    <td class="menuheadspacer" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="3" height="1" /></td>
+    <td class="headlink" width="66">
+    
+        
+<table width="66" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td class="menuheadgraygfx" width="3">
+    <img src="/design/admin/images/dark-left-corner.gif" alt=""/></td>
+    <td class="menuheadgraytopline" width="60">
+    <img src="/design/standard/images/1x1.gif" alt="" width="60" height="1" /></td>
+    <td class="menuheadgraygfx" width="3">
+    <img src="/design/admin/images/dark-right-corner.gif" alt=""/></td>
+</tr>
+<tr>
+    <td class="menuheadgrayleftline" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="15" /></td>
+    <td class="menuheadgray">
+    <p class="menuheadselected">
+    <a class="menuheadlinkgray" href="/index.php/admin_acro/shop/orderlist">Shop</a>
+    </p>
+    </td>
+    <td class="menuheadgrayrightline" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="15" /></td>
+</tr>
+</table></td>
+        
+    <td class="menuheadspacer" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="3" height="1" /></td>
+
+    <td class="headlink" width="66">
+
+    
+        
+<table width="66" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td class="menuheadgraygfx" width="3">
+    <img src="/design/admin/images/dark-left-corner.gif" alt=""/></td>
+    <td class="menuheadgraytopline" width="60">
+    <img src="/design/standard/images/1x1.gif" alt="" width="60" height="1" /></td>
+    <td class="menuheadgraygfx" width="3">
+    <img src="/design/admin/images/dark-right-corner.gif" alt=""/></td>
+</tr>
+<tr>
+    <td class="menuheadgrayleftline" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="15" /></td>
+    <td class="menuheadgray">
+    <p class="menuheadselected">
+    <a class="menuheadlinkgray" href="/index.php/admin_acro/content/view/full/5">Users</a>
+    </p>
+    </td>
+    <td class="menuheadgrayrightline" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="15" /></td>
+</tr>
+</table>        
+    </td>
+
+    <td class="menuheadspacer" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="3" height="1" /></td>
+
+    <td class="headlink" width="66">
+
+    
+        
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td class="menuheadselectedgfx">
+    <img src="/design/admin/images/light-left-corner.gif" alt=""/></td>
+    <td style="background-color: #c1d5ef; background-image:url('/design/admin/images/light-top.gif'); background-repeat: repeat;">
+    <img src="/design/standard/images/1x1.gif" alt="" width="60" height="1" /></td>
+    <td class="menuheadselectedgfx">
+    <img src="/design/admin/images/light-right-corner.gif" alt=""/></td>
+</tr>
+<tr>
+    <td style="background-color: #c1d5ef; background-image:url('/design/admin/images/bgtilelight.gif'); background-position: left bottom; background-repeat: repeat;">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="19" /></td>
+    <td style="background-color: #c1d5ef; color: #4373b4; text-align: center;  background-image:url('/design/admin/images/bgtilelight.gif'); background-position: left bottom; background-repeat: repeat;">
+    <p class="menuheadselected">
+    <a class="menuheadlink" href="/index.php/admin_acro/setup/menu">Set up</a>
+    </p>
+    </td>
+    <td style="background-color: #c1d5ef;background-image:url('/design/admin/images/bgtilelight.gif'); background-position: left bottom; background-repeat: repeat;">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="19" /></td>
+</tr>
+</table>
+    
+    </td>
+
+    <td class="menuheadspacer" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="3" height="1" /></td>
+
+    <td class="headlink" width="66">
+
+    
+        
+<table width="66" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td class="menuheadgraygfx" width="3">
+    <img src="/design/admin/images/dark-left-corner.gif" alt=""/></td>
+    <td class="menuheadgraytopline" width="60">
+    <img src="/design/standard/images/1x1.gif" alt="" width="60" height="1" /></td>
+    <td class="menuheadgraygfx" width="3">
+    <img src="/design/admin/images/dark-right-corner.gif" alt=""/></td>
+</tr>
+<tr>
+    <td class="menuheadgrayleftline" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="15" /></td>
+    <td class="menuheadgray">
+    <p class="menuheadselected">
+    <a class="menuheadlinkgray" href="/index.php/admin_acro/content/draft">Personal</a>
+    </p>
+    </td>
+    <td class="menuheadgrayrightline" width="3">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="15" /></td>
+</tr>
+</table>    
+    </td>
+   <td class="headlogo" width="500">
+   &nbsp;</td>
+</tr>
+<tr>
+    <td colspan="13" style="background-image:url('/design/admin/images/bgtilelight.gif'); background-repeat: repeat;">
+    <img src="/design/standard/images/1x1.gif" alt="" width="1" height="8" /></td>
+</tr>

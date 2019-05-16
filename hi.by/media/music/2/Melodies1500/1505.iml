@@ -1,0 +1,6 @@
+BEGIN:IMELODY
+VERSION:1.0
+FORMAT:CLASS1.0
+BEAT:175
+MELODY:r3*5#d4.r5*5d3.r4.*5#d3.r4#a2.r3#d3r4;#d3;r5#f4:#a3.r4a4.r5#a3.r4*5#d3.r4#a2r3.#d3r3#d3;r5#f4;#a3.r4.a4r5#a3r4;#a3r4;#a1r3#g3.r4#g4.r5#g3.r4#f4r4#g3.r4#f3.
+END:IMELODY

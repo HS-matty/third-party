@@ -1,0 +1,62 @@
+<form id="listing">
+	<title>
+		<en>Directory Listing</en>
+	</title>
+
+	<fields>	
+		<field primary_key="1">
+			<id>listing_id</id>
+			<type>int</type>
+			<title>
+				<en>DirectoryId</en>
+				<ru>DirectoryId</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+
+		<field>
+			<id>short_description</id>
+			<type>string</type>
+			<title>
+				<en>Short description</en>
+				<ru>Описание</ru>
+			</title>
+			<length>1-64</length>	
+		
+		</field>
+		
+		<field>
+			<id>is_active</id>
+			<type>bool</type>
+			<title>
+				<en>Is active</en>
+				<ru>Активна</ru>
+			</title>
+			<length>1-4</length>	
+		
+		</field>
+		<field not_required="1">
+			<id>main_image</id>
+			<type>file</type>
+			<file>
+				<filetype>image</filetype>
+				<size>1-8192</size>
+				<path>/images/items/</path>
+			</file>
+			<title>
+				<en>Logo</en>
+				<ru>Изображение</ru>
+			</title>
+		</field>
+		
+		<field not_required="1">
+			<id>long_description</id>
+			<type>string</type>
+			<title>
+				<en>Long description</en>
+				<ru>Расширенное описание</ru>
+			</title>
+			<view>editor</view>
+		</field>
+	</fields>
+</form>

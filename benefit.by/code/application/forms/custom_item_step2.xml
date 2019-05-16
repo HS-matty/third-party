@@ -1,0 +1,32 @@
+<form id="custom_item_step2">
+
+	<fields>
+
+		
+
+
+			
+		<field>
+				<id>short_description</id>
+				<type>string</type>
+				<title>
+					<en>Short Description</en>
+					<ru>Наименование поля</ru>
+				</title>
+			<length>2-30</length>	
+			
+		</field>
+		<field>
+		
+				<id>type</id>
+				<type>enum</type>
+				<title>
+					<en>Type</en>
+					<ru>Тип</ru>
+				</title>
+		
+				
+		</field>
+		
+	</fields>
+</form>

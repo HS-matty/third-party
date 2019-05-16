@@ -1,0 +1,62 @@
+  <body onselectstart="return false;">
+    <table width="750" align="center" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td valign="top" width="16" height="22"><img src="_images/spacer.gif" border="0" height="22" width="16" hspace="0" vspace="0"></td>
+        <td colspan="2" valign="top" width="247" height="22"><img src="_images/spacer.gif" height="22" width="247" hspace="0" vspace="0"></td>
+        <td valign="top" width="402" height="22"><img src="_images/spacer.gif" border="0" height="22" width="402" hspace="0" vspace="0"></td>
+        <td valign="top" width="85" height="22"><img src="_images/spacer.gif" height="22" width="85" hspace="0" vspace="0"></td>
+      </tr>
+      <tr>
+        <td valign="top" width="16" height="94"><img src="_images/spacer.gif" height="94" width="16"></td>
+        <td colspan="2" valign="top" width="247" height="94"><img src="_images/motiv_<?
+          if (EReg("products_.*",$page)):
+            echo "products";
+          else:
+            echo $page;
+          endif;
+        ?>.gif" border="0" height="94" width="247" hspace="0" vspace="0"></td>
+        <td valign="middle" width="402" height="94" background="_images/bgtop.gif" align="center"><img src="_images/logo.gif" border="0" height="64" width="324" hspace="0" vspace="0"></td>
+        <td valign="top" width="85" height="94"><img src="_images/spacer.gif" height="94" width="85"></td>
+      </tr>
+      <tr>
+        <td valign="top" width="16">&nbsp;</td>
+        <td valign="top" width="150" class="bggr">
+        <img src="_images/contact_01.gif" border="0" height="18" width="150" hspace="0" vspace="0"><br clear="all">
+        <a href="index.php?page=company&lang=<?echo $lang?>" " onmouseover="change('butt_off_01','butt_on_01')" onmouseout="change('butt_off_01','butt_off_01')"><img name="butt_off_01" src="_images/contact_02_<?echo $lang?>.gif" border="0" height="36" width="150" hspace="0" vspace="0"></a><br clear="all">
+        <a href="index.php?page=products&lang=<?echo $lang?>" " onmouseover="change('butt_off_02','butt_on_02')" onmouseout="change('butt_off_02','butt_off_02')"><img name="butt_off_02" src="_images/contact_03_<?echo $lang?>.gif" border="0" height="21" width="150" hspace="0" vspace="0"></a><br clear="all">
+        <a href="index.php?page=cooperation&lang=<?echo $lang?>" " onmouseover="change('butt_off_03','butt_on_03')" onmouseout="change('butt_off_03','butt_off_03')"><img name="butt_off_03" src="_images/contact_04_<?echo $lang?>.gif" border="0" height="24" width="150" hspace="0" vspace="0"></a><br clear="all">
+        <a href="index.php?page=contact&lang=<?echo $lang?>" " onmouseover="change('butt_off_04','butt_on_04')" onmouseout="change('butt_off_04','butt_off_04')"><img name="butt_off_04" src="_images/contact_05_<?echo $lang?>.gif" border="0" height="23" width="150" hspace="0" vspace="0"></a><br clear="all">
+        <a href="index.php?page=home&lang=<?echo $lang?>" " onmouseover="change('butt_off_05','butt_on_05')" onmouseout="change('butt_off_05','butt_off_05')"><img name="butt_off_05" src="_images/contact_06_<?echo $lang?>.gif" border="0" height="33" width="150" hspace="0" vspace="0"></a><br clear="all">
+        <img src="_images/left_cara.gif" border="0" height="50" width="63" hspace="0" vspace="0"><br clear="all">
+        <span "a" href="index.php?page=<?echo $page?>&lang=<?
+                                                      if($lang=='cs'):
+                                                        echo 'en';
+                                                      else:
+                                                        echo 'cs';
+                                                      endif;
+        ?>"><img src="_images/left_09_<?
+                                                      if($lang=='cs'):
+                                                        echo 'en';
+                                                      else:
+                                                        echo 'cs';
+                                                      endif;
+        ?>.gif" border="0" height="77" width="63" hspace="0" vspace="0"><!--</a>--></span>
+        </td>
+        <td valign="top" width="97">&nbsp;</td>
+        <td valign="top" width="402">
+          <table width="402" height="47" align="center" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <?
+                if ($page=="products"):
+                  echo "<td class=\"contact_toppage\"><div class=\"products_toppage\">All those products we offer are examined successfully<br>with ISO 9001 Quality Certificate, for OEM producing.</div>";
+                elseif ($page=="contact"):
+                  echo "<td class=\"contact_toppage\"><img src=\"_images/contact.gif\" border=\"0\" hspace=\"0\" vspace=\"0\">";
+                elseif (EReg("products_.*",$page)):
+                  echo "<td class=\"contact_toppage\"><img src=\"_images/".$page.".gif\" border=\"0\" hspace=\"0\" vspace=\"0\">";
+                else:
+                  echo "<td>&nbsp;";
+                endif;
+              ?>
+              </td>
+            </tr>
+          </table>

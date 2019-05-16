@@ -1,0 +1,85 @@
+<?xml version='1.0' standalone='yes'?>
+
+<grid id="admin_items">
+	<fields>
+		<field id="listing_id" table="listing">
+			<title>
+				<en>ID</en>
+			</title>
+			<conditions>
+				<condition type="orderby" default="1" />
+			</conditions>
+		</field>	
+		<field id="short_description">
+			<title>
+				<en>Title</en>
+			</title>
+		</field>
+
+		
+	
+		<field id="creation_date" type="timedate" table="listing">
+			<title>
+				<en>Created</en>
+			</title>
+			<conditions>
+				<condition type="orderby"/>
+			</conditions>
+		</field>
+				<field id="fuser_name">
+			<title>
+				<en>Owner</en>
+			</title>
+
+		</field>
+		<field id="count" >
+			<title>
+				<en>Categories assigned</en>
+			</title>
+			<conditions>
+				<condition type="orderby"/>
+			</conditions>
+		</field>
+
+		
+		<field id="#edit" type="additional" >
+			<title>
+				<en>edit</en>
+			</title>
+			<link>
+				<module>admin</module>
+				<params>
+					<param value="node" />
+					<param value="listing" />
+				</params>
+				
+				<urlparams>
+					<param title="listing_id" data_field = "listing_id" />
+				</urlparams>
+			</link>
+		</field>
+		<field id="#delete" type="additional" >
+			<title>
+				<en>del</en>
+			</title>
+			<link>
+				<module>admin</module>
+				<params>
+					<param value="node" />
+					<param value="listing" />
+				</params>
+				
+				<urlparams>
+					
+					<param title="listing_id" data_field = "listing_id" />
+					<param title="delete" value="1" />
+				</urlparams>
+			</link>
+		</field>
+		
+
+	</fields>
+	
+	
+	
+</grid>

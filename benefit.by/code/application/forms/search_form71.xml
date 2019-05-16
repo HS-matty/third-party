@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<form id="unnamed"><fields><field id="list_69" is_required="0"><type>list</type><value></value><title><en>ssss</en></title><list not_null="1"><key_title>listing_id</key_title><value_title>short_description</value_title></list><params><fullview>1</fullview></params></field><field id="list_70" is_required="0"><type>list</type><value></value><title><en>ssdddd</en></title><list not_null="1"><key_title>listing_id</key_title><value_title>short_description</value_title></list><params><fullview>1</fullview></params></field></fields></form>

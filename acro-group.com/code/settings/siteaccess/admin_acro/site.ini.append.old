@@ -1,0 +1,43 @@
+<?php /* #?ini charset="iso-8859-1"?
+
+[DatabaseSettings]
+DatabaseImplementation=ezmysql
+Server=localhost
+User=root
+Password=
+Database=acro
+Charset=
+Socket=disabled
+
+[InformationCollectionSettings]
+EmailReceiver=
+
+[SiteSettings]
+SiteName=Acro Group
+SiteURL=acro/index.php
+LoginPage=custom
+
+[UserSettings]
+RegistrationEmail=
+
+[SiteAccessSettings]
+RequireUserLogin=true
+
+[DesignSettings]
+SiteDesign=admin
+
+[RegionalSettings]
+Locale=eng-GB
+ContentObjectLocale=eng-GB
+TextTranslation=disabled
+
+[FileSettings]
+VarDir=var/plain
+
+[ContentSettings]
+TranslationList=
+
+[MailSettings]
+AdminEmail=ss@fff.com
+EmailSender=
+*/ ?>

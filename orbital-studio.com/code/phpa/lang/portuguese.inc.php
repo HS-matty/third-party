@@ -1,0 +1,348 @@
+<?php
+/* $Id: portuguese.inc.php,v 1.97 2002/02/15 13:06:55 loic1 Exp $ */
+
+$charset = 'iso-8859-1';
+$text_dir = 'ltr';
+$left_font_family = 'sans-serif';
+$right_font_family = 'sans-serif';
+$number_thousands_separator = ',';
+$number_decimal_separator = '.';
+$byteUnits = array('Bytes', 'KB', 'MB', 'GB');
+
+$day_of_week = array('Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab');
+$month = array('Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez');
+// See http://www.php.net/manual/en/function.strftime.php to define the
+// variable below
+$datefmt = '%d-%B-%Y às %H:%M';
+
+$strAPrimaryKey = 'Uma chave primária foi adicionada a %s';
+$strAccessDenied = 'Acesso Negado';
+$strAction = 'Acções';
+$strAddDeleteColumn = 'Add/Delete Field Columns'; //to translate (tbl_qbe.php)
+$strAddDeleteRow = 'Add/Delete Criteria Row'; //to translate (tbl_qbe.php)
+$strAddNewField = 'Adiciona novo campo';
+$strAddPriv = 'Acrescenta um novo Privilégio';
+$strAddPrivMessage = 'Acrescentou um novo privilégio.';
+$strAddSearchConditions = 'Condição de Pesquisa (Complemento da clausula "where"):';
+$strAddToIndex = 'Add to index &nbsp;%s&nbsp;column(s)';
+$strAddUser = 'Acrescenta um utilizador';
+$strAddUserMessage = 'Acrescentou um novo utilizador.';
+$strAffectedRows = 'Affected rows:';
+$strAfter = 'Depois %s';
+$strAfterInsertBack = 'Return';
+$strAfterInsertNewInsert = 'Insert a new record';
+$strAll = 'Todas';
+$strAlterOrderBy = 'Alterar a ordem da tabela por';
+$strAnIndex = 'Um indíce foi adicionado a %s';
+$strAnalyzeTable = 'Analizar tabela';
+$strAnd = 'E'; // (tbl_qbe.php)
+$strAny = 'Todos';
+$strAnyColumn = 'Qualquer coluna';
+$strAnyDatabase = 'Qualquer base de dados';
+$strAnyHost = 'Qualquer máquina';
+$strAnyTable = 'Qualquer tabela';
+$strAnyUser = 'Qualquer utilizador';
+$strAscending = 'Ascendente'; // (tbl_qbe.php)
+$strAtBeginningOfTable = 'No Início da Tabela';
+$strAtEndOfTable = 'No Fim da Tabela';
+$strAttr = 'Atributos';
+
+$strBack = 'Voltar';
+$strBinary = ' Binário ';
+$strBinaryDoNotEdit = ' Binário - não editar ';
+$strBookmarkDeleted = 'The bookmark has been deleted.';
+$strBookmarkLabel = 'Label'; //to translate
+$strBookmarkQuery = 'Bookmarked SQL-query'; //to translate
+$strBookmarkThis = 'Bookmark this SQL-query'; //to translate
+$strBookmarkView = 'View only'; //to translate
+$strBrowse = 'Visualiza';
+$strBzip = '"bzipped"';  //to translate
+
+$strCantLoadMySQL = 'não foi possível carregar a extensão MySQL,<br />por favor verifique a configuração do PHP.';
+$strCantRenameIdxToPrimary = 'Can\'t rename index to PRIMARY!';
+$strCardinality = 'Cardinality';
+$strCarriage = 'Fim de linha: \\r';
+$strChange = 'Muda';
+$strCheckAll = 'Todos';
+$strCheckDbPriv = 'Visualiza os Privilégios da Base de Dados';
+$strCheckTable = 'Verificar tabela';
+$strColumn = 'Campo';
+$strColumnNames = 'Nome dos Campos';
+$strCompleteInserts = 'Instrucções de inserção completas';
+$strConfirm = 'Do you really want to do it?'; //to translate
+$strCookiesRequired = 'O mecanoismo de "Cookies" tem de estar ligado a partir deste ponto.';
+$strCopyTable = 'Copia tabela para (base-de-dados<b>.</b>tabela):';
+$strCopyTableOK = 'Tabela %s copiada para %s.';
+$strCreate = 'Criar';
+$strCreateIndex = 'Criar um índice com&nbsp;%s&nbsp;coluna(s)';
+$strCreateIndexTopic = 'Criar um novo índice';
+$strCreateNewDatabase = 'Criar nova base de dados';
+$strCreateNewTable = 'Criar nova tabela na base de dados ';
+$strCriteria = 'Criteria'; // to translate (tbl_qbe.php)
+
+$strData = 'Dados';
+$strDataOnly = 'Apenas dados';
+$strDatabase = 'Base de Dados ';
+$strDatabaseHasBeenDropped = 'A base de dados %s foi eliminada.';
+$strDatabases = 'Base de Dados';
+$strDatabasesStats = 'Estatísticas das bases de dados';
+$strDefault = 'Defeito';
+$strDelete = 'Remove';
+$strDeleteFailed = 'Deleted Failed!'; //to translate
+$strDeleteUserMessage = 'Apagou o utilizador %s.';
+$strDeleted = 'Registo eliminado';
+$strDeletedRows = 'Deleted rows:';
+$strDescending = 'Descendente'; // (tbl_qbe.php)
+$strDisplay = 'Mostra';
+$strDisplayOrder = 'Ordem de visualização:';
+$strDoAQuery = 'Faça uma "query by example" (wildcard: "%")';
+$strDoYouReally = 'Confirma : ';
+$strDocu = 'Documentação';
+$strDrop = 'Elimina';
+$strDropDB = 'Elimina a base de dados: ';
+$strDropTable = 'Elimina tabela';
+$strDumpingData = 'Extraindo dados da tabela';
+$strDynamic = 'dinâmico';
+
+$strEdit = 'Edita';
+$strEditPrivileges = 'Alterar Privilegios';
+$strEffective = 'Em uso';
+$strEmpty = 'Limpa';
+$strEmptyResultSet = 'MySQL retornou um set vazio (ex. zero regs).';
+$strEnd = 'Fim';
+$strEnglishPrivileges = ' Nota: os nomes dos privilégios do MySQL são em Inglês ';
+$strError = 'Erro';
+$strExtendedInserts = 'Instrucções de inserção múltiplas';
+$strExtra = 'Extra'; // written the same in portuguese
+
+$strField = 'Campo';
+$strFieldHasBeenDropped = 'O campo %s foi eliminado';
+$strFields = 'Qtd Campos';
+$strFieldsEmpty = ' The field count is empty! ';  //to translate
+$strFieldsEnclosedBy = 'Campos delimitados por';
+$strFieldsEscapedBy = 'Campos marcados por'; // to refine translation
+$strFieldsTerminatedBy = 'Campos terminados por';
+$strFixed = 'fixo';
+$strFlushTable = 'Fecha a tabela ("FLUSH")';
+$strFormEmpty = 'Missing value in the form !';
+$strFormat = 'Formato';
+$strFullText = 'Full Texts'; //to translate
+$strFunction = 'Funções';
+
+$strGenTime = 'Data de Criação';
+$strGo = 'Executa';
+$strGrants = 'Autorizações';
+$strGzip = '"gzipped"';  //to translate
+
+$strHasBeenAltered = 'foi alterado.';
+$strHasBeenCreated = 'foi criado.';
+$strHome = 'Início';
+$strHomepageOfficial = 'Página Oficial do phpMyAdmin';
+$strHomepageSourceforge = 'Sourceforge phpMyAdmin Download Page'; //to translate
+$strHost = 'Máquina';
+$strHostEmpty = 'O nome da máquina está vazio!';
+
+$strIdxFulltext = 'Fulltext';  //to translate
+$strIfYouWish = 'Para carregar apenas algumas colunas da tabela, faça uma lista separada por virgula.';
+$strIgnore = 'Ignora';
+$strInUse = 'in use'; //to translate
+$strIndex = 'Índice';
+$strIndexHasBeenDropped = 'O Índice %s foi eliminado';
+$strIndexName = 'Nome do Índice&nbsp;:';
+$strIndexType = 'Tipo de Índice&nbsp;:';
+$strIndexes = 'Índices';
+$strInsert = 'Insere';
+$strInsertAsNewRow = 'Insere como novo registo';
+$strInsertedRows = 'Registos inseridos :';
+$strInsertNewRow = 'Insere novo registo';
+$strInsertTextfiles = 'Insere arquivo texto na tabela';
+$strInstructions = 'Instructions'; //to translate
+$strInvalidName = '"%s" é uma palavra reservada, não pode usar como nome de base de dados/tabela/campo.';
+
+$strKeepPass = 'Sem alterar senha';
+$strKeyname = 'Keyname';
+$strKill = 'Termina';
+
+$strLength = 'Comprimento';
+$strLengthSet = 'Tamanho/Set*';
+$strLimitNumRows = 'registos por página';
+$strLineFeed = 'Mudança de linha: \\n';
+$strLines = 'Linhas';
+$strLinesTerminatedBy = 'Linhas terminadas por';
+$strLocationTextfile = 'Localização do arquivo de texto';
+$strLogPassword = 'Senha&nbsp;:';
+$strLogUsername = 'Utilizador&nbsp;:';
+$strLogin = 'Entrada';
+$strLogout = 'Log out';
+
+$strModifications = 'Modificações foram salvas';
+$strModify = 'Modifica'; // (tbl_qbe.php)
+$strModifyIndexTopic = 'Modificar um índice';
+$strMoveTable = 'Move tabela para (base de dados<b>.</b>tabela):';
+$strMoveTableOK = 'A tabela %s foi movida para %s.';
+$strMySQLReloaded = 'MySQL reiniciado.';
+$strMySQLSaid = 'Mensagens do MySQL : ';
+$strMySQLServerProcess = 'MySQL %pma_s1% correndo em %pma_s2% como %pma_s3%';
+$strMySQLShowProcess = 'Mostra os Processos';
+$strMySQLShowStatus = 'Mostra informação do estado do MySql';
+$strMySQLShowVars = 'Mostra as variáveis de sistema do MySQL';
+
+$strName = 'Nome';
+$strNbRecords = 'n. de registos';
+$strNext = 'Próximo';
+$strNo = 'Não';
+$strNoDatabases = 'No databases';
+$strNoDropDatabases = 'Os comandos "DROP DATABASE" estão inibidos.';
+$strNoFrames = 'phpMyAdmin is more friendly with a <b>frames-capable</b> browser.';
+$strNoIndex = 'Nenhum indíce definido!';
+$strNoIndexPartsDefined = 'No index parts defined!';
+$strNoModification = 'No change'; // To translate
+$strNoPassword = 'Sem Senha';
+$strNoPrivileges = 'Sem Privilégios';
+$strNoQuery = 'No SQL query!';  //to translate
+$strNoRights = 'You don\'t have enough rights to be here right now!'; //to translate
+$strNoTablesFound = 'Nenhuma tabela encontrada na base de dados';
+$strNoUsersFound = 'No user(s) found.'; //to translate
+$strNone = 'Nenhum';
+$strNotNumber = 'Isto não é um número!';
+$strNotValidNumber = ' não é um número de registo válido!';
+$strNull = 'Nulo';
+
+$strOftenQuotation = 'Normalmente aspas. OPTIONALLY significa que apenas os campos "char" e "varchar" são delimitados pelo caractere delimitador.';
+$strOptimizeTable = 'Optimizar tabela';
+$strOptionalControls = 'Opcional. Comanda o modo de escrita e leitura dos caracteres especiais.';
+$strOptionally = 'OPTIONALLY';
+$strOr = 'Ou';
+$strOverhead = 'Extra';
+
+$strPHPVersion = 'versão do PHP';
+$strPartialText = 'Partial Texts';//to translate
+$strPassword = 'Senha';
+$strPasswordEmpty = 'The password is empty!'; //to translate
+$strPasswordNotSame = 'The passwords aren\'t the same!'; //to translate
+$strPmaDocumentation = 'Documentação do phpMyAdmin';
+$strPos1 = 'Inicio';
+$strPrevious = 'Anterior';
+$strPrimary = 'Primária';
+$strPrimaryKey = 'Chave Primária';
+$strPrimaryKeyHasBeenDropped = 'A chave primária foi eliminada';
+$strPrimaryKeyName = 'O nome da chave primária tem de ser... PRIMARY!';
+$strPrimaryKeyName = 'O nome da chave primária tem de ser... PRIMARY!';
+$strPrimaryKeyWarning = '("PRIMARY" <b>tem</b> de ser o nome de e <b>apenas de</b> uma chave primária!)';
+$strPrintView = 'Vista de impressão';
+$strPrivileges = 'Privilégios';
+$strProperties = 'Propriedades';
+
+$strQBE = 'Pesquisa por formulário';
+$strQBEDel = 'Elim.'; // Elimina (used in tbl_qbe.php)
+$strQBEIns = 'Ins.';  // Insere (used in tbl_qbe.php)
+$strQueryOnDb = 'Comando SQL na base de dados <b>%s</b>:';
+
+$strReType = 'Confirma';
+$strRecords = 'Registos';
+$strReloadFailed = 'Reinicialização do MySQL falhou.';
+$strReloadMySQL = 'Reinicializa o MySQL';
+$strRememberReload = 'Lembre-se de reinicializar o servidor.';
+$strRenameTable = 'Renomeia a tabela para ';
+$strRenameTableOK = 'Tabela %s renomeada para %s';
+$strRepairTable = 'Reparar tabela';
+$strReplace = 'Substituir';
+$strReplaceTable = 'Substituir os dados da tabela pelos do arquivo';
+$strReset = 'Limpa';
+$strRevoke = 'Anula';
+$strRevokeGrant = 'Anula Autorização';
+$strRevokeGrantMessage = 'Anulou a autorização para %s';
+$strRevokeMessage = 'Anulou os privilégios para %s';
+$strRevokePriv = 'Anula Privilégios';
+$strRowLength = 'Comprim. dos reg.';
+$strRowSize = ' Tamanho dos reg.';
+$strRows = 'Registos';
+$strRowsFrom = 'registos começando em';
+$strRowsModeHorizontal = 'horizontal';  // written the same in portuguese!
+$strRowsModeOptions = 'in %s mode and repeat headers after %s cells';  //to translate
+$strRowsModeVertical = 'vertical';  // written the same in portuguese!
+$strRowsStatistic = 'Estatísticas dos registos';
+$strRunQuery = 'Executa Comando SQL'; // (tbl_qbe.php)
+$strRunSQLQuery = 'Executa comando(s) SQL na base de dados %s';
+$strRunning = 'a correr em %s';
+
+$strSQLQuery = 'Comando SQL';
+$strSave = 'Guarda';
+$strSelect = 'Selecciona';
+$strSelectADb = 'Por favor seleccione uma base de dados';
+$strSelectAll = 'Selecciona Todas';
+$strSelectFields = 'Seleccione os campos (no mínimo 1)';
+$strSelectNumRows = 'in query'; //to translate
+$strSend = 'envia';
+$strSequence = 'Seq.'; // Sequence => Sequencia, same abreviation
+$strServerChoice = 'Server Choice';//to translate
+$strServerVersion = 'Versão do servidor';
+$strSetEnumVal = 'Se o tipo de campo é "enum" ou "set", por favor introduza os valores no seguinte formato: \'a\',\'b\',\'c\'...<br />Se precisar de colocar uma barra invertida ("\") ou um apóstrofe ("\'") entre esses valores, coloque uma barra invertida antes (por exemplo \'\\\\xyz\' ou \'a\\\'b\').';
+$strShow = 'Mostra';
+$strShowAll = 'Show all'; // to translate
+$strShowCols = 'Mostra Colunas';
+$strShowPHPInfo = 'Mostra informação do PHP';
+$strShowTables = 'Mostra tabelas';
+$strShowThisQuery = ' Mostrar de novo aqui este comando ';
+$strShowingRecords = 'Mostrando registos ';
+$strSingly = '(singly)'; //to translate
+$strSize = 'Tamanho';
+$strSort = 'Ordenação'; // (tbl_qbe.php)
+$strSpaceUsage = 'Espaço ocupado';
+$strStartingRecord = 'Registo inicial';
+$strStatement = 'Itens';
+$strStrucCSV = 'Dados CSV';
+$strStrucData = 'Estrutura e dados';
+$strStrucDrop = 'Adiciona \'drop table\'';
+$strStrucExcelCSV = 'dados CSV para Ms Excel';
+$strStrucOnly = 'Sómente estrutura';
+$strSubmit = 'Submete';
+$strSuccess = 'O seu comando SQL foi executado com sucesso';
+$strSum = 'Soma';
+
+$strTable = 'tabela ';
+$strTableComments = 'Comentários da tabela';
+$strTableEmpty = 'O nome da tabela está vazio!';
+$strTableHasBeenDropped = 'A tabela %s foi eliminada';
+$strTableHasBeenEmptied = 'A tabela %s foi limpa';
+$strTableHasBeenFlushed = 'A tabela %s foi fechada';
+$strTableMaintenance = 'Manutenção da tabela';
+$strTableStructure = 'Estrutura da tabela';
+$strTableType = 'Tipo de tabela';
+$strTables = '%s tabela(s)';
+$strTextAreaLength = ' Devido ao seu tamanho,<br /> este campo pode não ser editável ';
+$strTheContent = 'O conteúdo do seu arquivo foi inserido';
+$strTheContents = 'O conteúdo do arquivo substituiu o conteúdo da tabela que tinha a mesma chave primária ou única';
+$strTheTerminator = 'Terminador de campos.';
+$strTotal = 'total';
+$strType = 'Tipo';
+
+$strUncheckAll = 'Nenhum';
+$strUnique = 'Único';
+$strUnselectAll = 'Limpa Todas as Selecções';
+$strUpdatePrivMessage = 'Actualizou os privilégios de %s.';
+$strUpdateProfile = 'Actualiza o prefil:';
+$strUpdateProfileMessage = 'O prefil foi actualizado.';
+$strUpdateQuery = 'Actualiza Comando SQL'; // (tbl_qbe.php)
+$strUsage = 'Utilização';
+$strUseBackquotes = 'Usar apostrofes com os nomes das tabelas e campos';
+$strUseTables = 'Usar Tabelas'; // (tbl_qbe.php)
+$strUser = 'Utilizador';
+$strUserEmpty = 'O nome do utilizador está vazio!';
+$strUserName = 'Nome do Utilizador';
+$strUsers = 'Utilizadores';
+
+$strValue = 'Valor';
+$strViewDump = 'Ver o esquema da tabela';
+$strViewDumpDB = 'Ver o esquema da base de dados';
+
+$strWelcome = 'Bemvindo ao %s';
+$strWithChecked = 'Com os selecçionados:';
+$strWrongUser = 'Utilizador ou Senha errada. Acesso Negado.';
+
+$strYes = 'Sim';
+
+$strZip = '"zipped"';  //to translate
+
+// To translate
+?>

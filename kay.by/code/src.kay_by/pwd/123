@@ -1,0 +1,135 @@
+                 Fields in the textfile are terminated by ...
+  --fields-enclosed-by=...
+                        Fields in the importfile are enclosed by ...
+  --fields-optionally-enclosed-by=...
+                        Fields in the i.file are opt. enclosed by ...
+  --fields-escaped-by=...
+                        Fields in the i.file are escaped by ...
+  --lines-terminated-by=...
+                        Lines in the i.file are terminated by ...
+
+Default options are read from the following files in the given order:
+/etc/my.cnf /var/lib/mysql/my.cnf ~/.my.cnf 
+The following groups are read: mysqldump client
+The following options may be given as the first argument:
+--print-defaults        Print the program argument list and exit
+--no-defaults           Don't read default options from any options file
+--defaults-file=#       Only read default options from the given file #
+--defaults-extra-file=# Read this file after the global files are read
+
+Possible variables for option --set-variable (-O) are:
+max_allowed_packet    current value: 25165824
+net_buffer_length     current value: 1047551
+[iiouc2xr1p@glade.tut.by:kay.by]% mysql -hglade.tut.by -P3306 -ukayby -powGOrers97 <database
+bash: database: No such file or directory
+[iiouc2xr1p@glade.tut.by:kay.by]% mysql -hglade.tut.by -P3306 -ukayby -powGOrers97 </test/database
+bash: /test/database: No such file or directory
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 -drop kayby
+mysqladmin: invalid option -- d
+mysqladmin: invalid option -- o
+mysqladmin  Ver 8.18 Distrib 3.23.36, for redhat-linux-gnu on i386
+Copyright (C) 2000 MySQL AB & MySQL Finland AB & TCX DataKonsult AB
+This software comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to modify and redistribute it under the GPL license
+
+Administration program for the mysqld daemon.
+Usage: mysqladmin [OPTIONS] command command....
+
+  -#, --debug=...       Output debug log. Often this is 'd:t:o,filename`
+  -f, --force           Don't ask for confirmation on drop database; with
+                        multiple commands, continue even if an error occurs
+  -?, --help            Display this help and exit
+  --character-sets-dir=...
+                        Set the character set directory
+  -C, --compress        Use compression in server/client protocol
+  -h, --host=#          Connect to host
+  -p, --password[=...]  Password to use when connecting to server
+                        If password is not given it's asked from the tty
+  -P  --port=...        Port number to use for connection
+  -i, --sleep=sec       Execute commands again and again with a sleep between
+  -r, --relative        Show difference between current and previous values
+                        when used with -i. Currently works only with
+                        extended-status
+  -E, --vertical        Print output vertically. Is similar to --relative,
+                        but prints output vertically.
+  -s, --silent          Silently exit if one can't connect to server
+  -S, --socket=...      Socket file to use for connection
+  -t, --timeout=...     Timeout for connection to the mysqld server
+  -u, --user=#          User for login if not current user
+  -v, --verbose         Write more information
+  -V, --version         Output version information and exit
+  -w, --wait[=retries]  Wait and retry if connection is down
+
+Default options are read from the following files in the given order:
+/etc/my.cnf /var/lib/mysql/my.cnf ~/.my.cnf 
+The following groups are read: mysqladmin client
+The following options may be given as the first argument:
+--print-defaults        Print the program argument list and exit
+--no-defaults           Don't read default options from any options file
+--defaults-file=#       Only read default options from the given file #
+--defaults-extra-file=# Read this file after the global files are read
+
+Possible variables for option --set-variable (-O) are:
+connect_timeout       current value: 0
+shutdown_timeout      current value: 3600
+
+Where command is a one or more of: (Commands may be shortened)
+  create databasename   Create a new database
+  drop databasename     Delete a database and all its tables
+  extended-status       Gives an extended status message from the server
+  flush-hosts           Flush all cached hosts
+  flush-logs            Flush all logs
+  flush-status          Clear status variables
+  flush-tables          Flush all tables
+  flush-threads         Flush the thread cache
+  flush-privileges      Reload grant tables (same as reload)
+  kill id,id,...        Kill mysql threads
+  password new-password Change old password to new-password
+  ping                  Check if mysqld is alive
+  processlist           Show list of active threads in server
+  reload                Reload grant tables
+  refresh               Flush all tables and close and open logfiles
+  shutdown              Take server down
+  status                Gives a short status message from the server
+  start-slave           Start slave
+  stop-slave            Stop slave
+  variables             Prints variables available
+  version               Get version info from server
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 create kayby
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 create kayby
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+mysqladmin: connect to server at 'glade.tut.by' failed
+error: 'Too many connections'
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+mysqladmin: connect to server at 'glade.tut.by' failed
+error: 'Too many connections'
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+mysqladmin: connect to server at 'glade.tut.by' failed
+error: 'Too many connections'
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+mysqladmin: connect to server at 'glade.tut.by' failed
+error: 'Too many connections'
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+mysqladmin: connect to server at 'glade.tut.by' failed
+error: 'Too many connections'
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+mysqladmin: connect to server at 'glade.tut.by' failed
+error: 'Too many connections'
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+mysqladmin: connect to server at 'glade.tut.by' failed
+error: 'Too many connections'
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+mysqladmin: connect to server at 'glade.tut.by' failed
+error: 'Too many connections'
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+mysqladmin: connect to server at 'glade.tut.by' failed
+error: 'Too many connections'
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby
+mysqladmin: connect to server at 'glade.tut.by' failed
+error: 'Too many connections'
+[iiouc2xr1p@glade.tut.by:kay.by]% mysqladmin -hglade.tut.by -P3306 -ukayby -powGOrers97 drop kayby-
+mysqladmin: connect to server at 'glade.tut.by' failed
+error: 'Too many connections'
+[iiouc2xr1p@glade.tut.by:kay.by]
