@@ -1,0 +1,25 @@
+<%include ../inc_admin.common.view/header.tmpl%>
+<%include ../index_admin.common.view/index_menu.tmpl%>
+<%if ErrorMessage%><%echohtml ErrorMessage%><%endif%>
+<br>
+<%if data%>
+<table width="500" border="0" cellspacing="0" cellpadding="0">
+  <tr id='realty' align="justify"> 
+    <td width="50%"><div align="center"><strong>Логин</strong></div></td>
+    <td ><div align="center"><strong>Имя пользователя</strong></div></td>
+  </tr>
+<%loop data%>
+
+    <tr id='realty'> 
+    <td align='center'><%echo user_login%></td>
+    <td align = 'center'><%echo user_name%></td>
+  </tr>
+
+
+
+<%endloop%>
+</table>
+<%endif%>
+
+<br><br>
+<%include ../inc_admin.common.view/footer.tmpl%>

@@ -1,0 +1,214 @@
+<html>
+<head>
+<style type="text/css">
+<!--
+.menu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+}
+.menu2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+}
+.header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	text-align: justify;
+	padding: 20px;
+}
+.news {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	text-align: left;
+	padding: 10px;
+
+}
+.text2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	text-align: right;
+	
+
+}
+
+
+.bord {
+	border-top: 1px none #999999;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+}
+input#main{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	margin: 0px 10px 0px 5px;
+	height: 15px;
+	width: 90px;
+	border: 1px solid #CCCCCC;
+	vertical-align: middle;
+}
+input#button{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	margin: 0px 0px 0px 00px;
+	height: 20px;
+	width: 50px;
+	border: 1px solid #666666;
+	vertical-align: middle;
+	background-color: #ffffff;
+}
+a:hover {
+	text-decoration: underline;
+}
+a,a#visited {
+	font-size: 14px;
+	color: #A32323;
+	text-decoration: none;
+}
+
+tr#realty {
+	background-color: #FFFFCC;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	color: #666666;
+	text-decoration: none;
+	text-align: left;
+	vertical-align: top;
+	height: 35px;
+}
+select{
+
+	width: 200px;
+	height: 50px;
+}
+-->
+</style>
+<script language="JavaScript">
+<!--
+<%echo Jstring%>
+	
+function InitForm(){
+    FormObj=document.RouteForm;
+    FormObj.SelRoute.selectedIndex=0;
+    FormObj.SelYear.selectedIndex=0;
+    FormObj.SelMonth.selectedIndex=0;
+    FormObj.SelDay.selectedIndex=0;
+    FormObj.SelRoute.options.length=1;
+    FormObj.SelYear.options.length=1;
+    FormObj.SelMonth.options.length=1;
+    FormObj.SelDay.options.length=1;
+    for(i=0;i<Route.length;i+=3)
+        FormObj.SelRoute.options[FormObj.SelRoute.options.length]=new Option(Route[i+1],Route[i]);
+}
+
+function RouteChange() {
+    FormObj=document.RouteForm;
+    FormObj.SelYear.selectedIndex=0;
+    FormObj.SelMonth.selectedIndex=0;
+    FormObj.SelDay.selectedIndex=0;
+    FormObj.SelYear.options.length=1;
+    FormObj.SelMonth.options.length=1;
+    FormObj.SelDay.options.length=1;
+    if(FormObj.SelRoute.selectedIndex<1)return;
+    RouteInd=3*FormObj.SelRoute.selectedIndex-1;
+    for(i=0;i<Route[RouteInd].length;i+=2)
+        FormObj.SelYear.options[FormObj.SelYear.options.length]=new Option(Route[RouteInd][i],Route[RouteInd][i]);
+}
+
+function YearChange() {
+    FormObj=document.RouteForm;
+    FormObj.SelMonth.selectedIndex=0;
+    FormObj.SelDay.selectedIndex=0;
+    FormObj.SelMonth.options.length=1;
+    FormObj.SelDay.options.length=1;
+    if(FormObj.SelRoute.selectedIndex<1)return;
+    if(FormObj.SelYear.selectedIndex<1)return;
+    RouteInd=3*FormObj.SelRoute.selectedIndex-1;
+    YearInd=2*FormObj.SelYear.selectedIndex-1;
+    for(i=0;i<Route[RouteInd][YearInd].length;i+=3)
+        FormObj.SelMonth.options[FormObj.SelMonth.options.length]=new Option(Route[RouteInd][YearInd][i+1],Route[RouteInd][YearInd][i]);
+}
+
+function MonthChange() {
+    FormObj=document.RouteForm;
+    FormObj.SelDay.selectedIndex=0;
+    FormObj.SelDay.options.length=1;
+    if(FormObj.SelRoute.selectedIndex<1)return;
+    if(FormObj.SelYear.selectedIndex<1)return;
+    if(FormObj.SelMonth.selectedIndex<1)return;
+    RouteInd=3*FormObj.SelRoute.selectedIndex-1;
+    YearInd=2*FormObj.SelYear.selectedIndex-1;
+    MonthInd=3*FormObj.SelMonth.selectedIndex-1;
+    for(i=0;i<Route[RouteInd][YearInd][MonthInd].length;i++)
+        FormObj.SelDay.options[FormObj.SelDay.options.length]=new Option(Route[RouteInd][YearInd][MonthInd][i],Route[RouteInd][YearInd][MonthInd][i]);
+}
+
+//-->
+</script>
+</head>
+<body onload="javascript:InitForm();">
+
+<%include menu.tmpl%>
+
+Информация о партнере:
+<ul>
+<li>Name: <%echo CorpName%><br>
+<li>Phone1: <%echo Phone1%><br>
+<li>Phon2: <%echo Phone2%><br>
+<li>Email: <%echo Email%><br>
+</ul><br>
+Выбор маршрута и даты для последующего заказа билетов:<br>
+<br>
+<table width="500" border="0" cellspasing="0" cellpadding="0">
+<tr><td><form name="RouteForm" action="<%echo HostName%>/busservice/partners_page/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post"> </td></tr>
+<tr><td  width="150">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr id='realty'>
+      <td>Маршрут:</td>
+      <td><select name="SelRoute" onchange="javascript:RouteChange();">
+        <option value="99">--Выбирайте--</option>
+      </select></td>
+     </tr><tr id='realty'>
+      <td>Год:</td>
+      <td><select name="SelYear" onchange="javascript:YearChange();">
+        <option value="99">--Выбирайте--</option>
+      </select></td>
+     </tr><tr id='realty'>
+      <td>Месяц:</td>
+      <td><select name="SelMonth" onchange="javascript:MonthChange();">
+        <option value="99">--Выбирайте--</option>
+      </select></td>
+     </tr><tr id='realty'>
+      <td>День:</td>
+      <td><select name="SelDay">
+        <option value="99">--Выбирайте--</option>
+      </select></td>
+     </tr><tr>
+      <td colspan="2"><input type="hidden" name="post" value="1"><input type="Submit" value="Go!"></td>
+     </tr>
+    </table>
+</td></tr>
+<tr><td></form></td></tr>
+</table>
+</body>
+</html>

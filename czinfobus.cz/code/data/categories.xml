@@ -1,0 +1,42 @@
+<?xml version='1.0' standalone='yes'?>
+<categories>
+	
+	<content>
+		<news>
+			<page>
+					<id>topnews</id>
+					<module>content</module>
+					<object>article</object>
+					<param>
+						<ru>2</ru>
+						<en>3</en>
+					
+					</param>
+					<index>1</index>
+								
+			</page>
+			<page>
+				
+				<id>news_from_blabla</id>
+					<module>content</module>
+					<object>article</object>
+					<param>
+						<ru>3</ru>
+						<en>4</en>
+					</param>
+					<index>1</index>
+				
+			
+				
+			</page>
+			
+			
+		</news>
+
+	</content>
+	
+	
+	
+
+
+</categories>

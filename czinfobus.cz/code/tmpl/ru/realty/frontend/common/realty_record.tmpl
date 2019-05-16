@@ -1,0 +1,49 @@
+<%include ../../inc_.common.view/header.tmpl%>
+
+<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id='article'>
+   <tr> 
+   			<td width="40" id='newsheader' nowrap = 'nowrap'></td>
+          <td id='newsheader'><h3><%echo r_short_descr%></h3></td>
+        </tr>
+        
+  <tr> <td width="40" id='newsheader' nowrap = 'nowrap'></td>
+      <td width="650" align="justify" class='news'> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="25%" id='realtyrec'>Город/район:</td>
+          <td id='realtyrec2'><%echo r_location%></td>
+        </tr>
+        <tr> 
+          <td id='realtyrec'>Адрес:</td>
+          <td id='realtyrec2'><%echo r_address%></td>
+        </tr>
+        <tr> 
+          <td id='realtyrec'>Площадь:</td>
+          <td id='realtyrec2'><%echo r_space%> кв.м.</td>
+        </tr>
+        <tr> 
+          <td id='realtyrec'>Количество комнат:</td>
+          <td id='realtyrec2'><%echo r_room_num%>+<%if r_kitchen_type==1%>1<%else%>к.к.<%endif%></td>
+        </tr>
+        <tr> 
+          <td id='realtyrec'>Цена:</td>
+          <td id='realtyrec2'><%echo r_price%> крон</td>
+        </tr>
+        <tr> 
+          <td id='realtyrec'>Полное описание:</td>
+          <td id='realtyrec2'><%echo r_long_descr%></td>
+        </tr>
+        <tr> 
+          <td id='realtyrec'>Фото:</td>
+          <td id='realtyrec2'><%if Images%><%loop Images%> <a href='<%echo global:HostName%>/<%echo image%>' target='_blank'> Фото<%echo i%></a><%endloop%><%else%>нет<%endif%></td>
+        </tr>
+      </table>
+      
+     </td>
+    <td></td>
+		
+  </tr>
+</table>
+
+<%include ../../inc_.common.view/footer.tmpl%>

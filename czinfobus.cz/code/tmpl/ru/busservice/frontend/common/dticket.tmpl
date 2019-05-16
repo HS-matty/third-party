@@ -1,0 +1,32 @@
+<%include ../../../include/frontend/common/dheader.tmpl%>
+<br>
+
+<%include menu.tmpl%>
+
+<UL>
+
+
+<li>Место №<%echo ticket_place%>
+<li>Клиент: <b><%echo client_name %></b>
+<li>Дата резервации: <%echo ticket_timedate%>
+<li>ID Автобуса: <%echo bus_id%>
+<li>Интервал: <%echo ticket_interval_title%>
+<li>Наименование: <%echo bus_route_title%>
+<li>День отправления: <%echo bus_day_depar%>
+<li>Время отправления: <%echo bus_time_depar%>
+<li>День прибытия: <%echo bus_day_arrival %>
+<li>Время прибытия: <%echo bus_time_arrival %>
+<li>Стоимость: <%echo ticket_price%> (<%echo ticket_currency_title%>)
+<li> Скидка: <%echo discount%>%
+<li>Стоимость со скидкой: <%echo ticket_price_with_discount%> (<%echo ticket_currency_title%>)
+<li> <a href="<%echo global:HostName%>/busservice/dticket/<%echo ticket_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&action=print" target="_blank">ПЕЧАТЬ</a>
+<li> <a href="<%echo global:HostName%>/busservice/ptickets/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&rollback=<%echo ticket_id%>">ОТКАЗАТЬСЯ</a>
+
+
+</UL>
+
+<%include ../../../include/frontend/common/dfooter.tmpl%>
+
+
+
+

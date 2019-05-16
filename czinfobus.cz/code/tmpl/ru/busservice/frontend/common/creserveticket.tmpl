@@ -1,0 +1,51 @@
+<%include ../../../include/frontend/common/dheader.tmpl%>
+<%include menu_client.tmpl%>
+<br>
+
+Автобус  
+<UL>
+<li>ID<%echo bus_id%>
+<li>Наименование: <%echo bus_route_title%>
+<li>День отправления: <%echo bus_day_depar%>
+<li>Время отправления: <%echo bus_time_depar%>
+<li>День прибытия: <%echo bus_day_arrival %>
+<li>Время прибытия: <%echo bus_time_arrival %>
+
+</UL>
+
+Билет, место №<%echo ticketplace%>
+
+<form action="<%echo HostName%>/busservice/c_rticket/<%echo ticketplace%>_<%echo global:bus_id%>/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post" enctype="application/x-www-form-urlencoded">
+   
+    
+   
+<br>
+<br>
+
+<ul>
+<%if intervals%>
+<%loop intervals%>
+
+
+<li><b><%echo departure_point_latin_name%> - <%echo arrival_point_ru_name%></b>
+
+	<ul>
+		<%loop currs%>
+		<li><input type="radio" name="currency_id" value="<%echo currency_id%>_<%echo parent:interval_id%>" />    <%echo price_value%> <%echo currency_name%>   </li>
+		<%endloop%>
+
+	</ul>
+<%endloop%>
+
+</ul>
+
+    
+      
+<input name="submit" type="submit" value="Готово" />
+<%endif%>   
+<input type="hidden" name="post" value="1">
+</form>
+
+
+	
+<%include ../../../include/frontend/common/dfooter.tmpl%>

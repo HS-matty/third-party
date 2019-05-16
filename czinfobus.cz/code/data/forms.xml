@@ -1,0 +1,1568 @@
+<?xml version='1.0' standalone='yes'?>
+<forms>
+	<addbus>
+	
+		<groups>	
+		</groups>
+		
+			<field>
+				<id>SelRoute</id> 
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>99999</max>
+					<error_message>
+						<en>Route name field error</en>
+						<ru>Ошибка в поле "Маршрут"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		
+		<field>
+				<id>SelYear</id> 
+				<type>int</type>
+				<length>
+					<min>2005</min>
+					<max>2010</max>
+					<error_message>
+						<en>Year name field error</en>
+						<ru>Ошибка в поле "Year"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>SelMonth</id> 
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>12</max>
+					<error_message>
+						<en>Month field error</en>
+						<ru>Ошибка в поле "Месяц"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>SelDay</id> 
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>31</max>
+					<error_message>
+						<en>Day field error</en>
+						<ru>Ошибка в поле "День"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+	</addbus>
+
+
+	<editpartner>
+		
+		<groups>	
+		</groups>
+			<field>
+				<id>currency_id</id> 
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>9999</max>
+					<error_message>
+						<en>Currency Id field error</en>
+						<ru>Ошибка в поле "Валюта"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+			<field>
+				<id>dealer_id</id> 
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>500</max>
+					<error_message>
+						<en>Partner Id field error</en>
+						<ru>Ошибка в поле "Id партнера"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>	
+		
+				
+			<field>
+				<id>dealer_corp_name</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>50</max>
+					<error_message>
+						<en>Partner name field error</en>
+						<ru>Ошибка в поле "Имя партнера"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dealer_inn</id> 
+				<type>string</type>
+				<length>
+					<min>8</min>
+					<max>8</max>
+					<error_message>
+						<en>INN field error</en>
+						<ru>Ошибка в поле "ИНН"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dealer_address</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>60</max>
+					<error_message>
+						<en>Address field error</en>
+						<ru>Ошибка в поле "Адрес"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dealer_phone1</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Phone1 field error</en>
+						<ru>Ошибка в поле "Телефон1"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dealer_phone2</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Phone2 field error</en>
+						<ru>Ошибка в поле "Телефон2"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dealer_email</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Email field error</en>
+						<ru>Ошибка в поле "Email"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+			<field>
+				<id>dealer_login</id> 
+				<type>string</type>
+				<length>
+					<min>5</min>
+					<max>20</max>
+					<error_message>
+						<en>login field error</en>
+						<ru>Ошибка в поле "login"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+			
+		
+	</editpartner>
+	
+	<addpartner>
+		
+		<groups>	
+		</groups>
+			<field>
+				<id>dealer_id</id> 
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>500</max>
+					<error_message>
+						<en>Partner Id field error</en>
+						<ru>Ошибка в поле "Id партнера"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>currency_id</id> 
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>9999</max>
+					<error_message>
+						<en>Currency Id field error</en>
+						<ru>Ошибка в поле "Валюта"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+			<field>
+				<id>dealer_corp_name</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>50</max>
+					<error_message>
+						<en>Partner name field error</en>
+						<ru>Ошибка в поле "Имя партнера"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dealer_inn</id> 
+				<type>string</type>
+				<length>
+					<min>8</min>
+					<max>8</max>
+					<error_message>
+						<en>INN field error</en>
+						<ru>Ошибка в поле "ИНН"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dealer_address</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>60</max>
+					<error_message>
+						<en>Address field error</en>
+						<ru>Ошибка в поле "Адрес"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dealer_phone1</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Phone1 field error</en>
+						<ru>Ошибка в поле "Телефон1"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dealer_phone2</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Phone2 field error</en>
+						<ru>Ошибка в поле "Телефон2"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dealer_email</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Email field error</en>
+						<ru>Ошибка в поле "Email"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+			<field>
+				<id>dealer_login</id> 
+				<type>string</type>
+				<length>
+					<min>5</min>
+					<max>20</max>
+					<error_message>
+						<en>login field error</en>
+						<ru>Ошибка в поле "login"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+			<field>
+				<id>dealer_password1</id> 
+				<type>string</type>
+				<length>
+					<min>5</min>
+					<max>20</max>
+					<error_message>
+						<en>Password field error</en>
+						<ru>Ошибка в поле "Пароль"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dealer_password2</id> 
+				<type>string</type>
+				<length>
+					<min>5</min>
+					<max>20</max>
+					<error_message>
+						<en>Password2 field error</en>
+						<ru>Ошибка в поле "Пароль2"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		
+	</addpartner>	
+	<addstations>
+		<groups>
+				<group>
+					<id>point</id>
+					
+				</group>
+			
+			</groups>
+			<field>
+				<group>point</group>
+				<id>station_order</id> 
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>1024</max>
+					<error_message>
+						<en>ORDER ERROR</en>
+						<ru>Порядок</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+
+			<field>
+				<group>point</group>
+				<id>point_id</id> 
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>1024</max>
+					<error_message>
+						<en>Point_id error</en>
+						<ru>Point_id error</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+	
+	
+			
+	</addstations>
+
+
+	<addpoint>
+		
+		<groups>	
+		</groups>
+
+	
+		<field>
+			
+				<id>point_latin_name</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>35</max>
+					<error_message>
+						<en>Point latin name!</en>
+						<ru>Ошибка поля "Латинское название пункта"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+			
+				<id>point_is_cz</id> 
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>1</max>
+					<error_message>
+						<en>Point_is_cz Error!</en>
+						<ru>Ошибка поля "is_cz"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+			
+				<id>point_ru_name</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>35</max>
+					<error_message>
+						<en>Point ru name!</en>
+						<ru>Ошибка поля "Русское название пункта"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+			
+	</addpoint>
+
+
+	<addroute>
+			<groups>
+				<group>
+					<id>day</id>
+					
+				</group>
+			
+			</groups>
+			
+			<field>
+				<id>route_name_latin</id> 
+				<type>string</type>
+				<length>
+					<min>3</min>
+					<max>55</max>
+					<error_message>
+						<en>Route name length must be 3-55 characters</en>
+						<ru>Длина названия маршрута должна быть от 3 до 55 знаков  </ru>
+					</error_message>
+				</length>
+			
+				<content>
+					<error_message>
+						<en>Bad route name. </en>
+						<ru>Неправильное название для маршрута (латиница).</ru>
+					</error_message>
+				</content>							
+		
+		</field>
+		<field>
+				<id>route_id</id> 
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>9999999</max>
+					<error_message>
+						<en>Route id error</en>
+						<ru>route id error</ru>
+					</error_message>
+				</length>
+			
+				<content>
+					
+				</content>							
+		
+		</field>			
+		<field>
+				<id>route_name_ru</id> 
+				<type>string</type>
+				<length>
+					<min>3</min>
+					<max>55</max>
+					<error_message>
+						<en>Route name length must be 3-55 characters</en>
+						<ru>Длина названия маршрута должна быть от 3 до 55 знаков  </ru>
+					</error_message>
+				</length>
+			
+				<content>
+					<error_message>
+						<en>Bad route name (ru). </en>
+						<ru>Неправильное название для маршрута (ru).</ru>
+					</error_message>
+				</content>							
+		
+		</field>			
+		<field>
+				<group>day</group>
+				<id>time_departure_hour</id> 
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>24</max>
+					<error_message>
+						<en>Error in time_departure_hour</en>
+						<ru>Ошибка в time_departure_hour</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				</content>							
+		
+		</field>
+			<field>
+				<group>day</group>
+				<id>days_id</id> 
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>999999</max>
+					<error_message>
+						<en>day id error</en>
+						<ru>day id error</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				</content>							
+		
+		</field>
+		<field>
+				<group>day</group>
+				<id>time_departure_minute</id> 
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>60</max>
+					<error_message>
+						<en>Error in time_departure_minute</en>
+						<ru>Ошибка в  time_departure_minute</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				</content>							
+		
+		</field>
+		<field>
+				<group>day</group>
+				<id>day_departure</id> 
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>6</max>
+					<error_message>
+						<en>Day departure is incorrect</en>
+						<ru>Day departure is incorrect</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				</content>							
+		
+		</field>			
+		<field>
+				<group>day</group>
+				<id>day_arrival</id> 
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>6</max>
+					<error_message>
+						<en>Day arrival is incorrect</en>
+						<ru>Day arrival is incorrect</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				</content>							
+		
+		</field>			
+		<field>
+			<group>day</group>
+				<id>time_arrival_hour</id> 
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>24</max>
+					<error_message>
+						<en>length must be 5-15 characters</en>
+						<ru>Длинна должна быть от 5 до 15 знаков</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				</content>							
+		
+		</field>			
+		<field>
+			<group>day</group>
+				<id>time_arrival_minute</id> 
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>60</max>
+					<error_message>
+						<en>length must be 5-15 characters</en>
+						<ru>Длинна должна быть от 5 до 15 знаков</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				</content>							
+		
+		</field>			
+		<field>
+				<group>day</group>
+				<id>bus_type</id> 
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>500</max>
+					<error_message>
+						<en>Bus type field error!</en>
+						<ru>Ошибка в поле "Тип автобуса"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				</content>							
+		
+		</field>			
+			
+		<field>
+				<group>day</group>
+				<id>places_range</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>50</max>
+					<error_message>
+						<en>Bus owner field error!</en>
+						<ru>Ошибка в поле "Владелец автобуса"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				<expr>/^([0-9]{1,3}\-[0-9]{1,3}\,?)*$/</expr>
+					<error_message>
+						<en>Wrong places range!</en>
+						<ru>Вы ошиблись с диапазоном мест!</ru>
+					</error_message>
+				</content>							
+		
+		</field>			
+		
+		
+			
+
+	
+	</addroute>	
+	
+	<login_form>
+
+		<field>
+				<id>login</id> 
+				<type>string</type>
+				<length>
+					<min>3</min>
+					<max>15</max>
+					<error_message>
+						<en>Login length must be 3-15 characters</en>
+						<ru>Длина имени пользователя должна быть от 3 до 15 знаков  </ru>
+					</error_message>
+				</length>
+			
+				<content>
+					<expr>/^([A-Za-z0-9_])*$/</expr>
+					<error_message>
+						<en>Login must consist of characters and letters. </en>
+						<ru>Имя пользователя должно состоять из букв латинского алфавита и цифр.</ru>
+					</error_message>
+				</content>							
+		
+		</field>			
+		
+		<field> 
+				<id>password</id>
+				<type>string</type>
+				<length>
+					<min>4</min>
+					<max>15</max>
+					<error_message>
+						<en>Password length must be 4-15 characters</en>
+						<ru>Длина пароля должна быть от 4 до 15 знаков  </ru>
+					</error_message>
+				</length>
+			
+				<content>
+					<expr>/^([A-Za-z0-9_.,-])*$/</expr>
+					<error_message>
+						<en>password must consist of characters, letters, [_.,-] sybmols</en>
+						<ru>Пароль должен состоять из букв латинского алфавита, цифр, символов [ _.,- ]</ru>
+					</error_message>
+				</content>							
+		
+		</field>			
+		
+		
+	</login_form>
+	<edit_article>
+		<field> 
+				<id>article_header</id>
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>100</max>
+					<error_message>
+						<en>Header length must be 4-30 characters</en>
+						<ru>Длина заголовка должна быть от 4 до 30знаков  </ru>
+					</error_message>
+				</length>
+			
+				<content>
+					
+				</content>							
+		
+		</field>			
+			<field> 
+				<id>article_body</id>
+				<type>string</type>
+				<length>
+					<min>4</min>
+					<max>10000</max>
+					<error_message>
+						<en>Body length must be > 4</en>
+						<ru>Длина статьи должна быть от 4  </ru>
+					</error_message>
+				</length>
+			
+				<content>
+					
+				</content>							
+		
+		</field>			
+		<field> 
+				<id>article_meta</id>
+				<type>string</type>
+				<length>
+					<min>4</min>
+					<max>100</max>
+					<error_message>
+						<en>Meta length must be 4-100 characters</en>
+						<ru>Длина Meta должна быть от 4 до 100 знаков  </ru>
+					</error_message>
+				</length>
+			
+				<content>
+					
+				</content>							
+		
+		</field>			
+			<field> 
+				<id>article_descr</id>
+				<type>string</type>
+				<length>
+					<min>4</min>
+					<max>100</max>
+					<error_message>
+						<en>Descr length must be 4-100 characters</en>
+						<ru>Длина описания должна быть от 4 до 100 знаков  </ru>
+					</error_message>
+				</length>
+			
+				<content>
+					
+				</content>							
+		
+		</field>			
+				
+	</edit_article>		
+	
+	<register_user>
+	
+		<groups>	
+		</groups>
+		
+			<field>
+				<id>client_name</id>
+				<type>string</type>
+				<length>
+					<min>4</min>
+					<max>30</max>
+					<error_message>
+						<en>Name field error</en>
+						<ru>Ошибка в поле "Имя"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>	
+		<field>
+				<id>client_phone1</id>
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>50</max>
+					<error_message>
+						<en>Phone1 field error</en>
+						<ru>Ошибка в поле "Телефон1"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>	
+		
+		<field>
+				<id>client_phone2</id>
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>50</max>
+					<error_message>
+						<en>Phone2 field error</en>
+						<ru>Ошибка в поле "Телефон2"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>
+				<field>
+				<id>client_email</id>
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>50</max>
+					<error_message>
+						<en>Email field error</en>
+						<ru>Ошибка в поле "Email"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				
+				
+				<expr>/^([A-Za-z0-9_.-]{2,15})@([A-Za-z0-9_.-]{2,25}).([a-zA-Z]{2,4})$/</expr>
+				<error_message>
+					<en>Email Error</en>
+					<ru>Email Error</ru>
+				</error_message>
+					
+										
+				</content>							
+				
+		
+		</field>
+		<field>
+				<id>client_login</id> 
+				<type>string</type>
+				<length>
+					<min>3</min>
+					<max>20</max>
+					<error_message>
+						<en>login field error</en>
+						<ru>Ошибка в поле "login"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+			<field>
+				<id>client_password1</id> 
+				<type>string</type>
+				<length>
+					<min>5</min>
+					<max>20</max>
+					<error_message>
+						<en>Password field error</en>
+						<ru>Ошибка в поле "Пароль"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>client_password2</id> 
+				<type>string</type>
+				<length>
+					<min>5</min>
+					<max>20</max>
+					<error_message>
+						<en>Password2 field error</en>
+						<ru>Ошибка в поле "Пароль2"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>					
+		
+	</register_user>
+	
+	
+	<addbusowner>
+	
+		<groups>	
+		</groups>
+		
+			<field>
+				<id>busowner_title</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>50</max>
+					<error_message>
+						<en>Title name field error</en>
+						<ru>Ошибка в поле "Наименование"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>busowner_inn</id> 
+				<type>string</type>
+				<length>
+					<min>7</min>
+					<max>9</max>
+					<error_message>
+						<en>INN field error</en>
+						<ru>Ошибка в поле "ИНН"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>busowner_address</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>60</max>
+					<error_message>
+						<en>Address field error</en>
+						<ru>Ошибка в поле "Адрес"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>busowner_phone1</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Phone1 field error</en>
+						<ru>Ошибка в поле "Телефон1"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>busowner_phone2</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Phone2 field error</en>
+						<ru>Ошибка в поле "Телефон2"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>busowner_email</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Email field error</en>
+						<ru>Ошибка в поле "Email"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				
+				
+				<expr>/^([A-Za-z0-9_.-]{2,15})@([A-Za-z0-9_.-]{2,25}).([a-zA-Z]{2,4})$/</expr>
+				<error_message>
+					<en>Email Error</en>
+					<ru>Email Error</ru>
+				</error_message>
+					
+										
+				</content>								
+				
+		
+		</field>			
+	
+				<field>
+				<id>busowner_fax</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Fax field error</en>
+						<ru>Ошибка в поле "Fax"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>	
+				
+			
+		
+	</addbusowner>			
+	
+	
+	
+	<addbustype>
+	
+		<groups>	
+		</groups>
+		   
+		       <field>
+				<id>bustype_title</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>50</max>
+					<error_message>
+						<en>Title name field error</en>
+						<ru>Ошибка в поле "Наименование"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>bustype_places_num</id> 
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>500</max>
+					<error_message>
+						<en>Places num  field error</en>
+						<ru>Ошибка в поле "Кол-во мест"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>
+			<field>
+				<id>bustype_tv</id> 
+				<notrequire>1</notrequire>
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>1</max>
+					<error_message>
+						<en>TV field error</en>
+						<ru>Ошибка в поле "TV"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>						
+		<field>
+				<id>bustype_toilet</id> 
+				<notrequire>1</notrequire>
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>1</max>
+					<error_message>
+						<en>Toilet field error</en>
+						<ru>Ошибка в поле "Туалет"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		
+		
+			<field>
+				<id>bustype_cond</id> 
+			<notrequire>1</notrequire>
+				<type>int</type>
+				<length>
+					<min>0</min>
+					<max>1</max>
+					<error_message>
+						<en>Condition field error</en>
+						<ru>Ошибка в поле "Кондиционер"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+			<field>
+				<id>bustype_bar</id> 
+				<type>int</type>
+			<notrequire>1</notrequire>
+				<length>
+					<min>0</min>
+					<max>1</max>
+					<error_message>
+						<en>Bar field error</en>
+						<ru>Ошибка в поле "Бар"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>busowner_id</id> 
+				
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>500</max>
+					<error_message>
+						<en>bus owner field error</en>
+						<ru>Ошибка в поле "Владелец автобуса"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+				
+			
+		
+	</addbustype>			
+	<station_timing>
+			<groups>
+				<group>
+					<id>st</id>
+															
+				</group>
+			
+			</groups>
+			
+			
+			<field>
+			<group>st</group>
+				<id>days_id</id> 
+				
+				<type>int</type>
+				<length>
+					<min>1</min>
+					<max>500</max>
+					<error_message>
+						<en>days_id field error</en>
+						<ru>Ошибка в поле "days_id"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+			
+			<field>
+				<group>st</group>
+				
+				<id>time_arr</id> 
+				
+				<type>string</type>
+				<length>
+					<min>5</min>
+					<max>5</max>
+					<error_message>
+						<en>time arrival field error</en>
+						<ru>Ошибка в поле "Время прибытия"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+					
+				<expr>/^[0-9]{2,2}:[0-9]{2,2}$/</expr>
+								
+				<error_message>
+					<en>Time arrival: format error</en>
+					<ru>Время прибытия: ошибка формата</ru>
+				</error_message>
+
+				
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<group>st</group>
+				
+				<id>time_dep</id> 
+				
+				<type>string</type>
+				<length>
+					<min>5</min>
+					<max>5</max>
+					<error_message>
+						<en>time departure field error</en>
+						<ru>Ошибка в поле "Время отправления"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+					
+				<expr>/^[0-9]{2,2}:[0-9]{2,2}$/</expr>
+				<error_message>
+					<en>Time departutre: format error</en>
+					<ru>Время отправления: ошибка формата</ru>
+				</error_message>
+				
+										
+				</content>							
+				
+		
+		</field>			
+			
+			
+			
+	</station_timing>
+	
+	<add_dclient>
+		
+		<groups>	
+		</groups>
+		
+			<field>
+				<id>dclient_name</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>50</max>
+					<error_message>
+						<en>Client name field error</en>
+						<ru>Ошибка в поле "Имя Клиента"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		
+		<field>
+				<id>dclient_address</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>60</max>
+					<error_message>
+						<en>Address field error</en>
+						<ru>Ошибка в поле "Адрес"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		<field>
+				<id>dclient_phone</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Phone1 field error</en>
+						<ru>Ошибка в поле "Телефон1"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+	
+		<field>
+				<id>dclient_email</id> 
+				<type>string</type>
+				<length>
+					<min>1</min>
+					<max>20</max>
+					<error_message>
+						<en>Email field error</en>
+						<ru>Ошибка в поле "Email"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+				
+				
+				<expr>/^([A-Za-z0-9_.-]{2,15})@([A-Za-z0-9_.-]{2,25}).([a-zA-Z]{2,4})$/</expr>
+				<error_message>
+					<en>Email Error</en>
+					<ru>Email Error</ru>
+				</error_message>
+					
+										
+				</content>									
+				
+		
+		</field>			
+		
+		<field>
+				<id>dclient_info</id> 
+				<type>string</type>
+				<length>
+					<min>0</min>
+					<max>500</max>
+					<error_message>
+						<en>Info field error</en>
+						<ru>Ошибка в поле "Info"</ru>
+					</error_message>
+				</length>
+			
+				<content>
+										
+				</content>							
+				
+		
+		</field>			
+		
+	</add_dclient>
+
+</forms>

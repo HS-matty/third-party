@@ -1,0 +1,24 @@
+
+RewriteEngine On
+Options +FollowSymlinks
+
+
+RewriteBase   /
+
+
+
+#RewriteRule ^admin(.*)$ index_admin.php 
+#RewriteRule index_admin.php - [L]
+
+RewriteCond %{REQUEST_URI} ^/images/(.*).jpg$
+RewriteRule ^(.*)$ $1 [L]	
+
+RewriteCond %{REQUEST_URI} ^/img/(.*).[jpg|gif|swf]$
+RewriteRule ^img/(.*)$ /images/frontend/$1 [L]	
+
+RewriteCond %{REQUEST_URI} !^(.*).doc$
+RewriteCond %{REQUEST_URI} !^/index.html$
+RewriteRule !\.(jpg|gif|swf)$ index_admin.php [L]
+
+
+

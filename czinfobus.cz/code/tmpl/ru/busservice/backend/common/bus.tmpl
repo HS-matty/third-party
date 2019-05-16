@@ -1,0 +1,20 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+
+Автобус  
+<UL>
+<li>ID<%echo bus_id%>
+<li>Наименование: <%echo bus_route_title%>
+<li>День отправления: <%echo bus_day_depar%>
+<li>Время отправления: <%echo bus_time_depar%>
+<li>День прибытия: <%echo bus_day_arrival %>
+<li>Время прибытия: <%echo bus_time_arrival %>
+<li>Количество мест: <%echo bus_places_num%>
+</UL>
+<br>Билеты:
+<br>
+<%loop tickets%>
+	<%if ticket_id%><a href="<%echo global:HostName%>/admin/busservice/ticket/<%echo ticket_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>" >Билет <%echo id%><%else%><a href="<%echo global:HostName%>/admin/busservice/newticket/<%echo id%>_<%echo global:bus_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>" method="post" enctype="application/x-www-form-urlencoded" name="addstations" > Билет <%echo id%><%endif%></a>, <%echo status%><%if reserved_by_name%>,  <%echo reserved_by_name%><%endif%><%if ticket_status%>, Бронь: <%echo ticket_status%><%endif%>, <%if ticket_payed==1%>Оплачен<%else%>Не оплачен<%endif%> <br>
+<%endloop%>
+
+<%include ../../../include/backend/common/footer.tmpl%>

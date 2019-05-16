@@ -1,0 +1,12 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td id='menu3'><a href="<%echohtml HostName%>/admin/<%echohtml CatName%>/<%echohtml Lang%>/index.html?sid=<%echohtml Sid%>&action=add_realty" class='menu' >Добавить запись</a></td>
+	<%if r_id%><td id='menu3'><a href="<%echohtml HostName%>/admin/<%echohtml CatName%>/<%echohtml Lang%>/index.html?sid=<%echohtml Sid%>&action=edit_realty&realty_id=<%echohtml r_id%>" class='menu'> Редактировать запись</a></td><%endif%>
+	<%if r_id%><td id='menu3'><a href="<%echohtml HostName%>/admin/<%echohtml CatName%>/<%echohtml Lang%>/index.html?sid=<%echohtml Sid%>&action=delete_realty&realty_id=<%echohtml r_id%>" class='menu'> Удалить запись</a></td>	<%endif%>
+  	
+
+		<td class="menu" id='menu4'>&nbsp;</td>
+  </tr>
+</table>
+
+<br>

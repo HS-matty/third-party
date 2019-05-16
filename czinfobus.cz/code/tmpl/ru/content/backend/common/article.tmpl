@@ -1,0 +1,39 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br><br>
+<%if !IsEmptyArticle%>
+<a href="<%echo HostName%>/admin/content/edit_article/<%echo article_id%>/<%echohtml Lang%>/?sid=<%echohtml Sid%>">Редактировать статью</a><br>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr id='realty'> 
+    <td width="200">Запись N:</td>
+    <td ><%echo article_id%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Добавлено: </td>
+    <td><%echo article_timedate%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Кем: </td>
+    <td> <%echo user_name%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Краткий Заголовок</td>
+    <td><%echo article_header%></td>
+  </tr>
+  
+  <tr id='realty'> 
+    <td>Краткое описание:</td>
+    <td><%echo article_descr%> </td>
+  </tr>
+
+  <tr id='realty'> 
+    <td>Содержание: </td>
+    <td align="justify"> <%echo article_body%></td>
+  </tr>
+</table>
+<%else%> Статья не найдена!<%endif%>
+	
+	
+
+
+<br><br>
+<%include ../../../include/backend/common/footer.tmpl%>

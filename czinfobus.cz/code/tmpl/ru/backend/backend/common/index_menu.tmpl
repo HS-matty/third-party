@@ -1,0 +1,12 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td id='menu3'><a href="<%echohtml HostName%>/admin/<%echohtml Lang%>/adminuser_<%echo UserId%>.html?sid=<%echohtml Sid%>" class='menu' >Настройки пользователя</a></td>
+    <%if SupervisorMode%><td id='menu3'><a href="<%echohtml HostName%>/admin/managecms/<%echohtml Lang%>/userlist.html?sid=<%echohtml Sid%>" class='menu' >Список пользователей</a></td><%endif%>
+    <%if SupervisorMode%><td id='menu3'><a href="<%echohtml HostName%>/admin/managecms/<%echohtml Lang%>/index.html?sid=<%echohtml Sid%>&action=add_user" class='menu' >Добавить пользователя</a></td><%endif%>
+    
+		<td class="menu" id='menu4'>&nbsp;</td>
+  </tr>
+  
+</table>
+
+<br>

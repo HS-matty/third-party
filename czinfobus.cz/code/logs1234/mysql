@@ -1,0 +1,20 @@
+27.7.2005 - 15:07 : Table 'kesso_cms.grealty_records_ru' doesn't exist
+27.7.2005 - 15:07 : Table 'kesso_cms.grealty_records_ru' doesn't exist
+14.8.2005 - 21:00 : Table 'bus.busses' doesn't exist
+14.8.2005 - 21:45 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+14.8.2005 - 21:45 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+21.8.2005 - 17:12 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),'2',MAKETIME('12:1200')' at line 2
+21.8.2005 - 17:12 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),'2',MAKETIME('14:1400')' at line 2
+21.8.2005 - 17:12 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),'1',MAKETIME('16:1600')' at line 2
+21.8.2005 - 17:13 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),'3',MAKETIME('12:1200')' at line 2
+21.8.2005 - 17:14 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),'3',MAKETIME('12:12:00')' at line 2
+21.8.2005 - 17:15 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),'3',MAKETIME('12,12,00')' at line 2
+21.8.2005 - 17:15 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),'3',MAKETIME('12,12,00')' at line 2
+21.8.2005 - 17:16 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':00),'3',MAKETIME(12,12,00)' at line 2
+21.8.2005 - 17:16 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),'3',MAKETIME('12,12,00')' at line 2
+21.8.2005 - 17:17 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 2
+21.8.2005 - 19:23 : Column 'time_departure' cannot be null
+21.8.2005 - 19:31 : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TRANSACTION' at line 1
+21.8.2005 - 19:44 : Unknown column 'bus_owner' in 'field list'
+21.8.2005 - 19:47 : Unknown column 'bus_owner' in 'field list'
+21.8.2005 - 19:48 : Unknown column 'bus_owner' in 'field list'

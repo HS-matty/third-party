@@ -1,0 +1,42 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+
+<form action="<%echo HostName%>/admin/busservice/addpoint/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post" enctype="application/x-www-form-urlencoded" name="addpartner">
+  <table width="650" border="0" cellspacing="0" cellpadding="0">
+    <tr id='realty'> 
+      <td width="250">Латинское название пункта:</td>
+      <td width="400"><input <%if point_name_latin%>value="<%echo point_name_latin%>"<%endif%> name="point_latin_name" type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td>Русское название пункта:</td>
+      <td><input name="point_ru_name" <%if point_ru_name%>value="<%echo point_ru_name%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td>Находиться в Чехии? :</td>
+      <td><select name="point_is_cz"  style="width: 100px"/>
+      <option selected value="99">Выбирайте!</option>
+      <option value="1">Да</option>
+      <option value="0">Нет</option>
+ 
+      </select></td>
+    </tr>
+   
+    
+   
+    <tr id='realty'> 
+      <td></td>
+      <td align="right"><input name="submit" type="submit" value="Готово" /></td>
+    </tr></td></tr>
+  
+  </table>
+  <input type="hidden" name="post" value="1">
+</form>
+
+
+
+<%include ../../../include/backend/common/footer.tmpl%>

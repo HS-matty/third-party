@@ -1,0 +1,62 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+<%if client_id%>
+<a href="<%echo global:HostName%>/admin/busservice/edit_client/<%echo client_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>">Редактировать данные о клиенте</a>
+<br><a href="<%echo global:HostName%>/admin/busservice/client/<%echo client_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&delete=1">Удалить клиента</a>
+<%endif%>
+<br><br>
+
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+<%if client_id%>
+<UL>
+<li> <%echo client_name%>
+<li> <%echo client_email%>
+<li> <%echo client_phone1%>
+<li> <%echo client_phone2%>
+<li> Скидка: <%echo discount%>%
+
+
+</UL>
+
+
+<table border='1'>
+<tr align=''>
+<td>Автобус</td>
+<td>Дата отъезда</td>
+<td>Интервал</td>
+<td>Стоимость</td>
+<td>Дата заказа</td>
+<td>Статус</td>
+<td>Оплачено</td>
+<td>Билет</td>
+</tr>
+
+<%loop tickets%>
+
+<tr>
+<td><a href ="<%echo global:HostName%>/admin/busservice/bus/<%echo bus_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>"><%echo bus_route_title%></a></td>
+<td><%echo bus_day_depar%></td>
+<td><%echo ticket_interval_title%></td>
+<td><%echo ticket_price%> ( <%echo ticket_currency_title%> )</td>
+<td><%echo ticket_timedate%></td>
+<td><%echo ticket_status%></td>
+<td><%if ticket_payed==1%>Да<%else%>Нет<%endif%></td>
+<td><a href ="<%echo global:HostName%>/admin/busservice/ticket/<%echo ticket_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>">редактировать билет</a></td>
+</tr>
+
+
+
+
+
+<%endloop%>
+</table>
+<%endif%>
+
+
+
+<%include ../../../include/backend/common/footer.tmpl%>

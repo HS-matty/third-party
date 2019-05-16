@@ -1,0 +1,44 @@
+<%include ../../inc_.common.view/header.tmpl%>
+
+<br>
+<%if ErrorMessage%><span style="color:red"><%echo ErrorMessage%></span><%endif%>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id='article'>
+   <tr> 
+   			<td width="40" id='newsheader' nowrap = 'nowrap'></td>
+          <td id='newsheader'><h3>Добавить запись о недвижимости</h3></td>
+        </tr>
+        
+  <tr> <td width="40" id='newsheader' nowrap = 'nowrap'></td>
+      
+	<td id='newsheader'><form action="<%echo HostName%>/<%echohtml Lang%>/realty_add.html?action=posted" method="post" enctype="multipart/form-data" name="realty_data">
+<table width="400" border="0" cellspacing="0" cellpadding="0">
+<tr id='realty'><td width="200">*Имя:</td> <td><input name="c_name" <%if name%>value="<%echo name%>"<%endif%> class="form_obj" type="text" maxlength="20" /></td></tr>
+<tr id='realty'><td >*Телефон 1:</td> <td><input <%if phone1%>value="<%echo phone1%>"<%endif%> name="c_phone1" class="form_obj" type="text" maxlength="20" /></td></tr>
+<tr id='realty'><td >Телефон 2:</td> <td><input <%if phone2%>value="<%echo phone2%>"<%endif%> name="c_phone2" class="form_obj" type="text" maxlength="20" /></td></tr>
+<tr id='realty'><td >*E-mail:</td> <td><input <%if email%>value="<%echo email%>"<%endif%> name="c_email" class="form_obj" type="text" maxlength="20" /></td></tr>
+<tr id='realty'><td >*Город / район:</td> <td><input <%if location%>value="<%echo location%>"<%endif%> name="r_location" class="form_obj" type="text" maxlength="20" /></td></tr>
+<tr id='realty'><td>*Адрес:</td> <td><input <%if address%>value="<%echo address%>"<%endif%> name="r_address" type="text" class="form_obj" maxlength="60" /></td></tr>
+<tr id='realty'> <td>*Количество комнат:</td> <td><input <%if room_number%>value="<%echo room_number%>"<%endif%> name="r_room_num" type="text" class="form_obj" maxlength="5" /> </td></tr>
+<tr id='realty'><td>*Тип кухни:</td> <td><select class="form_obj" name="r_kitchen_type"><option value="1" <%if kitchen_type==1%>selected<%endif%> >1</option><option value="2" <%if kitchen_type==2%>selected<%endif%>>к.к.</option></select>
+<tr id='realty'><td>*Площадь (кв.м):</td><td><input <%if space%>value="<%echo space%>"<%endif%> name="r_space" type="text" class="form_obj" maxlength="5" /></td></tr>
+<tr id='realty'><td>*Цена:</td><td><input <%if price%>value="<%echo price%>"<%endif%> name="r_price" type="text" class="form_obj" maxlength="10" /></td></tr>
+<tr id='realty'><td>*Краткое описание:</td><td><input  <%if short_description%>value="<%echo short_description%>"<%endif%><%if address%>value="<%echo address%>"<%endif%> name="r_short_descr" type="text" class="form_obj" maxlength="30" /><br /></td></tr>
+<tr id='realty'><td>*Полное описание:</td><td><input  <%if long_description%>value="<%echo long_description%>"<%endif%> name="r_long_descr" type="text" class="form_obj" maxlength="200" /></td></tr>
+<tr id='realty'><td>Фото N1:</td><td><input name="image1" type="file" class="form_obj" /></td></tr>
+<tr id='realty'><td>Фото N2:</td><td><input name="image2" type="file" class="form_obj" /></td></tr>
+<tr id='realty'><td>Фото N3:</td><td><input name="image3" type="file" class="form_obj" /></td></tr>
+
+
+
+<tr id='realty'>
+      
+      <td colspan="2" align="center"><input name="submit" type="submit" value="Готово" /></td></tr>
+</td></tr>
+
+</table>
+* - обязательные поля.
+</form></td>	
+  </tr>
+</table>
+
+<%include ../../inc_.common.view/footer.tmpl%>

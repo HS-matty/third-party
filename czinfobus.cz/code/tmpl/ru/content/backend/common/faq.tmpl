@@ -1,0 +1,34 @@
+<%include ../inc_admin.common.view/header.tmpl%>
+<%include article_cat_menu.tmpl%>
+<br>
+
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr id='realty'> 
+    <td width="200">Запись N:</td>
+    <td ><%echo article_id%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Добавлено: </td>
+    <td><%echo article_timedate%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Краткий Заголовок</td>
+    <td><%echo article_shortname%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Полный Заголовок</td>
+    <td><%echo article_longname%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Краткое описание:</td>
+    <td><%echo article_shortdescr%> </td>
+  </tr>
+
+  <tr id='realty'> 
+    <td>Содержание: </td>
+    <td align="justify"> <%echo article_body%></td>
+  </tr>
+</table>
+
+<br><br>
+<%include ../inc_admin.common.view/footer.tmpl%>

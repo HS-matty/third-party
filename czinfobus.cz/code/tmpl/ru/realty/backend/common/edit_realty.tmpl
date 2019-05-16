@@ -1,0 +1,37 @@
+<%include ../inc_admin.common.view/header.tmpl%>
+<%include realty_menu.tmpl%>
+<br><br>
+
+
+<%if ErrorMessage%><span style="color:red"><%echo ErrorMessage%></span><br><%endif%>
+
+<form action="<%echo HostName%>/admin/<%echohtml CatName%>/<%echohtml Lang%>/index.html?sid=<%echohtml Sid%>&action=edited_realty&realty_id=<%echo r_id%>" method="post" enctype="multipart/form-data" name="realty_data">
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr id='realty'><td width="200">Город / район:</td> <td><input name="r_location" id="form_obj" value="<%echohtml r_location%>" type="text" maxlength="20" /></td></tr>
+<tr id='realty'><td>Адрес:</td> <td><input name="r_address" type="text" id="form_obj" value="<%echohtml r_address%>" maxlength="60" /></td></tr>
+<tr id='realty'> <td>Количество комнат:</td> <td><input name="r_room_num" type="text" value="<%echohtml r_room_num%>" id="form_obj" maxlength="5" /> </td></tr>
+<tr id='realty'><td>Тип кухни:</td> <td><select id="form_obj" name="r_kitchen_type"><option <%if r_kitchen_type==1%>selected<%endif%> value="1">1</option><option <%if r_kitchen_type==2%>selected<%endif%> value="2">к.к.</option></select>
+<tr id='realty'><td>Площадь (кв.м):</td><td><input name="r_space" value="<%echohtml r_space%>" type="text" id="form_obj" maxlength="5" /></td></tr>
+<tr id='realty'><td>Цена:</td><td><input name="r_price" type="text" value="<%echohtml r_price%>" id="form_obj" maxlength="10" /></td></tr>
+<tr id='realty'><td>Краткое описание:</td><td><input name="r_short_descr" value="<%echohtml r_short_descr%>" type="text" id="form_obj" maxlength="30" /><br /></td></tr>
+<tr id='realty'><td>Полное описание:</td><td><input name="r_long_descr" value="<%echohtml r_long_descr%>" type="text" id="form_obj" maxlength="200" /></td></tr>
+
+<%if Images%><%loop Images%>
+	<tr id='realty'><td>Фото N <%echohtml i%></td><td><a href="<%echo global:HostName%>/<%echo Image%>" target="_blank">Просмотреть</a> | Удалить <input name="image<%echohtml i%>" value='1'  type="checkbox"  /></td></tr>
+	<%endloop%>
+<%endif%>
+
+
+<tr id='realty'>
+      <td></td>
+      <td align="right"><input name="submit" type="submit" value="Готово" /></td></tr>
+</td></tr>
+
+</table>
+</form>
+
+
+
+
+<br><br>
+<%include ../inc_admin.common.view/footer.tmpl%>

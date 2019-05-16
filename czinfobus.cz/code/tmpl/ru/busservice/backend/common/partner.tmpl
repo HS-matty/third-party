@@ -1,0 +1,47 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+
+<br><br>
+Действия:<br>
+<ul>
+<li>
+<%if dealer_activeflag==0%><a href="<%echo global:HostName%>/admin/busservice/partner/<%echo dealer_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>&action=active">Сделать партнера активным</a>
+<%else%><a href="<%echo global:HostName%>/admin/busservice/partner/<%echo dealer_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>&action=notactive">Сделать партнера неактивным</a>
+<%endif%>
+<li><a href="<%echo global:HostName%>/admin/busservice/editpartner/<%echo dealer_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>">Редактировать данные о партнере</a>
+</ul>
+
+Партнер:<br>
+<UL>
+<li>ID<%echo dealer_id%>
+<li><%if dealer_activeflag==1%>Активен<%else%>Неактивен<%endif%>
+<li><%echo dealer_corp_name%>
+<li><%echo dealer_inn%>
+<li><%echo dealer_address%>
+<li><%echo dealer_phone1%>
+<li><%echo dealer_phone2%>
+<li><%echo dealer_email%>
+<li><%echo currency_name%>
+
+
+
+</UL>
+Статистика:<br>
+<uL>
+<li> Число заказанных билетов: <%if count%><%echo count%><%else%>0<%endif%>
+<li> На сумму : <%if sum%><%echo sum%><%else%>0<%endif%>
+</uL>
+Заказанные билеты:
+<UL>
+<%loop tickets%>
+
+<li> <a href="<%echo global:HostName%>/admin/busservice/bus/<%echo bus_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>"><%echo bus_route_title%></a>, <%echo bus_day_depar%>, место: <%echo ticket_place%>, Оплата: <strong> <%if ticket_payed==1%>Да<%else%>Нет<%endif%></strong>, <a href="<%echo global:HostName%>/admin/busservice/ticket/<%echo ticket_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>">просмотреть информацию о билете</a>
+<%endloop%>
+</UL>
+История:
+<OL>
+<%loop log%>
+<li><%echo log_timedate%> :: <%echo log_msg%>
+<%endloop%>
+</OL>
+<%include ../../../include/backend/common/footer.tmpl%>

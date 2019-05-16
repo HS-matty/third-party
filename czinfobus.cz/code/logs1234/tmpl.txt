@@ -1,0 +1,212 @@
+18.8.2005 - 16:58 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 16:59 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 17:00 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_arrival_name</b> in expression near "day_arrival_name..." - assuming NULL<br>
+
+18.8.2005 - 18:32 : <b>[Template, ./tmpl/ru/busservice/backend/common/points.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:32 : <b>[Template, ./tmpl/ru/busservice/backend/common/points.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:32 : <b>[Template, ./tmpl/ru/busservice/backend/common/points.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:32 : <b>[Template, ./tmpl/ru/busservice/backend/common/points.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:34 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:34 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:34 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:34 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:34 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:34 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:34 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:34 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:34 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+18.8.2005 - 18:34 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 15:52 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 15:52 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 15:52 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 15:52 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 15:52 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 15:52 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 15:52 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 15:52 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 16:12 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>routename_lang_name</b> in expression near "routename_lang_name..." - assuming NULL<br>
+
+21.8.2005 - 16:12 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>routename_latin</b> in expression near "routename_latin..." - assuming NULL<br>
+
+21.8.2005 - 16:12 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>routename_ru</b> in expression near "routename_ru..." - assuming NULL<br>
+
+21.8.2005 - 16:12 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>routename_latin</b> in expression near "routename_latin..." - assuming NULL<br>
+
+21.8.2005 - 16:12 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>routename_ru</b> in expression near "routename_ru..." - assuming NULL<br>
+
+21.8.2005 - 16:46 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 16:46 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 16:46 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 16:46 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 16:51 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 16:51 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 16:51 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 16:51 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:08 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:09 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:09 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:09 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:09 : <b>[Template, ./tmpl/ru/busservice/backend/common/routes.tmpl] Warning:</b> Undefined parameter <b>day_day_departure</b> in expression near "day_day_departure..." - assuming NULL<br>
+
+21.8.2005 - 17:25 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 17:25 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 17:25 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 17:25 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 17:25 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 17:25 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 17:25 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 17:25 : <b>[Template, ./tmpl/ru/busservice/backend/common/addstations.tmpl] Warning:</b> Undefined parameter <b>pname_body</b> in expression near "pname_body..." - assuming NULL<br>
+
+21.8.2005 - 18:14 : <b>[Template, ./tmpl/ru/busservice/backend/common/addroute.tmpl] Warning:</b> Undefined parameter <b>routename_ru</b> in expression near "routename_ru..." - assuming NULL<br>
+
+21.8.2005 - 18:14 : <b>[Template, ./tmpl/ru/busservice/backend/common/addroute.tmpl] Warning:</b> Unexpected <b>ENDIF</b> tag near "&lt;%endif%&gt;&gt;понедельни..." - tag ignored<br>
+
+21.8.2005 - 18:14 : <b>[Template, ./tmpl/ru/busservice/backend/common/addroute.tmpl] Warning:</b> Undefined parameter <b>routename_ru</b> in expression near "routename_ru..." - assuming NULL<br>
+
+21.8.2005 - 18:14 : <b>[Template, ./tmpl/ru/busservice/backend/common/addroute.tmpl] Warning:</b> Unexpected <b>ENDIF</b> tag near "&lt;%endif%&gt;&gt;понедельни..." - tag ignored<br>
+
+21.8.2005 - 18:14 : <b>[Template, ./tmpl/ru/busservice/backend/common/addroute.tmpl] Warning:</b> Undefined parameter <b>routename_ru</b> in expression near "routename_ru..." - assuming NULL<br>
+
+21.8.2005 - 18:14 : <b>[Template, ./tmpl/ru/busservice/backend/common/addroute.tmpl] Warning:</b> Unexpected <b>ENDIF</b> tag near "&lt;%endif%&gt;&gt;понедельни..." - tag ignored<br>
+
+21.8.2005 - 18:14 : <b>[Template, ./tmpl/ru/busservice/backend/common/addroute.tmpl] Warning:</b> Unexpected <b>ENDIF</b> tag near "&lt;%endif%&gt;&gt;понедельни..." - tag ignored<br>
+
+21.8.2005 - 18:14 : <b>[Template, ./tmpl/ru/busservice/backend/common/addroute.tmpl] Warning:</b> Unexpected <b>ENDIF</b> tag near "&lt;%endif%&gt;&gt;понедельни..." - tag ignored<br>
+
+21.8.2005 - 18:14 : <b>[Template, ./tmpl/ru/busservice/backend/common/addroute.tmpl] Warning:</b> Unexpected <b>ENDIF</b> tag near "&lt;%endif%&gt;&gt;понедельни..." - tag ignored<br>
+

@@ -1,0 +1,59 @@
+<%include ../../../include/frontend/common/dheader.tmpl%>
+<br>
+<%include menu.tmpl%>
+
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+<%if client_id%>
+<UL>
+<li> <%echo client_name%>
+<li> <%echo client_email%>
+<li> <%echo client_phone1%>
+<li> <%echo client_phone2%>
+
+</UL>
+
+
+<table border='1'>
+<tr align=''>
+<td>Автобус</td>
+<td>Дата отъезда</td>
+<td>Интервал</td>
+<td>Стоимость</td>
+<td>Дата заказа</td>
+
+<td>Оплачено</td>
+<td>Билет</td>
+</tr>
+
+<%loop tickets%>
+
+<tr>
+<td><%echo bus_route_title%></td>
+<td><%echo bus_day_depar%></td>
+<td><%echo ticket_interval_title%></td>
+<td><%echo ticket_price%> ( <%echo ticket_currency_title%> )</td>
+<td><%echo ticket_timedate%></td>
+
+<td><%if ticket_payed==1%>Да<%else%>Нет<%endif%></td>
+<td><a href ="<%echo global:HostName%>/busservice/dticket/<%echo ticket_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>">редактировать билет</a></td>
+</tr>
+
+
+
+
+
+<%endloop%>
+</table>
+<%endif%>
+
+<br>
+<br>
+<br>
+<%include ../../../include/frontend/common/dfooter.tmpl%>
+
+

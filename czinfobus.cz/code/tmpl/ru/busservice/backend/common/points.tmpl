@@ -1,0 +1,31 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+<BR><BR>
+<a href="<%echo global:HostName%>/admin/busservice/addpoint/<%echo global:Lang%>/?sid=<%echo global:Sid%>">Добавить пункт </a>
+
+
+<br><br>
+
+
+
+<table style="border: 1px dotted #333333;" width="550px"  border="0" cellspacing="0" cellpadding="0">
+<%loop Points%>
+  <tr >
+    <td><%echo point_latin_name%>/<%echo point_ru_name%></td>
+    <td><%if point_is_cz == 1%> ЧЕХИЯ <%else%> НЕ ЧЕХИЯ <%endif%></td>
+    <td><a href="<%echo global:HostName%>/admin/busservice/points/<%echo global:Lang%>/?sid=<%echo global:Sid%>&delete=<%echo point_id%>">Удалить</a></td>
+  </tr>
+ <%endloop%>
+</table>
+
+
+
+
+
+<%include ../../../include/backend/common/footer.tmpl%>

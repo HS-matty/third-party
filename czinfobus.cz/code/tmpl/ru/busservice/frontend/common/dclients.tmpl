@@ -1,0 +1,71 @@
+<%include ../../../include/frontend/common/dheader.tmpl%>
+<br>
+<%include menu.tmpl%>
+
+Клиенты:
+<%if clients%>
+<UL>
+
+<%loop clients%>
+
+<li> <a  href="<%echo global:HostName%>/busservice/dclient/<%echo client_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>"><%echo client_name%></a>, <a href="<%echo global:HostName%>/busservice/dclients/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&delete=<%echo client_id%>">[Удалить]</a>
+
+<%endloop%>
+<%else%><br>Нет зарегистрированных клиентов<%endif%>
+</UL>
+<br>
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+<br>
+Добавить клиента:
+<br>
+
+<form action="<%echo global:HostName%>/busservice/dclients/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>"" method="post" enctype="application/x-www-form-urlencoded" name="addpartner">
+  <table width="650" border="0" cellspacing="0" cellpadding="0">
+    <tr id='realty'> 
+      <td width="150">Имя:</td>
+      <td width="400"><input <%if client_name%>value="<%echo client_name%>"<%endif%> name="client_name" type="text" size="30" maxlength="40" /></td>
+    </tr>
+    
+    
+    <tr id='realty'> 
+      <td >Телефон1:</td>
+      <td ><input name="client_phone1" <%if client_phone1%>value="<%echo client_phone1%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Телефон2:</td>
+      <td ><input name="client_phone2" <%if client_phone2%>value="<%echo client_phone2%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+     <tr id='realty'> 
+      <td >Email:</td>
+      <td ><input name="client_email" <%if client_email%>value="<%echo client_email%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Login:</td>
+      <td ><input name="client_login" type="text" size="30" maxlength="40" /></td>
+    </tr>
+     <tr id='realty'> 
+      <td >Пароль:</td>
+      <td ><input name="client_password1" type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Повторить пароль:</td>
+      <td ><input name="client_password2" type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td></td>
+      <td align="center"><br><input name="submit" type="submit" value="Готово" /></td>
+    </tr></td></tr>
+  
+  </table>
+  <input type="hidden" name="post" value="1">
+</form>
+<%include ../../../include/frontend/common/dfooter.tmpl%>
+
+
+
+

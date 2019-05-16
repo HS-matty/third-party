@@ -1,0 +1,13 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br><br>
+
+<ul>
+<%if timings%><%loop timings%>
+<li> <%echo point_latin_name%>/<%echo point_latin_name%>, отправление: <%echo time_dep%>, прибытие: <%echo time_arr%>
+
+<%endloop%><%endif%>
+</ul>
+<br><br><br><br>
+<a href="?sid=<%echo Sid%>&delete=<%echo days_id%>">ПОЛНОСТЬЮ очистить информацию о времени отправления для всех станций данного выезда</a>
+
+<%include ../../../include/backend/common/footer.tmpl%>

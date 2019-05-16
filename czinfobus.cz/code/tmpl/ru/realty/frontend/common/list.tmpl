@@ -1,0 +1,114 @@
+<%include ../../inc_.common.view/header.tmpl%>
+
+ <form action="<%echo HostName%>/realty/realty_list.html" method="post">
+
+
+
+
+ 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id='article'>
+   <tr> 
+   			<td width="40" id='newsheader' nowrap = 'nowrap'></td>
+          <td id='newsheader'><h3>Результаты поиска</h3></td>
+        </tr>
+        
+        
+  <tr> <td width="40" id='newsheader' nowrap = 'nowrap'></td>
+      <td width="800" align="justify" class='news'> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       
+        
+        <%if Data%>
+                  
+          
+        <%loop Data%> 
+        <tr> 
+          <td width="15%" id="searchrez"><a target='_blank' href='<%echo global:HostName%>/realty/ru/realty_<%echo r_id%>.html'><%echo r_location%></a></td>
+          <td width="10%" id="searchrez"><%echo r_room_num%>+<%if r_kitchen_type==1%>1<%else%>к.к.<%endif%></td>
+          <td width="10%" id="searchrez"><%echo r_space%> кв.м.</td>
+          <td width="20%" id="searchrez"><%echo r_price%> крон</td>
+          <td width="35%" id="searchrez"><%echo r_short_descr%></td>
+          <td id='searchrez'>фото: <%if r_images_num>0%>есть<%else%>нет<%endif%></td>
+          
+                  </tr>
+
+                  
+           <%endloop%>
+           
+                  <tr>
+                  <td colspan="6" id="pages">
+   Страницы: <a href="<%echo global:HostName%>/realty/realty_list.html?pnum=0<%if global:RealtyType%>&realty_type=<%echo global:RealtyType%><%endif%><%if global:SortBy%>&sort_by=<%echo global:SortBy%><%endif%><%if global:LocationFilter%>&location=<%echo global:LocationFilter%><%endif%><%if global:PriceFilter%>&price=<%echo global:PriceFilter%><%endif%>">1</a> |
+<%if Page%>
+<%loop Page%>
+<a href="<%echo global:HostName%>/realty/realty_list.html?pnum=<%echo Page%><%if global:RealtyType%>&realty_type=<%echo global:RealtyType%><%endif%><%if global:SortBy%>&sort_by=<%echo global:SortBy%><%endif%><%if global:LocationFilter%>&location=<%echo global:LocationFilter%><%endif%><%if global:PriceFilter%>&price=<%echo global:PriceFilter%><%endif%>"><%echo Page+1%></a> |
+<%endloop%>
+<%endif%>
+</td>
+                  </tr>
+          
+		<%else%>
+		  <tr><td width="20%" id='searchrez'>Ничего не найдено!</td></tr>
+      <%endif%>
+
+	 
+      </table>
+      </td>
+      
+    		
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id='article'>
+   <tr> 
+   			<td width="40" id='newsheader' nowrap = 'nowrap'></td>
+          <td id='newsheader'><h3>Поиск</h3></td>
+        </tr>
+          <tr> <td width="40" id='newsheader' nowrap = 'nowrap'></td>
+      <td width="800" align="justify" class='news'> 
+
+      <h3>Регион</h3><input name="location" type="text" <%if LocationFilter%>value="<%echo LocationFilter%>"<%endif%>class='form_obj' />
+        <h3>Тип недвижимости</h3>
+		<select name="realty_type" class='form_obj'>
+		
+		<option value="0" <%if RealtyType==0%>selected<%endif%>>Любой</option>	
+		<option value="11" <%if RealtyType==11%>selected<%endif%>>1+1</option><
+		<option value="12" <%if RealtyType==12%>selected<%endif%>>2+1</option>
+		<option value="13" <%if RealtyType==13%>selected<%endif%>>3+1</option>
+		<option value="14" <%if RealtyType==14%>selected<%endif%>>4+1</option>
+		<option value="15" <%if RealtyType==15%>selected<%endif%>>5+1</option>
+		<option value="16" <%if RealtyType==16%>selected<%endif%>>6+1</option>
+		<option value="10" <%if RealtyType==10%>selected<%endif%>>Любой+1</option>
+		<option value="21" <%if RealtyType==21%>selected<%endif%>>1+к.к.</option>
+		<option value="22" <%if RealtyType==22%>selected<%endif%>>2+к.к.</option>
+		<option value="23" <%if RealtyType==23%>selected<%endif%>>3+к.к.</option>
+		<option value="24" <%if RealtyType==24%>selected<%endif%>>4+к.к.</option>
+		<option value="25" <%if RealtyType==25%>selected<%endif%>>5+к.к.</option>
+		<option value="26" <%if RealtyType==26%>selected<%endif%>>6+к.к.</option>
+		<option value="20" <%if RealtyType==20%>selected<%endif%>>Любой+к.к.</option>
+	
+
+		
+		</select>
+		 <h3>Максимальная цена</h3>
+		 
+		
+	
+        
+
+		 
+		<input name="price" type="text" class='form_obj' <%if PriceFilter%>value="<%echo PriceFilter%>"<%endif%> />
+		<h3>Сортировать по:</h3>
+		 	<select name="sort_by" class='form_obj'>
+			<option value="0" <%if SortBy == 0%> selected="selected"<%endif%> >не сортировать</option>
+			<option value="price" <%if SortBy == price%> selected="selected"<%endif%> >цене</option>
+			<option value="room_num" <%if SortBy == room_num%> selected="selected"<%endif%>>количеству комнат</option>
+			<option value="space" <%if SortBy == space%> selected="selected"<%endif%>>метражу</option>
+			
+		</select>
+		
+	</td></tr>
+	 <tr><td >&nbsp</td><td>	<input name="submit" type="submit" id='submit' value="Поиск"/></td></tr>
+	</table>
+	
+</form>
+
+<%include ../../inc_.common.view/footer.tmpl%>

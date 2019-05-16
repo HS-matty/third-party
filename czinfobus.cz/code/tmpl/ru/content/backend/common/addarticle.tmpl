@@ -1,0 +1,49 @@
+<%include ../../../include/backend/common/header.tmpl%><br>
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+
+
+<form action="<%echo HostName%>/admin/content/add_article/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post" type="application/x-www-form-urlencoded" name="articledata">
+  <table width="750" border="0" cellspacing="0" cellpadding="0">
+    <tr id='realty'> 
+      <td width="200">Заголовок:</td>
+      <td><input <%if article_header%> value="<%echo article_header%>" <%endif%>name="article_header" type="text" size="30" maxlength="30" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td>Описание:</td>
+      <td><input <%if article_descr%> value="<%echo article_descr%>" <%endif%> name="article_descr" type="text" size="30" maxlength="60" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td>Перечень определяющих слов (meta) </td>
+      <td><input name="article_meta"  <%if article_meta%> value="<%echo article_meta%>" <%endif%>type="text" size="30" maxlength="100" /> </td>
+    </tr>
+    
+    <tr id='realty'>
+      <td>Содержание:</td>
+      <td><textarea name="article_body" type="text"  <%if article_body%> value="<%echo article_body%>" <%endif%> maxlength="1000" cols="70" rows="30"></textarea></td>
+    </tr>
+     <tr id='realty'>
+      <td>Язык:</td>
+      <td><select name="articlelang"  style="width: 200px">
+<option <%if articlelang==1%>selected<%endif%> value='1'>Русский</option>
+<option <%if articlelang==2%>selected<%endif%> value='2'>Чешский</option>
+<option <%if articlelang==3%>selected<%endif%> value='3'>Украинский</option>
+</select></td>
+    </tr>
+
+    <tr id='realty'> 
+      <td></td>
+      <td align="right"><input type="hidden" name="post" value="1"><input name="submit" type="submit" value="Готово" /></td>
+    </tr></td></tr>
+  </table>
+</form>
+
+
+
+
+<br><br>
+<%include ../../../include/backend/common/footer.tmpl%>

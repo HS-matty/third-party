@@ -1,0 +1,13 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+<a href='<%echo global:HostName%>/admin/busservice/addpartner/<%echo global:Lang%>/?sid=<%echo global:Sid%>'>Добавить партнера </a>
+<br><br><br>
+Партнеры:<br>
+<UL>
+<%loop Partners%>
+<li><a href="<%echo global:HostName%>/admin/busservice/partner/<%echo dealer_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>"> ID<%echo dealer_id%>, <%echo dealer_corp_name%>, <%if dealer_activeflag==1%>Активен<%else%>Неактивен<%endif%></a>
+
+<%endloop%>
+</UL>
+
+<%include ../../../include/backend/common/footer.tmpl%>

@@ -1,0 +1,59 @@
+<%include ../inc_admin.common.view/header.tmpl%>
+<%include realty_menu.tmpl%>
+<br><br>
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+  <tr id='realty'> 
+    <td width="200">Запись N:</td>
+    <td ><%echo r_id%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Добавил:</td>
+    <td><%echo added_by%></td>
+  </tr>
+  <tr id='realty'> 
+    <td width="200">Добавлено:</td>
+    <td ><%echo r_timedate%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Город / район:</td>
+    <td><%echo r_location%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Адрес:</td>
+    <td><%echo r_address%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Краткое описание:</td>
+    <td><%echo r_short_descr%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Полное описание:</td>
+    <td><%echo r_long_descr%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Тип квартиры:</td>
+    <td><%echo r_room_num%>+<%if r_kitchen_type==1%>1<%else%>к.к.<%endif%></td>
+  </tr>
+    <tr id='realty'> 
+    <td>Площадь:</td>
+    <td><%echo r_space%> кв.м.</td>
+  </tr>
+
+  <tr id='realty'> 
+    <td>Цена</td>
+    <td><%echo r_price%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Статус</td>
+    <td><%if r_approval%>Одобрено <a href="<%echo global:HostName%>/admin/<%echo global:CatName%>/<%echo global:Lang%>/realty_<%echo r_id%>.html?sid=<%echo global:Sid%>&action=not_approve">(Отменить)</a> <%else%>Не одобрено <a href="<%echo global:HostName%>/admin/<%echo global:CatName%>/<%echo global:Lang%>/realty_<%echo r_id%>.html?sid=<%echo global:Sid%>&action=approve">(Одобрить)<a/><%endif%></td>
+  </tr>
+    <tr id='realty'> 
+    <td>Фотографии:</td>
+    <td><%loop Images%>
+	<a href="<%echo global:HostName%>/<%echo Image%>" target="_blank">Фото</a><br>
+	<%endloop%></td>
+  </tr>
+</table>
+
+<br>
+<%include ../inc_admin.common.view/footer.tmpl%>

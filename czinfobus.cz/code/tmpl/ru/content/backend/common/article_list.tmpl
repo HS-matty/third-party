@@ -1,0 +1,54 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br><br><br>
+<%if ErrorMessage%><%echohtml ErrorMessage%><%endif%>
+<br>
+
+<%if Cats%>
+<form name="Form" action="<%echo HostName%>/admin/content/article_list/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post">
+<select name="articlelang"  style="width: 200px">
+<option <%if articlelang==1%>selected<%endif%> value='1'>Русский</option>
+<option <%if articlelang==2%>selected<%endif%> value='2'>Чешский</option>
+<option <%if articlelang==3%>selected<%endif%> value='3'>Украинский</option>
+</select>
+
+<select name='param' style="width: 200px">
+<option <%if param==0%>selected<%endif%> value="0">Выберите категорию</option>
+<%loop Cats%>
+<option value="<%echo cat_id%>" <%if global:param==cat_id%>selected<%endif%>><%echo cat_name%></option>
+<%endloop%>
+</select>
+<input type="Submit" name="submit" value="Submit">
+</form>
+<%endif%>
+<%if ArticleList%>
+<table width="100%" border="0" cellpadding="0" cellspacing="1">
+  <tr id='header'> 
+    <td id='header'>Добавлено</td>
+    <td>Заголовок</td>
+    <td >Описание</td>
+    <td >Добавил</td>
+     <td ></td>
+      <td ></td>
+  </tr>
+
+
+  <%loop ArticleList%>
+  <tr id='white'> 
+    <td id='realty'><a href = '<%echo global:HostName%>/admin/content/article/<%echo article_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>' target="_blank">
+<%echo article_timedate%></a></td>
+    <td ><a target="_blank" href = '<%echo global:HostName%>/admin/content/article/<%echo article_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>'><%echo article_header%></a></td>
+    <td> <a target="_blank" href = '<%echo global:HostName%>/admin/content/article/<%echo article_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>'><%echo article_descr%></a></td>
+    <td ><%echo user_name%></td>
+    <td width='70' style="font-size:9px"><a href="<%echo global:HostName%>/admin/content/edit_article/<%echo article_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>">Редактировать</a></td>
+    <td width='70' style="font-size:9px"><a href="<%echo global:HostName%>/admin/content/article_list/<%echo article_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>&action=del">Удалить</a></td>
+  </tr>
+  <%endloop%>
+</table>
+<%else%>
+<br /> Записей не найдено!
+<%endif%>
+<br><br>
+
+
+<br><br>
+<%include ../../../include/backend/common/footer.tmpl%>

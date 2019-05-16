@@ -1,0 +1,88 @@
+<%include ../../../include/frontend/common/header.tmpl%>
+<table width="868" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="631" height="329" valign="top"> 
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="text" id="main">
+        <tr> 
+          <td height="290" valign="top">
+          <%if found_routes%>
+          <%loop found_routes%>
+          <p>Маршрут: <%echo route_name_ru%><br>
+          <ul>
+          <%loop schedule%>
+          
+          <li>Отправление: <%echo departure_date%>, <%echo departure_time%>. Прибытие: <%echo arrival_date%>, <%echo departure_time%>
+          <%endloop%>
+          </ul>
+          <%endloop%>
+          <%else%> Выберите маршрут и период!
+          <%endif%>
+          
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width="239" valign="top">
+   <form name="form1" method="post" action="<%echo HostName%>/schedule/<%echohtml Lang%>/">   
+    <table width="100%" bgcolor="#FCE897">
+          	<tr><td align="center">Расписание маршрутов</td></tr>
+          	<tr>
+                <td height="40"><div align="center">
+                    <select name="route_id" style="width: 200px">
+                    	<option selected value='0'>Маршрут</option>
+                    	<%if routes%><%loop routes%> <option value='<%echo route_id%>'><%echo route_name_ru%></option> <%endloop%><%endif%>
+                    </select>
+                  </div></td>
+              </tr>
+              	 
+				  <tr><td align="center">Поиск маршрута по пунктам</td></tr>
+				     <tr>
+					<td height="40"><div align="center">
+						<select name="departure" style="width: 200px">
+							<option selected value='0'>Пункт отправления</option>
+						
+							<%loop points%>
+							<option value="<%echo point_id%>"><%echo point_ru_name%></option>
+							<%endloop%>
+					
+						</select>
+					  </div></td>
+				  </tr>
+              	 <tr>
+					<td height="40"><div align="center">
+						<select name="arrival" style="width: 200px">
+							<option selected value='0'>Пункт прибытия</option>
+						<%loop points%>
+							<option value="<%echo point_id%>"><%echo point_ru_name%></option>
+							<%endloop%>
+							
+						</select>
+					  </div></td>
+				  </tr>
+				  <tr><td align="center">Период</td></tr>
+				     <tr>
+				  <tr>
+					<td height="40"><div align="center">
+						<select name="num" style="width: 200px">
+							<option selected value='0'>Период</option>
+							<option value="1">Сегодня</option>
+							<option value="7">На неделю</option>
+							<option value="30">Месяц</option>
+							<option value="90">3 месяца</option>
+						</select>
+					  </div></td>
+				  </tr>
+
+				    <tr>
+                <td align="center" height="40"><input type="submit" style="width:40px"value="go"></td>
+              </tr>
+
+          
+          	</table>
+          	</form>
+    </td>
+    </tr>
+    </table>
+    
+      
+<%include ../../../include/frontend/common/footer.tmpl%>

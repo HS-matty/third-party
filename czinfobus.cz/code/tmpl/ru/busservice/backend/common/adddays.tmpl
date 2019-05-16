@@ -1,0 +1,94 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+
+<form action="<%echo HostName%>/admin/busservice/adddays/<%echo route_id%>/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post" enctype="application/x-www-form-urlencoded" >
+<input type="hidden" name="route_id" value="1">
+
+  <table width="850" border="0" cellspacing="0" cellpadding="0">
+    <input type="hidden" name="route_name_latin" value="aaaaa">
+    <input type="hidden" name="route_name_ru" value="aaaaa">
+    <input type="hidden" name="num" value="<%echo num%>">
+    <%loop DaysNum%>
+    <input type="hidden" name="day<%echo loop:key%>_days_id" value="1">
+    <tr id='realty'> 
+      <td colspan="2" style='background-color: #CCCCCC'>Выезд <%echo loop:key + 1%></td>
+      
+    </tr>
+    <tr id='realty'> 
+      <td>День отправления:</td>
+      <td><select name="day<%echo loop:key%>_day_departure">
+      <option value="1" >понедельник</option>
+       <option value="2">вторник</option>
+       <option value="3">среда</option>
+       <option value="4">четверг</option>
+       <option value="5">пятница</option>
+       <option value="6">суббота</option>
+       <option value="0">воскресенье</option>
+            
+      </select></td>
+    </tr>
+    
+    <tr id='realty'> 
+      <td >Время отправления (например: 12-23)</td>
+      <td><input name="day<%echo loop:key%>_time_departure_hour" type="text" size="2" maxlength="2" />-<input name="day<%echo loop:key%>_time_departure_minute" type="text" size="2" maxlength="2" /></td>
+    </tr>
+    
+    <tr id='realty'> 
+      <td >День прибытия:</td>
+      <td><select name="day<%echo loop:key%>_day_arrival">
+      <option value="1">понедельник</option>
+       <option value="2">вторник</option>
+       <option value="3">среда</option>
+       <option value="4">четверг</option>
+       <option value="5">пятница</option>
+       <option value="6">суббота</option>
+       <option value="0">воскресенье</option>
+            
+      </select></td>
+    </tr>
+    
+    
+    <tr id='realty'> 
+      <td >Время прибытия (например: 12-23)</td>
+      <td><input name="day<%echo loop:key%>_time_arrival_hour" type="text" size="2" maxlength="2" />-<input name="day<%echo loop:key%>_time_arrival_minute" type="text" size="2" maxlength="2" /><br><br><br></td>
+    </tr>
+    
+
+	<tr id='realty'> 
+      <td >Автобус: </td>
+      <td><select name='day<%echo loop:key%>_bus_type'>
+      <option value='0' selected="selected">Тип автобуса</option>
+      <%loop global:bus_types%>
+      <option value="<%echo bustype_id%>"><%echo bustype_title%> / <%echo busowner_title%> / <%echo bustype_places_num%> мест</option>
+      <%endloop%>
+      </select><br><br><br></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Диапазон мест (15-25)</td>
+      <td><input name="day<%echo loop:key%>_places_range" type="text" size="30" maxlength="20" /><br><br><br></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Стоимость билета</td>
+      <td><input name="day<%echo loop:key%>_ticket_price" type="text" size="30" maxlength="10" /><br><br><br></td>
+    </tr>
+    
+
+    <%endloop%>
+    
+    <tr id='realty'> 
+      <td></td>
+      <td align="right"><input name="submit" type="submit" value="Готово" /></td>
+    </tr></td></tr>
+  
+  </table>
+  <input type="hidden" name="post" value="1">
+</form>
+
+
+
+<%include ../../../include/backend/common/footer.tmpl%>

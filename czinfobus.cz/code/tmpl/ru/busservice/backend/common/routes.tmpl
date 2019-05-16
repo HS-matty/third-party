@@ -1,0 +1,18 @@
+<%include ../../../include/backend/common/header.tmpl%><br>
+<br>
+<ul>
+<li> Для того,  чтобы маршрут можно было активировать, должен быть добавлен хотя бы один выезд.
+</ul>
+<br>
+<form action="<%echo HostName%>/admin/busservice/addroute/ru/?sid=<%echo Sid%>" method="post" enctype="application/x-www-form-urlencoded" name="addroute">
+<br>Добавить маршрут из <input name = "num" value="4" size='2'> выездов. <input style="width: 40px"type="submit" value = "go" name="go"><br>                              
+</form>
+<hr>
+<br>
+<%loop routes%>
+Маршрут: <b><%echo route_name_latin%> / <%echo route_name_ru%></b>, Добавил: <b><%echo route_addedby%></b>, <%echo route_addedtime%>, <%if route_active==1%>Активен (<a href="<%echo global:HostName%>/admin/busservice/routes/ru/?sid=<%echo global:Sid%>&nonactive=<%echo route_id%>">Сделать неактивным</a>)<%else%>Неактивен (<a href="<%echo global:HostName%>/admin/busservice/routes/ru/?sid=<%echo global:Sid%>&active=<%echo route_id%>">Сделать активным</a>)<%endif%> 
+/ <a href="<%echo global:HostName%>/admin/busservice/editroute/<%echo route_id%>/ru/?sid=<%echo global:Sid%>">редактировать</a> / <br>
+<br>
+	<hr>
+<%endloop%>
+<%include ../../../include/backend/common/footer.tmpl%>

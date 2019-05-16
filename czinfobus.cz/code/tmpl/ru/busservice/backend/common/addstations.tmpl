@@ -1,0 +1,46 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+<form action="<%echo HostName%>/admin/busservice/addstations/<%echo RouteId%>/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post" enctype="application/x-www-form-urlencoded" name="addstations">
+<input type="hidden" name = "num" value="<%echo num%>">
+  <table width="750" border="0" cellspacing="0" cellpadding="0">
+   
+    <%loop StationsNum%>
+    <tr id='realty'> 
+      <td colspan="2" style='background-color: #CCCCCC'>
+      
+   Пункт №<%echo loop:key + global:old_num +1%><td>
+      
+    </tr>
+    
+    <tr id='realty'> 
+      <td width="200">Наименование:</td>
+      <td><select name="point<%echo loop:key%>_point_id">
+      
+       <%loop global:Points%>
+       <option value="<%echo point_id%>"><%echo point_latin_name%> / <%echo point_ru_name%></option>
+         <%endloop%>   
+      </select><input type="hidden" name="point<%echo loop:key%>_station_order" value="<%if Order==0%>1<%else%><%echo Order%><%endif%>"></td>
+    </tr>
+    
+   
+    
+    <%endloop%>
+    
+    <tr id='realty'> 
+      <td></td>
+      <td align="right"><input name="submit" type="submit" value="Готово" /></td>
+    </tr></td></tr>
+  
+  </table>
+  <input type="hidden" name="post" value="1">
+   
+</form>
+
+
+
+<%include ../../../include/backend/common/footer.tmpl%>

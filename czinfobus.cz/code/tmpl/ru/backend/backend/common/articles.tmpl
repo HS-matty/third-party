@@ -1,0 +1,24 @@
+<%include ../inc_admin.common.view/header.tmpl%>
+<br><br>
+<a href='<%echohtml HostName%>/admin/<%echo CatName%>/<%echohtml Lang%>/index.html?sid=<%echo Sid%>&action=addarticle'>Add article</a>
+<br><br><br>
+ARTICLES CATEGORY CODE HERE.
+
+<br>
+<%if ErrorMessage%><%echohtml ErrorMessage%><%endif%>
+<br>
+<%loop IndexArticleList%><br>
+	<%echo article_id%> <br>
+	<%echo article_timedate%>
+	<br>
+	<a 
+	href='<%echo global:HostName%>/admin/<%echo global:CatName%>/<%echo global:Lang%>/article_<%echo article_id%>.html?sid=<%echo global:Sid%>'>
+	<%echo article_longname%>
+	</a><br>
+	<%echo article_shortdescr%><br>
+	
+<%endloop%>
+
+
+<br><br>
+<%include ../inc_admin.common.view/footer.tmpl%>

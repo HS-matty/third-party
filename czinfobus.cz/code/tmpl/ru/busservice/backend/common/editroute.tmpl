@@ -1,0 +1,133 @@
+<%include ../../../include/backend/common/header.tmpl%>
+
+
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+<%if routes%>
+
+<form action="<%echo global:HostName%>/admin/busservice/adddays/<%echo route_id%>/ru/?sid=<%echo global:Sid%>" method="post" enctype="application/x-www-form-urlencoded" name="adddays">
+<br>Добавить <input name = "num" value="4" size='2'> выезда. <input style="width: 40px" type="submit" value = "go" name="go"><br>
+</form><br>
+<form action="<%echo HostName%>/admin/busservice/editroute/<%echo route_id%>/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post" enctype="application/x-www-form-urlencoded" name="articledata">
+<input type="hidden" name="route_id" value="<%echo route_id%>">
+  <table width="850" border="0" cellspacing="0" cellpadding="0">
+    <tr id='realty'> 
+
+      <td width="350" >Название маршрута (русский):</td>
+      <td width="500"><input <%if route_name_ru%>value="<%echo route_name_ru%>"<%endif%> name="route_name_ru" type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td width="350">Название маршрута (латинский):</td>
+      <td width="500"><input name="route_name_latin" <%if route_name_latin%>value="<%echo route_name_latin%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <%if days%>    <%loop days%>
+    <input type = "hidden" name="day<%echo loop:key%>_days_id" value="<%echo days_id%>">
+    <tr id='realty'> 
+      <td colspan="2" style='background-color: #CCCCCC'>Выезд <%echo loop:key + 1%> , <a href="<%echo global:HostName%>/admin/busservice/editroute/<%echo global:route_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&delete=<%echo days_id%>">Удалить ВЫЕЗД!<a/><br>
+      <ul>
+      <li><a href="<%echo global:HostName%>/admin/busservice/add_station_t/<%echo days_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&delete=<%echo days_id%>">Время прибытия и отправления для остановок</a>
+      <li><a href="<%echo global:HostName%>/admin/busservice/intervals/<%echo days_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>">Интервалы</a>
+
+      <ul>
+      </td>
+      
+    </tr>
+    <tr id='realty'> 
+      <td>День отправления:</td>
+      <td><select name="day<%echo loop:key%>_day_departure">
+      <option value="1" <%if day_departure==1%>selected<%endif%>>понедельник</option>
+       <option value="2" <%if day_departure==2%>selected<%endif%>>вторник</option>
+       <option value="3" <%if day_departure==3%> selected <%endif%>>среда</option>
+       <option value="4"  <%if day_departure==4%> selected <%endif%>>четверг</option>
+       <option value="5" <%if day_departure==5%> selected <%endif%>>пятница</option>
+       <option value="6"  <%if day_departure==6%> selected <%endif%>>суббота</option>
+       <option value="0"  <%if day_departure==0%> selected <%endif%>>воскресенье</option>
+            
+      </select></td>
+    </tr>
+    
+    <tr id='realty'> 
+      <td >Время отправления (например: 12-23)</td>
+      <td><input name="day<%echo loop:key%>_time_departure_hour" value="<%echo time_departure_hours%>" type="text" size="2" maxlength="2" />-<input name="day<%echo loop:key%>_time_departure_minute" type="text" size="2" maxlength="2" value="<%echo time_departure_minute%>"/></td>
+    </tr>
+    
+    <tr id='realty'> 
+      <td >День прибытия:</td>
+      <td><select name="day<%echo loop:key%>_day_arrival">
+      <option value="1" <%if day_arrival==1%> selected <%endif%>>понедельник</option>
+       <option value="2" <%if day_arrival==2%> selected <%endif%>>вторник</option>
+       <option value="3" <%if day_arrival==3%> selected <%endif%>>среда</option>
+       <option value="4"<%if day_arrival==4%> selected <%endif%>>четверг</option>
+       <option value="5"<%if day_arrival==5%> selected <%endif%>>пятница</option>
+       <option value="6"<%if day_arrival==6%> selected <%endif%>>суббота</option>
+       <option value="0"<%if day_arrival==0%> selected <%endif%>>воскресенье</option>
+            
+      </select></td>
+    </tr>
+    
+    
+    <tr id='realty'> 
+      <td >Время прибытия (например: 12-23)</td>
+      <td><input name="day<%echo loop:key%>_time_arrival_hour" value="<%echo time_arrival_hours%>"  type="text" size="2" maxlength="2" />-<input value="<%echo time_departure_minute%>"  name="day<%echo loop:key%>_time_arrival_minute" type="text" size="2" maxlength="2" /><br><br><br></td>
+    </tr>
+    
+
+	<tr id='realty'> 
+      <td >Автобус: </td>
+      <td><select name='day<%echo loop:key%>_bus_type'>
+      <option value='0' selected="selected">Тип автобуса</option>
+      <%loop global:bus_types%>
+      <option <%if parent:bustype_id == bustype_id%> selected <%endif%>value="<%echo bustype_id%>"><%echo bustype_title%> / <%echo busowner_title%> / <%echo bustype_places_num%> мест</option>
+      <%endloop%>
+      </select><br><br><br></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Диапазон мест (15-25)</td>
+      <td><input name="day<%echo loop:key%>_places_range" type="text" value="<%echo places_range%>" size="30" maxlength="20" /><br><br><br></td>
+    </tr>
+     
+    <tr id='realty'> 
+      <td >Стоимость билета</td>
+      <td><input name="day<%echo loop:key%>_ticket_price" type="text" size="30" value="<%echo days_ticket_price%>"  maxlength="10" /><br><br><br></td>
+    </tr>
+    
+
+    <%endloop%>
+       <%endif%>
+    
+    <tr id='realty'> 
+      <td></td>
+      <td align="right"><input name="submit" type="submit" value="Готово" /></td>
+    </tr></td></tr>
+  
+  </table>
+  <input type="hidden" name="post" value="1">
+</form>
+<br>
+<ul>
+<li style="color:red" >При удалении остановок УДАЛЮТСЯ интервалы и время прибытия на остановки, т.е. их нужно создать заново!
+</ul>
+
+	<br>Остановки: 
+	<%if stations%>
+	<%if edit%><a href="<%echo global:HostName%>/admin/busservice/stations/<%echo route_id%>/ru/?sid=<%echo global:Sid%>"> (редактировать остановки)</a><%endif%><br>
+	<%loop stations%>
+		<%echo loop:key +1%>: <%echo point_latin_name%>/<%echo point_ru_name%> <a href="<%echo global:HostName%>/admin/busservice/editroute/<%echo global:route_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&delete_station=<%echo station_id%>">[Удалить]</a>  <br>
+	<%endloop%>
+	<%else%>
+	<br>
+	<form action="<%echo global:HostName%>/admin/busservice/addstations/<%echo route_id%>/ru/?sid=<%echo global:Sid%>" method="post" enctype="application/x-www-form-urlencoded" name="addstations">
+<br>Добавить <input name = "num" value="4" size='2'> остановки. <input style="width: 40px" type="submit" value = "go" name="go"><br>
+</form>
+<br>
+	<%endif%>
+	<br><br><div align="center"><a  href="<%echo global:HostName%>/admin/busservice/routes/ru/?sid=<%echo global:Sid%>&delete=<%echo route_id%>">Удалить маршрут</a></span><br>
+
+<%endif%>
+
+
+<%include ../../../include/backend/common/footer.tmpl%>

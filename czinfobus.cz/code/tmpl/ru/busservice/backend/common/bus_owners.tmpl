@@ -1,0 +1,74 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+<br>
+
+Владельцы автобусов:<br>
+
+<%loop bus_owners%>
+<UL>
+<li>ID: <%echo busowner_id%>
+<li>Наименование: <%echo busowner_title%> 
+<li>ИНН: <%echo busowner_inn%> 
+<li>Адрес:<%echo busowner_address%> 
+<li>Телефон1:<%echo busowner_phone1%> 
+<li>Телефон2: <%echo busowner_phone2%> 
+<li>Факс <%echo  busowner_fax%> 
+<li>Email <%echo  busowner_email%> 
+</UL>
+
+<%endloop%>
+<br><br>
+Добавить нового владельца:
+
+<form action="<%echo HostName%>/admin/busservice/bus_owners/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post" enctype="application/x-www-form-urlencoded" name="addpartner">
+  <table width="650" border="0" cellspacing="0" cellpadding="0">
+    <tr id='realty'> 
+      <td width="150">Наименование:</td>
+      <td width="400"><input <%if busowner_title%>value="<%echo busowner_title%>"<%endif%> name="busowner_title" type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Инн:</td>
+      <td ><input name="busowner_inn" <%if busowner_inn%>value="<%echo busowner_inn%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    
+    <tr id='realty'> 
+      <td >Адрес:</td>
+      <td ><input name="busowner_address" <%if busowner_address%>value="<%echo busowner_address%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    
+    <tr id='realty'> 
+      <td >Телефон1:</td>
+      <td ><input name="busowner_phone1" <%if busowner_phone1%>value="<%echo busowner_phone1%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Телефон2:</td>
+      <td ><input name="busowner_phone2" <%if busowner_phone2%>value="<%echo busowner_phone2%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+     <tr id='realty'> 
+      <td >Fax:</td>
+      <td ><input name="busowner_fax" <%if busowner_fax%>value="<%echo busowner_fax%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+     <tr id='realty'> 
+      <td >Email:</td>
+      <td ><input name="busowner_email" <%if busowner_email%>value="<%echo busowner_email%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+   
+    <tr id='realty'> 
+      <td></td>
+      <td align="right"><input name="submit" type="submit" value="Готово" /></td>
+    </tr></td></tr>
+  
+  </table>
+  <input type="hidden" name="post" value="1">
+</form>
+
+
+
+
+<%include ../../../include/backend/common/footer.tmpl%>

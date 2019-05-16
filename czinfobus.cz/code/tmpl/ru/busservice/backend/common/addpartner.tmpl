@@ -1,0 +1,71 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+
+<form action="<%echo HostName%>/admin/busservice/addpartner/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post" enctype="application/x-www-form-urlencoded" name="addpartner">
+<input type="hidden" name="dealer_id" value="3">
+  <table width="650" border="0" cellspacing="0" cellpadding="0">
+    <tr id='realty'> 
+      <td width="150">Партнер:</td>
+      <td width="400"><input <%if dealer_corp_name%>value="<%echo dealer_corp_name%>"<%endif%> name="dealer_corp_name" type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Инн:</td>
+      <td ><input name="dealer_inn" <%if dealer_inn%>value="<%echo dealer_inn%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    
+    <tr id='realty'> 
+      <td >Адрес:</td>
+      <td ><input name="dealer_address" <%if dealer_address%>value="<%echo dealer_address%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    
+    <tr id='realty'> 
+      <td >Телефон1:</td>
+      <td ><input name="dealer_phone1" <%if dealer_phone1%>value="<%echo dealer_phone1%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Телефон2:</td>
+      <td ><input name="dealer_phone2" <%if dealer_phone2%>value="<%echo dealer_phone2%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+     <tr id='realty'> 
+      <td >Email:</td>
+      <td ><input name="dealer_email" <%if dealer_email%>value="<%echo dealer_email%>"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Login:</td>
+      <td ><input name="dealer_login" type="text" size="30" maxlength="40" /></td>
+    </tr>
+     <tr id='realty'> 
+      <td >Пароль:</td>
+      <td ><input name="dealer_password1" type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Повторить пароль:</td>
+      <td ><input name="dealer_password2" type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Валюта дилера:</td>
+      <td ><select name="currency_id" style="width:200px" >
+      <option selected value="0">Выбирайте</option>
+      <%loop currs%>
+      	<option value="<%echo  currency_id%>"><%echo currency_name%></option>
+      <%endloop%>
+      </select>
+      </td>
+    </tr>
+    <tr id='realty'> 
+      <td></td>
+      <td align="right"><input name="submit" type="submit" value="Готово" /></td>
+    </tr></td></tr>
+  
+  </table>
+  <input type="hidden" name="post" value="1">
+</form>
+
+
+
+<%include ../../../include/backend/common/footer.tmpl%>

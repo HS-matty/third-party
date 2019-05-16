@@ -1,0 +1,15 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+<a href="<%echo global:HostName%>/admin/busservice/register_client/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>">Добавить клиента</a>
+<br><br><br>
+
+
+<UL>
+<%loop clients%>
+<li>ID<%echo client_id%>, 
+<a href="<%echo global:HostName%>/admin/busservice/client/<%echo client_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>"><%echo client_name%></a>
+
+<%endloop%>
+</UL>
+
+<%include ../../../include/backend/common/footer.tmpl%>

@@ -1,0 +1,21 @@
+<%include ../../../include/frontend/common/dheader.tmpl%>
+<br>
+<%include menu_client.tmpl%>
+Автобус  
+<UL>
+<li>ID<%echo bus_id%>
+<li>Наименование: <%echo bus_route_title%>
+<li>День отправления: <%echo bus_day_depar%>
+<li>Время отправления: <%echo bus_time_depar%>
+<li>День прибытия: <%echo bus_day_arrival %>
+<li>Время прибытия: <%echo bus_time_arrival %>
+<li>Количество свободных билетов: <%echo bus_places_num%>
+
+</UL>
+<br>Билеты:
+<br>
+<%loop tickets%>
+	Билет <%echo id%>, <a href="<%echo global:HostName%>/busservice/c_rticket/<%echo id%>_<%echo global:bus_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>" >забронировать</a>  <br>
+<%endloop%>
+
+<%include ../../../include/frontend/common/dfooter.tmpl%>

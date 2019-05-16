@@ -1,0 +1,31 @@
+<%include ../inc_admin.common.view/header.tmpl%>
+<%include ../article.common.view/article_menu.tmpl%>
+
+
+
+<%if IndexArticleList%>
+<table width="100%" border="0" cellpadding="0" cellspacing="1">
+  <tr id='header'> 
+    <td id='header'>Добавлено</td>
+    <td>Краткий заголовок</td>
+    <td >Полный заголовок</td>
+    <td >Добавил</td>
+  </tr>
+
+  <%loop IndexArticleList%>
+  <tr id='white'> 
+    <td id='realty'><a href = '<%echo global:HostName%>/admin/<%echo global:CatName%>/<%echo global:Lang%>/article_<%echo article_id%>.html?sid=<%echo global:Sid%>'>
+<%echo article_timedate%></a></td>
+    <td ><a href = '<%echo global:HostName%>/admin/<%echo global:CatName%>/<%echo global:Lang%>/article_<%echo article_id%>.html?sid=<%echo global:Sid%>'><%echo article_longname%></a></td>
+    <td> <a href = '<%echo global:HostName%>/admin/<%echo global:CatName%>/<%echo global:Lang%>/article_<%echo article_id%>.html?sid=<%echo global:Sid%>'><%echo article_shortdescr%></a></td>
+    <td ><%echo user_name%></td>
+  </tr>
+
+ 
+  <%endloop%>
+</table>
+<%else%>
+<br /> Записей не найдено!
+<%endif%>
+<br><br>
+<%include ../inc_admin.common.view/footer.tmpl%>

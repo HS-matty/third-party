@@ -1,0 +1,24 @@
+<html>
+<style>
+<!--
+body, table, td {font-family: Arial, Verdana; font-size: 10px; font-color: #000000}
+.sel {font-family: Arial, Verdana; font-size: 11px; font-color: #000000}
+-->
+</style>
+<body marginheight=0 merginwidth=0>
+
+<table border=0 cellpadding=2 cellspacing=0 bgcolor="#777777"><tr><td>
+ <table border=0 cellpadding=2 cellspacing=0 bgcolor="#FFFFFF">
+  <tr><td><form method="get"></td></tr>
+  <tr><td>Модель телефона:</td></tr>
+  <tr><td><select class=sel name="ph" onchange="javascript:submit()">
+  <%if !global:selected_phone_id><option value="">Выберите модель</option><%endif>
+  <%loop phones>
+   <option value="<%echo phone_model_id>"<%if global:selected_phone_id==phone_model_id> selected<%endif>><%echo phone_name></option><%endloop>
+  </select></td><td><input type=submit value=">>"></td><tr>
+  <tr><td></form></td></tr>
+ </table>
+</td></tr></table>
+
+</body>
+</html>

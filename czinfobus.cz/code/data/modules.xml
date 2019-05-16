@@ -1,0 +1,1666 @@
+<?xml version='1.0' standalone='yes'?>
+<modules>
+	<module>
+		<id>busservice</id> 
+		<name>
+			<en>Bus Service Managment System</en>
+			<ru>Система управления автобусными маршрутами</ru>
+		</name>
+		<grants>
+			<read>
+				<include>
+					<groups>
+					<group>admins</group>
+					<group>clients</group>
+					
+					<group>partners</group>
+					</groups>
+					<users></users>
+				</include>
+				<exclude>
+					<groups>all</groups>
+					<users></users>
+					
+				</exclude>
+			</read>		
+		</grants>
+
+		<objects>
+		
+				<object>
+					<id>client_page</id>	
+					<param></param>
+					<name>
+						<en>Clients page</en>
+						<ru>Clients page</ru>
+					</name>
+					
+					<template>client_page.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>clients</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				<object>
+					<id>client_tickets</id>	
+					<param></param>
+					<name>
+						<en>Clients page</en>
+						<ru>Clients page</ru>
+					</name>
+					
+					<template>client_tickets.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>clients</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+		
+			
+				<object>
+					<id>not_found</id>	
+					<template>not_found.tmpl</template>
+					<alias_list>
+					</alias_list>
+				</object>
+
+				<object>
+					<id>index</id>	
+					
+					<name>
+						<en>Bus Service system</en>
+						<ru>Система управления маршрутами</ru>
+					</name>
+					<template>bus_index.tmpl</template>
+					<alias_list>
+						<alias><id>bus_service</id></alias>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>
+								<group>admins</group>
+								<group>guests</group>
+								</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				<object>
+					<id>routes</id>	
+					<name>
+						<en>Routes</en>
+						<ru>Маршруты</ru>
+					</name>
+					
+					<public>1</public>
+					<template>routes.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups></groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				<object>
+					<id>intervals</id>	
+					<name>
+						<en>Intervals</en>
+						<ru>Интервалы</ru>
+					</name>
+					
+					<param></param>
+					<template>intervals.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				<object>
+					<id>edit_price</id>	
+					<name>
+						<en>Edit interval price</en>
+						<ru>Редактировать стоимость интервала</ru>
+					</name>
+					
+					<param></param>
+					<template>edit_price.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+
+
+				<object>
+					<id>print_ticket</id>	
+					<name>
+						<en>ticket</en>
+						<ru>билет</ru>
+					</name>
+					
+					<param></param>
+					<template>ticket_print.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+
+				
+				<object>
+					<id>newticket</id>	
+					<name>
+						<en>New ticket</en>
+						<ru>Новый билет</ru>
+					</name>
+					<param></param>
+					
+
+					<template>newticket.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				<object>
+					<public>1</public>
+					<id>stations</id>	
+					<name>
+						<en>Stations</en>
+						<ru>Станции</ru>
+					</name>
+					<param></param>
+					
+
+					<template>stations.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admin</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+
+			<object>
+					<id>partners</id>	
+					<name>
+						<en>Partners</en>
+						<ru>Партнеры</ru>
+					</name>
+					
+					<public>1</public>
+					<template>partners.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				
+				
+				<object>
+					<id>ticket</id>	
+					<name>
+						<en>Ticket Page</en>
+						<ru>Билет</ru>
+					</name>
+					
+					<public>0</public>
+					<param></param>
+					<template>ticket.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				
+				
+		
+				
+				<object>
+					<id>partner</id>	
+					<param> </param>
+					<name>
+						<en>Partner</en>
+						<ru>Партнер</ru>
+					</name>
+					
+					
+					<template>partner.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+
+				
+				<object>
+					<id>bus</id>	
+					<param></param>
+					<name>
+						<en>Bus</en>
+						<ru>Автобус</ru>
+					</name>
+					
+					<template>bus.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups></groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+
+				
+				
+
+				<object>
+					<id>addpartner</id>	
+					<param></param>
+					<name>
+						<en>AddPartner</en>
+						<ru>Добавить Партнера</ru>
+					</name>
+					
+					<template>addpartner.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+					<object>
+					<id>client</id>	
+					<param></param>
+					<name>
+						<en>Client</en>
+						<ru>Клиент</ru>
+					</name>
+					
+					<template>client.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+			
+				
+			
+				<object>
+					<id>register_client</id>	
+					<param></param>
+					<name>
+						<en>Register Client</en>
+						<ru>Зарегистрировать Клиента</ru>
+					</name>
+					
+					<template>register_client.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+			
+			
+					<object>
+					<id>edit_client</id>	
+					<param></param>
+					<name>
+						<en>Edit Client</en>
+						<ru>Редактировать Клиента</ru>
+					</name>
+					
+					<template>edit_client.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				
+				<object>
+					<id>editpartner</id>	
+					<param></param>
+					<name>
+						<en>Editartner</en>
+						<ru>Редактировать партнера</ru>
+					</name>
+					
+					<template>editpartner.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				<object>
+					<id>partners_page</id>	
+					<param></param>
+					<name>
+						<en>Partner's page</en>
+						<ru>Страница партнера</ru>
+					</name>
+					
+					<template>partnerspage.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>partners</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				
+				
+				
+				<object>
+					<id>ptickets</id>	
+					<param></param>
+					<name>
+						<en>Partner's tickets</en>
+						<ru>Билеты</ru>
+					</name>
+					
+					<template>ptickets.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>partners</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				<object>
+					<id>busmanage</id>	
+					<param></param>
+					<name>
+						<en>Bus manage</en>
+						<ru>Bus manage</ru>
+					</name>
+					
+					<template>busmanage.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>partners</group>
+							
+								</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				<object>
+					<id>cbusmanage</id>	
+					<param></param>
+					<name>
+						<en>Bus manage</en>
+						<ru>Bus manage</ru>
+					</name>
+					
+					<template>client_busmanage.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>
+								<group>clients</group>
+								</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				<object>
+					<id>c_rticket</id>	
+					<param></param>
+					<name>
+						<en>reserve ticket</en>
+						<ru>reserve ticket</ru>
+					</name>
+					
+					<template>creserveticket.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>
+								<group>clients</group>
+								</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				
+				
+				
+					<object>
+					<id>reserveticket</id>	
+					<param></param>
+					<name>
+						<en>Reserve ticket</en>
+						<ru>Reserve ticket</ru>
+					</name>
+					
+					<template>reserveticket.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>partners</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+					<object>
+					<id>dclients</id>	
+					<param></param>
+					<name>
+						<en>Partner's clients page</en>
+						<ru>Partner's clients page</ru>
+					</name>
+					
+					<template>dclients.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>partners</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				<object>
+					<id>dclient</id>	
+					<param></param>
+					<name>
+						<en>Clients page</en>
+						<ru>Clients page</ru>
+					</name>
+					
+					<template>dclient.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>partners</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				<object>
+					<id>dticket</id>	
+					<param></param>
+					<name>
+						<en>Clients page</en>
+						<ru>Clients page</ru>
+					</name>
+					
+					<template>dticket.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>partners</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				
+
+
+				<object>
+					<id>points</id>	
+					<name>
+						<en>Points</en>
+						<ru>Пункты</ru>
+					</name>
+					
+					<public>1</public>
+					<template>points.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				<object>
+					<id>addpoint</id>	
+					<name>
+						<en>Add Point</en>
+						<ru>Добавить пункт</ru>
+					</name>
+					
+					<public>0</public>
+					<template>addpoint.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				<object>
+					<id>clients</id>	
+					<name>
+						<en>Clients</en>
+						<ru>Клиенты</ru>
+					</name>
+					
+					<public>1</public>
+					<template>clients.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+
+				
+				<object>
+					<id>addroute</id>	
+					<param></param>
+					<name>
+						<en>Add new route</en>
+						<ru>Добавить новый маршруты</ru>
+					</name>
+					
+					<public>0</public>
+					<template>addroute.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				<object>
+					<id>adddays</id>	
+					<param></param>
+					<name>
+						<en>Add new days</en>
+						<ru>Добавить новые выезды</ru>
+					</name>
+					
+					<public>0</public>
+					<template>adddays.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				<object>
+					<id>editroute</id>	
+					<param></param>
+					<name>
+						<en>Edit route</en>
+						<ru>Редактировать маршрут</ru>
+					</name>
+					
+					<public>0</public>
+					<template>editroute.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+
+
+				<object>
+					<id>addstations</id>	
+					<param></param>
+					<name>
+						<en>Add new stations</en>
+						<ru>Добавить станции</ru>
+					</name>
+					
+					<public>0</public>
+					<template>addstations.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>
+								<group>admins</group>
+								</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				
+				<object>
+					<id>add_station_t</id>	
+					<param></param>
+					<name>
+						<en>Add stations timing</en>
+						<ru>Добавить данные о приездах на станции</ru>
+					</name>
+					
+					<public>0</public>
+					<template>add_station_t.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>
+								<group>admins</group>
+								</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+
+				<object>
+					<id>view_station_t</id>	
+					<param></param>
+					<name>
+						<en>view stations timing</en>
+						<ru>Просмотреть данные о приездах на станции</ru>
+					</name>
+					
+					<public>0</public>
+					<template>view_station_t.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>
+								<group>admins</group>
+								</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+
+				
+				<object>
+					<id>buses</id>	
+					<name>
+						<en>Buses</en>
+						<ru>Автобусы</ru>
+					</name>
+					
+					<public>1</public>
+					<template>buses.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups></groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+				<object>
+					<id>bus_owners</id>	
+					<name>
+						<en>Bus owners</en>
+						<ru>Владельцы автобусов</ru>
+					</name>
+					
+					<public>0</public>
+					<template>bus_owners.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+					<object>
+					<id>bus_types</id>	
+					<name>
+						<en>Bus types</en>
+						<ru>Типы автобусов</ru>
+					</name>
+					
+					<public>0</public>
+					<template>bus_types.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+<object>
+					<public>1</public>
+					<id>reserve_ticket</id>	
+					<param></param>
+					<name>
+						<en>Reserve ticket</en>
+						<ru>Резервация билета</ru>
+					</name>
+					
+					<template>reseve.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+		</objects>
+			
+	</module>
+	<module>		
+		<id>content</id> 
+		<name>
+			<en>Site Content</en>
+			<ru>Контент сайта</ru>
+		</name>
+		<grants>
+			<read>
+				<include>
+					<groups>all</groups>
+					<users></users>
+				</include>
+				<exclude>
+					<groups>
+					</groups>
+					<users></users>
+					
+				</exclude>
+			</read>		
+		</grants>
+		
+			<objects>
+
+				<object>
+					<id>not_found</id>	
+					<template>not_found.tmpl</template>
+					<alias_list>
+					</alias_list>
+				</object>
+				<object>
+					<id>index</id>
+					<template>content_index.tmpl</template>
+					<alias_list>
+						<alias>
+							<id>content_index</id>
+						</alias>
+					</alias_list>
+					
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+							<exclude>
+							</exclude>
+						</read>		
+					</grants>
+					
+				</object>
+				
+				<object>
+					<id>add_article</id>
+					<name>
+						<en>Add article</en>
+						<ru>Добавить статью</ru>
+					</name>
+					<public>1</public>
+					<template>addarticle.tmpl</template>
+					<alias_list>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>
+								<group>admins</group>
+								</groups>
+								<users></users>
+							</include>
+							<exclude>
+							<groups>all</groups>
+							</exclude>
+						</read>		
+					</grants>
+					
+				</object>
+				
+				<object>
+					<id>delete_article</id>
+					<param></param>					
+					<alias_list>
+					</alias_list>
+					
+					<grants>
+						<read>
+							<include>
+								<groups>
+									<group>admins</group></groups>
+								<users>
+									<user></user>
+								</users>
+							</include>
+							<exclude>
+							<groups>all</groups>
+							</exclude>
+						</read>		
+					</grants>
+					
+				</object>
+
+			
+				<object>
+					<id>article_list</id>
+					<param></param>
+					<name>
+						<ru>Список статей</ru>
+						<en>Articles list</en>
+					</name>
+					<public>1</public>
+					<template>article_list.tmpl</template>
+					<alias_list>
+						<alias>
+							<id>list</id>
+						</alias>
+					</alias_list>
+					
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+							<exclude>
+							<users></users>
+							<groups></groups>
+							</exclude>
+						</read>		
+					</grants>
+					
+				</object>
+							
+				<object>			
+					<id>article</id>
+					<param>0</param>
+					<template>article.tmpl</template>
+					<title>
+						<ru>Статья</ru>
+						<en>Article</en>
+					</title>
+			
+					<alias_list>
+						<alias>
+								<id>test</id>	
+								<public>1</public>
+								<params>
+									<ru>2</ru>
+									<en>3</en>
+								</params>
+								
+						</alias>
+						
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups></groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+		
+			</object>
+			
+			
+			<object>			
+					<id>edit_article</id>
+					<param></param>
+					<template>edit_article.tmpl</template>
+					<title>
+						<ru>Редактировать статью</ru>
+						<en>Edit article</en>
+					</title>
+			
+					<alias_list>
+						
+						
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups><group>admins</group></groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups>all</groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+		
+			</object>
+		</objects>	
+	
+	</module>
+	
+
+	
+
+	<module>
+		<id>frontend</id>
+		<alt_id>main</alt_id>
+		<not_public>1</not_public>
+	 	<name>
+			<en>Frontpage</en>
+			<ru>Публичная страница</ru>
+		</name>
+	 	<grants>
+			<read>
+				<include>
+					<groups>all</groups>
+				</include>
+				<exclude>
+					<groups></groups>
+				</exclude>
+			</read>		
+		</grants>
+	
+			<objects>
+			<object>
+					<id>schedule</id>
+					<name>Schedule page</name>
+					<template>schedule.tmpl</template>
+						<page_params>	
+							<title>
+								<ru>Расписание</ru>
+								<en>Schedule</en>
+							</title>
+						</page_params>
+						
+						<alias_list>
+						
+							<alias>
+								<id>schedule</id>	
+								<public>1</public>
+							</alias>
+						
+						</alias_list>
+						
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+						
+						</read>		
+					</grants>
+					
+					
+					
+				</object>
+				
+				
+					<object>
+					<id>forgot_password</id>
+					<name>Forgot password page</name>
+					<template>forgot.tmpl</template>
+						<page_params>	
+							<title>
+								<ru>Забылил пароль</ru>
+								<en>Forgot password</en>
+							</title>
+						</page_params>
+						
+						<alias_list>
+						
+							<alias>
+								<id>forgot</id>	
+								<public>1</public>
+							</alias>
+						
+						</alias_list>
+						
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+						
+						</read>		
+					</grants>
+					
+					
+					
+				</object>
+				
+				<object>
+					<id>index</id>
+					<name>FrontEnd index Object</name>
+					<template>index.tmpl</template>
+						<page_params>	
+							<title>
+								<ru>Русский заголовок</ru>
+								<en>Английский заголовок</en>
+							</title>
+						</page_params>
+						
+						<alias_list>
+						
+							<alias>
+								<id>main</id>	
+								<public>1</public>
+							</alias>
+						
+						</alias_list>
+						
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+						
+						</read>		
+					</grants>
+				
+				
+					
+				</object>
+				
+				
+				<object>
+					<id>register_user</id>	
+					<name>
+						<en>Ticket Page</en>
+						<ru>Билет</ru>
+					</name>
+					
+					<public>0</public>
+					<param></param>
+					<template>register_user.tmpl</template>
+					<alias_list>
+						<alias><id>register</id></alias>
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups></groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				</object>
+					
+					
+				<object>
+					<id>login</id>
+					<name>Login page</name>
+					<template>login.tmpl</template>
+						<page_params>	
+							<title>
+								<ru>Вход для клиентов </ru>
+								<en>Английский заголовок</en>
+							</title>
+						</page_params>
+						
+						<alias_list>
+						
+							<alias>
+								<id>userlogin</id>	
+								<public>1</public>
+							</alias>
+						
+						</alias_list>
+						
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+						
+						</read>		
+					</grants>
+					
+					
+					
+				</object>
+				
+			
+			
+				<object>
+					
+					<id>not_found</id>
+					<name>notfound Object</name>		
+					<template>not_found.tmpl</template>
+					
+					<alias_list>
+					
+						<alias>
+							<id>not_found</id>	
+							<public>1</public>
+						</alias>
+					
+					</alias_list>
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups></groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+
+				</object>
+			
+			</objects>
+
+	</module>
+	
+	<module>
+		<id>backend</id>
+		<not_public>1</not_public>
+		<name>
+			<en>Backend</en>
+			<ru>Администирование</ru>
+		</name>
+		
+		<grants>
+			<read>
+				<include>
+					<groups>
+						<group>admins</group>
+					</groups>
+					<users></users>
+				</include>
+				<exclude>
+					<groups>all</groups>
+					<users></users>
+				</exclude>
+			</read>		
+		</grants>
+	
+
+
+		
+		<objects>
+			<object>
+				<id>index</id>
+				<name>Backend Index Object</name>		
+				
+				<alias_list>
+				
+					<alias>
+						<id>backend_index</id>	
+						<public>1</public>
+ 					</alias>
+					
+	 			</alias_list>
+
+							
+				<page_params>	
+					<test>a</test>
+					<title>
+						<ru>Главная страница</ru>
+						<en>Main page</en>
+					</title>
+				</page_params>
+				
+				<template>index.tmpl</template>		
+				<grants>
+					<read>
+						<include>
+							<groups>all</groups>
+							<users></users>
+						</include>
+						<exclude>
+							<groups></groups>
+							<users></users>
+						</exclude>
+					</read>		
+				</grants>
+				
+			</object>
+			
+			<object>
+				<id>login_page</id>
+				<name>LoginPage Object</name>
+					<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups></groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+					
+				<alias_list>
+				
+					<alias>
+						<id>login</id>	
+						<public>1</public>
+ 					</alias>
+					
+	 			</alias_list>
+		
+				
+				<template>login_page.tmpl</template>
+				<grants>
+						<read>
+							<include>
+								<groups>all</groups>
+								<users></users>
+							</include>
+							<exclude>
+								<groups></groups>
+								<users></users>
+							</exclude>
+						</read>		
+					</grants>
+				
+			</object>
+			
+			
+			<object>
+				<id>auth</id>
+				<name>Auth object</name>
+				<alias_list>
+				
+					<alias>
+						<id>auth</id>	
+						<public>1</public>
+ 					</alias>
+					
+	 			</alias_list>
+		
+				
+				<template>auth.tmpl</template>
+				<grants>
+					<read>
+						<include>
+							<groups>all</groups>
+							<users></users>
+						</include>
+						<exclude>
+							<groups></groups>
+							<users></users>
+						</exclude>
+					</read>		
+				</grants>
+			</object>
+			
+			<object>
+				<name>NotFound Object</name>		
+				<id>not_found</id>
+					<alias_list>
+				
+						<alias>
+							<id>not_found</id>	
+							<public>1</public>
+ 						</alias>
+					
+	 				</alias_list>
+
+				<template>not_found.tmpl</template>	
+			</object>
+		</objects>
+		
+	</module>	
+
+
+</modules>
+  

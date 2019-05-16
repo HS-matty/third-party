@@ -1,0 +1,65 @@
+<%include ../../../include/frontend/common/header.tmpl%>
+<table width="867" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="631">
+    
+    
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="631" height="172">
+              <param name="movie" value="<%echo HostName%>/img/bus.swf" />
+              <param name="quality" value="high" />
+              <embed src="http://bus/<%echo HostName%>/img/bus.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="631" height="172"></embed></object></td>
+        </tr>
+        <tr>
+          <td height="30" bgcolor="#4F7DB1">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td align="left" valign="top" ><table width="236" height="203" border="0" cellpadding="0" cellspacing="0" bgcolor="#FCE897">
+        <tr>
+          <td height="203">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+<table width="868" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="631" height="329" valign="top"> <table width="100%" border="0" cellpadding="0" cellspacing="0" class="text" id="main">
+        <tr> 
+          <td height="290"><p><%echo article_body%></p></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p></td>
+    <td width="239" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="26">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="26" bgcolor="#4F7DB1" class="header">Новости</td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="bord">
+        <tr> 
+          <td class="news"><%if news_headers%>
+          	<%loop news_headers%><strong><%echo article_header%></strong><br>
+          	<%echo article_descr%><br><a 	style="size:font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;">Читать далее</a> 	<br><br><%endloop%>
+          <%endif%>
+        </tr>
+      </table>
+      <br> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="26" bgcolor="#4F7DB1" class="header">Анонсы</td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="bord">
+        <tr> 
+          <td><p>teste</p>
+            <p>test</p>
+            <p>&nbsp;</p></td>
+        </tr>
+      </table></td>
+  </tr>
+  </table>
+<%include ../../../include/frontend/common/footer.tmpl%>

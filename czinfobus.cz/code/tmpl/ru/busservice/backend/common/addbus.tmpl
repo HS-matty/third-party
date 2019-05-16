@@ -1,0 +1,43 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+
+<table width="500" border="0" cellspasing="0" cellpadding="0">
+<tr><td><form name="RouteForm" action="<%echo HostName%>/admin/busservice/reserve_ticket/<%echohtml Lang%>/?sid=<%echohtml Sid%><%if step%>&step=<%echo step%><%endif%>" method="post"> </td></tr>
+<tr><td  width="150">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr id='realty'>
+      <td>Route:</td>
+      <td><select name="SelRoute" onchange="javascript:RouteChange();">
+        <option value="99">--Please Select--</option>
+      </select></td>
+     </tr><tr id='realty'>
+      <td>Year:</td>
+      <td><select name="SelYear" onchange="javascript:YearChange();">
+        <option value="99">--Please Select--</option>
+      </select></td>
+     </tr><tr id='realty'>
+      <td>Month:</td>
+      <td><select name="SelMonth" onchange="javascript:MonthChange();">
+        <option value="99">--Please Select--</option>
+      </select></td>
+     </tr><tr id='realty'>
+      <td>Day:</td>
+      <td><select name="SelDay">
+        <option value="99">--Please Select--</option>
+      </select></td>
+     </tr><tr>
+      <td colspan="2"><input type="hidden" name="step" value="2"><input type="hidden" name="post" value="1"><input type="Submit" value="Go!"></td>
+     </tr>
+    </table>
+</td></tr>
+<tr><td></form></td></tr>
+</table>
+
+
+
+<%include ../../../include/backend/common/footer.tmpl%>

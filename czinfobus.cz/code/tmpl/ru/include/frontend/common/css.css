@@ -1,0 +1,182 @@
+
+
+td#cont{
+	padding-left: 50px;
+
+}
+table#menu {
+
+	height: 59px;
+}
+td#menu{
+	width: 25%;
+	text-align: center;
+	vertical-align: middle;
+
+}
+td#pix{
+	vertical-align: middle;
+}
+a#menu{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+
+
+}
+a:hover#menu{
+	text-decoration: underline;
+}
+
+td{
+vertical-align: top;
+}
+td#search{
+	padding-left: 50px;
+	padding-top: 20px;
+
+}
+td#newsheader{
+
+	padding-top: 20px;
+
+}
+table {
+	border: none;
+	
+}
+table#article{
+	padding-left: 0px;
+} 
+
+a#news{
+	size:font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+
+	}
+
+h3{
+	font-size: 14px;
+	color: 5E5E5E;
+}
+.news {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	padding-bottom: 15px;
+	text-align: justify;
+}
+.article{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+
+}
+td#intro {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 20px;
+	text-align: justify;
+	padding-top: 20px;
+	padding-right: 80px;
+}
+
+
+.news#date{
+	font-weight: bold;
+	text-align: left;
+}
+.form_obj{
+	width: 200px;
+
+}
+input#submit {
+	background-color: #FFFFFF;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	width: 70px;
+
+}
+td#footer{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	background-color: #909090;
+	vertical-align: middle;
+	height: 25px;
+	color: #FFFFFF;
+	padding-right: 5px;
+	padding-left: 15px;
+	
+}
+td#searchrez{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	text-align: left;
+	height: 40px;
+	vertical-align: middle;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+}
+td#pages{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	text-align: left;
+	height: 40px;
+	vertical-align: middle;
+}
+
+td#realtyrec{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	text-align: left;
+	height: 40px;
+	vertical-align: middle;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #CCCCCC;
+}
+td#realtyrec2{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	text-align: left;
+	height: 40px;
+	vertical-align: middle;
+	padding-left: 30px;
+}
+tr#realty {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	vertical-align: middle;
+	height: 35px;
+}

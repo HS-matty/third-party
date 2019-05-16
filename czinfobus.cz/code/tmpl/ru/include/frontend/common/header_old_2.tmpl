@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Infobus / <%if article_header%><%echo article_header%><%endif%></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+<!--
+.menu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+}
+.menu2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+}
+.header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	text-align: justify;
+	padding: 20px;
+}
+.news {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	text-align: left;
+	padding: 10px;
+
+}
+.text2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	text-align: right;
+	
+
+}
+
+
+.bord {
+	border-top: 1px none #999999;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+}
+input#main{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	margin: 0px 10px 0px 5px;
+	height: 15px;
+	width: 90px;
+	border: 1px solid #CCCCCC;
+	vertical-align: middle;
+}
+input#button{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	margin: 0px 0px 0px 00px;
+	height: 20px;
+	width: 50px;
+	border: 1px solid #666666;
+	vertical-align: middle;
+	background-color: #ffffff;
+}
+a:hover {
+	text-decoration: underline;
+}
+a,a#visited {
+	font-size: 14px;
+	color: #666666;
+	text-decoration: underline;
+}
+
+-->
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<form method="post" action="<%echo HostName%>/userlogin/<%echohtml Lang%>/" name="">
+
+<table width="867" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td height="25" colspan="2">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="226"><img src="<%echo HostName%>/img/logo.gif" width="226" height="40" /></td>
+    <td align="right"><div align="right">
+        <table  height ="25" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" align="right"  class="text2">Login:</td>
+            <td width="90"><input id="main" type="text2" name="login" /></td>
+            <td width="15" align="right"  class="text2">Password:</td>
+            <td width="90"><input id="main" type="password" name="password" /></td>
+            <input type="hidden" name="post" value="1">
+            <td><input type="submit" name="form" id ="button"value="Войти"></td>
+
+          </tr>
+        </table>
+      </div></td>
+  </tr>
+</table>
+</form>
+<table width="867" height="30" border="0" cellpadding="0" cellspacing="0" bgcolor="#4F7DB1">
+  <tr> 
+    <td width="173" height="20" class="menu" ><a class="menu" href="<%echo HostName%>/main/<%echo global:Lang%>/">На главную</a></td>
+    <td class="menu" width="3"><img src="<%echo HostName%>/img/menu_line.gif" /></td>
+    <td width="173" class="menu"><a href="<%echo global:HostName%>/schedule/<%echo global:Lang%>/" class="menu">Расписание движения автобусов</a></td>
+	 <td class="menu" width="3"><img src="<%echo HostName%>/img/menu_line.gif" /></td>
+    <td width="173" class="menu"><a href="<%echo global:HostName%>/content/article/38/<%echo global:Lang%>/" class="menu">Бронирование билетов</a></td>
+	 <td class="menu" width="3"><img src="<%echo HostName%>/img/menu_line.gif" /></td>
+    <td width="173" class="menu"><a href="<%echo global:HostName%>/content/article/34/<%echo global:Lang%>/"class="menu">Сотрудничество</a></td>
+	 <td class="menu" width="3"><img src="<%echo HostName%>/img/menu_line.gif" /></td>
+    <td width="173" class="menu"><a href="<%echo global:HostName%>/content/article/35/<%echo global:Lang%>/"  class="menu">Контакты</a></td>
+	 
+    
+  </tr>
+</table>
+<table width="867" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="14"><div align="right"><a href="<%echo HostName%>/register/<%echo global:Lang%>/">Регистрация</a>   |   <a href="#">Забыли пароль</a></div></td>
+  </tr>
+</table>
+
+
+

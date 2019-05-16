@@ -1,0 +1,35 @@
+<%include ../inc_admin.common.view/header.tmpl%>
+<%include ../index_admin.common.view/index_menu.tmpl%>
+<%if ErrorMessage%><%echohtml ErrorMessage%><%endif%>
+<br>
+<form name="settings"  method="post" action="<%echohtml HostName%>/admin/<%echohtml Lang%>/useradmin_<%echo UserId%>.html?sid=<%echohtml Sid%>">
+
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+  <tr id='realty' align="justify"> 
+    <td width="250">Логин:</td>
+    <td width="350"><%echo user_login%></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Имя пользователя:</td>
+    <td><%echo user_name%></td>
+  </tr>
+ <tr id='realty'> 
+    <td>Старый пароль:</td>
+    <td><input name="old_password" type="password" class="filterObj" /></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Новый пароль:</td>
+    <td><input name="new_password" type="password" class="filterObj" /></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Проверка нового пароля:</td>
+    <td><input name="retyped_new_password" type="password" class="filterObj" /></td>
+  </tr>
+  <tr id='realty'> 
+    <td></td>
+    <td><input name="submit" type="submit" class="button" value="Submit" /></td>
+  </tr>
+</table>
+</form>
+<br><br>
+<%include ../inc_admin.common.view/footer.tmpl%>

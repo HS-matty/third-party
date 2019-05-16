@@ -1,0 +1,37 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+Автобус может создаваться автоматически при бронировании либо клиентом либо партнером билета, (билетов), <br>
+а так же  администратором.<br>
+<br>
+Возможные операции:
+<ul>
+
+<li><a href='<%echo global:HostName%>/admin/busservice/bus_owners/<%echo global:Lang%>/?sid=<%echo global:Sid%>'>Владельцы автобусов </a>
+<li><a href='<%echo global:HostName%>/admin/busservice/bus_types/<%echo global:Lang%>/?sid=<%echo global:Sid%>'>Типы автобусов </a>
+
+</ul>
+<br>
+Список уже созданных автобусов:<br>
+<br>
+
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#E8E8E8">
+    <td align="center">Номер автобуса</td>
+    <td align="center">Отправление</td>
+    <td align="center">Маршрут</td>
+    <td align="center">Диапазон мест</td>
+    <td align="center">Добавил</td>
+  </tr>
+  <%loop Buses%>
+  <tr>
+    <td height="20"><a href="<%echo global:HostName%>/admin/busservice/bus/<%echo bus_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>">ID<%echo bus_id%></td>
+    <td><%echo bus_day_depar_converted%>, <%echo bus_time_depar%></td>
+    <td><a href="<%echo global:HostName%>/admin/busservice/editroute/<%echo route_id%>/<%echo global:Lang%>/?sid=<%echo global:Sid%>"><%echo bus_route_title%></a></td>
+    <td><%echo places_range%></td>
+    <td><%echo bus_addedby%></td>
+  </tr>
+  <%endloop%>
+</table>
+
+
+<%include ../../../include/backend/common/footer.tmpl%>

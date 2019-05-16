@@ -1,0 +1,27 @@
+<%include ../../../include/frontend/common/dheader.tmpl%>
+<br>
+<%include menu_client.tmpl%>
+Список билетов:<br>
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#E8E8E8">
+    <td align="center">Автобус</td>
+    <td align="center">Отправление</td>
+    <td align="center">Интервал</td>
+    <td align="center">Клиент</td>
+    <td align="center">Оплата</td>
+  </tr>
+  <%loop tickets%>
+  <tr height="40" align='center'>
+    <td ><%echo bus_route_title%></td>
+    <td><%echo bus_day_depar%>, <%echo bus_time_depar%></td>
+    <td><%echo bus_route_title%></td>
+    <td><%echo client_name%></td>
+    <td><%if ticket_payed > 0%>Да<%else%>Нет<%endif%></td>
+  </tr>
+  <%endloop%>
+</table>
+
+<%include ../../../include/frontend/common/dfooter.tmpl%>
+
+
+

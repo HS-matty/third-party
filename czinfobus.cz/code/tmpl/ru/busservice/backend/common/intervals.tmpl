@@ -1,0 +1,17 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+<a href="<%echo global:HostName%>/admin/busservice/editroute/<%echo RouteId%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>"> Вернуться к маршруту<a/>
+<br><br>
+<%loop intervals%>
+
+<%echo departure_point_latin_name%> / <%echo arrival_point_latin_name%>:
+<ul>
+<%loop currs%>
+<li><a href="<%echo global:HostName%>/admin/busservice/edit_price/<%echo price_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&days_id=<%echo global:days_id%>"> <%echo currency_name%>: <%echo price_value%></a>
+<%endloop%>
+</ul>
+
+<%endloop%>
+<a href="<%echo global:HostName%>/admin/busservice/intervals/<%echo days_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&delete=<%echo days_id%>">Обнулить </a>
+<br>
+<%include ../../../include/backend/common/footer.tmpl%>

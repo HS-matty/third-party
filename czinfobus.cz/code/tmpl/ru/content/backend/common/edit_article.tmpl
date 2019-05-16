@@ -1,0 +1,45 @@
+<%include ../../../include/backend/common/header.tmpl%>
+
+<br><br>
+
+
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+
+
+<form action="<%echo HostName%>/admin/content/edit_article/<%echo article_id%>/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post" enctype="application/x-www-form-urlencoded" name="articledata">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+    <tr id='realty'> 
+      <td width="200">Заголовок статьи:</td>
+      <td><input name="article_header" value="<%echo article_header%>" type="text" size="30" maxlength="30" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td>Описание статьи:</td>
+      <td><input name="article_descr" value="<%echo article_descr%>" type="text" size="30" maxlength="60" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td>Перечень meta-слов:</td>
+      <td><input name="article_meta" value="<%echo article_meta%>" type="text" size="30" maxlength="100" /> </td>
+    </tr>
+    
+    <tr id='realty'>
+      <td>Содержание:</td>
+      <td><textarea name="article_body" type="text"  cols="70" rows="30"><%echohtml article_body%></textarea></td>
+    </tr>
+
+    <tr id='realty'> 
+      <td></td>
+      <td align="right"><input type="hidden" name="post" value="1"><input name="submit" type="submit" value="Готово" /></td>
+    </tr></td></tr>
+  </table>
+</form>
+
+
+
+
+<br><br>
+<%include ../../../include/backend/common/footer.tmpl%>

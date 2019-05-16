@@ -1,0 +1,79 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+
+
+Владельцы автобусов:<br>
+
+<%loop bus_types%>
+<UL>
+<li>ID: <%echo bustype_id%>, <%echo bustype_title %>, кол-во мест: <%echo bustype_places_num%><%if bustype_pic == 1%>,  <a href="<%echo global:HostName%>/images/bus_img/<%echo bustype_id%>.jpg" target="_blank">изображение</a><%endif%> |  Владелец: <%echo busowner_title%>
+</UL>
+
+<%endloop%>
+<br><br>
+Добавить новый автобус:<br>
+<%if Errors%>
+Errors:<br>
+<%loop Errors%>
+<%echo loop:key+1%>) <%echo msg%><br>
+<%endloop%>
+<%endif%>
+<br>
+       
+<form action="<%echo HostName%>/admin/busservice/bus_types/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post" enctype="multipart/form-data" name="addpartner">
+  <table width="650" border="0" cellspacing="0" cellpadding="0">
+    <tr id='realty'> 
+      <td width="150">Наименование</td>
+      <td width="400"><input <%if bustype_title%>value="<%echo bustype_title%>"<%endif%> name="bustype_title" type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td height="23" >Кол-во мест:</td>
+      <td ><input name="bustype_places_num" <%if  bustype_places_num%>value="<%echo bustype_places_num%>"<%else%>value="0"<%endif%> type="text" size="30" maxlength="40" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Телевизор:</td>
+      <td ><input name="bustype_tv" type="checkbox"  value="1"  <%if bustype_tv%> checked <%endif%>/></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Туалет:</td>
+      <td ><input name="bustype_toilet" type="checkbox"  value="1"  <%if bustype_toilet%> checked <%endif%>/></td>
+    </tr>
+    <tr id='realty'> 
+      <td >Кондиционер:</td>
+      <td ><input name="bustype_cond" type="checkbox"  value="1"  <%if bustype_cond%>checked <%endif%>/> </td>
+    </tr>
+    <tr id='realty'> 
+      <td >Бар:</td>
+      <td ><input name="bustype_bar" type="checkbox"  value="1"  <%if bustype_bar%>checked <%endif%>/> </td>
+    </tr>
+    <tr id='realty'>
+      <td >Владелец автобуса:</td>
+      <td ><select name="busowner_id" style="width: 220px">
+
+      <option value="0" >Выберите владельца</option>
+	<%loop bus_owners%>      
+   <option value="<%echo busowner_id%>" ><%echo busowner_title%></option>
+	<%endloop%>
+      </td>
+    </tr>
+    <tr id='realty'>
+      <td >Изображение схемы автобуса:</td>
+      <td ><input name="bustype_pic" type="file" name="imgfile" id="upload" />      
+      </td>
+    </tr>
+    <tr id='realty'>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+    </tr>
+    
+    <tr id='realty'> 
+      <td></td>
+      <td align="right"><input name="submit" type="submit" value="Готово" /></td>
+    </tr></td></tr>
+  </table>
+  <input type="hidden" name="post" value="1">
+</form>
+
+
+
+<%include ../../../include/backend/common/footer.tmpl%>

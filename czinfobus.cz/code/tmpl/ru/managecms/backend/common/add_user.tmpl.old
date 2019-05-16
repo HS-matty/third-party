@@ -1,0 +1,37 @@
+<%include ../inc_admin.common.view/header.tmpl%>
+<%include ../index_admin.common.view/index_menu.tmpl%>
+<br>
+<%if ErrorMessage%><%echohtml ErrorMessage%><%endif%>
+<form name = "add_user" action="<%echo HostName%>/admin/<%echohtml CatName%>/<%echohtml Lang%>/index.html?sid=<%echohtml Sid%>&action=added_user" method="post" enctype="application/x-www-form-urlencoded">
+  <table width="600" border="0" cellspacing="0" cellpadding="0">
+    <tr id='realty'> 
+      <td width="250">Имя пользователя:</td>
+      <td width='350'><input name="user_name" type="text" maxlength="40"  class="filterObj" /></td>
+    </tr>
+    <tr id='realty'> 
+      <td>Login:</td>
+      <td><input name="user_login" type="text"  class="filterObj" maxlength="15"  /></td>
+    </tr>
+    
+  <tr id='realty'> 
+    <td>Пароль:</td>
+    <td><input name="user_password" type="password" class="filterObj" maxlength="15"  /></td>
+  </tr>
+  <tr id='realty'> 
+    <td>Проверка пароля:</td>
+    <td><input name="user_retyped_password" type="password" class="filterObj" maxlength="15" /></td>
+  </tr>
+
+    <tr id='realty'> 
+      <td></td>
+      <td align="right"><input name="submit" type="submit" value="Добавить" class='button' /></td>
+    </tr></td></tr>
+    
+  </table>
+</form>
+
+
+
+
+<br><br>
+<%include ../inc_admin.common.view/footer.tmpl%>

@@ -1,0 +1,49 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+
+Билет:
+	
+
+<UL>
+<li>Идентфикатор билета: <%echo ticket_id%>
+
+<li>Маршрут: <%echo bus_route_title%>
+<li>Место: <%echo ticket_place%> 
+<li>Владелец:  
+<%if free%>Свободный
+<%elseif dealer_corp_name%>Партнер, <a href="<%echo global:HostName%>/admin/busservice/partner/<%echo dealer_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>"  target="_blank"><%echo dealer_corp_name%></a>
+<%elseif user_name%>Администратор
+<%endif%>
+
+<li> Бронь: <%echo ticket_status%>
+<li> Оплата: <%if ticket_payed==1%>Да<%else%>Нет<%endif%>
+<%if client_id%>
+<li>Билет забронирован:  <b><a href="<%echo global:HostName%>/admin/busservice/client/<%echo client_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>"><%echo client_name%></a></b>, <%echo ticket_interval_title%>, <%echo ticket_price%> (<%echo ticket_currency_title%>)
+<li>Скидка: <%echo discount%>%
+<li>Стоимость со скидкой: <%echo ticket_price_with_discount%> (<%echo ticket_currency_title%>)
+<%endif%>
+
+</UL>
+Действия:
+<%if status > 1%>
+<ul>
+<li><%if ticket_payed==0%><a href="<%echo global:HostName%>/admin/busservice/ticket/<%echo ticket_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&action=setpayed">Подтвердить оплату</a>
+<%else%><a href="<%echo global:HostName%>/admin/busservice/ticket/<%echo ticket_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&action=setunpayed">Отменить оплату</a><%endif%>
+<li><a href="<%echo global:HostName%>/admin/busservice/ticket/<%echo ticket_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&action=<%if waiting_status%>app">Одобрить</a>
+<%elseif reserved_status%>notapp">Не одобрить</a><%else%>"></a><%endif%>
+<li><a href="<%echo global:HostName%>/admin/busservice/ticket/<%echo ticket_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&action=del">Удалить</a>
+<li><a href="<%echo global:HostName%>/admin/busservice/print_ticket/<%echo ticket_id%>/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>" target='_blank'>Распечатать билет</a>
+
+
+</ul>
+<%else%>
+<ul>
+<li> <a href="<%echo global:HostName%>/admin/busservice/reserve_ticket/<%echohtml global:Lang%>/?sid=<%echohtml global:Sid%>&step=4&ticket_id=<%echo ticket_id%>">Забронировать</a>
+</ul>
+
+<%endif%>
+
+
+<br>
+
+<%include ../../../include/backend/common/footer.tmpl%>

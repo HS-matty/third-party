@@ -1,0 +1,51 @@
+<%include ../../../include/backend/common/header.tmpl%>
+<br>
+
+Билет:
+	
+
+<UL>
+<li>Идентфикатор билета: <%echo ticket_id%>
+<li>Место: <%echo ticket_place%> 
+
+
+</UL>
+<form action="<%echo HostName%>/admin/busservice/reserve_ticket/<%echohtml Lang%>/?sid=<%echohtml Sid%>" method="post">
+<input type='hidden' name="ticket_id" value="<%echo ticket_id%>">
+Зарезервировать:
+<br>
+<select name='client_id' style="width: 200px">
+<option value='0'>Клиент</option>
+<%loop clients%>
+<option value="<%echo client_id%>"><%echo client_name%></option>
+<%endloop%>
+</select>
+<br>
+<br>
+
+<ul>
+
+<%loop intervals%>
+
+
+<li><b><%echo departure_point_latin_name%> - <%echo arrival_point_ru_name%></b>
+
+	<ul>
+		<%loop currs%>
+		<li><input type="radio" name="currency_id" value="<%echo currency_id%>_<%echo parent:interval_id%>" />    <%echo price_value%> <%echo currency_name%>   </li>
+		<%endloop%>
+
+	</ul>
+<%endloop%>
+
+</ul>
+
+<input type="hidden" name="step" value="5">
+<input type="submit" value="submit">
+</form>
+
+
+
+<br>
+
+<%include ../../../include/backend/common/footer.tmpl%>
