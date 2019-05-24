@@ -1,0 +1,17 @@
+<menu id="data">
+	<!-- menu-element id="adverts" group="">
+		<title>
+			<en>Adverts</en>
+		</title>
+	</menu-element -->
+	
+	
+	<menu-element id="test" group_id="menu_group1">
+		<title>
+			<en>Data</en>
+		</title>
+
+	</menu-element>
+
+	
+</menu>

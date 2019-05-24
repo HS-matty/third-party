@@ -1,0 +1,43 @@
+<menu id="content">
+	<menu-element id="tree_articles" group_id="default">
+		<title>
+			<ru>Структура+Статьи</ru>
+		</title>
+		<link>
+			<params>
+				<param value="app" />
+				<param value="sys" />
+				<param value="content-manager" />
+				<param value="tree" />
+			</params>
+		</link>
+	</menu-element>
+	
+		<!--menu-element id="add-article">
+			<title>
+				<ru>Добавить статью</ru>
+			</title>
+			<link>
+				<params>
+					<param value="app" />
+					<param value="sys" />
+					<param value="content-manager" />
+					<param value="add-article" />
+				</params>
+			</link>
+		</menu-element-->
+		<!--menu-element id="add-node">
+			<title>
+				<ru>Добавить раздел</ru>
+			</title>
+			<link>
+				<params>
+					<param value="app" />
+					<param value="sys" />
+					<param value="сontent-manager" />
+					<param value="add-node" />
+				</params>
+			</link>
+		</menu-element-->
+	
+</menu>

@@ -1,0 +1,1 @@
+<?php class Rad_Query_Params extends Rad_Query {}?>

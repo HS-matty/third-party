@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<meta>
+  <fields>
+    <field id="campaign">
+      <title>
+        <ru>Campaign</ru>
+        <en>Campaign</en>
+      </title>
+    </field>
+  </fields>
+</meta>

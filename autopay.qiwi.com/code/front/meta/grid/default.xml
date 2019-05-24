@@ -1,0 +1,33 @@
+
+<grid id="default">
+	<fields>
+		<field id="id">
+			<title>
+				<en>ID</en>
+				<ru>ID</ru>
+			</title>
+
+		</field>
+
+		<field id="name">
+			<title>
+				<en>Name</en>
+				<ru>Имя</ru>
+			</title>
+				
+						
+		</field>
+		
+		<field id="title">
+			<title>
+				<en>Title</en>
+				<ru>заголовок</ru>
+			</title>
+		</field>
+
+
+	</fields>
+	
+	
+	
+</grid>

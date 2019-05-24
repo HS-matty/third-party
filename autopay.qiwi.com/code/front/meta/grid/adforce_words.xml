@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<grid id="">
+  <fields>
+    <field id="id">
+      <title>
+        <en>ID</en>
+        <ru/>
+      </title>
+    </field>
+	
+
+   
+
+    <field id="title">
+      <title>
+        <ru>Keyword</ru>
+        <en>Keyword</en>
+      </title>
+    </field>
+    
+	
+		<field id="#view" type="additional" >
+			<title>
+				<en>view</en>
+				<ru>просмотр</ru>
+			</title>
+			<image file="/public/images/view.gif" />
+			
+			<link>
+				<params>
+					<param value="adforce" />
+					<param value="view-item" />
+									
+				</params>
+				
+				<urlparams>
+					<param name="id" data_field_name = "id" />
+				</urlparams>
+			</link>
+		</field>
+				
+		
+		<field id="#edit" type="additional" >
+			<title>
+				<en>edit</en>
+				<ru>редактирование</ru>
+			</title>
+			<image file="/public/images/edit.gif" />
+			
+			<link>
+				<params>
+						<param value="adforce" />
+						<param value="edit-item" />		
+				</params>
+				
+				<urlparams>
+					<param name="id" data_field_name = "id" />
+				</urlparams>
+			</link>
+		</field>
+	
+  </fields>
+</grid>

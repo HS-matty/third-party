@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<grid class_name="Ui_Element" name="google" title="Imported dates">
+	
+  <fields>
+    <field name="date_start">
+      <title>
+        <ru>Date start</ru>
+        <en>Date start</en>
+      </title>
+    </field>
+    <field name="date_end">
+      <title>
+        <ru>Date end</ru>
+        <en>Date end</en>
+      </title>
+    </field>
+  </fields>
+</grid>

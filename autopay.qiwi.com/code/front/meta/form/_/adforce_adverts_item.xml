@@ -1,0 +1,47 @@
+	<form id="" >
+
+	<title>
+		<en></en>
+		<ru></ru>
+	</title>
+	
+
+	<fields>	
+		<field primary_key="1">
+			<id>id</id>
+			<type>int</type>
+			<title>
+				<en>ID</en>
+				<ru>ID</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		
+	<field id="name" type="string">
+      <title>
+        <ru>Имя</ru>
+        <en>Name</en>
+      </title>
+	  <length>1-255</length>	
+    </field>
+
+
+
+	<field id="category_id" type="list">
+      <title>
+        <ru>Категория</ru>
+        <en>Category</en>
+      </title>
+    </field>
+	<field id="keyword_id" type="list" key_name ="id" value_name="title">
+      <title>
+        <en>Keyword</en>
+        <ru>Ключевое слово</ru>
+      </title>
+    </field>
+		
+		
+		
+	</fields>	
+
+</form>

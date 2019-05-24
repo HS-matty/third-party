@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<meta>
+  <fields>
+    <field id="keyword_max_cpc">
+      <title>
+        <ru>Keyword max CPC</ru>
+        <en>Keyword max CPC</en>
+      </title>
+    </field>
+    <field id="ad_group_max_cpc">
+      <title>
+        <ru>Ad group max CPC</ru>
+        <en>Ad group max CPC</en>
+      </title>
+    </field>
+    <field id="clicks">
+      <title>
+        <ru>Clicks</ru>
+        <en>Clicks</en>
+      </title>
+    </field>
+    <field id="impressions">
+      <title>
+        <ru>Impressions</ru>
+        <en>Impressions</en>
+      </title>
+    </field>
+    <field id="ctr">
+      <title>
+        <ru>CTR</ru>
+        <en>CTR</en>
+      </title>
+    </field>
+    <field id="avg_cpc">
+      <title>
+        <ru>Avg. CPC</ru>
+        <en>Avg. CPC</en>
+      </title>
+    </field>
+    <field id="cost">
+      <title>
+        <ru>Cost</ru>
+        <en>Cost</en>
+      </title>
+    </field>
+    <field id="avg_position">
+      <title>
+        <ru>Avg. position</ru>
+        <en>Avg. position</en>
+      </title>
+    </field>
+    <field id="conv_per_click">
+      <title>
+        <ru>Conv. (1-per-click)</ru>
+        <en>Conv. (1-per-click)</en>
+      </title>
+    </field>
+    <field id="cost_conv_per_click">
+      <title>
+        <ru>Cost / conv. (1-per-click)</ru>
+        <en>Cost / conv. (1-per-click)</en>
+      </title>
+    </field>
+    <field id="conv_rate_per_click">
+      <title>
+        <ru>Conv. rate (1-per-click)</ru>
+        <en>Conv. rate (1-per-click)</en>
+      </title>
+    </field>
+    <field id="view_through_conv">
+      <title>
+        <ru>View-through conv.</ru>
+        <en>View-through conv.</en>
+      </title>
+    </field>
+    <field id="quality_score">
+      <title>
+        <ru>Quality score</ru>
+        <en>Quality score</en>
+      </title>
+    </field>
+    <field id="date_start">
+      <title>
+        <ru>Start date </ru>
+        <en>Start date </en>
+      </title>
+    </field>
+    <field id="date_end">
+      <title>
+        <ru>End date</ru>
+        <en>End date</en>
+      </title>
+    </field>
+  </fields>
+</meta>

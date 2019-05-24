@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<meta>
+  <fields>
+    <field id="match_type">
+      <title>
+        <ru>Match type</ru>
+        <en>Match type</en>
+      </title>
+    </field>
+    <field id="status">
+      <title>
+        <ru>Status</ru>
+        <en>Status</en>
+      </title>
+    </field>
+    <field id="destination_url">
+      <title>
+        <ru>Destination URL</ru>
+        <en>Destination URL</en>
+      </title>
+    </field>
+  </fields>
+</meta>

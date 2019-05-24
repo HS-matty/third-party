@@ -1,0 +1,39 @@
+<menu id="Autopay">
+	<!-- menu-element id="adverts" group="">
+		<title>
+			<en>Adverts</en>
+		</title>
+	</menu-element -->
+	
+	<menu-element id="Payments" group_id="menu_group1">
+		<title>
+			<en>Payments</en>
+		</title>
+
+	</menu-element>
+		<menu-element id="Contractors" group_id="menu_group1">
+		<title>
+			<en>Contractors</en>
+		</title>
+	</menu-element>
+	
+	<!--menu-element id="Templates" group_id="menu_group1">
+		<title>
+			<en>Templates</en>
+		</title>
+	</menu-element>
+	
+	
+	<menu-element id="ContactLists" group_id="menu_group2">
+		<title>
+			<en>Contact Lists</en>
+		</title>
+	</menu-element>
+	
+	<menu-element id="Tasks" group_id="menu_group2">
+		<title>
+			<en>Tasks</en>
+		</title>
+	</menu-element-->
+
+</menu>

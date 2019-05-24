@@ -1,0 +1,57 @@
+<menu id="adforce">
+	<!-- menu-element id="adverts" group="">
+		<title>
+			<en>Adverts</en>
+		</title>
+	</menu-element -->
+	
+	
+	<menu-element id="data" group_id="menu_group0">
+		<title>
+			<en>Knowledge base</en>
+		</title>
+
+	</menu-element>
+	
+	<menu-element id="keywords" group_id="menu_group1">
+		<title>
+			<en>Keywords</en>
+		</title>
+
+	</menu-element>
+		<menu-element id="categories" group_id="menu_group1">
+		<title>
+			<en>Categories</en>
+		</title>
+	</menu-element>
+	
+	<menu-element id="campaigns" group_id="menu_group1">
+		<title>
+			<en>Campaigns</en>
+		</title>
+	</menu-element>
+	
+	<menu-element id="services" group_id="menu_group1">
+		<title>
+			<en>Services</en>
+		</title>
+	</menu-element>	
+	
+	<menu-element id="stats" group_id="menu_group2">
+		<title>
+			<en>Stats</en>
+		</title>
+	</menu-element>
+	
+	<menu-element id="import" group_id="menu_group2">
+		<title>
+			<en>Import</en>
+		</title>
+	</menu-element>
+		<menu-element id="export" group_id="menu_group2">
+		<title>
+			<en>Export</en>
+		</title>
+	</menu-element>
+
+</menu>

@@ -1,0 +1,46 @@
+<form id="login">
+	
+				<title>
+					<en>Auth form</en>
+					<ru>Форма авторизации</ru>
+					
+				</title>
+	<fields>
+
+			<field>
+				<id>login</id>
+				<type>string</type>
+				<title>
+					<en>Login</en>
+					<ru>Логин</ru>
+					
+				</title>
+			<length>1-40</length>
+			</field>
+			<field>
+				<id>password</id>
+				<type>string</type>
+				<title>
+					<en>Password</en>
+					<ru>Пароль</ru>
+				</title>
+			<length>4-40</length>
+			<view><type>password</type></view>
+			</field>
+			
+		
+		<field> 
+			<id>captcha</id>
+			<type>captcha</type>
+			<title>
+				<en>Code</en>
+				<ru>Код</ru>
+			</title>
+			<length>1-2048</length >
+			
+		</field>
+	</fields>
+	
+		
+	
+	</form>

@@ -1,0 +1,49 @@
+<menu id="content">
+	<menu-element id="users" group_id="default">
+		<title>
+			<ru>Пользователи</ru>
+		</title>
+		<link>
+			<params>
+				<param value="app" />
+				<param value="sys" />
+				<param value="auth-manager" />
+				<param value="index" />
+			</params>
+		</link>
+	</menu-element>
+	
+	<menu-element id="groups" group_id="default">
+		<title>
+			<ru>Группы</ru>
+		</title>
+		<link>
+			<params>
+				<param value="app" />
+				<param value="sys" />
+				<param value="auth-manager" />
+				<param value="index" />
+			</params>
+		</link>
+	</menu-element>
+	
+		<menu-element id="roles" group_id="default">
+		<title>
+			<ru>Роли</ru>
+		</title>
+		<link>
+			<params>
+				<param value="app" />
+				<param value="sys" />
+				<param value="auth-manager" />
+				<param value="index" />
+			</params>
+		</link>
+	</menu-element>
+	
+	
+
+	
+
+	
+</menu>

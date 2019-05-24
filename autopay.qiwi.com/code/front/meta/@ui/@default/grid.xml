@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<grid class_name="Ui_Grid">
+  <fields>
+    <field primary_key="1" name="id">
+      <title>
+        <ru>id</ru>
+        <en>id</en>
+      </title>
+    </field>
+    <field name="name">
+      <title>
+        <ru>Name</ru>
+        <en>Name</en>
+      </title>
+    </field>
+    <field name="title">
+      <title>
+        <ru>Title</ru>
+        <en>Title</en>
+      </title>
+    </field>
+  </fields>
+</grid>

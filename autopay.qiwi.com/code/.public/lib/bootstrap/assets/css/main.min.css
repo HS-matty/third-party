@@ -1,0 +1,124 @@
+html,
+body {
+height: 100%;
+overflow: hidden;
+}
+body > #wrap {
+width: 100%;
+height: 100%;
+overflow-y: auto;
+
+-webkit-overflow-scrolling: touch;
+-webkit-transform-style: preserve-3d;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#wrap > .container {
+  min-height: 80.4%;
+}
+
+#footer {
+  width: 100%;
+  height: 60px;
+  /* background-color: #f5f5f5; */
+  background-color: #121212;
+  border-color: #121212;
+}
+#footer > .container > .text-muted {
+  margin: 20px 0;
+}
+
+
+
+.meny {
+display: none;
+padding: 20px;
+overflow: auto;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.meny ul {
+margin-top: 10px;
+}
+.meny ul li {
+display: inline-block;
+width: 200px;
+list-style: none;
+font-size: 20px;
+padding: 3px 10px;
+}
+.meny ul li:before {
+content: '-';
+margin-right: 5px;
+color: #000;
+}
+
+.meny-arrow {
+position: absolute;
+z-index: 10;
+
+border: 10px solid transparent;
+
+-webkit-transition: opacity 0.4s ease 0.4s;
+-moz-transition: opacity 0.4s ease 0.4s;
+-ms-transition: opacity 0.4s ease 0.4s;
+-o-transition: opacity 0.4s ease 0.4s;
+transition: opacity 0.4s ease 0.4s;
+}
+.meny-left .meny-arrow {
+left: 14px;
+top: 50%;
+margin-top: -16px;
+border-left: 16px solid #333;
+}
+.meny-active .meny-arrow {
+opacity: 0;
+
+-webkit-transition: opacity 0.2s ease;
+-moz-transition: opacity 0.2s ease;
+-ms-transition: opacity 0.2s ease;
+-o-transition: opacity 0.2s ease;
+transition: opacity 0.2s ease;
+}
+
+
+
+
+ul.videos {
+  list-style-type: none;
+  padding-left: 0;
+}
+ul.videos > li.video {
+  display: inline-block;
+  margin: 10px 0 10px 0;
+  width: 19.7%;
+}
+ul.videos > li.video > a.link  {
+  cursor: pointer;
+  text-decoration: none;
+  float: left;
+}
+ul.videos > li.video > a.link > div.image {
+  float: left;
+}
+ul.videos > li.video > a.link > div.image, ul.videos > li.video > a.link > div.image img {
+  height: 164px;
+  width: 224px;
+}
+ul.videos > li.video > a.link > div.image > span.duration {
+  position: relative;
+  bottom: 28px;
+  left: 10px;
+}
+ul.videos > li.video > a.link > div.info {
+}
+
+
+div.player {
+  margin: 0 auto;
+  width: 500px;
+}

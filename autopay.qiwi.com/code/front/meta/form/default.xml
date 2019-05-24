@@ -1,0 +1,47 @@
+	<form id="content_article" >
+
+	<title>
+		<en></en>
+		<ru></ru>
+	</title>
+	
+
+	<fields>	
+		<field primary_key="1">
+			<id>id</id>
+			<type>int</type>
+			<title>
+				<en>ID</en>
+				<ru>ID</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		
+
+		
+		<field>
+			<id>name</id>
+			<type>string</type>
+			<title>
+				<en>Name</en>
+				<ru>Имя / Наименование</ru>
+			</title>
+			<length>3-100</length>	
+			<expr></expr>
+		</field>
+		
+		<field>
+			<id>title</id>
+			<type>string</type>
+			<title>
+				<en>Title</en>
+				<ru>Заголовок</ru>
+			</title>
+			<length>3-100</length>	
+			<expr></expr>
+		</field>
+		
+
+	</fields>	
+
+</form>

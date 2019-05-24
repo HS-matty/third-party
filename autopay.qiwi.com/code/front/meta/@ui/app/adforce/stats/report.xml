@@ -1,0 +1,26 @@
+
+<workspace>
+	<tab>
+		<title>
+			<en>Stats</en>
+			<ru>Статистика</ru>
+		</title>
+		<buttons>
+			<button>
+				<title>
+					<en>Отчет</en>
+					<ru>Report</ru>
+				</title>
+			</button>
+			
+			<button>
+				<title>
+					<en>Affilates</en>
+					<ru>Афилиаты</ru>
+				</title>
+			</button>
+			
+		</buttons>
+	</tab>
+
+</workspace>

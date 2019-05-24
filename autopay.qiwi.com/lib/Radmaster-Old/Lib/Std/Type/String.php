@@ -1,0 +1,1 @@
+<?phpclass Std_Type_String extends Std_Type{	protected $_encoding = 'windows-1251';		/**	 * Enter description here...	 *	 * @return Std_Type_String	 */	public function toLower(){				$this->_string = strtolower($this->_string);		return $this;	}			public function __toString(){		return (string) $this->_string;	}}?>

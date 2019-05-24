@@ -1,0 +1,64 @@
+.ui-grid td{
+
+padding:7px;
+margin:0 auto;
+	line-height: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	
+}
+
+
+.ui-form
+{
+  min-width:300px;
+  max-width:300px;
+  width: 100px;
+  margin:0 auto;
+  text-align: center;
+}
+
+.ui-form form {
+	min-width: 650px;
+	margin: 0 auto;
+	text-align: left;
+	width: 200px;
+	
+
+} 
+.ui-form label {
+	float: left;
+    text-align: right;
+	width: 120px;
+	padding-top: 4px;
+	padding-right: 5px;
+	 display: inline-block;;
+}
+
+.ui-form input {
+	margin: 0 auto;
+}
+
+.ui-form p{
+overflow: hidden;
+padding:0px;
+
+}
+
+
+.error_message {
+color:red;
+
+}
+
+
+ul#sub-menu hr {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+ul#sub-menu li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+}

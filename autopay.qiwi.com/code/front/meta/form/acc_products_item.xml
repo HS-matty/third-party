@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<meta>
+  <fields>
+    <field primary_key="1" id="id">
+      <title>
+        <ru>id</ru>
+        <en>id</en>
+      </title>
+    </field>
+    <field id="name">
+      <title>
+        <ru>Name</ru>
+        <en>Name</en>
+      </title>
+    </field>
+    <field id="title">
+      <title>
+        <ru>Title</ru>
+        <en>Title</en>
+      </title>
+    </field>
+	
+	<field id="category_id">
+      <title>
+        <ru>Категория</ru>
+        <en>Category</en>
+      </title>
+    </field>
+	
+	<field id="warehouse_id">
+      <title>
+        <ru>Склад</ru>
+        <en>Warehouse</en>
+      </title>
+    </field>
+
+	
+  </fields>
+</meta>

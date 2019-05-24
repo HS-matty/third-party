@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<meta>
+  <fields>
+    <field id="action">
+      <title>
+        <ru>Action</ru>
+        <en>Action</en>
+      </title>
+    </field>
+    <field id="keyword_state">
+      <title>
+        <ru>Keyword state</ru>
+        <en>Keyword state</en>
+      </title>
+    </field>
+    <field id="keyword">
+      <title>
+        <ru>Keyword</ru>
+        <en>Keyword</en>
+      </title>
+    </field>
+    <field id="keyword_id">
+      <title>
+        <ru>Keyword ID</ru>
+        <en>Keyword ID</en>
+      </title>
+    </field>
+  </fields>
+</meta>

@@ -1,0 +1,56 @@
+<menu id="acc">
+	<menu-element id="products" group_id="default">
+		<title>
+			<ru>Товары</ru>
+			<en>Products</en>
+		</title>
+
+	</menu-element>
+	
+	<menu-element id="categories" group_id="default">
+		<title>
+			<ru>Номенклатура</ru>
+			<en>Categories</en>
+		</title>
+
+	</menu-element>
+
+	<menu-element id="warehouses" group_id="default">
+		<title>
+			<ru>Склады</ru>
+			<en>Warehouses</en>
+		</title>
+	</menu-element>
+	
+	<menu-element id="contractors" group_id="default">
+		<title>
+			<ru>Контрагенты</ru>
+			<en>Сontractors</en>
+		</title>
+	</menu-element>
+	
+	<menu-element id="contracts" group_id="default">
+		<title>
+			<ru>Сделки</ru>
+			<en>Сontracts</en>
+		</title>
+	</menu-element>
+	
+	
+	<menu-element id="payments" group_id="default">
+		<title>
+			<ru>Платежи</ru>
+			<en>Payments</en>
+		</title>
+	</menu-element>
+	
+	<menu-element id="reports" group_id="default">
+		<title>
+			<ru>Отчеты</ru>
+			<en>Reports</en>
+		</title>
+	</menu-element>
+	
+
+	
+</menu>

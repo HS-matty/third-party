@@ -1,0 +1,1 @@
+<?php class Std_Type_String extends Std_Type {}?>

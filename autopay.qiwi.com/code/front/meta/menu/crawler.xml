@@ -1,0 +1,15 @@
+<menu id="adforce">
+	<!-- menu-element id="adverts" group="">
+		<title>
+			<en>Adverts</en>
+		</title>
+	</menu-element -->
+	
+	<menu-element id="results" group_id="menu_group1" is_default = "1">
+		<title>
+			<en>Results</en>
+		</title>
+
+	</menu-element>
+
+</menu>

@@ -1,0 +1,1 @@
+<?php class App_Dashboard extends Element {}?>

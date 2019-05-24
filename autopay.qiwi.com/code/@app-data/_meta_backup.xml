@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<meta>
+  <elements>
+    <element table="keywords" name="action" title="Action"/>
+    <element table="keywords" name="keyword_state" title="Keyword state"/>
+    <element table="keywords" name="keyword" title="Keyword"/>
+    <element table="keywords" name="match_type" title="Match type"/>
+    <element table="campaigns" is_required = "1"  name="campaign" is_unique = "1" title="Campaign"/>
+    <element table="categories" is_required = "1" name="ad_group" title="Ad group"/>
+    <element table="categories" is_required = "1" name="ad_group_id" is_unique = "1" title="Ad group ID"/>
+    <element table="keywords" name="status" title="Status"/>
+    <element table="stats_google" name="keyword_max_cpc" title="Keyword max CPC"/>
+    <element table="stats_google" name="ad_group_max_cpc" title="Ad group max CPC"/>
+    <element table="stats_google" is_required = "1" name="clicks" title="Clicks"/>
+    <element table="stats_google" name="impressions" title="Impressions"/>
+    <element table="stats_google" name="ctr" title="CTR"/>
+    <element table="stats_google" name="avg_cpc" title="Avg. CPC"/>
+    <element table="stats_google" is_required = "1" name="cost" title="Cost"/>
+    <element table="stats_google" name="avg_position" title="Avg. position"/>
+    <element table="stats_google" name="conv_per_click" title="Conv. (1-per-click)"/>
+    <element table="stats_google" name="cost_conv_per_click" title="Cost / conv. (1-per-click)"/>
+    <element table="stats_google" name="conv_rate_per_click" title="Conv. rate (1-per-click)"/>
+    <element table="stats_google" name="view_through_conv" title="View-through conv."/>
+    <element table="stats_google" name="labels" title="Labels"/>
+    <element table="stats_google" name="quality_score" title="Quality score"/>
+    <element table="keywords" name="destination_url" is_required = "1" title="Destination URL"/>
+	<element table="keywords" name="google_keyword_id" is_required = "1" is_unique="1" title="Keyword ID"/>
+	<element table="keywords"  name="adv_id" title="adv_id" export_skip="1" />
+	
+	
+	
+	<element table="stats_google" export_skip="1"  name="date_start" is_additional="1" type= "date" title="Start date "/>
+	<element table="stats_google" export_skip="1" name="date_end" is_additional="1" type= "date" title="End date"/>
+	<element table="stats_google" name="google_keyword_id"  is_unique = "0" is_index = "1" title="Stats Keyword ID"/>
+	
+	
+	<!--element table="import_lines" name="keyword_id" additional="1" title="" />
+	<element table="import_lines" name="advert_id" additional="1" title="" />
+	<element table="import_lines" name="campaign_id" additional="1" title="" />
+	<element table="import_lines" name="category_id" additional="1" title="" />
+	<element table="import_lines" name="stats_google_id" additional="1" title="" / -->
+	
+	
+  </elements>
+  
+  <!--tables>
+	<table name="categories" key_name = "category_id" />
+	<table name="campaigns" key_name = "campaign_id" />
+	<table name ="adverts" key_name = "advert_id" />
+	<table name="stats_google" key_name="stats_google_id"/>
+	<table name ="keywords" key_name = "keyword_id" />
+</tables>
+
+<links>
+	<link table_name ="keywords" key_name = "keyword_id" />
+			
+	</link>
+	
+<links-->
+
+  
+</meta>

@@ -1,0 +1,38 @@
+<menu id="top-menu">
+	<menu-element id="Dashboard">
+		<title>
+			<ru>Старт</ru>
+			<en>Start / Dashboard</en>
+		</title>
+		<link>
+			<params>
+				<param value="index" />
+			</params>
+		</link>
+	</menu-element>
+	
+		
+	<!--menu-element id="Bulker" group_id="app">
+		<title>
+			<ru>Bulker Monitor</ru>
+			<en>Bulker Monitor</en>
+		</title>
+	</menu-element -->
+
+	<menu-element id="Mail">
+		<title>
+			<ru>Mail</ru>
+			<en>Mail</en>
+		</title>
+	</menu-element>	
+	<menu-element id="Autopay" group_id="app">
+		<title>
+			<ru>Autopay</ru>
+			<en>Autopay</en>
+		</title>
+	</menu-element>
+
+
+	
+	
+</menu>

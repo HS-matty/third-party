@@ -1,0 +1,1 @@
+<?php class Std_Type extends Element {}?>

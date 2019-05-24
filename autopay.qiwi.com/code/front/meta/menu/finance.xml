@@ -1,0 +1,20 @@
+<menu id="content">
+	<menu-element id="currencies" group_id="default">
+		<title>
+			<ru>Курсы валют</ru>
+		</title>
+		<link>
+			<params>
+				<param value="app" />
+				<param value="user" />
+				<param value="finance-manager" />
+				<param value="currencies" />
+			</params>
+		</link>
+	</menu-element>
+	
+
+	
+
+	
+</menu>

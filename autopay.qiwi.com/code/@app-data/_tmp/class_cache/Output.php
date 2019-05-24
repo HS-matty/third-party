@@ -1,0 +1,1 @@
+<?php class Output extends Element {}?>

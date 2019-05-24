@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<meta>
+  <fields>
+    <field id="ad_group">
+      <title>
+        <ru>Ad group</ru>
+        <en>Ad group</en>
+      </title>
+    </field>
+    <field id="ad_group_id">
+      <title>
+        <ru>Ad group ID</ru>
+        <en>Ad group ID</en>
+      </title>
+    </field>
+  </fields>
+</meta>
