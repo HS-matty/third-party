@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ui_element name="Products" title="test" type="grid">
+     <title>
+        <ru>Продукты</ru>
+        <en>Products</en>
+      </title>
+
+  <fields>
+    <field name="market_product_id" table="market_offer" is_enabled="1">
+      <title>
+        <ru>ID</ru>
+        <en>ID</en>
+      </title>
+    </field>
+	
+	
+	<field name="market_product_name" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Name</ru>
+        <en>Name</en>
+      </title>
+    </field>
+	<field name="market_product_title" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Title</ru>
+        <en>Title</en>
+      </title>
+    </field>
+	
+	
+	
+  </fields>
+</ui_element>

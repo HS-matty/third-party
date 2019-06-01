@@ -1,0 +1,106 @@
+<!-- Button to trigger modal -->
+<!--a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+ 
+<!-- Modal -->
+<!--div id="myModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">?</button>
+    <h3 id="myModalLabel">Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
+</div>
+
+
+<br></br>
+
+
+<a  id="TestButton1" class="btn" href="#" style="{*$TestButton1->style->getValueHTML()*}" onClick="TestButton1_onClick(event)">TestButton</a>
+
+
+<div id="debug_js"></div>
+
+<div id="debug_response"></div>
+
+<script type="text/javascript">
+
+
+ 
+
+
+function debug_js(key,value){
+
+document.getElementById('debug_js').innerHTML += '<br> ' + key + ' : ' + value ;   
+//document.getElementById('debug_js').insertAdjacentHTML('add','<br> ' + key + ' : ' + value);
+
+return true;
+}
+
+function TestButton1_onClick(event){
+
+	obj = event.target;
+	//event = event || window.event;
+	//var event_src = event.target || event.srcElement;
+	//if (window.event) var e = window.event;
+	//alert(e.type);
+	//alert(Object.keys(e));
+	
+	//for (var key in e) {
+    //if (e.hasOwnProperty(key)) {
+	//		debug_js(key,'tt');
+			
+	//	}
+	//}
+//	debug_js('tt','tt');
+
+	debug_js('obj_id',obj.id);
+	debug_js('event',event.type);
+	//debug_js('event',event.type);
+	var event_type = 'click';
+	query('/app/Market/Api/TestButton1?event_type='+ event_type,'_callback');
+	
+}
+
+
+function _callback(response_string){
+	
+	alert(response_string);
+	return true;
+}
+
+
+
+
+
+
+
+
+function query(url, callback_function){
+
+	var hostname = '{*$host_name*}';
+    var xmlhttp;
+	
+	url = hostname + url;
+	
+	debug_js('url',url);
+	debug_js('callback_function',callback_function);
+	
+    // compatible with IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function(){
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
+            _callback(xmlhttp.responseText);
+        }
+    }
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+}
+
+//this.constructor.name
+
+</script>

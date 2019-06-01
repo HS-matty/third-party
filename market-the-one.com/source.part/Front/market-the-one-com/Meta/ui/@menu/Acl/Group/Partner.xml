@@ -1,0 +1,14 @@
+<ui_element name="Partner" _type="top-menu" type="menu">
+
+	<menu-element name="Market">
+		<title>
+			<ru>Маркет</ru>
+			<en>Market</en>
+		</title>
+	</menu-element>	
+	
+	
+	
+	
+	
+</ui_element>

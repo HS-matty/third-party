@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<meta>
+	<type>form</type>
+	<name>User_Profile_Form_001</name>
+	<title>Simple form title</title>
+  <fields>
+
+	<field name="id">
+
+		<title>
+			<en>id</en>
+			<ru>id</ru>
+		</title>
+		
+		<type>text</type>
+		
+		<value type="int">
+			<length>1-a</length>
+		</value>
+		<markup>
+			<view is_allowed="1">
+			<edit is_allowed="0" type="input">
+		</markup>
+	</field>
+	
+	<field name="nickname">
+
+		<title>
+			<en>Nickname</en>
+			<ru>Ник</ru>
+		</title>
+		
+		<type>text</type>
+		
+		<value type="int">
+			<length>1-a</length>
+		</value>
+		
+		<view type="input">
+		<edit is_allowed="0">
+		
+	</field>
+	
+		<field name="balance">
+
+		<title>
+			<en>Balance</en>
+			<ru>Balance</ru>
+		</title>
+		
+		<type>text</type>
+		
+		<value type="int">
+			<length>1-a</length>
+		</value>
+		
+		<view type="input">
+		<edit is_allowed="0">
+	</field>
+
+  </fields>
+</meta>

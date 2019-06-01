@@ -1,0 +1,23 @@
+<menu name="Offers_Group">
+
+
+	<menu-element name="Products" group_id="default" app_class_name="App_Market_Product_Grid" menu_class_name = "Menu_App_Market_Products" menu_group_class_name = 'Menu_Group_App_Market_Offers'>
+		<title>
+			<ru>Товары</ru>
+			<en>Products</en>
+		</title>
+
+	</menu-element>
+	
+	<menu-element name="Categories" group_id="default" app_class_name="App_Market_Category_Grid" menu_class_name = "Menu_App_Market_Categories" menu_group_class_name = 'Menu_Group_App_Market_Offers'>
+		<title>
+			<ru>Категории</ru>
+			<en>Categories</en>
+		</title>
+
+	</menu-element>
+	
+		
+	
+	
+</menu>

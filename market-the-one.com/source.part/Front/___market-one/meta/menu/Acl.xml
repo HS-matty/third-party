@@ -1,0 +1,27 @@
+<menu id="Acl">
+	<menu-element id="Users" group_id="default">
+		<title>
+			<ru>Пользователи</ru>
+			<en>Users</en>
+		</title>
+
+	</menu-element>
+	
+	
+	<menu-element id="Groups" group_id="default">
+		<title>
+			<ru>Группы</ru>
+			<en>Groups</en>
+		</title>
+
+	</menu-element>
+	
+	<menu-element id="Roles" group_id="default">
+		<title>
+			<ru>Роли</ru>
+			<en>Roles</en>
+		</title>
+
+	</menu-element>
+	
+</menu>

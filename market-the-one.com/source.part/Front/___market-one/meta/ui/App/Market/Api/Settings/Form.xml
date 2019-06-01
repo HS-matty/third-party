@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<ui_element name="offer" type="form">
+
+	<title>
+		<en>Setting</en>
+		<ru>Setting</ru>
+	</title>
+	
+
+	<fields>	
+				
+
+		
+		<field name="postback_url" type="input" is_required="1">
+			
+			<type>string</type>
+			<title>
+				<en>Postback Url</en>
+				<ru>Postback Url</ru>
+			</title>
+			
+			<value type="string">
+				<range min="3" max="150"></range>										
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		
+		
+		
+		
+	</fields>	
+
+</ui_element>

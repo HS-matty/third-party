@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<ui_element name="offer" type="form">
+
+	<title>
+		<en>Offer</en>
+		<ru>Рекламное предложение</ru>
+	</title>
+	
+
+	<fields>	
+		<field  name="market_offer_id" type="input" is_required="1" is_primary_key="1">
+			<title>
+				<en>ID</en>
+				<ru>ID</ru>
+			</title>
+			
+			<value type="int">
+				<range min="1" max="a"></range>
+			</value>
+				
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+
+		
+		<field name="market_product_title" type="input" is_required="1">
+			
+			<type>string</type>
+			<title>
+				<en>Title</en>
+				<ru>Заголовок</ru>
+			</title>
+			
+			<value type="string">
+				<range min="3" max="150"></range>										
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		
+		<field name="market_product_logo_url" type="image" source="" is_required="0">
+			
+			<title>
+				<en>Logo</en>
+				<ru>Лого</ru>
+			</title>
+			
+			<value type="string">
+				<range min="3" max="150"></range>	
+					
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+
+		<field name="market_product_url" type="input" is_required="1">
+			
+			<title>
+				<en>Preview link</en>
+				<ru>Демо</ru>
+			</title>
+			
+			<value type="string" class="url" url_type="redirect">
+				<range min="3" max="150"></range>				
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		<field name="market_offer_url" type="input" is_required="1">
+			
+			<title>
+				<en>Tracking link</en>
+				<ru>Трэкинг линк</ru>
+			</title>
+			
+			<value type="string" class="url" url_type="redirect">
+				<range min="3" max="150"></range>				
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		
+		<field name="market_product_description" type="textarea" is_required="1">
+			
+			<title>
+				<en>Description</en>
+				<ru>Описание</ru>
+			</title>
+			
+			<value type="string">
+				<range min="1" max="500"></range>										
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		
+		<!--field name="market_offer_clicks_in" type="string" source="" is_required="0">
+			
+			<type>string</type>
+			<title>
+				<en>Clicks in</en>
+				<ru>Клики in</ru>
+			</title>
+			
+			<value type="string">
+				<range min="3" max="150"></range>	
+					
+			</value>
+			
+			<view is_disabled="0"></view>
+			<edit is_disabled="1"></edit>
+			
+		</field>
+		
+		
+		<field name="market_offer_clicks_out" type="string" source="" is_required="0">
+			
+			<type>string</type>
+			<title>
+				<en>Clicks Out</en>
+				<ru>Клики Out</ru>
+			</title>
+			
+			<value type="string">
+				<range min="0" max="150"></range>	
+					
+			</value>
+			
+			<view is_disabled="0"></view>
+			<edit is_disabled="1"></edit>
+			
+		</field-->
+		
+		<!--field name="category" type="select" is_required="1">
+			
+			<title>
+				<en>Category</en>
+				<ru>Категория</ru>
+			</title>
+			
+			<value type="string" class="">
+				<range min="3" max="150"></range>
+				<enum>
+					<value>iOS</value>
+					<value>Android</value>				
+					
+				</enum>
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		
+			<field name="payout_type" type="select" is_required="1">
+			
+			<title>
+				<en>Payout Type</en>
+				<ru>Тип выплат</ru>
+			</title>
+			
+			<value type="string" type_db = "enum" class="">
+				<range min="3" max="150"></range>
+				<enum>
+					<value>Conversion</value>
+					<value>Conversion+Goals</value>				
+					
+				</enum>
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field-->
+		
+		
+		
+		
+		
+	</fields>	
+
+</ui_element>

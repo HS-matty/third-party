@@ -1,0 +1,32 @@
+	<form id="content_article" class_name="Ui_FormExt" >
+
+	<fields>	
+		<field primary_key="1" name="id" type="numeric">
+			<title>
+				<en>ID</en>
+				<ru>ID</ru>
+			</title>
+			<length>1-a</length>	
+		</field>
+		
+
+		
+		<field name="name" type="numeric">
+			<type>string</type>
+			<title>
+				<en>Name</en>
+				<ru>Имя / Наименование</ru>
+			</title>
+			<length>3-100</length>	
+		</field>
+		
+		<field name="title" type="string">
+			<title>
+				<en>Title</en>
+				<ru>Заголовок</ru>
+			</title>
+			<length>3-100</length>	
+		</field>
+	</fields>	
+
+</form>

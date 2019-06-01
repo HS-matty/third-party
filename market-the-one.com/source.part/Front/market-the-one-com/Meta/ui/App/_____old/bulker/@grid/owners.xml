@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<grid name="report">
+  <fields>
+    <field name="Id" table="owners" is_enabled="1">
+      <title>
+        <ru>ID</ru>
+        <en>ID</en>
+      </title>
+    </field>
+	
+	
+	<field name="Name" table="owners" is_enabled="1">
+      <title>
+        <ru>Имя</ru>
+        <en>Name</en>
+      </title>
+    </field>
+	<field name="ContactEmail" table="owners" is_enabled="1">
+      <title>
+        <ru>Contact Email</ru>
+        <en>Contact Email</en>
+      </title>
+    </field>
+    
+  </fields>
+</grid>

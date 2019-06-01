@@ -1,0 +1,39 @@
+<menu id="top-menu">
+	<menu-element name="Dashboard">
+		<title>
+			<ru>Dashboard</ru>
+			<en>Dashboard</en>
+		</title>
+		<link>
+			<params>
+				<param value="index" />
+			</params>
+		</link>
+	</menu-element>
+	
+	
+	<menu-element name="Market">
+		<title>
+			<ru>Маркет</ru>
+			<en>Market</en>
+		</title>
+	</menu-element>	
+	
+	<menu-element name="Mail">
+		<title>
+			<ru>Почта</ru>
+			<en>Mail</en>
+		</title>
+	</menu-element>	
+
+	
+	<menu-element name="Acl">
+		<title>
+			<ru>Доступ</ru>
+			<en>Access</en>
+		</title>
+	</menu-element>	
+	
+	
+	
+</menu>

@@ -1,0 +1,23 @@
+<menu name="Offers_Group">
+
+
+	<menu-element name="Products" group_id="default" app_class_name="App_Market_Products">
+		<title>
+			<ru>Товары</ru>
+			<en>Products</en>
+		</title>
+
+	</menu-element>
+	
+	<menu-element name="Categories" group_id="default" app_class_name="App_Market_Categories">
+		<title>
+			<ru>Категории</ru>
+			<en>Categories</en>
+		</title>
+
+	</menu-element>
+	
+		
+	
+	
+</menu>

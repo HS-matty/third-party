@@ -1,0 +1,30 @@
+<menu name="Mail">
+	
+	<menu-element name="Inbox" group_id="default">
+		<title>
+			<ru>Inbox</ru>
+			<en>Inbox</en>
+		</title>
+
+	</menu-element>
+	
+	
+	<menu-element name="Outbox" group_id="default">
+		<title>
+			<ru>Outbox</ru>
+			<en>Outbox</en>
+		</title>
+
+	</menu-element>
+	
+
+	
+	<menu-element name="Trash" group_id="default">
+		<title>
+			<ru>Trash</ru>
+			<en>Trash</en>
+		</title>
+
+	</menu-element>
+
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ui_element type="grid" name="default" title="test" >
+  <fields>
+    <field name="id"  is_enabled="1">
+      <title>
+        <ru>ID</ru>
+        <en>ID</en>
+      </title>
+    </field>
+	
+	
+	<field name="name">
+		<title>
+			<ru>Name</ru>
+			<en>Name</en>
+		</title>
+	</field>
+	<field name="title" >
+		<title>
+			<ru>Title</ru>
+			<en>Title</en>
+		</title>
+		</field>
+	</fields>
+</ui_element>

@@ -1,0 +1,46 @@
+<errors>
+		<empty>
+			<en>field is empty</en>
+			<ru>пустое поле</ru>
+	
+		</empty>
+		
+		<filetype>
+			<en>Wrong file type</en>
+			<ru>Неправильный тип файла</ru>
+	
+		</filetype>
+		<int>
+			<en>must be a numeric</en>
+			<ru>должно быть числом</ru>
+		</int>
+		<string>
+			<en>must be a string</en>
+			<ru>должно быть строкой</ru>
+		</string>
+		<length>
+			<en>field length error</en>	
+			<ru>ошибка длинны поля</ru>
+		</length>
+		<range>
+			<en>field range error</en>	
+			<ru>ошибка в диапазоне значения  поля</ru>
+		</range>
+		<common_error>
+			<en>field error</en>	
+			<ru>ошибка поля</ru>
+		</common_error>
+		<expr>
+			<en>field format mismatch</en>	
+			<ru>ошибочный формат поля</ru>
+		
+		</expr>
+		
+		<captcha>
+			<en>bad code</en>	
+			<ru>неправильный код</ru>
+		
+		</captcha>
+		
+		
+	</errors>

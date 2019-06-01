@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<ui_element name="login" type="form">
+
+			<title>
+				<en>Authentication</en>
+				<ru>Авторизация</ru>
+			</title>
+
+			<fields>
+				
+				<field name="login" type="input" is_required="1">
+				
+				<title>
+						<en>Email</en>
+						<ru>Емаил</ru>
+						
+					</title>
+				
+									
+					<value type="string" class="email">
+						<range min="10" max="30"></range>
+					</value>
+				
+					<view is_allowed="0"></view>
+					<edit is_allowed="0"></edit>
+			
+				</field>
+			
+			
+			<field name="password" type="input" is_required="1">
+				<title>
+					<en>Password</en>
+					<ru>Пароль</ru>
+				</title>
+				
+				
+					<value type="string" class="password">
+						<range min="6" max="30"></range>
+					</value>
+				
+				
+				<view is_allowed="0" type="password">
+					
+				</view>
+				<edit is_allowed="0"></edit>
+			</field>
+			
+		
+		<!--field> 
+			<id>captcha</id>
+			<type>captcha</type>
+			<title>
+				<en>Code</en>
+				<ru>Код</ru>
+			</title>
+			<length>1-2048</length >
+			
+		</field-->
+	</fields>
+	
+		
+	
+</ui_element>

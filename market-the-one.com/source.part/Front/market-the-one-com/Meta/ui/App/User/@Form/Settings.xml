@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<ui_element name="profile" type="form">
+
+	<title>
+		<en>Settings</en>
+		<ru>Настройки</ru>
+	</title>
+	
+
+	<fields>	
+		
+		
+
+		
+		<field name="ui_type" type="select" is_required="1">
+			
+			<type>string</type>
+			<title>
+				<en>User Interface</en>
+				<ru>Интерфейс </ru>
+			</title>
+			
+			<value type="string" type_db = "enum" class="">
+				<range min="3" max="150"></range>
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		
+
+		
+	</fields>	
+
+</ui_element>

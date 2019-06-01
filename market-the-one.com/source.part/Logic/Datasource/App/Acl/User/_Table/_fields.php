@@ -1,0 +1,16 @@
+<?php $fields = array (
+  0 => 'id',
+  1 => 'acl_group_id',
+  2 => 'first_name',
+  3 => 'last_name',
+  4 => 'company',
+  5 => 'email',
+  6 => 'phone_number',
+  7 => 'login',
+  8 => 'sha_password',
+  9 => 'is_active',
+  10 => 'role',
+  11 => 'is_payed',
+  12 => 'balance',
+  13 => 'postback_url',
+); ?>

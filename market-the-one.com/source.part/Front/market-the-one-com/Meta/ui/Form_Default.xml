@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<meta>
+  <fields>
+    <field name="id" type="input" is_required = "1">
+      <title>
+        <ru>Test1</ru>
+        <en>Test1</en>
+      </title>
+    </field>
+    <field name="test2">
+      <title>
+        <ru>Test2</ru>
+        <en>Test2</en>
+      </title>
+    </field>
+    <field name="test3">
+      <title>
+        <ru>Test3</ru>
+        <en>Test3</en>
+      </title>
+    </field>
+  </fields>
+</meta>

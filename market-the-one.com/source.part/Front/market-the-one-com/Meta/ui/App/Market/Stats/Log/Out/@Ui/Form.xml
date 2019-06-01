@@ -1,0 +1,138 @@
+<ui_element name="log_out" type="form">
+
+	<title>
+		<en>Out</en>
+		<ru>Out</ru>
+	</title>
+	
+
+	<fields>
+	
+		<field  name="market_stats_log_id" type="input" is_required="1" is_primary_key="1">
+			<title>
+				<en>Event ID</en>
+				<ru>Event ID</ru>
+			</title>
+			
+			<value type="int">
+				<range min="1" max="a"></range>
+			</value>
+				
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+	
+		<field  name="market_offer_id" type="input" is_required="1" >
+			<title>
+				<en>Offer ID</en>
+				<ru>Offer ID</ru>
+			</title>
+			
+			<value type="int">
+				<range min="1" max="a"></range>
+			</value>
+				
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		<field  name="acl_user_email" type="input" is_required="1" >
+			<title>
+				<en>Email</en>
+				<ru>Email</ru>
+			</title>
+			
+			<value type="int">
+				<range min="1" max="a"></range>
+			</value>
+				
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		
+		<field  name="market_stats_log_click_datetime" type="input" is_required="1" >
+			<title>
+				<en>Click Datetime</en>
+				<ru>Click Datetime</ru>
+			</title>
+			
+			<value type="int">
+				<range min="1" max="a"></range>
+			</value>
+				
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		<field  name="market_stats_log_postback_datetime" type="input" is_required="1" >
+			<title>
+				<en>Postback datetime</en>
+				<ru>Postback datetime</ru>
+			</title>
+			
+			<value type="string">
+				<range min="1" max="a"></range>
+			</value>
+				
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		<field  name="acl_user_postback_url" type="input" is_required="1" >
+			<title>
+				<en>Postback url</en>
+				<ru>Postback url</ru>
+			</title>
+			
+			<value type="string">
+				<range min="1" max="a"></range>
+			</value>
+				
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+
+
+		
+		
+		<field  name="market_stats_log_partner_postback_datetime" type="input" is_required="1" >
+			<title>
+				<en>Partner postback datetime</en>
+				<ru>Partner Postback datetime</ru>
+			</title>
+			
+			<value type="string">
+				<range min="1" max="a"></range>
+			</value>
+				
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		<field  name="market_stats_log_partner_postback_message" type="input" is_required="1" >
+			<title>
+				<en>Partner postback message</en>
+				<ru>Partner postback message</ru>
+			</title>
+			
+			<value type="string">
+				<range min="1" max="a"></range>
+			</value>
+				
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		
+	</fields>	
+
+</ui_element>

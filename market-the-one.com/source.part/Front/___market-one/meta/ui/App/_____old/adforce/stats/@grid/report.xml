@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<grid name="report">
+  <fields>
+    <field name="action" table="adforce_keywords" is_enabled="0">
+      <title>
+        <ru>Action</ru>
+        <en>Action</en>
+      </title>
+    </field>
+    <field name="keyword_state" table="adforce_keywords" is_enabled="0">
+      <title>
+        <ru>Keyword State</ru>
+        <en>Keyword State</en>
+      </title>
+    </field>
+    <field name="adv_id" table="" is_enabled="0">
+      <title>
+        <ru>Adv id</ru>
+        <en>Adv id</en>
+      </title>
+    </field>
+    <field name="keyword" table="adforce_keywords" is_enabled="1">
+      <title>
+        <ru>Keyword</ru>
+        <en>Keyword</en>
+      </title>
+    </field>
+    <field name="match_type" table="adforce_keywords" is_enabled="1">
+      <title>
+        <ru>Match type</ru>
+        <en>Match type</en>
+      </title>
+    </field>
+    <field name="status" table="adforce_keywords" is_enabled="1">
+      <title>
+        <ru>Status</ru>
+        <en>Status</en>
+      </title>
+    </field>
+    <field name="destination_url" table="adforce_keywords" is_enabled="1">
+      <title>
+        <ru>Destination url</ru>
+        <en>Destination url</en>
+      </title>
+    </field>
+    <field name="google_keyword_id" table="adforce_keywords" is_enabled="1">
+      <title>
+        <ru>Google keyword id</ru>
+        <en>Google keyword id</en>
+      </title>
+    </field>
+    <field name="ad_group" table="adforce_categories" is_enabled="1">
+      <title>
+        <ru>Ad group</ru>
+        <en>Ad group</en>
+      </title>
+    </field>
+    <field name="ad_group_id" table="adforce_categories" is_enabled="1">
+      <title>
+        <ru>Ad group ID</ru>
+        <en>Ad group ID</en>
+      </title>
+    </field>
+    <field name="date_start" table="adforce_stats_google" is_enabled="1">
+      <title>
+        <ru>Date start</ru>
+        <en>Date start</en>
+      </title>
+    </field>
+    <field name="date_end" table="adforce_stats_google" is_enabled="1">
+      <title>
+        <ru>Date end</ru>
+        <en>Date end</en>
+      </title>
+    </field>
+    <field name="impressions" table="" is_enabled="1">
+      <title>
+        <ru>Impressions</ru>
+        <en>Impressions</en>
+      </title>
+    </field>
+    <field name="ctr" table="" is_enabled="1">
+      <title>
+        <ru>CTR</ru>
+        <en>CTR</en>
+      </title>
+    </field>
+    <field name="target_cpa" table="" is_enabled="1">
+      <title>
+        <ru>Target CPA (1-per-click)</ru>
+        <en>Target CPA (1-per-click)</en>
+      </title>
+    </field>
+    <field name="clicks_count_total" table="" is_enabled="1">
+      <title>
+        <ru>Clicks count total</ru>
+        <en>Clicks count total</en>
+      </title>
+    </field>
+    <field name="clicks_payed_total" table="" is_enabled="1">
+      <title>
+        <ru>Clicks payed total</ru>
+        <en>Clicks payed total</en>
+      </title>
+    </field>
+    <field name="profit_usd_total" table="" is_enabled="1">
+      <title>
+        <ru>Profit usd total</ru>
+        <en>Profit usd total</en>
+      </title>
+    </field>
+  </fields>
+</grid>

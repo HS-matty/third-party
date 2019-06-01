@@ -1,0 +1,83 @@
+<h2>Api</h2>
+
+<ul>
+	
+	<li>Base url: {*$host_name*}/api</li>
+	<li>Hash: {*$user->hash*}</li>
+	<li>Functions</li>
+		<ul>
+			<li>/offers  : get partners offers</li>
+				<ul>
+					<li>params:</li>
+						<ul>
+							<li>all=1 : get all available offers</li>
+						</ul>
+				</ul>
+			</li>
+			
+		<li>/clicks  : get partners clicks</li>
+				
+			</li>
+		</ul>
+
+</ul>
+
+
+
+<!-- Button to trigger modal -->
+<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+ 
+<!-- Modal -->
+<div id="myModal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
+</div>
+
+
+<br></br>
+<a  id="TestButton1" class="btn" href="#"   onClick="alert(this.)">TestButton</a>
+
+
+
+<script type="text/javascript">
+
+var test =function(value,object){  
+object.innerHTML=value;
+};     
+
+
+function TestButton1_onClick(id){
+
+}
+
+
+var hostname = {*$host_name*};
+
+
+
+
+
+function query(url, callback){
+    var xmlhttp;
+    // compatible with IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function(){
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
+            callback(xmlhttp.responseText);
+        }
+    }
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+}
+
+</script>
+

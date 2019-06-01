@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<grid name="groups" title="test" type="grid">
+  <fields>
+    <field name="id" table="acl_group" is_enabled="1">
+      <title>
+        <ru>ID</ru>
+        <en>ID</en>
+      </title>
+    </field>
+	
+	
+	<field name="name" table="acl_group" is_disabled="0">
+      <title>
+        <ru>Имя</ru>
+        <en>Name</en>
+      </title>
+    </field>
+	<field name="title" table="acl_group" is_disabled="0">
+      <title>
+        <ru>Заголовок</ru>
+        <en>Title</en>
+      </title>
+    </field>
+	
+	
+	
+	
+	
+  </fields>
+</grid>

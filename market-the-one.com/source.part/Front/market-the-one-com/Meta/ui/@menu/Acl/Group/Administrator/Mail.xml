@@ -1,0 +1,27 @@
+<menu id="content">
+	<menu-element name="inbox" group_id="default">
+		<title>
+			<ru>входящие</ru>
+			<en>inbox</en>
+		</title>
+
+	</menu-element>
+	
+	<menu-element name="outbox" group_id="default">
+		<title>
+			<ru>исходящие</ru>
+			<en>outbox</en>
+		</title>
+
+	</menu-element>
+
+	<menu-element name="trash" group_id="default">
+		<title>
+			<ru>корзина</ru>
+			<en>trash</en>
+		</title>
+	</menu-element>
+	
+
+	
+</menu>

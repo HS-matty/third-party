@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<grid name="Users" title="test" type="grid">
+  <fields>
+    <field name="id" table="auth_users" is_enabled="1">
+      <title>
+        <ru>ID</ru>
+        <en>ID</en>
+      </title>
+    </field>
+	
+	
+	<field name="email" table="auth_users" is_disabled="0">
+      <title>
+        <ru>Email</ru>
+        <en>Email</en>
+      </title>
+    </field>
+	<!--field name="first_name" table="auth_users" is_disabled="0">
+      <title>
+        <ru>Имя</ru>
+        <en>Name</en>
+      </title>
+    </field>
+	<field name="last_name" table="auth_users" is_disabled="0">
+      <title>
+        <ru>Фамилия</ru>
+        <en>Last name</en>
+      </title>
+    </field-->
+	
+	
+	
+	
+	
+  </fields>
+</grid>

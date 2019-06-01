@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<grid name="Offers" title="test" type="grid">
+
+      <title>
+        <ru>Предложения</ru>
+        <en>Offers</en>
+      </title>
+
+
+
+  <fields>
+    <field name="market_offer_id" table="market_offer" is_enabled="1">
+      <title>
+        <ru>ID</ru>
+        <en>Offer ID</en>
+      </title>
+    </field>
+	
+	
+	<!--field name="market_offer_name" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Name</ru>
+        <en>Offers Name</en>
+      </title>
+    </field>
+	<field name="market_offer_title" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Title</ru>
+        <en>Offers Title</en>
+      </title>
+    </field-->
+	
+	<field name="market_product_title"  table="market_product" is_disabled="0">
+      <title>
+        <ru>Title</ru>
+        <en>Product Title</en>
+      </title>
+    </field>
+
+	
+	
+	<field name="market_product_url" table="market_product" is_disabled="0" type="url">
+      <title>
+        <ru>Просмотр</ru>
+        <en>Preview</en>
+      </title>
+    </field>
+	
+	
+	<field name="market_offer_url" table="market_offer" is_disabled="0" type="url">
+      <title>
+        <ru>Трекинг</ru>
+        <en>Tracking</en>
+      </title>
+    </field>
+	
+	<!--field name="category" table="advert_offers" is_disabled="0">
+      <title>
+        <ru>Категория</ru>
+        <en>Тип</en>
+      </title>
+    </field-->
+	
+
+	<field name="market_aggregator_title" table="market_aggregator" is_disabled="0">
+      <title>
+        <ru>Источник данных</ru>
+        <en>Source</en>
+      </title>
+    </field>
+	
+	<field name="market_offer_revenue_value" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Доход</ru>
+        <en>Revenue</en>
+      </title>
+    </field>	
+    
+	<field name="market_offer_revenue_currency" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Валюта</ru>
+        <en>Currency</en>
+      </title>
+    </field>
+	
+	
+	<!--field name="market_offer_clicks_in" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Клики In</ru>
+        <en>Clicks In</en>
+      </title>
+    </field>
+	
+	
+	<field name="market_offer_clicks_out" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Клики</ru>
+        <en>Clicks Out</en>
+      </title>
+    </field-->
+	
+	
+	<!--field name="market_offer_conversions" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Конверсии</ru>
+        <en>Conversions</en>
+      </title>
+    </field-->
+	
+	
+	
+	
+	
+	
+  </fields>
+</grid>

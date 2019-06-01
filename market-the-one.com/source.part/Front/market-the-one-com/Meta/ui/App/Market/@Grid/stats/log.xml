@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<grid name="Log" title="test" type="grid">
+
+      <title>
+        <ru>Stats</ru>
+        <en>Stats</en>
+      </title>
+
+
+
+  <fields>
+    <field name="market_stats_log_id" table="market_stats_log" is_enabled="1">
+      <title>
+        <ru>Click ID</ru>
+        <en>Click ID</en>
+      </title>
+    </field>
+	
+	
+	
+	<field name="market_product_name"  table="market_product" is_disabled="0">
+      <title>
+        <ru>Продукт</ru>
+        <en>Product</en>
+      </title>
+    </field>
+
+	<field name="acl_user_email"  table="acl_user" is_disabled="0" type="timestamp">
+      <title>
+        <ru>Пользователь</ru>
+        <en>User</en>
+      </title>
+    </field>
+	<field name="market_stats_log_click_datetime"  table="market_stats_log" is_disabled="0" type="timestamp">
+      <title>
+        <ru>Время клика</ru>
+        <en>Click time</en>
+      </title>
+    </field>
+	
+	
+	<field name="market_stats_log_postback_status"  table="market_stats_log" is_disabled="0" type="string">
+      <title>
+        <ru>Статус постбэка</ru>
+        <en>Postback Status</en>
+      </title>
+    </field>
+	
+	<field name="market_stats_log_postback_datetime"  table="market_stats_log" is_disabled="0" type="timestamp">
+      <title>
+        <ru>Время постбэка</ru>
+        <en>Postback time</en>
+      </title>
+    </field>
+	
+	<field name="market_stats_log_partner_click_id"  table="market_stats_log" is_disabled="0" type="string">
+      <title>
+        <ru>ClickID партнера</ru>
+        <en>Partners ClickID</en>
+      </title>
+    </field>
+	
+	
+	
+	
+	
+	<!--field name="category" table="advert_offers" is_disabled="0">
+      <title>
+        <ru>Категория</ru>
+        <en>Тип</en>
+      </title>
+    </field-->
+	
+
+	<!--field name="market_aggregator_title" table="market_aggregator" is_disabled="0">
+      <title>
+        <ru>Источник данных</ru>
+        <en>Source</en>
+      </title>
+    </field>
+	
+	<field name="market_offer_payout" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Выплаты</ru>
+        <en>Payout</en>
+      </title>
+    </field>	
+    
+	<field name="market_offer_payout_type" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Тип выплат</ru>
+        <en>Payout Type</en>
+      </title>
+    </field>
+	
+	
+	<field name="market_offer_clicks_in" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Клики In</ru>
+        <en>Clicks In</en>
+      </title>
+    </field>
+	
+	
+	<field name="market_offer_clicks_out" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Клики</ru>
+        <en>Clicks Out</en>
+      </title>
+    </field>
+	
+	
+	<field name="market_offer_conversions" table="market_offer" is_disabled="0">
+      <title>
+        <ru>Конверсии</ru>
+        <en>Conversions</en>
+      </title>
+    </field!-->
+	
+	
+	
+	
+	
+	
+  </fields>
+</grid>

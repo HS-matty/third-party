@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<meta>
+  <elements>
+    <element table="table" name="number" is_import_skip = "1"  title_ru="Номер объявления" title="2w"/>
+    <element table="campaigns" is_required = "1"  is_unique = "1" is_index="1" name="yandex_campaign_id" title = "Campaign ID" title_ru="ID кампании"/>
+    <element table="keywords" is_required = "1"  is_unique = "1" is_index = "1" name="yandex_keyword_id" title = "Keyword id" title_ru="ID фразы"/>
+    <element table="keywords" name="keyword" is_import_skip = "1" title = "Keyword" title_ru="Фраза (с минус-словами)"/>
+    <element table="adverts" name="yandex_advert_id" title = "Advert id" title_ru="ID объявления"/>
+    <element table="adverts" name="title" title = "Title" title_ru="Заголовок"/>
+    <element table="adverts" name="text" title ="Text" title_ru="Текст"/>
+    <element table="table" name="destination_url" is_required = "1" is_import_skip = "1"  title_ru = "Ссылка" title="Destination URL"/>
+    <element table="adverts" name="regions" title ="Region" title_ru="Регион"/>
+    <element table="rate" is_import_skip = "1" name="" title ="d" title_ru="Ставка"/>
+    <element table="table" is_import_skip = "1" name="s" title = "x" title_ru="Ставка на тематич. пл."/>
+    <element table="table" is_import_skip = "1" name="x" title ="f" title_ru="Контакты"/>
+    <element table="adverts" name="status" title = "Advert Status " title_ru="Статус объявления"/>
+    <element table="keywords" name="status" title = "Keyword status" title_ru="Статус фразы"/>
+    <element table="adverts"  name="adverts_link_headers" title = "adverts_link_headers" title_ru="Заголовки быстрых ссылок"/>
+    <element table="adverts"  name="adverts_links" title ="adverts_links" title_ru="Адреса быстрых ссылок"/>
+    <element table="table" is_import_skip = "1" name="wd" title_ru="Параметр 1"/>
+    <element table="table" is_import_skip = "1" name="dw" title_ru="Параметр 2"/>
+    <element table="table" is_import_skip = "1" name="" title_ru="Метки"/>
+    <element table="adverts" name="image" title = "image" title_ru="Изображение"/>
+	
+	
+	<element table="keywords"  name="adv_id" title_ru="adv_id" title="adv_id" export_skip="1" import_skip="1" />
+	
+  </elements>
+</meta>

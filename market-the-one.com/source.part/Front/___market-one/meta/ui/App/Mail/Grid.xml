@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ui_element name="Mail" title="test" type="grid">
+  <fields>
+    <field name="mail_message_id" table="market_offer" is_enabled="1">
+      <title>
+        <ru>ID</ru>
+        <en>Message ID</en>
+      </title>
+    </field>
+	
+	
+		
+	<field name="mail_message_subject"  table="mail_message" is_disabled="0">
+      <title>
+        <ru>Title</ru>
+        <en>Product Title</en>
+      </title>
+    </field>
+	
+	
+	<field name="acl_user_id"  table="mail_message" is_disabled="0">
+      <title>
+        <ru>User ID</ru>
+        <en>User ID</en>
+      </title>
+    </field>
+
+	<field name="mail_message_sent_datetime"  table="mail_message" is_disabled="0">
+      <title>
+        <ru>Послано</ru>
+        <en>Sent</en>
+      </title>
+    </field>
+	
+	
+		
+  </fields>
+</ui_element>

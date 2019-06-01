@@ -1,0 +1,53 @@
+<menu id="Market">
+	<menu-element name="Offers" group_id="default">
+		<title>
+			<ru>Рекламные предложения</ru>
+			<en>Offers</en>
+		</title>
+
+	</menu-element>
+	
+	<!--menu-element name="Products" group_id="default">
+		<title>
+			<ru>Товары</ru>
+			<en>Products</en>
+		</title>
+
+	</menu-element>
+	
+	<menu-element name="Categories" group_id="default">
+		<title>
+			<ru>Категории</ru>
+			<en>Categories</en>
+		</title>
+
+	</menu-element-->
+	
+	
+	<menu-element name="Stats" group_id="default">
+		<title>
+			<ru>Статистика</ru>
+			<en>Stats</en>
+		</title>
+
+	</menu-element>
+
+	<menu-element name="Import" group_id="default">
+		<title>
+			<ru>Импорт</ru>
+			<en>Import</en>
+		</title>
+
+	</menu-element>
+	
+	<menu-element name="Api" group_id="default">
+		<title>
+			<ru>Апи</ru>
+			<en>Api</en>
+		</title>
+
+	</menu-element>
+
+	
+	
+</menu>

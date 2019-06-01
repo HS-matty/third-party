@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<ui_element name="offer" type="form">
+
+	<title>
+		<en>Offer</en>
+		<ru>Рекламное предложение</ru>
+	</title>
+	
+
+	<fields>	
+		<field  name="id" type="input" is_required="1" is_primary_key="1">
+			<title>
+				<en>ID</en>
+				<ru>ID</ru>
+			</title>
+			
+			<value type="int">
+				<range min="1" max="a"></range>
+			</value>
+				
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+
+		
+		<field name="first_name" type="input" is_required="1">
+			
+			<type>string</type>
+			<title>
+				<en>First Name</en>
+				<ru>Имя</ru>
+			</title>
+			
+			<value type="string">
+				<range min="3" max="150"></range>										
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+		
+		<field name="last_name" type="input" is_required="1">
+			
+			<title>
+				<en>Last Name</en>
+				<ru>Фамилия</ru>
+			</title>
+			
+			<value type="string">
+				<range min="3" max="150"></range>										
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+
+		<field name="email" type="input" is_required="1">
+			
+			<title>
+				<en>Email</en>
+				<ru>Email</ru>
+			</title>
+			
+			<value type="string" class="email">
+				<range min="3" max="150"></range>										
+			</value>
+			
+			<view is_allowed="0"></view>
+			<edit is_allowed="0"></edit>
+			
+		</field>
+	
+		
+		
+		
+		
+		
+	</fields>	
+
+</ui_element>

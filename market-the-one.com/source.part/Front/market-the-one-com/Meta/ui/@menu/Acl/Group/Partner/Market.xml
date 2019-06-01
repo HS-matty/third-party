@@ -1,0 +1,49 @@
+<menu name="Market">
+
+
+	<menu-element name="Dashboard" group_id="default" app_class_name="App_Dashboard" menu_class_name = "Menu_App_Dashboard">
+		<title>
+			<ru>Dashboard</ru>
+			<en>Dashboard</en>
+		</title>
+
+	</menu-element>
+	
+	
+	<menu-element name="Offers" group_id="default">
+		<title>
+			<ru>Offers</ru>
+			<en>Offers</en>
+		</title>
+
+	</menu-element>
+	
+	
+	<menu-element name="Stats" group_id="default" class_name="">
+		<title>
+			<ru>Stats</ru>
+			<en>Stats</en>
+		</title>
+
+	</menu-element>
+	
+	
+	<!--menu-element name="Mail" group_id="default" app_class_name="App_Mail">
+		<title>
+			<ru>Mail</ru>
+			<en>Mail</en>
+		</title>
+
+	</menu-element-->
+	
+
+	
+	<menu-element name="Api" group_id="default">
+		<title>
+			<ru>Апи</ru>
+			<en>Api</en>
+		</title>
+
+	</menu-element>
+
+</menu>

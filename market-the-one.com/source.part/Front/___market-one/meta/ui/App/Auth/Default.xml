@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<ui_element type="form">
+	
+	<name>User_Profile_Form_001</name>
+	<title>Profile</title>
+  <fields>
+
+	<field name="id" type="input">
+
+		<title>
+			<en>id</en>
+			<ru>id</ru>
+		</title>
+		
+		
+		<value type="int">
+			<length>1-a</length>
+		</value>
+		
+		<view is_allowed="0"></view>
+		<edit is_allowed="0"></edit>
+	
+	</field>
+	
+	<field name="nickname" type="input">
+
+		<title>
+			<en>Nickname_</en>
+			<ru>Ник</ru>
+		</title>
+		
+			
+		<value type="string">
+			<length>1-a</length>
+		</value>
+		
+		
+		<view is_allowed="1"></view>
+		<edit is_allowed="0" type="input"></edit>
+		
+		
+	</field>
+	
+	<field name="steam_id" type="input">
+
+		<title>
+			<en>steam_id</en>
+			<ru>steam_id</ru>
+		</title>
+		
+				
+		<value type="string">
+			<length>1-a</length>
+		</value>
+	
+		<view is_allowed="1"></view>
+		<edit is_allowed="0" type="input"></edit>
+	
+		
+	</field>
+	
+	
+	<field name="balance" is_required = "1" type="input">
+
+		<title>
+			<en>Balance $$</en>
+			<ru>Баланс $$</ru>
+		</title>
+		
+		<value type="int" min="3" max="10"></value>
+			
+		
+		<view is_allowed="1"></view>
+		<edit is_allowed="1" ></edit>
+		
+		
+	</field>
+	
+	<field name="user_type" is_required = "1" type="select">
+
+		<title>
+			<en>User Type</en>
+			<ru></ru>
+		</title>
+				
+		<value type="string"></value>
+				
+			
+		
+		<view is_allowed="1"  is_multiple = "0"></view>
+		<edit is_allowed="1"></edit>
+		
+		
+	</field>
+	
+	
+	<field name="select_test" is_required = "1" type="select">
+
+		<title>
+			<en>Select</en>
+			<ru>Select</ru>
+		</title>
+		
+		
+		<value type="int"></value>
+			
+		
+		<view is_allowed="1"></view> 
+		<edit is_allowed="1" ></edit>
+		
+		
+	</field>
+	
+	
+	<field name="bool_test" is_required = "1" type="select" template="bool">
+
+		<title>
+			<en>Bool</en>
+			<ru>Bool</ru>
+		</title>
+		
+		
+		<value type="bool"></value>
+			
+			
+		<view is_allowed="1"></view>
+		<edit is_allowed="1" ></edit>
+		
+		<markup></markup>
+		
+	</field>
+	
+	
+	<field name="checkbox_test" is_required = "1" type="checkbox">
+
+		<title>
+			<en>Checkbox</en>
+			<ru>Checkbox</ru>
+		</title>
+		
+		
+		<value type="bool"></value>
+			
+			
+		<view is_allowed="1"></view>
+		<edit is_allowed="1" ></edit>
+		
+		<markup></markup>
+		
+	</field>
+	
+	
+
+  </fields>
+</ui_element>

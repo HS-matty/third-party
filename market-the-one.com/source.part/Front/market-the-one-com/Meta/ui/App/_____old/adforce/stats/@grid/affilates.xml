@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<grid class_name="Ui_Element" name="affilates">
+  <fields>
+    <field name="id" table="adforce_keywords">
+      <title>
+        <ru>Id</ru>
+        <en>Id</en>
+      </title>
+    </field>
+    <field name="name" table="adforce_keywords">
+      <title>
+        <ru>Name</ru>
+        <en>Name</en>
+      </title>
+    </field>
+    <field name="action" table="adforce_keywords">
+      <title>
+        <ru>Action</ru>
+        <en>Action</en>
+      </title>
+    </field>
+    <field name="keyword_state" table="adforce_keywords">
+      <title>
+        <ru>Keyword state</ru>
+        <en>Keyword state</en>
+      </title>
+    </field>
+    <field name="keyword" table="adforce_keywords">
+      <title>
+        <ru>Keyword</ru>
+        <en>Keyword</en>
+      </title>
+    </field>
+    <field name="match_type" table="adforce_keywords">
+      <title>
+        <ru>Match type</ru>
+        <en>Match type</en>
+      </title>
+    </field>
+    <field name="status" table="adforce_keywords">
+      <title>
+        <ru>Status</ru>
+        <en>Status</en>
+      </title>
+    </field>
+    <field name="destination_url" table="adforce_keywords">
+      <title>
+        <ru>Destination url</ru>
+        <en>Destination url</en>
+      </title>
+    </field>
+    <field name="google_keyword_id" table="adforce_keywords">
+      <title>
+        <ru>Google keyword id</ru>
+        <en>Google keyword id</en>
+      </title>
+    </field>
+    <field name="adv_id" table="adforce_keywords">
+      <title>
+        <ru>Adv id</ru>
+        <en>Adv id</en>
+      </title>
+    </field>
+    <field name="keyword_id" table="adforce_keywords">
+      <title>
+        <ru>Keyword id</ru>
+        <en>Keyword id</en>
+      </title>
+    </field>
+    <field name="clicks_total" table="_adforce_report">
+      <title>
+        <ru>Clicks total</ru>
+        <en>Clicks total</en>
+      </title>
+    </field>
+    <field name="clicks_payed" table="_adforce_report">
+      <title>
+        <ru>Clicks payed</ru>
+        <en>Clicks payed</en>
+      </title>
+    </field>
+    <field name="date" table="_adforce_report">
+      <title>
+        <ru>Date</ru>
+        <en>Date</en>
+      </title>
+    </field>
+    <field name="profit_usd" table="_adforce_report">
+      <title>
+        <ru>Profit usd</ru>
+        <en>Profit usd</en>
+      </title>
+    </field>
+  </fields>
+</grid>

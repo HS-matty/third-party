@@ -1,0 +1,44 @@
+<form  name="login" title="Login form" class_name="Ui_Form">
+	
+	<title>
+		<en>Auth form</en>
+		<ru>Форма авторизации</ru>
+	</title>
+			
+	<fields>
+		<field name="login" type="input" is_required = "1">
+			<title>
+				<en>Login</en>
+				<ru>Логин</ru>
+			</title>
+			
+			<length>1-40</length>
+		</field>
+			
+		<field name="password" type="input" is_required = "1">
+			
+			<title>
+				<en>Password</en>
+				<ru>Пароль</ru>
+			</title>
+			<length>4-40</length>
+		<view type="password">1</view>
+							
+		</field>
+			
+		
+		<!--field> 
+			<id>captcha</id>
+			<type>captcha</type>
+			<title>
+				<en>Code</en>
+				<ru>Код</ru>
+			</title>
+			<length>1-2048</length >
+			
+		</field-->
+	</fields>
+	
+		
+	
+</form>
