@@ -1,0 +1,104 @@
+%
+%     T E R M I N A T E    D E F I N A B L E    I N S T A L L A T I O N
+%     컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+%
+% Extra installation script for INSTALL.EXE
+%
+% Must be called TERMINAT.INS and placed on the LAST disk or in the same
+% path as the installation files.
+%
+% After INSTALL.EXE has called UNPACK.EXE and unpacked all the files, this
+% script could be started if you need special files inserted in your
+% configuration.
+%
+% Installation with default values in TERMINAT.CFG:
+%
+% Install the T-IMPORT.CFG, look in example file DOCS\T-IMPORT.CFG for info.
+%
+% Installation of local language files:
+%
+% If you have the online manuals in your local language. Create a
+% selfextracting archive called TLAN_???.EXE and place it on installation
+% disk 1. Then these files will be unpacked to TLAN_???\ and Terminate
+% will detect and ask the user if he/she wants to use those files
+% instead of the English manual.
+%
+% Auto-installation of keyfile:
+%
+%   TERMINAT.KEY will automatically be copied.
+%   No entry is needed in this file.
+%
+% Available command:
+%
+%   $INS will be replaced with the install path (ei: A:\ or C:\TEMP )
+%   $TER will be replaced with the Terminate path (ei: C:\TERMINAT )
+%   Both keywords will not append a backslash
+%
+%   MakeDir path
+%     Create a directory or a directory tree
+%
+%   ChDir path
+%     Change to directory or another drive
+%
+%   Install source-filename dest-path+filename
+%     Like copy source-filename this occurs in the same directory as where
+%     the installation files are located. If no path is defined then the
+%     file will be placed in the same directory as TERMINAT.EXE. Remember
+%     that the current directory at this time is the same directory as
+%     TERMINAT.EXE. All these files will also be copied to the GIVEAWAY\
+%     in the Shareware version of Terminate. Do not use any path definition
+%     on the source-filename.
+%
+%   Run path+filename.ext parameters
+%     Run any program, remember to give the path and the extension.
+%
+%   Erase path+filename.ext
+%     Erase a file after installation.
+%
+%   ClearScreen
+%     Clears display
+%
+%   WaitEnter
+%     Waits for any key to be pressed
+%
+%   Color attr
+%     Change color attribute
+%
+%   PrintAt x,y,txt
+%     Displays a string at x,y
+%
+%   Ask x,y,question,Yes/No,Commands;
+%     Ask a question and run commands
+%
+%   Sound freq
+%     Plays a tone
+%
+%   NoSound
+%     Disables sound
+%
+%   Delay
+%     Waits 1/100 seconds  Delay 100 = 1 second
+%
+
+% Install t-import.cfg t-import.cfg
+% Install tm.cfg termail\tm.cfg
+% Install tm.lst termail\tm.lst
+% Install tm.nam termail\tm.nam
+% Install terminat.fon phone\terminat.fon
+% Install avatar.kbd phone\avatar.kbd
+% Install Logon.tsl Script\Logon.tsl
+
+% Makedir extra
+% ChDir extra
+% Install readme.1st extra\readme.now
+% Run edit extra\readme.now
+% Erase extra\readme.now
+% ClearScreen
+% WaitEnter
+% Color 14
+% PrintAt 1,1,Important question:
+% Ask 1,3,Install special phonebook (Y/N),YN,Install my.fon phone\my.fon
+% Sound 440
+% Delay 200
+% Nosound
+

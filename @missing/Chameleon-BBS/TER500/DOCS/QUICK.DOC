@@ -1,0 +1,77 @@
+
+GETTING STARTED QUICKLY
+
+For people who don't know much about serial communications and modems, we
+provide this small document, so you don't have to worry about all the
+options.
+
+Remember always: If you don't understand an option/feature, do not change
+its setting! All options have been set to sensible defaults for normal
+use, and there is no immediate need to change anything - although you
+will need to set up the following things:
+
+At startup you will be asked about which colour palette you want to use.
+Terminate will check if you have a colour screen and place the cursor on
+"colour" if you do. Just press enter if you are not sure.
+
+IMPORTANT: If you don't understand a toggle or an option, do not change it,
+           just leave as it was. All options have already been set to give
+           best performance for most machines.
+
+Terminal settings: You can either let Terminate auto-configure itself for
+your modem or set your modem up manually.
+- If you have a modem faste than 14400 bps, you should set your bps rate to
+  19200 or 38400. Fast modems can use data compression and if you only use
+  9600, you will not be able to do fast transfers. If you are using faster
+  speeds like 28800 set the speed to 57600. With ISDN you will need a
+  fossil driver like cFos.
+- For normal BBS calls you should always use 8 databits, no parity, 1
+  stopbit.
+- If you use 2400, you should disable Hardware RTS/CTS flowcontrol in the
+  Terminal options menu. We always recommend that 9600 and faster modems
+  should use Hardware RTS/CTS flowcontrol, which is the safest way of
+  sending data when using a speed to the comport at 19200 or above.
+- Don't ever run 57600 bps on external modems, unless you are sure that
+  your cable is protected from noise - try 38400 first. Remember that you
+  must also set RTS/CTS flowcontrol in your internal modem configuration -
+  check in your modem manual.
+- RTS/CTS flowcontrol requires an internal modem OR an external modem AND a
+  proper modem cable which has the RTS and CTS (Request to send/Clear to
+  send) pins connected.
+
+When you are finished with the basic configuration, you can move to the
+Modem & Dialing Menu and select a modem from Quick Install. If your modem
+is not featured in the list, you must set the following things manually -
+or at least check if they work (read your modem manual to check for further
+details. Remember that the factory defaults on your modem may be set in
+such a way that you won't have to change anything...):
+
+Carrier Detect (CD) follows line (usually &C1):
+
+- Type AT&C1 and press enter
+
+When DTR is low, the line must be dropped, (Usually &D2 or &D3):
+
+- Type AT&D2 and press enter
+
+  Not all modems like this, if you can't hangup your modem, move to the
+  Modem & dialing menu and Enter a 0 at the hang-up options which will
+  allow Terminate to send a hangup string to your modem instead.
+
+Type ATS0=0
+Then your modem will not pick up the phone - so Terminate can make the
+decision.
+
+If you can save your setup in your modem, type AT&W, otherwise you should
+use this initstring: AT&C1&D2S0=0^M
+
+If your modem string is not sent because the carrier is high when you start
+up Terminate, you should enable the FORCE INITSTRING switch in the Options
+menu under "Modem And Dialing".
+
+If your modem is standard Hayes compatible you don't need to set up
+anything else, everything has been set up already.
+
+You could now press Alt-D for the phonebook and import or enter some
+entries - then you are ready to enter the world of CyberSpace!
+

@@ -1,0 +1,104 @@
+
+EXTERNAL PROTOCOLS
+
+Each of these protocols can be found on your local BBS or at our website
+www.terminate.com. They are all included as default configurations in
+Terminate. If you are a beginner, just use Zmodem - it is much easier to
+understand. Here is some more information about the protocols. The prices
+given are in US dollars and could be changed by the authors:
+
+PROTOCOLS SUPPORTED DIRECTLY IN TERMINATE
+=========================================
+
+HydraCom                                  Filename: HYDRA108.ZIP  Price:  $0
+
+A nice Bi-directional protocol just as Bimodem and HSLink. It has no
+additional features, but the best thing is that it is FREE.
+
+HSLink                                    Filename: HS121.ZIP     Price:  $0
+
+Same as BiModem, just a newer program. Does the same things as BiModem.
+My opinion is that it is just as good as BiModem. It gives you a lot of
+information when transfering files.
+
+BiModem                                   Filename: BIMOD125.ZIP  Price: $25
+
+A very fast protocol that allows you to upload, download files and chat
+with the sysop at the same time. Very good and stable.
+
+GSZ/DSZ                                   Filename: GSZ0924.ZIP   Price: $30
+
+GSZ and DSZ are the same thing. GSZ has just a little bit more screen
+layout than DSZ. The screen layout is nothing to cheer about compared to
+Puma, Bimodem or HSLink. But GSZ/DSZ are good standard Zmodem protocols.
+It also has Xmodem, Ymodem (G and Batch). If you pay you get something
+called MobyTurbo, but don't let this fool you because the other protocols
+around are just as fast.
+
+PDZmodem (Peter Mandrella)                Filename: PDZM124.ZIP   Price:  $0
+
+A freeware Zmodem that also have the Zmodem 8k option also called ZedZap
+which Terminate also supports internally. However this protocol is very good
+for multitaskers especially when running Terminate in a DOS-box under OS/2
+
+GifLink                                   Filename: GIFLK112.ZIP  Price: $30
+
+A Zmodem that allows you to view GIF images while you download. Maybe a nice
+feature if you really spend hours and hours downloading GIFs.
+
+IceZmodem                                 Filename: IZM110.ZIP    Price: $25
+
+A new cool Zmodem with MOD-player and chat facilities while transfering
+files. If can use larger 2k block and a special reducement in overhead.
+Furthermore you can get extensive information on the other ends system if
+both ends are running this protocol.
+
+Super Zmodem                              Filename: SZMOD200.ZIP  Price: $20
+
+Very fancy Zmodem, with a lot of enhancements. It can do normal Zmodem
+transfers as well. But while you are transfering files you can play
+Tetris or Four-In-A-Row. To chat it demands of course that both ends use
+Super Zmodem.
+
+Puma/Mpt                                  Filename: MPT110.ZIP    Price: $15
+
+Puma is an enhanced Zmodem with some extra compression and some real nice
+fancy screen layout. It is fast, good and reliable. It was renamed from
+Puma to Mpt because the company Puma (shoes) complained about the
+use of this name (that was the rumour).
+
+vFast                                     Filename: VFAST30.ZIP   Price: $15
+
+This protocol claims to work faster and better than zmodem, but only with
+error correcting modem. The screen layout if also quite good.
+
+Jmodem                                    Filename: JMOD306.ZIP   Price:  $0
+
+Again a fast protocol, but this protocol can send up to 8192 bytes in each
+block. The best thing about this protocol is that an entire C-source is
+provided with the program, so it can be compiled easily for other systems.
+The program is public domain and there is no money charged.
+
+Smodem                                    Filename: SMODEM10.ZIP  Price: $12
+
+Smodem is a bi-directional file transfer protocol with full screen chat.
+Supports: Windows, DESQview, Special com ports. Works with 7-bit Telnet.
+
+OTHER PROTOCOLS TESTED WITH TERMINATE
+=====================================
+
+CMP                                       Filename: CHATMN23.ZIP  Price: $20
+
+Chat manager protocol. A protocol that belongs to a package called Chat
+Manager. It allows several users to chat with each other on multiline
+systems. It supports RA,SBBS,MAX,OPUS,QUICK-BBS. The shareware price for
+the BBS part is around 40$ non-commercially and the protocol is 10-20$.
+
+                                     *
+
+Remember that many of the CPS rates that these protocols claim are NOT
+comparable. Please be aware that many things can confuse the calculation...
+
+                       (c) 1994,95,96,97 by Bo Bendtsen, Author of Terminate
+                       This file may not be used for other terminal programs.
+

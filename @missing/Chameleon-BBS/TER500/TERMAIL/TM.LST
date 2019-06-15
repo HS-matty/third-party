@@ -1,0 +1,1048 @@
+%
+% ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+% ³ °°°° TerMail Default Conference List °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+% ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+%
+% This list is only an example for some common conferences.
+%
+% A list of conferences can never be up-to-date. New conferences are added
+% daily, so please contact your boss or uplink to get the newest list.
+%
+% Blank and lines starting with a % will be ignored (comments).
+% You can get such a list from your Boss by sending an AREAFIX request and
+% using the keyword %LIST or a simular command. Then you will receive one or
+% several netmails with the information you need. Export the message and
+% create this file which only should contain areas available from your Boss.
+%
+% A maximum of 1000 entries can be put in this list.
+%
+%
+% EchoID (60 characters maximum)                             Description (35 characters maximum)
+%ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ| ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Terminate-conferences                                        Description
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+TERMINAT                                                     Global  Terminate conference
+TERMINATE.GER                                                German  Terminate conference
+TERMINATE_UK                                                 UK      Terminate conference
+TERMINAT_R23.PUB                                             Danish  Terminate conference
+FM-TERMINATE                                                 French  Terminate conference
+SK_TERMINAT                                                  French  Terminate conference
+TERMINATE.39                                                 Italian Terminate conference
+TERMINAT.FIN                                                 Finnish Terminate conference
+R20_TERMINATE                                                Swedish Terminate conference
+TERMINAT.028                                                 Dutch   Terminate conference
+R34.TERMINATE                                                Spanish Terminate conference
+TERMINATE_BETA                                               Test    Terminate conference
+TERMINATE_BETA_CHAT                                          Test    Terminate conference
+%ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+File-echoes                                                  Description
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+TERMINAT                                                     Global  Terminate file echo
+BACKBONE                                                     BACKBONE
+NDIFFLZH                                                     NDIFFLZH
+RECECHO                                                      RECECHO
+RECMODER                                                     RECMODER
+RECRULES                                                     RECRULES
+%ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+International-conferences                                    Description
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+10TH_AMD                                                     10th amendment legislation issue
+12_STEPS                                                     Recovery based on the 12 Steps
+1992-NET                                                     Chat in any European language
+2000                                                         Software good after year 2000
+440_CHAT                                                     Chat between net440 sysops & poi
+4DOS                                                         4DOS Support echo
+4X4                                                          Martial arts discussion echo
+60S_70S_PROGROCK                                             60's & 70's Progressive Rock
+80XXX                                                        Assembly language programming
+AAOS                                                         American Atheist Online Services
+ABLED                                                        DisABLED Users Information
+ABLED_ATHLETE                                                DisABLED Athletes information xc
+ABLENEWS                                                     Disability/medical news, views,
+ABORTION                                                     Abortion Discussion
+ACORNBBS                                                     Acorn BBS news/announcements
+ACORNBUY                                                     Acorn related buy/sell
+AD&D                                                         Advanced dungeons and Dragons
+ADAPTEK                                                      Adaptive technology for disabled
+ADEPT_SYSOP                                                  ADEPT Sysop to Sysop support
+ADEPTSOFT                                                    Adept XBBS Support Echo
+ADHD                                                         Attention Deficit Hyperactivity
+ADLIB                                                        Computer soundcard discussion
+ADOPTEES                                                     Adoptees Information exchange
+ADS_ANNOUNCE                                                 ADS FILE ANNOUNCEMENTS
+ADULT_TALK                                                   For Adults to chat
+AIDS-HIV                                                     AIDS-HIV discussion
+AIDS.DATA                                                    AIDS DATA
+AIDS/ARC                                                     AIDS/ARC
+ALASKA_CHAT                                                  Alaska off topic chat
+ALLFIX_HELP                                                  Allfix File Processor Help Echo
+ALLFIX_UK                                                    Allfix Support UK
+ALTMED                                                       Alternative Medicine
+ALT_DOS                                                      Open DOS & FREEDOS discussion
+AMATEUR_RADIO                                                AMATEUR radio ham radio
+AMIGA                                                        International amiga conference
+AMSTRAD                                                      Amstrad computers - all types
+AMU_HELP                                                     Automated maintainence utility
+ANEWS                                                        News of the US and World
+ANGLING                                                      For angling and related subjects
+ANIMAL_DOC                                                   Animal vetinarians
+ANIMAL_RIGHTS                                                Animal rights conference
+ANIME                                                        Japanese Animation conference
+ANIMED                                                       ANIMAL MEDICINE DISCUSSION AREA
+ANNO.RISC-OS                                                 ANNO.RISC-OS
+ANXIETY                                                      Anxiety Disorders
+APOGEE                                                       Apogee Support Conference
+APPLE                                                        International APPLE echo
+APRIL                                                        The Amiga April mail tosser supp
+AQUARIUM                                                     Aquaria & Fishkeeping
+ARCADE                                                       Coin operated arcade machines
+ARCCOMMS                                                     Archimedes Communications
+ARCHERY                                                      ARCHERY
+ARCHIMEDES                                                   ARCHIMEDES
+ARCPROG                                                      Arc programming
+AREXX                                                        Echo for discussion and assistan
+ARJ                                                          ARJ Support Echo
+ARROWBRIDGE                                                  ARROWBRIDGE interbbs game chat
+ARTS_VISUAL                                                  Visual arts
+ARTWARE                                                      Support for Gerard Van Essen's
+ASIAN_LINK                                                   World Chat/Discussion Forum
+ASKACOP                                                      Ask law enforcement proffesional
+ASKACOP2                                                     ASKACOP2
+ASKCOPS                                                      Ask Law enforcement professional
+ASK_A_NURSE                                                  Ask a nurse about health related
+ASL                                                          American Sign Language Echo
+ASP                                                          ASP (Association of Shareware
+ASTRONET                                                     Astronomy echo
+ASTRONOMY                                                    Astronomy echo
+ASTRONOMY.029                                                ASTRONOMY.029
+AT&T                                                         AT&T
+ATARI                                                        Atari micros - all types
+ATARIST                                                      Atari ST micro users
+ATARI_ST                                                     ATARI_ST
+ATHEISM                                                      Intra-atheist eductaion and disc
+AUDIO                                                        Int`l Fidonet AUDIO echo
+AUTOMOBILE_RACING                                            Discussion of all types of autom
+AUTOMOTIVE                                                   AUTOMOTIVE
+AUTORACE                                                     The int`l auto racing echo
+AVIATION                                                     International aviation echo
+AWOL                                                         Bikers, Music and The
+A_CAD                                                        International AutoCAD/CAD
+A_THEIST                                                     ATHEIST
+BAHAI                                                        BAHAI
+BAMA                                                         Odyssey fringe science research
+BARDROOM                                                     Authors and poets get together
+BASIC7                                                       PDS 7.x and VB/DOS discussions
+BASSGTR                                                      Bass guitar echo
+BATPOWER                                                     MS/PCDOS batch file hints & tips
+BATPOWER_UK                                                  DOS Batch Programming Forum
+BATTERED                                                     BATTERED
+BB-CARDS                                                     Baseball card conference
+BBC                                                          Acorn BBC micro users
+BBS-GAMES                                                    BBS Games
+BBS-NEWS                                                     BBS-NEWS
+BBS-SYSOP                                                    BBS-SYSOP
+BBSCON                                                       BBS conventions conference
+BBSDOORS                                                     Door games relating to all BBS s
+BBSDOOR_DISCUSSION                                           The BBS Doorgame and utility dis
+BBSLAW                                                       BBSLAW
+BBS_ADS                                                      ADVERTISE and promote your BBS
+BBS_CARNIVAL                                                 BBS Software and related utility
+BBS_DOORS                                                    Discussion of all types of BBS d
+BBS_INTERNET                                                 DOS Win OS2 UNIX Internet BBS ap
+BBS_USERS                                                    BBS_USERS
+BCAST_RADIO                                                  Broadcast radio
+BCS                                                          British Computer Society
+BE                                                           BeOS BeBox and general Be chat
+BEAD-JEWEL                                                   Beading and working with beads
+BEATLES                                                      Beatles discussion conference
+BEEMAIL_UK                                                   BEEMAIL_UK
+BGFAX                                                        BGFAX Support Echo
+BIBLE                                                        International Bible Conference
+BIBLE-STUDY                                                  BIBLE STUDY
+BIG_SMOKE                                                    Cigar Smokers forum
+BIKE-N-RIDER                                                 BIKE N RIDER
+BIKENET                                                      BIKENET
+BINKLEY                                                      BinkleyTerm mailer support
+BIOLOGY                                                      Biology Discussion
+BIOMED                                                       BIOMED
+BIRDING                                                      Birdwatching
+BIRDS_UK                                                     Chat 7 queries about all
+BIRTHMOTHERS                                                 BIRTH MOTHERS
+BLACK_POWDER                                                 BLACK POWDER, muzzle loading
+BLINDSIGHT                                                   Visual Impaiment - All Issues
+BLINDTLK                                                     BLIND TALK
+BLINKTALK                                                    Visual disabilities echo
+BLUEWAVE                                                     Blue Wave Mail System Support
+BNU                                                          BNU Help and Discussion Echo
+BOATING                                                      Boat discussion
+BODYART                                                      Tattoo`s and Body piercing
+BODYWORK                                                     BODYWORK
+BOFFINS                                                      BOFFINS
+BOOKEM                                                       BOOKEM juvenilles and the law
+BRE900                                                       BRE League 900
+BRIT_CAR                                                     British car discussion
+BROADCAST                                                    Discussion of broadcast radio an
+BROMCHAT                                                     Local chat for the bromley area
+BT-XE                                                        BT-XE
+BUSINESS                                                     For Business Discussions
+BUSINESS_UK                                                  Small business discussion and
+BUY                                                          The buy n sell echo
+C&C                                                          Command and conquer discussion
+CALLSIGN                                                     Ham radio call sign server echo
+CANACHAT                                                     Canada chat
+CANPOL                                                       Canadian Politics
+CANTALOUP.GER                                                Cantaloup mailer support
+CAP_NAT                                                      Civil Air Patrol
+CARCINOMA                                                    Cancer Survivors
+CARDIAC                                                      International cardiac conference
+CAROLINA_GEN                                                 Carolina genealogy
+CAR_AUDIO                                                    Car Audio discussion
+CATS                                                         Cat discussion
+CAVING                                                       Caving and Potholing Discussion
+CBM                                                          Commodore computer conference
+CBM-128                                                      Commodore-128 discussion
+CBM-GEOS                                                     Commodore-GEOS discussion
+CB_RADIO                                                     General discussion of CB related
+CDOOR                                                        CDOOR Mods to RBBS
+CDRECORD                                                     CDR CDRON DVD recording discussi
+CDROM                                                        CDROM Discussions
+CDROM_SALE                                                   CD ROM For Sale
+CD_ECHO                                                      Compact disc equipment & music
+CELLULAR                                                     Cellular telephone discussions
+CELLULAR_II                                                  Cellular Telephones & Related
+CELLULAR_UK                                                  Cellular Telephone Discussions U
+CFL                                                          Canadian football league
+CFORSALE                                                     Commercial for Sale Echo
+CFS                                                          Chronic fatigue syndrome
+CHAMELEON                                                    Exotic animals pets chatter conf
+CHANNELS                                                     Messages from the spirit world
+CHATTER                                                      Mindless Chatter
+CHESS                                                        International Fidonet Chess conf
+CHESS_TOURNEY                                                International echo for chess Pla
+CHESS_UK                                                     Play and Chat about chess
+CHILD_ABUSE                                                  Child abuse information and reco
+CHIPSMAG                                                     Chips n bits magazine echo
+CHRONIC_PAIN                                                 Chronic Pain Discussion Area
+CHURCH&STATE                                                 Separation of Church & State
+CIRCUS_UK                                                    UK Circus Chat
+CIVIL_WAR                                                    Civil War History Echo
+CIVLIB                                                       Civil Liberties
+CLARION                                                      Clarion database programming
+CLASSICAL                                                    Classical music discussion
+CLASSICAL_UK                                                 An echo for lovers of classical
+CLASSIFIEDS                                                  Classified Ads (NON-COMMERCIAL
+CLIMBING                                                     Discussion / advice on climbing
+CLIPPER                                                      Ca Clipper database and programm
+CLONE                                                        Ibm Pc-Compatible Computers
+CMX4SALE                                                     Comics for sale
+CNET_BBS                                                     The official international CNet
+COCO                                                         Tandy Colour computers
+COFFEE_KLATSCH                                               Gossip and chit-chat
+COINS                                                        Coin/Token Collecting Discussion
+COLLEGE                                                      International college echo
+COLLEGE_SINGLES                                              College singles hey baby whats y
+COMICS                                                       Comic book discussions echo
+COMICS_UK                                                    Comics (UK) Discussion
+COMM                                                         Communications echo
+COMMON-ROOM                                                  General discussion echo
+COMMS_MAGS                                                   Communications Magazines
+COMMS_UK                                                     UK Communications issues
+COMMUNITY                                                    CommUnity development/Usenet
+COMPRESS                                                     Compression methods and discussi
+COMPUSALE                                                    Computer equipment for sale
+CONCORD                                                      Concord BBS Help & Advice
+CONFED_HERITAGE                                              Confederate heritage
+CONSCIOUSNESS                                                The Consciousness Echo
+CONSOLES                                                     Games consoles discussion
+CONSPRCY                                                     Conspiracy discussions
+CONSTITUTIONAL                                               Constitutional echo
+CONSUMER_REPORT                                              CONSUMER REPORT
+CONSUMER_VIEW                                                Dealing with Commercial
+CONTACT_WORLD_LINK                                           CONTACT WORLD LINK
+CONTROV                                                      Controversial Discussion
+CONTROVERSE                                                  Debate\Discussion of controversi
+COOKING                                                      National Cooking echo
+CORELDRAW                                                    CorelDraw graphics package
+COUNTRY                                                      COUNTRY Music discussion
+CRAFTING                                                     CRAFTING
+CRAFTING-FORSALE                                             Crafting Project and supplies fo
+CRAFTING-SYSOPS                                              Craft related chat
+CRAFTING_BAZAAR                                              Crafting Bazaar
+CREATIVE_ARTS                                                Rubber stamping
+CRICKET_ECHO                                                 Cricket news and discussion conf
+CRIME_QUEST                                                  Crime questions
+CRIME_VICTIMS                                                Victims of crime
+CROSS-STITCHING                                              Cross stitch and other decorativ
+CYBER                                                        CYBER
+CYBERSPACE                                                   Cyberspace
+CYBER_AUCTION                                                Cyber auction echo
+CYCLONE                                                      CYCLONE
+C_ADVOCAT                                                    Consumer Advocate
+C_ECHO                                                       The international C echo
+C_PLUSPLUS                                                   C++ programming language
+DADS                                                         Dads
+DARK_SKIES                                                   Discussion of the Dark Skies TV
+DBASE                                                        Database topics techniques and a
+DBRIDGE                                                      D'Bridge Support Echo
+DEADHEAD                                                     Grateful dead topics
+DEAR_DIARY                                                   Jot down events, thoughts of the
+DEBATE                                                       Debate conferance
+DEBATER                                                      Serious debate of topical issues
+DELPHI                                                       Borland delphis developers echo
+DEMOCRACY                                                    Democracy Discussion
+DEMON.ANNOUNCE                                               DEMON.ANNOUNCE
+DESQVIEW                                                     Quarterdeck's DESQview
+DEUTSCH                                                      German language chat echo
+DIABETES                                                     Diabetes discussions and support
+DIARIST                                                      For comment on entries in
+DIETING                                                      Healthy Dieting and Weight Loss
+DIRTY_DOZEN                                                  Warnings on Trojans, Viruses,
+DISASTERS                                                    Disaster Echo
+DISNEY                                                       Disney discussions
+DIY                                                          DIY
+DJ                                                           DJ
+DLG_INFO                                                     DLG Pro BB OS info
+DLG_SUPPORT                                                  DLG Pro BB OS Support q&a echo
+DND                                                          D n D fantasy role playing
+DOGHOUSE                                                     Dog lovers conference
+DOG_FANCIERS                                                 Dog fanciers conference
+DOOM                                                         Discussion of id software's Doom
+DOOM_UK                                                      Doom/Doom II Discussion (UK)
+DOORGAMES                                                    BBS doorgames and discussions
+DOORWARE                                                     General door development forum
+DOS_INTERNET                                                 DOS BBS Internet applications fo
+DREAMS                                                       For discussion of Dreams
+DRIVING                                                      DRIVING
+DR_DEBUG                                                     Doctor Debug's Laboratory
+DTP                                                          Desktop publishing discussions
+ECHO-NEWS                                                    News of new echoes
+ECHOLIST                                                     Echolist access conference
+ECHOMAC                                                      Apple Macintosh Computers
+ECHOPOL2                                                     Discussion about ECHOPOL2
+ECHOREVIEWS                                                  Forum for review of Fidonet echo
+ECHO_ADS                                                     Advertise fidonet echoes here
+ECHO_REQ                                                     Echo requests
+ECOLOGY                                                      Ecology discussion
+ECONET                                                       Ecology Discussion
+ECO_CHAT                                                     Ecology chat
+ECPROG                                                       East coast programmers
+EC_SUPPORT                                                   Ezycomm BBs support for ssysops
+EDUCATOR                                                     Discussion for educators
+ELECTRONICS                                                  Home electronics and applaince d
+EMBEDDED                                                     Embedded systems echo
+EMERG_MANAGE                                                 EMERGENCY MANAGEMENT
+EMERG_NOTIFY                                                 EMERGENCY NOTIFY
+EMS                                                          Emergency Medical Services
+EMULATE                                                      EMULATE
+ENET.SOFT                                                    Software distribution
+ENET.SYSOP                                                   Zone Wide sysops conference
+ENTREPRENEUR                                                 Entrepreneur Conference
+ENVIRO                                                       Environmental news
+ENVIRON                                                      Environmental Issues
+EP-ANNOUNCE                                                  EPubNet File Announcement Echo
+EP2FILES                                                     Echopol2 files distribution
+EP2_COMMITTEE                                                For EP2 Committee members only
+EPILEPSY                                                     EPILEPSY
+EQUUS                                                        Horse Discussion
+ER                                                           ER hit soap
+ESPRIT                                                       Esprit new age thinking and acti
+EVOLUTION                                                    Evolutionary mechanism theory di
+E_ECHO                                                       Amiga-E Programming Conference
+F&SF.UK                                                      Fantasy & Science fiction (uk)
+F-VGA_PLANETS                                                Discussion of VGA Planets by Tim
+FANTASY.281                                                  FANTASY.281
+FARMING                                                      Farm Life and Production
+FAROUT                                                       For discussing far-out things
+FCC                                                          Radio and data telecommunication
+FDECHO                                                       FrontDoor Mailer Support
+FDECHO_UK                                                    Front door echo (uk)
+FDN_ANNOUNCE                                                 File distribution networks and a
+FEMINISM                                                     Feminism and gender issues
+FE_HELP                                                      The FastEcho Mailprocessor
+FIBROM                                                       Fibromyalgia fibrositis discussi
+FIDO2INT                                                     Support Echo for FIDO2INT mailer
+FIDOBBS                                                      FidoBBS Software Support &
+FIDOGEN                                                      Fidonet genealogy sysop discussi
+FIDONEWS                                                     Fidonews discussion echo
+FIDOWEB                                                      FidoNet Web Page Conference
+FIDOWORK                                                     The fidonet Workshop
+FILEFIND                                                     ALLFIX international FILEFIND ec
+FILEMGR                                                      FILEMGR
+FILE_MOVERS                                                  FILE MOVERS
+FILE_REQ                                                     File and FDN announcement echo
+FILK                                                         Science fiction fannish folksong
+FILM                                                         Film & Movie review
+FIRE&RESCUE                                                  FIRE&RESCUE
+FIREARMS                                                     Firearms technical not polotics
+FIRENET                                                      Fire and Emergency Medical
+FISHING                                                      Fishing discussions of all kinds
+FITNESS                                                      Health and fitness discussions
+FLAT_TAX                                                     Discussion of taxation issues
+FLYING                                                       International flying echo
+FMAIL_HELP                                                   FMail Mail Processor
+FNOS_HELP                                                    FNOS version of KA9Q with modifi
+FN_SYSOP                                                     Fidonet sysops conference sysops
+FOR-SALE                                                     National for sale echo
+FOSTER                                                       Foster Care Issues
+FOXPRO                                                       FOXPRO programming language
+FRANCAIS                                                     For French speakers
+FRANCENET                                                    General Chat. French Language
+FREE25                                                       FREE25
+FREEMAIL                                                     FreeMail and A/Mail Support Echo
+FREEMASON                                                    Freemasonry
+FREE_BIBLE                                                   Free bible discussion area
+FREE_SPEECH                                                  Freedom of speech and expression
+FRIENDS                                                      FRIENDS
+FRONTDOOR_APX                                                FRONTDOOR Apx support conference
+FRONTIER                                                     FRONTIER
+FS                                                           FS
+FS3                                                          MS Flight Simulator discussion
+FTN_PROGS                                                    FTN Programming
+FTP_FIDO                                                     Fidonet FTP chat and queries
+FTSC_PUBLIC                                                  Fidonet technical standards publ
+FUNNY                                                        FUNNY Jokes and Stories
+F_SYSLNGE                                                    UK sysops discussion (inc
+GAF.CHAT                                                     German American friendship echo
+GAMEDEV                                                      Game Development Echo, The
+GAMES4SALE                                                   Games for sale
+GAMING                                                       International Personal Computer
+GAMING_UK                                                    Personal Computer Gaming
+GAYLINK                                                      Gay topic discussion conference
+GAYNEWS                                                      Gays/Lesbians News Echo.
+GAYTEEN                                                      Gay Teenager forum for teenagers
+GAY_CHAT                                                     Gay issues, discussion & chat
+GAY_FAITH                                                    GAY FAITH
+GAY_PRIDE                                                    GAY PRIDE
+GECHO_HELP                                                   International Gecho support
+GENDATA                                                      Genealogy Data (Tiny Tafels
+GENDER                                                       Gender dysphoria discussion
+GENEA.BNL                                                    BeNeLux Genealogy
+GENEALOGY                                                    North American Genealogy
+GENEALOGY.CDN                                                Canadian Genealogy
+GENEALOGY.EUR                                                Genealogy And Family History
+GENE_CHAT                                                    GENE CHAT
+GENSOFT                                                      Genealogy software conference
+GENSYSOP                                                     For Sysops taking Genealogy
+GEN_RES                                                      Genealogy researchers
+GEOWORKS                                                     Geoworks ensemble help echo
+GIGO                                                         Support for GIGO Gateway
+GOLDED                                                       GoldEd message editor support
+GOLDED.BETA                                                  Support for Beta/Gamma Versions
+GOP_POLITICS                                                 Grand Old Party
+GOTHIC.UK                                                    Gothic Chat
+GOURMET                                                      Gourmet Cooking
+GRAMPS_ECHO                                                  Clean chat about current events
+GRAND_PRIX                                                   F1 Grand Prix Racing
+GRAND_PRIX                                                   Formula one Grand Prix chat
+GRAND_ROUNDS                                                 Grand rounds medical information
+GRAPHICS                                                     Discussions, programming, tips,
+GRASSROOTS                                                   Grassroots political conference
+GUITAR                                                       Guitar/Bass Guitar topics
+GUN_CONTROL                                                  Gun Control and crime control
+HAM                                                          Amateur Radio interest
+HAM-SALE                                                     Ham radio equipment sale swop an
+HAM_REQ                                                      Amateur radio file announcements
+HAM_TECH                                                     Amateur (ham) radio technical co
+HAPPY_HARDCORE                                               Happy Hardcore (Techno, Jungle,
+HARDWARE                                                     HARDWARE
+HARLEY_DAVIDSON                                              Harley Davidson motorcycle discu
+HAYES                                                        Hayes modems discussion
+HDCONF                                                       Hard drive conference
+HDCONF_UK                                                    UK Hard drive conference
+HDSALE                                                       Buying and selling of Hard drive
+HEINLEIN                                                     Heinlein the author works ideas
+HELPLINE                                                     HELPLINE
+HELP_MANKIND                                                 Help mankind
+HERBS-N-SUCH                                                 The herbal conference
+HERMES_SYSOPS                                                Hermes II BBS operators support
+HIGHLANDER                                                   Highlander TV Movies Books
+HISTORY                                                      The History conference
+HOBBIES                                                      Hobbies discussion!
+HOCKEY                                                       North American hockey echo
+HOLISTIC                                                     Holistic thought and lifestyle
+HOLYSMOKE                                                    Religion debate echo
+HOLY_BIBLE_FCS                                               Respond to posts in the Holy Bib
+HOME-N-GRDN                                                  Homes & gardens
+HOMEPOWR                                                     Alternative energy systems and h
+HOMESCHL                                                     Home schooling support
+HOME_AUTOMATION                                              Home Automation/X10 & Security
+HOME_COOKING                                                 Home Cooking and Related Topics
+HOME_OFFICE                                                  Home office echo
+HOME_REPAIR                                                  Home repair and construction
+HOTROD                                                       Hot Rod
+HOT_SITES                                                    Hot sites on the Internet
+HP                                                           Hewlett-Packard Technical Issues
+HS_MODEMS                                                    High Speed modems
+HTMLEDIT                                                     Html editing discussions
+HUMOR                                                        THE JOKERS KORNER, a read/only
+I&UK_GENE                                                    I&UK GENE
+I95                                                          Cruising Interstate I95
+IBBSDOOR                                                     InterBBS DOORgame discussion
+IBM                                                          IBM
+ICEUTILS                                                     ICEUTILS is the official Ice
+ICGAL                                                        Issues concerning gays and lesbi
+IMAGES                                                       IMAGES
+IMAIL_HELP                                                   International IMAIL support area
+INDIAN_AFFAIRS                                               Native American and indigenous p
+INDIE                                                        INDIE Music
+INFOMAIL                                                     Infomail Support echo
+INK                                                          Desktop publishing & word proces
+INTBBS_WK                                                    International BBS Week echo
+INTERBBS                                                     Inter BBS games scores and chat
+INTERCOOK                                                    International Cookery Recipes
+INTERFAITH                                                   Interfaith religeous dicussions
+INTERGREEK                                                   Int'l Greek Conference (English
+INTERNAT                                                     International non-computer chat
+INTERNAT_UK                                                  UK Overspill From the INTERNAT
+INTERNET                                                     For discussion on the internet f
+INTERNET_UK                                                  Internet discussion (uk)
+INTERUSER                                                    International user chat forum
+INVENTIONS                                                   Ideas and inventions
+INVEST                                                       International investors forum
+ISDN                                                         ISDN
+ISDN.EUR                                                     For the discussion of ISDN in
+ISDN_UK                                                      ISDN UK
+ITALIANO.GEN                                                 Italian Genealogy Conference
+IZA.TOC                                                      IZA.TOC
+I_AMSTRAD_8BIT                                               I AMSTRAD 8BIT
+I_UFO                                                        UFO`s Science, Alien contact
+JDSSOFT                                                      John Dailey Software support
+JEWISHGEN                                                    Jewish genealogy
+JFK_ASSN                                                     John F Kennedy assisination conf
+JOURNAL                                                      JOURNAL
+JUDAICA                                                      JUDAICA
+KAG                                                          The Klingon Assault Group Echo
+KATTY_KORNER                                                 A Must for cat lovers
+KERRANG                                                      Discussion of Rock/Metal Music
+KIDS                                                         International kids conference
+KLINGON                                                      Star trek klingon discussions
+KLINGON_RPG                                                  Klingon Role-Playing Game Echo
+KOMBUCHA                                                     Discussion of manchurian mushroo
+KRAP_LINKS                                                   KRAP_LINKS
+LAN                                                          Local-Area/Wide-area Networks
+LAND                                                         Land of devastation echo
+LANDROVER_UK                                                 LANDROVER_UK
+LANTASTI                                                     LANtastic network software
+LAW                                                          Legal issues conference
+LAW_&_ORDER                                                  Law enforcement issues
+LAW_DISORDER                                                 "Law and disorder" discussion ar
+LA_FOR_SALE                                                  LA FOR SALE
+LEGAL_LAW                                                    Legal law conference
+LIBRARY                                                      LIBRARY
+LIB_NW                                                       Liberty Northwest conference
+LIMBAUGH                                                     International fans of rush limba
+LINUX                                                        Linux Operating System (Fidonet
+LINUX_UK                                                     Linux - *free* Unix OS for PCs
+LOCAL_MUSIC                                                  Local Music
+LORA                                                         The official LORAbbs support ech
+LORD                                                         Legend of the Red dragon chat ec
+LORD_SYSOP                                                   Lord sysops and IGM conference
+LORE                                                         LORE
+LOTUS                                                        LOTUS
+LOVE_&_MARRIAGE                                              The relationship conference
+LOW-FAT                                                      Low fat and special diet cooking
+LYRICS                                                       The fidonet International lyrics
+MAC4SALE                                                     Macintosh items for sale/wanted
+MACCOMM                                                      Macintosh telecommunications
+MACDEV                                                       Macintosh development
+MACHW                                                        Macintosh hardware support and d
+MACHYPE                                                      MACHYPE
+MACSW                                                        Macintosh software support and d
+MACSYSOP                                                     Macintosh sysops
+MACUK                                                        UK Apple Macintosh discussion
+MACWOOF                                                      Macintosh offline software suppo
+MAC_GAMES                                                    Macintosh games
+MAC_TELEFINDER                                               MAC TELEFINDER
+MAGICK                                                       MAGICK echo
+MAIL_80                                                      MAIL 80
+MAINDOOR                                                     MAINDOOR
+MALUM_PROHIBITUM                                             Discussion of laws against conse
+MARKET                                                       Commercial Buy & Sell
+MATH                                                         Mathematics echo
+MATHS.ACA                                                    MATHS.ACA
+MAXDEV                                                       Maximus developers and support e
+MAXIMUS_UK                                                   UK-only support echo for Maximus
+MCC_SUPPORT                                                  Multiboard communications softwa
+MCIBTYC                                                      My computer is better than yours
+MCMAIL                                                       International Mcmail support
+MDOOR_HELP                                                   MainDoor Mailer Support
+MEADOW                                                       Opus CBCS software sysops echo
+MEAL-MASTER                                                  Meal-Master Support Conference
+MECCA                                                        MECCA Language for Maximus BBS
+MEMORIES                                                     Nostalgia
+MEMPHIS                                                      Windows 97 echo
+MENSA                                                        Mensa intelligence education and
+MENS_ISSUES                                                  Men`s issues
+MENTAL_HEALTH                                                Mental health
+METAWORLDS                                                   Metaworlds clinet/server softwar
+META_UFO                                                     Metaphysics UFO`s and other chat
+MEXICAN_LINK                                                 Mexicos international link (mult
+MIDI-NET                                                     International MIDI conference
+MIDI-PROGRAMMING                                             MIDI PROGRAMMING
+MIDI.UK                                                      MIDI music/computer interfacing
+MILHISTORY                                                   Military History
+MILITARY_PEOPLE                                              Military Contacts/people
+MILITIA                                                      The states militia`s organised a
+MILLENNIUM                                                   Millenium TV show discussion
+MISSING                                                      National missing persons echo
+MISSING_CHILD                                                MIssing children echo
+ML-BASEBALL                                                  Major league baseball
+MLM                                                          Multi level marketing conference
+MODEM                                                        Discussion of Modems and general
+MODEMS                                                       Modem chat and helpline
+MODERATOR                                                    Moderators echo
+MODERATORS                                                   MODERATORS
+MODERATORS_UK                                                Uk Moderators conference
+MODR8TR                                                      Fidonet moderator/co-moderator e
+MODULES                                                      Music .Mods echo for PC/Amiga
+MONTE                                                        Monty python conference
+MOORCOCK                                                     Michael moorcock discussion echo
+MORMON                                                       MORMON open conference
+MORN_CRES                                                    Mornington Crescent game discuss
+MOTORBIKES_UK                                                Motorbike owners/enthusiasts
+MOTORCYCLE                                                   Anything associated with motorcy
+MSGED_ECHO                                                   MSGED message editor (inc SQ)
+MST3K                                                        Mystery science theatre 3000
+MS_EXCEL                                                     Microsoft Excel Discussion
+MS_IE                                                        Microsoft Internet Explorere
+MS_SUPPORT                                                   Microsoft Support
+MS_WORD                                                      Microsoft word
+MTBIKER                                                      Mountain Biker
+MTG_TRADE                                                    Magic the gathering: trade echo
+MTG_UK                                                       Magic - The Gathering
+MTG_WOC                                                      Magic the gathering and card gam
+MTN_BIKE                                                     Discussion of mountain biking
+MUDMSG                                                       Multi user Dungeon messages
+MUFFIN                                                       Maximus BBS support
+MULT-SCLEROSIS                                               Multiple Sclerosis
+MUPPETS                                                      MUPPETS TV Programme
+MUSE                                                         Muse studio poetry discussion
+MUSIC                                                        Music discussion of all types
+MUSICIAN                                                     For Musicians
+MUSIC_COMP_101                                               MUSIC COMP 101
+MUSIC_CONTACTS                                               Music Contacts
+MUSIC_UK                                                     Music Discussion
+MW_GENE                                                      Midwest USA Genealogy Conference
+MYSTERY                                                      Mystery fiction
+MYTH                                                         Mythology discussion
+MYTHOLOGY                                                    Mythology conference
+M_P_D                                                        Multiple personality disorder su
+NANFE                                                        North american native fish echo
+NASCAR                                                       NASCAR discussion conference
+NATURIST                                                     NATURIST/nudist discussion
+NAT_FLEA_MKT                                                 Hard to find items for sale or t
+NAVY                                                         U.S navy support conference
+NBA_ECHO                                                     National basketball discussion
+NEEDLES_THREADS                                              NEEDLES_THREADS
+NET254                                                       NET254 sysops only
+NET254CHAT                                                   NET254 chat
+NET254FILES                                                  NET254FILES
+NET254POINTS                                                 NET254POINTS
+NETSCAPE                                                     The Netscape discussion and supp
+NETWORK-NEWS                                                 Network Advertisements and News
+NET_DEV                                                      Fidonet network development echo
+NEUROLOGY                                                    Neurology
+NEWAGE_THOUGHT                                               Newage thought and discussion
+NEWMUSIC                                                     Contemporary & Non Mainstream
+NEWSCHAT                                                     Read and discuss Fidonews articl
+NEW_AGE_ECHO                                                 New age discussions
+NEW_SYSOP                                                    Novice sysops' support echo
+NEW_SYSOP_UK                                                 Novice sysops' support echo
+NEXUS                                                        Nexus BBS software support confe
+NFB-TALK                                                     National federation of Blind dis
+NFL                                                          National football league
+NONSPORT_CARDS                                               Non Sport trading cards
+NOPIRACY                                                     Computer piracy discussion area
+NORML                                                        Electronic media marijuana echo
+NOVELL                                                       Novell Netware networking
+NURSES_NETWORK                                               NurseNet International
+NUTRITION                                                    NUTRITION
+OBSOLETE                                                     Computers which are past their
+OFFLINE                                                      Offline readers discussion
+OFF_ROAD                                                     Off road vehicles
+OLDCARS                                                      Old car discussion
+OLD_ENGINE                                                   Old engines discussion
+ON_LINE_GAMES                                                On Line games discussion
+OPEN.UNI                                                     Open University students
+OPENDOORS                                                    OpenDoors online software
+OPEN_BIBLE                                                   Bible discussion
+OS-DEBATE                                                    OS DEBATE
+OS2                                                          IBM OS/2 operating system
+OS2BBS                                                       Running a BBS under OS/2
+OS2BEGIN                                                     Beginners to OS/2
+OS2COMM                                                      Communications under OS2 inc.
+OS2DOS                                                       OS/2 and running DOS
+OS2DOSBBS                                                    Support for DOS-Based BBS
+OS2FORSALE                                                   For sale   OS/2
+OS2GAMES                                                     Running Games Under OS/2
+OS2HW                                                        OS/2 hardware discussion
+OS2INET                                                      The Internet and OS/2
+OS2LAN                                                       Local Area Networks under OS/2
+OS2PROG                                                      OS/2 programmers conference
+OS2REXX                                                      Programming and using REXX under
+OS2VIDEO                                                     Video drivers, hardware &
+OS9                                                          OS9
+OSDEBATE                                                     OSDEBATE
+OTHERNETS                                                    Other FTN networs
+OT_SUPPORT                                                   OT SUPPORT
+OZ_HUMOUR                                                    Humour (Australia)
+P5DRAFT                                                      P5DRAFT
+PACKET                                                       PACKET
+PARANORM                                                     Paranormal discussions
+PARENTS                                                      For Parents, Grandparents, and
+PARROTS                                                      PARROTS
+PASCAL                                                       PASCAL programming
+PASCAL_LESSONS                                               PASCAL LESSONS
+PAUL_REVERE                                                  PAUL REVERE
+PCBNET                                                       PCBoard BBS software Support
+PCBOARD                                                      PCBOARD
+PCBPPL                                                       PCBoard Programming Language
+PCUG                                                         PC Users groups
+PC_ADDICT                                                    PC ADDICTS
+PDNECHO                                                      Programmers Distribution Network
+PENPAL                                                       International Penpals conference
+PENPAL2_UK                                                   Penpal Echo
+PENPAL_UK                                                    PENPAL UK
+PERFECT                                                      PERFECT
+PERL                                                         PERL programming language chat
+PET_CHAT                                                     Chat about your pets
+PGMRS                                                        Programmers conference
+PHARMACY                                                     Medication and pharmaceuticals
+PHIL                                                         Philoshophy discussion
+PHILOSOPHY                                                   PHILOSOPHY
+PHONES                                                       A Telephone Industry Watchdog
+PHOTO                                                        International PHOTO conference
+PHOTOGRAPHY                                                  Photography Discussion
+PHYSICS                                                      PHYSICS Fidonet Conference
+PILOTS                                                       Flying & flight simulation chat
+PINK                                                         Pink Floyd Discussion
+PKEY_DROP                                                    Public Keys drop off echo
+PL.INTERNET.NOWOSCI                                          PL.INTERNET.NOWOSCI
+PLANET_CONNECT                                               PLANET CONNECT
+PLATINUM_XPRESS                                              PLATINUM EXPRESS
+PLAYSTATION                                                  Sony playstation Discussion
+POETRY_WORKSHOP                                              POETRY WORKSHOP
+POHE                                                         POHE
+POINTS                                                       POINTS
+POLISH                                                       POLISH Discussion
+POLITICS                                                     POLITICS Discussion
+PORTAL                                                       Portal of Power FTN mailer
+POWERPC                                                      POWERPC
+POWER_BAS                                                    Power Basic programming language
+PPI_MODEMS                                                   PPI MODEMS
+PRATCHETT                                                    The works of Terry Pratchett
+PREMIER_LEAGUE                                               Soccer
+PROBLEM_CHILD                                                Problem Children
+PROBOARD                                                     ProBoard BBS Support Conference
+PROSE&VERSE                                                  For the posting of original
+PROWRITE                                                     Professional Writers conference
+PRO_AUDIO                                                    PROFESSIONAL AUDIO
+PRO_LIFE                                                     ANTI Abortion chat
+PSION                                                        PSION Handheld computers
+PSION_UK                                                     Psion Handheld computers (UK)
+PUBLIC_KEYS                                                  Discussion of Public-Key
+PUBLIC_PSYCH                                                 PUBLIC PSYCH
+PUNCH                                                        PUNCH
+PUNCH_UK                                                     Light humour and Jokes
+PYRO                                                         National pyrotechnics echo
+PYTHONESQUE                                                  Monty Python Discussion
+P_NEWS                                                       Progressive news and Views
+QEDIT                                                        Semware echo
+QFRONT                                                       QFRONT Support Conference
+QMODEM_USER                                                  Qmodem Users Discussion
+QM_ECHO                                                      QM ECHOmail processor
+QUAKE                                                        Quake the game discussion
+QUANTUMLEAP                                                  QUANTUM Leap the TV show
+QUERIES                                                      QUERIES
+QUICKBBS                                                     QUICKBBS Support echo
+QUICKEN                                                      QUICKEN
+QUICKPRO                                                     QuickBBS Professional Sysop's
+QUIK_BAS                                                     QuickBasic programming language
+QUIK_BAS_UK                                                  Quick Basic Programming Echo
+QUOTES_2                                                     QUOTES 2
+R25C                                                         R25C
+RACING_SIMS                                                  Racing simulation software
+RACING_SPEED                                                 Various Motor Sports
+RADIO_CONTROL                                                Radio Controlled Models
+RADIO_HOBBY-ALL                                              RADIO HOBBY ALL
+RAILFANS                                                     RAILWay Fans
+RAIL_UK                                                      Any non-political chat about
+RANMA_1/2                                                    RANMA 1/2
+RAP_CARE                                                     Rapport Care
+RAR                                                          RAR Archiver Support Conference
+RARE_CONDITION                                               RARE CONDITION
+RA_SUPPORT                                                   RemoteAccess Support Echo
+RBBS-PC                                                      RBBS BBS software (PC) Support
+RCM                                                          Radio Controlled Model II
+READING-ROOM                                                 Serious discussion of general
+REAL_3D                                                      REAL 3D Software support
+REAL_FREE_SPEECH                                             REAL FREE SPEECH
+RECFRP                                                       Role Playing Games....
+RECIPES                                                      The Fidonet Recipes! Echo
+RECOVERY                                                     Recovery from addiction, etc
+REGCON                                                       REGIONAL CONFERENCE
+REGCON.EUR                                                   European Regional Conference
+REGION25                                                     REGION25
+REG_SITES                                                    REG SITES (UK Distribution Only)
+RELOAD                                                       Reloading Rifle, Pistol & Shotgu
+RIBBS                                                        RiBBS (CoCo/OS9) Sysop Support
+RIGHTS                                                       Gender equality and rights
+RIGHTS_RONGS                                                 Political Rights and Wrongs
+ROBOTECH                                                     ROBOTECH Animated series Discuss
+ROFC                                                         Republic of Foots Cray
+ROK                                                          Realm of Kisom Support
+ROMULAN_STAR_EMPIRE                                          ROMULAN STAR EMPIRE
+RPG                                                          More Role playing games chat
+RPG_GENERAL                                                  RPG GENERAL
+RTKBA                                                        Gun rights/Gun Control discussio
+R_CATHOLIC                                                   Roman catholic issues and chat
+SACRED_MAGICK                                                Discussion about MAGICK and its
+SAILING                                                      SAILING
+SAILOR_MOON                                                  SAILOR MOON Discussion and fan e
+SALVATION_ARMY                                               SALVATION ARMY
+SATELLITE                                                    SATELLITE
+SAT_TV_EUROPE                                                SAT TV EUROPE
+SB-E/N/L                                                     SPace bases read only newsletter
+SB-NASA_NEWS                                                 SpaceBase's READ ONLY Nasa News
+SB-NASA_TECH                                                 Space Base read only Tech news
+SB-QUESTIONS                                                 Space base discussion echo
+SB-SAT_TRACK                                                 Space Base READ ONLY satellite
+SB-SOLAR_RPT                                                 SB Solar activity reports and di
+SB-SYSOPS                                                    Space base Sysop only Conference
+SB-WORLD_NWS                                                 Space Base World news
+SB_UK                                                        Sound Blaster support echo
+SCANRADIO                                                    Radio scanner chat
+SCI&TECH                                                     Science and technical issues
+SCIENCE                                                      National Science Echo
+SCIENCE.UK                                                   General scientific discussion
+SCN-CHEAT                                                    Game tips and cheats
+SCOUTER                                                      International Scouting Conferenc
+SCOUTING                                                     International Scouting
+SCUBA                                                        Scuba divers Conference
+SCULLY                                                       Gillian Anderson Fan Club
+SEARCHLIGHT                                                  SEARCHLIGHT BBS software
+SENIOR_CLASS                                                 SENIOR CLASS
+SET                                                          Setian discussions (base of set)
+SEW_&_QUILT                                                  Sewing and Quilting by hand or m
+SE_GENEALOGY                                                 Dixieland genealogy
+SF                                                           Science Fiction Literature
+SF&ANIME_RPG                                                 SF&ANIME  role playing games
+SFFAN                                                        Science Fiction fans
+SHAREWARE_SUPPORT                                            SHAREWARE SUPPORT
+SHAREWRE                                                     SHAREWRE
+SHARING                                                      SHARING
+SHARP_POINTS                                                 SHARP POINTS
+SHORTWAVE                                                    SHORTWAVE
+SIERRAN                                                      SIERRAN
+SILENTTALK                                                   SILENTTALK
+SILVER_XPRESS                                                SILVER XPRESS  support
+SIM                                                          Simualtions discussion
+SIMPSONS                                                     The Simpsons TV program
+SINGLE_DADS                                                  SINGLE DADS
+SINGLE_MOMS                                                  SINGLE MOMS
+SINGLE_PARENT                                                SINGLE PARENT
+SIP_AA                                                       Recovery From Alcoholism
+SIP_ACA                                                      Adult Children of Alcoholics
+SIP_ALANON                                                   Al-ANON RECOVERY
+SIP_INCEST                                                   Incest survivors Conference
+SIP_MPD                                                      Multiple personality disorder
+SIP_NA                                                       Narcotics Anonymous
+SIP_SSAS                                                     Spouses of Sexual Abuse
+SIP_SURVIVOR                                                 SIP SURVIVOR
+SKEPTIC                                                      SKEPTICAL enquiry echo
+SLEEP_APNEA                                                  SLEEP APNEA and your life
+SLIDERS                                                      SLIDERS TV Program discussion
+SMEG                                                         Red Dwarf discussion
+SMOKERS_RIGHTS                                               SMOKERS RIGHTS
+SNETNEWS                                                     Patriot News and information
+SOAPS                                                        TV Soaps discussion
+SOUNDCARD                                                    SOUNDCARD support
+SOUNDOFF                                                     SOUNDOFF
+SOUTH_TEXAS                                                  SOUTH TEXAS
+SPACE                                                        SPACE
+SPECTRUM                                                     SPECTRUM
+SPINAL_INJURY                                                Spinal Cord Injury Topics
+SPIRITUAL                                                    Spirituality and world peace
+SPITFIRE                                                     Global spitfire BBS support echo
+SPITFIRE_CHAT                                                Global Spitfire BBS chat
+SPORTS                                                       SPORTS Discussion
+SPORTS_UK                                                    SPORTS UK
+SPOT                                                         Spot Support Echo
+SRGAMES                                                      Disussion of the Patels SRGAMES
+STAMPS                                                       STAMPS
+STARTREK                                                     Star Trek Role Playing Echo
+STARTREK_CCG                                                 Star Trek Customizable Card
+STARTREK_RPG                                                 STARTREK Role playing games
+STARWARS                                                     STARWARS Film discusion
+STARWARS_UK                                                  STARWARS UK
+STAR_TREK_VOYAGER                                            STAR TREK VOYAGER TV program
+STATESIDE_PENPALS                                            UK <-> US Penpal Link
+STDSN                                                        Star Trek Deep space Nine
+STOCK_MARKET                                                 STOCK MARKET
+STOP_SMOKING                                                 STOP SMOKING
+STRATEGY                                                     STRATEGY
+STRESS_MGMT                                                  STRESS Management discussion
+STTNG                                                        Star Trek the next generation
+STUDENT                                                      STUDENT
+ST_PROG                                                      ST PROGRAMMING
+SUPRA                                                        SUPRA Modems discussion
+SUPRAFAX                                                     SUPRAFAX modems discussion
+SURVIVOR                                                     Cancer/leukemia coping with adve
+SYNCDATA                                                     Synronet distribution database
+SYS4SALE                                                     Sysop for sale area
+SYSOP                                                        SYSOPS Only
+SYSOPS                                                       SYSOPS
+SYSTEM7                                                      Macintosh SYSTEM7 Support
+S_KING                                                       S_KING
+T-MAIL.SUPPORT                                               International T-MAIL Mailer
+T1-LINX                                                      Nodes connected to TRAK-ONE
+TABLATURE                                                    Guitar Tablature echo
+TAG                                                          T.A.G BBS support echo
+TAGLINES                                                     TAGLINES
+TAGLINES_UK                                                  Taglines and Tagmanagers
+TAGMULTI                                                     TAGMULTI
+TBBS                                                         TBBS Support Conference
+TCPIP                                                        Transport Control
+TEAMOS2                                                      OS/2 User Groups & Promotion
+TECH                                                         TECHnical Conference
+TEEN                                                         TEENAgers discussion area
+TEEN_SYSOP                                                   TEENAGE Sysops
+TELEMATE                                                     TELEMATE fidonet conference
+TELIX                                                        Telix Users Information Exchange
+TEL_TECH                                                     TEL TECH
+TENNIS                                                       TENNIS
+TENN_GEN                                                     Tennessee genealogy
+TEN_PIN                                                      Ten Pin Bowling discussion
+TERMINAT                                                     TERMINATE support conference
+TERMINATE_UK                                                 Terminate (UK) Support
+TG_SUPPORT                                                   TG SUPPORT
+THDPRO                                                       THDPROscan support conference
+THE-BIBLE                                                    THE BIBLE
+THE-TUBE                                                     Helpline for newcomers to comms
+THEIST_WATCH                                                 American Atheist watch
+THERAPY_SERVICE_DOG                                          Discussion of therapy
+THE_CURE_NETWORK                                             THE CURE NETWORK
+TI-ECHO                                                      Texas instruments topics
+TOONS                                                        Cartoons
+TOTT                                                         Turn on to teens
+TOTT_ROCK                                                    TOTT ROCK
+TOTT_SOS                                                     TOTT SOS
+TOTT_SYSOP                                                   TOTT SYSOP
+TOURETTES                                                    TOURETTES Syndrome support
+TRADE_WARS                                                   Trade Wars game discussion
+TRAINS                                                       TRAINS
+TRAK-ONE-FILES                                               TRAK-ONE-FILES
+TRANSAMIGA                                                   TRANSAMIGA
+TRANSATLANTIC_TALK                                           TRANSATLANTIC TALK
+TRANSPORT                                                    Public Transport Discussions
+TRAPDOOR                                                     TRAPDOOR Support echo
+TRAVEL                                                       National/International Travel
+TREK                                                         TREK
+TREK.UK                                                      TREK.UK
+TREKTECH                                                     TREKTECH
+TREK_CREATIVE                                                TREK CREATIVE
+TREK_FOR_SALE                                                TREK FOR SALE
+TREK_HUMOR_FILK                                              TREK HUMOR
+TREK_RANKS_UK                                                Star Trek RANKS Discussion/Chat
+TREK_VOYAGER                                                 TREK VOYAGER
+TRIBBS                                                       TRIBBS
+TRI_SYSOP                                                    TRI SYSOP
+TRS-MOD134                                                   TRS MOD134
+TUB                                                          Squish echomail processor
+TV                                                           General discussions about televi
+TVRO                                                         Satellite television echo
+UFGATE                                                       Usenet fidonet gating methods
+UFO                                                          Unidentified flying objects
+UK-OFFTOPIC                                                  UK-OFFTOPIC
+UK_FILE_DIST                                                 UK FILE DISTRIBUTION
+UK_FILE_FIND                                                 UK FILE FIND
+UK_SALES                                                     UK Unrestricted Buying and
+UNIX                                                         UNIX
+USA_EURLINK                                                  USA EURLINK
+USR_MODEMS                                                   USR MODEMS
+USR_SPORTSTERS                                               Technical Discussions of USR
+VAX                                                          VAX conference for users and
+VBBS                                                         VBBS Technical Support
+VEGAN                                                        For Vegans
+VFALSAC                                                      VFALSAC
+VFIDO                                                        VBBS/FIDO Technical Support
+VGA.PLANETS                                                  VGA.PLANETS game discussion
+VHEAL                                                        Vibrational Healing
+VIA_SOFT                                                     VIA SOFT
+VICARS                                                       VICARS
+VIDEO                                                        Conference for Home Videogame
+VID_GAME                                                     Video games
+VIETNAM_VETS                                                 VIETNAM VETERANS
+VIN_MAISON                                                   VIN MAISON Californain wine
+VIRUS                                                        VIRUS
+VIRUS_INFO                                                   VIRUS INFO
+VIRUS_NFO                                                    VIRUS Discussions,
+VISUAL_BASIC                                                 Visual Basic programming
+W95-FIPS                                                     W95-FIPS
+WARNING                                                      WARNINGS of public Interest
+WC!_CHAT                                                     Wildcat 3rd Party Support and
+WC4DOS                                                       Wildcat for DOS
+WCCODE                                                       Wildcat wcCODE Author Support
+WC_TECH                                                      Wildcat Sysop Technical
+WEATHER                                                      WEATHER Discussions
+WEB-CONSTRUCT                                                WEB Page constructors
+WELFARE                                                      WELFARE And social security
+WGW                                                          Who's got What Enquiries and
+WHIRLYBIRDS                                                  Helicopter chat echo
+WHITEHOUSE                                                   White Housr Press releases (READ
+WHO                                                          WHO
+WHOLLY_BIBLE                                                 Biblical Discussions and related
+WILDCAT                                                      WILDCAT! BBS Sysops Conference
+WILDCAT4                                                     WILDCAT BBS DOS versions only ch
+WILDCAT5                                                     Wildcat5 Discussion and support
+WILDLIFE                                                     Wildlife and Natural History
+WILDRNSS                                                     Wilderness travel
+WIN.SYSOP                                                    Windows sysop conference
+WIN32                                                        Microsoft WIN32 operating system
+WIN95                                                        Windows 95
+WINDOWS                                                      WINDOWS
+WINDOWS-NT                                                   WINDOWS NT discussion and suppor
+WINDOWS-NT_BBS                                               WINDOWS-NT BBSDiscussion forum
+WINDOWS.PROG                                                 WINDOWS Programming
+WINDOWS_UK                                                   WINDOWS_UK
+WIN_95                                                       Windows 95 Discussion
+WIN_ACCESS                                                   Microsoft Access for Windows
+WNFOSSIL                                                     WinFOSSIL Support
+WOODYS_LINKS                                                 Woodys FTP and FTSC Links
+WORDSTAR                                                     WORDSTAR
+WORDS_WORDS                                                  The fidonet words conference
+WORKBENCH                                                    WORKBENCH
+WORLDTLK                                                     WORLD TALK
+WP-CRAFT                                                     WP-CRAFT
+WPERFECT                                                     Wordperfect products discussion
+WRESTLE_RPG                                                  WRESTLE_RPG
+WRESTLING                                                    Fido pro Wrestling (FPW)
+WRESTLING_CHAT                                               Wrestling chat echo
+WRITING                                                      Fdionet writing conference
+WUNDERMENT                                                   Filk Faere anachrony anarchy sf
+WWW-PGRMRS                                                   Discussion of WWW programming
+X-FILES                                                      X-FILES TV show discussion
+X00_USER                                                     X00 Fossil echo
+XENIA                                                        International Xenia Support
+XPOINT_UK                                                    Crosspoint UK support
+X_FILES                                                      X_FILES
+YOUNG_ADULT                                                  A place for the young at heart t
+Z1_BACKBONE                                                  Zone 1 mail backbone - users
+Z1_CHAT                                                      Zone 1 general chat
+Z1_ELECTION                                                  Fidonet Zone 1 current election
+Z1_POLITICAL                                                 Zone 1 fidonet Polotics discussi
+Z3_ECHO_NEWS                                                 Echo news   (NZ)
+ZEC                                                          Zone 1 echomail co-ordinators co
+ZMODEM                                                       ZMODEM
+ZONE3_CHAT                                                   ZONE3_CHAT
+ZONE3_SPORT                                                  ZONE3_SPORT
+ZONE3_SYSOP                                                  ZONE3_SYSOP
+ZONE3_TECH                                                   ZONE3_TECH
+ZOOM                                                         The Zoom Modems echo
+ZOOM_MODEM                                                   Hints & Advice for Zoom Modem
+ZYMURGY                                                      Beer Homebrewing
+ZYXEL                                                        ZyXel modem support

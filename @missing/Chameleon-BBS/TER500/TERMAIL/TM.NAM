@@ -1,0 +1,56 @@
+%
+% ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+% ³ °°°° TerMail Name Data File °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+% ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+%
+% This is a file containing a list of fast names you use a lot.
+% You only need to enter the part before the first comma and TerMail
+% will scan through all your *.NAM files and select the first match it
+% finds.
+% If you have several names which you want to find "fast" rather than
+% searching through nodelists, consider using the Address Book feature
+% instead. The latter is particularly relevant if you have two or more users
+% with the same first name.
+%
+Syntax,To-Name,To-network-Address,Subject/*File,[Crash]
+%
+% Please note: The Crash flag is optional, (Crash = Send directly)
+%              If Subject starts with a *, then file attach is assumed
+%
+
+% Areafix,Areafix,2:236/111,Password,Crash
+% FileFix,FileFix,2:236/111,Password,Crash
+% AllFix,AllFix,2:236/111,Password,Crash
+
+%
+% Send file when entering "Help" in the TO-field
+%
+
+Help,Help me,1:0/0,*C:\AUTOEXEC.BAT
+
+% Terminate registration sites
+
+Argentina,Rodolfo Bordenave,4:901/124,,Crash
+Australia,Maurice Melrose,3:634/382,,Crash
+Ausi,Michael Doyle,3:690/442,,Crash
+Belgium,Eric Vaneberck,2:293/2009,,Crash
+Brazil,Fabio Becker,4:805/4,,Crash
+Britain,Steve Stacher,2:443/888,,Crash
+UK,Steve Stacher,2:443/888,,Crash
+Canada,Wayne Terry,1:163/312,,Crash
+Danmark,Erik Andersen,2:254/261,,Crash
+Finland,Thomas Raehalme,2:220/470,,Crash
+Suomi,Thomas Raehalme,2:220/470,,Crash
+France,Philippe Cheve,2:320/201,,Crash
+Germany,Andreas Streit,2:2453/750,,Crash
+Holland,Arthur Mol,2:283/531,,Crash
+Israel,Danny Ruff,2:403/100,,Crash
+Italy,Daniele Di Marzo,2:332/103,,Crash
+Italia,Andrea Sibaldi,2:332/103,,Crash
+New Zealand,Selwyn Arrow,3:772/185,,Crash
+Norge,Rune Johansen,2:210/20,,Crash
+Schweiz,Michael Dreier,2:301/414,,Crash
+Spain,Ricardo Curto,2:340/24,,Crash
+Sverige,Mikael Winterkvist,2:205/442,,Crash
+USA,Andy Roberts,1:109/921,,Crash
+

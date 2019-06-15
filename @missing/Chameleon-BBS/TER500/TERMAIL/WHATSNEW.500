@@ -1,0 +1,72 @@
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ °°°° TerMail history °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+TerMail start date            : 1. October 1993
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ °°°° How to read this document °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ +  = New feature
+ -  = Removed feature
+ *  = Changed feature for the better
+ !  = Fixed feature
+ #  = Information
+{+} = Registered feature activated in Professional version only
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ °°°° 5.00  Release date: 30-Jul-1997 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+# THE BIGGEST IMPROVEMENT IN TERMAIL EVER!!!
+  A NEW GENERATION OF FIDONET MAIL-READER IS BORN!!!
+
++ INTERNAL-MESSAGE-EDITOR now built-in.
+  Insert the keyword InternalMsgEditor and if you do not want to use
+  an external editor. Help is on F1.
+  Scrollbar, margin etc. can be defined.
+  In other words, the Fidonet mailreader that has everything you will ever
+  need for reading and writing mail.
+
++ Everything is much faster....
++ Internal autocorrect function TM.CRT will correct up to 500 words/group
++ Alt-Z MEGA search, will search all conferences and save result.
++ Signature manager on F5 in internal editor (TM.SIG)
++ Best message reformatting using TM.RFM definitions also on Ctrl-B
+  Mew keywords: ReformatQuotes and ReformatAsk
++ Increased maximum number of areas from 500 to 1000
++ Advanced MOUSE support, including fileattach, viewfiles, help etc.
++ Quote warning level can be defined, 50% percent default
+* Increase reading of JAM-indexes by 700% meaning that scanning your JAM-areas
+  on a network drive will now work much faster.
++ Stylecolors. 15 different colors in your messages to substitute bold,
+  italic, underline and reverse and combinations. Press Alt-Y to insert in
+  internal message editor.
++ Support for the new JAR (.J) and ACE (.ACE) format for packing/unpacking mail
++ Higlighting of internet email addresses, www pages and ftp sites.
++ Call spellchecker directly in internal editor
++ SendLog, keeps track of all the messages you write
++ ROT13 encryption/decryption on Alt-U
++ Import markers inserted when importing files into internal editor
++ Addressbook group handling (G)
++ Addressbook sorting in 6 ways (G)
++ Addressbook now has www-homepage and can call up the web-browser
++ Search for www-pages inside message and call web-browser directly
++ New function Alt-M, Uplink maintenance
++ Searchword in text will now FLASH making it easier and faster to locate
++ GIF-kludge support enabled
++ Support for external utilities with MSGINFO.SYS created before message
++ Alt-T will edit message text directly
++ You can now start in the arealist function when you enter an area
++ Default directory file-attach/import file can be defined
++ More information on area statistics including quote-ratio
++ HIDE command in TM.BBS will not show area in area-selection menu
++ Semaphores: TMRESCAN.NOW, TMFREEZE.NOW, TMNOTE.NOW
++ F11 now allow you to search the nodelist with keyword or address
++ KeepSoftReturns, do not strip #141 (soft-returns) from messages
++ New keyword: NeverToss. Never toss incoming mail or ask.
++ /LINK will link all areas. /LINK areaname will only link 1 area
+* Searchmenu can now search both forward and backwards
+

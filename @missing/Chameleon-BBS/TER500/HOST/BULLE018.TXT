@@ -1,0 +1,17 @@
+[?7h[40m[2J[0m
+
+[29C[0;1;36m    TERMINATE
+
+[29C[0;36mThe Final Terminal
+
+[5C[37mThe hostmode is just one of the many unique features in [1;33mTERMINATE[0m.
+
+[9C[1;33mTERMINATE [0mis an advanced [1mDatacomms Terminal Program [0mwith:
+
+    [1;36mþ [0;36mAutomatic Modem Installation[6C[1mþ [0;36mContext-Sensitive Online Help
+    [1mþ [0;36mComplete Fax Send & Receive[7C[1mþ [0;36mAutomatic Logins (IEMSI)
+    [1mþ [0;36mNetwork Support (Int 14h)[9C[1mþ [0;36m10 Built-In Transfer Protocols
+    [1mþ [0;36mMany Terminal Emulations[10C[1mþ [0;36mAdvanced Cost Calculation
+    [1mþ [0;36mSmartNote - Screen Grabbing[7C[1mþ [0;36mFidoNet Point System Package
+
+[6C[1mþ [0mDownload [1;33mTERMINATE [0mTODAY to see what you have been missing!!![0m

@@ -1,0 +1,73 @@
+%
+% ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+% ³ °°°° Terminate keyboard definition °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+% ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+%
+%            Default order: AFTDUHINLECMRPBSOKG0123456
+%                                    1         2
+%                           12345678901234567890123456
+%
+%           To disable a hotkey completely replace key with |
+%
+
+%
+% Main menu
+%
+% If you change any of these hotkeys, please remember to change the
+% ANSI/ASCII menus.
+%
+
+01 A           ;  A    Areas
+02 F           ;  F    Files
+03 T           ;  T    Type
+04 D           ;  D    Download
+05 U           ;  U    Upload
+06 H           ;  H    HD-free
+07 I           ;  I    Info-HD
+08 N           ;  N    New dir
+09 L           ;  L    Locate
+10 E           ;  E    Erase
+11 C           ;  C    Chat
+12 M           ;  M    Message
+13 R           ;  R    Read
+14 P           ;  P    Public files
+15 B           ;  B    Bulletin
+16 S           ;  S    Setup user
+17 O           ;  O    ANSI on/off
+18 K           ;  K    Kill host
+19 G           ;  G    Goodbye
+20 0           ;  0    External utility 0
+21 1           ;  1    External utility 1
+22 2           ;  2    External utility 2
+23 3           ;  3    External utility 3
+24 4           ;  4    External utility 4
+25 5           ;  5    External utility 5
+26 6           ;  6    External utility 6
+
+%
+% Example to disable bulletin menu
+% 15 |
+
+%
+% Various questions
+%
+% If you change any of these hotkeys, please remember to change T-TEXT.BBS
+%
+
+50 YN=         ;  YN=   More (Y/n/=)
+51 GA          ;  GA    (G)oodbye after transfer  (A)bort
+52 YN          ;  YN    Download waiting file (Y/n)
+53 YN          ;  YN    Waiting file transfered correctly (Y/N)
+54 YNR         ;  YNR   Try again (Y/N) or (R)emove file from queue
+55 YNA         ;  YNA   Download file (y/N) A=All bulletins :
+56 YN          ;  YN    Goodbye (y/N)
+57 YN          ;  YN    Are your answers correct (Y/N):
+58 SA          ;  SA    Message (S)ave, (A)bort:
+59 YN          ;  YN    Do you want to attach a local file (y/N)
+60 YN          ;  YN    Delete file after download (y/N)
+61 YN          ;  YN    Also read messages written by you (y/N)
+62 CDR         ;  CDR   (C)ontinue, (D)elete, (R)eply...
+63 YN          ;  YN    Did you enter the name correctly (Y/n)
+64 CW          ;  CW    (C) Check Mailbox  (W) Write message
+65 YN=MD       ;  YN=MD More (Y)es, (n)o, (=) nostop, (M)ark files, (D)ownload
+

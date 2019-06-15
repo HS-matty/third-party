@@ -1,0 +1,66 @@
+%
+% ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+% ³ °°°° Terminate hostmode Public file definition °°°°°°°°°°°°°°°°°°°°°°°°°° ³
+% ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+%
+% Many companies could use this feature if they do not want to set up a full
+% support system, but only want to offer a few files like updates, drivers
+% to hardware or perhaps your latest pricelist.
+%
+% This menu will use the PUBLIC.ANS/.ASC however if you do not want to
+% use colors, just delete PUBLIC.ANS and PUBLIC.ASC will always be used.
+%
+% Delete this file if you do not want to use this function at all.
+%
+% You can setup the following in hostmode configuration.
+%
+%  1. Do not show this menu at startup
+%  2. Show menu at startup
+%  3. Allow only this menu for Normal users
+%
+% 3. option can be used if you only want this menu to be available to
+% customers with Normal access and nothing else. This means that you can
+% set up a support BBS with just the few files you deside the customers
+% can get from you and then you will not be bothered with uploads or
+% messages and the users will not need any help downloading.
+%
+% The syntax is simple. Just enter the key to press and the filename. You
+% can use wildcards if you have several files to be sent.
+% After you inserted your files in here, you must edit the PUBLIC.ANS/.ASC
+% and insert the keys and your descriptions. Could it be easier ?
+%
+% SUBMENU's
+% =========
+%
+% You can create up to 5 levels of public menus with the SUBMENU: command.
+% The syntax:
+%
+%   SUBMENU:menuname  (8 characters, no extension)
+%
+% For each sub-menu entry you must have 3 files:
+%
+%  nnnnnnnn.BBS Key-strokes (Same format as this file)
+%  nnnnnnnn.ANS ANSI (You can omit this if you do not want colors)
+%  nnnnnnnn.ASC ASCII
+%
+% Example:
+%
+%   T-PUBLIC.BBS
+%   |- SUBMENU:TERSUB
+%   |  |- SUBMENU:TERM
+%   |  |- SUBMENU:TERMAIL
+%   |  |- SUBMENU:TERFAX
+%   |- SUBMENU:OTHER
+%
+% Do not use the G key, since this is used for logging off (T-HOTKEY.BBS).
+%
+% Maximum 25 lines will be used
+%
+% Key  File to download or wildcard             Description (only for your use)
+% |-|  |--------------------------------------| |-----------------------------|
+   P   HOST\PRICELST.TXT                        Our newest pricelist
+   T   GIVEAWAY\*.*                             Terminate program
+   M   SUPPORT\T-??-???.ZIP                     All Terminate manuals
+%  S   SUBMENU:SUPPORT                          Demonstration Sub-menu
+% |--------------------------------------------------END-OF-FILE--------------|
+

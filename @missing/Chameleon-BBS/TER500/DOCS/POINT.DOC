@@ -1,0 +1,86 @@
+
+BECOMING A POINT IN FIDONET
+
+There really is no problem becoming a point in FidoNet. It is, of course, a
+VERY good thing to have a computer and a modem. You don't necessarily need
+a PC - many points are using other machines such as Amigas or Macs, etc.
+
+But it is no secret that on the PC, the choice of mailing software is
+greater and of a higher quality, more secure and more reliable than on any
+other machine - because the software has had more time to develop.
+
+A reason for becoming a FidoNet point (or a point in another network) is
+that it will be easier for you to read conference mail (echomail). Reading
+echomail online is very expensive and by selecting at home which
+conferences you want, you will spend less money calling up systems. You
+will also be able to filerequest (frequest) files - which means you can
+call your Boss and download quickly without having to go through a login
+procedure.
+
+To become a point in FidoNet, contact a Fido node anywhere in FidoNet
+(preferrably close to where you live) and simply ask if the node accepts
+new points. If the node does not accept new points, simply ask another
+node. Right now FidoNet has around 33000 systems connected throughout the
+entire world, so it should not really be a problem to find a system that
+accepts points. It's best to choose a local site, so your phonebill will
+stay as low as possible.
+
+Keeping the phonebill as low as possible is one of the main rules of
+FidoNet!
+
+You should not be charged for being a point off your Boss. You should
+not be charged for getting mail, unless you ask your Boss to get a
+special conference for you. The basic rule in FidoNet is that points
+shouldn't pay. If someone forces you to pay for mail, just change to a
+system where you can get the mail for free.
+Normally only nodes (your Boss) will maybe pay for the mail in some kind of
+costsharing agreement. It is my opinion that no one should make money on
+'selling' mail to points. Just remember you can change your Boss as you
+please if you are not satisfied. Remember that since you are not paying
+anything for the mail, you cannot demand anything from your Boss either.
+The basic rule is: Be nice to your Boss and he will be nice to you. And
+follow the rules in the conferences.
+
+The main rules for FidoNet:
+
+   1) Thou shalt not excessively annoy others.
+   2) Thou shalt not be too easily annoyed.
+
+For more information try requesting POLICY4E.*
+
+To setup a point system you will need 3 important things:
+
+Program                        Suggestions:
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+A mailer                       Terminate point system
+A tosser/scanner/packer        TerMail
+A Message editor               TerMail
+
+The mailer is the program that takes care of actually calling your Boss
+(also called your uplink). A Boss is a Fido node who has points. The
+transfer is fully automatic, you just start the call and the rest will be
+taken care of by Terminate. You can also request or send files with
+Terminate.
+
+The tosser/scanner/packer is a program that will unpack your mail and toss
+it into the right conferences. Then it will scan for outgoing mail and pack
+it for the next time you call your Boss.
+
+The message editor is the part of the system where you switch between
+conferences and read/write your messages. TerMail is the message editor
+included with Terminate: It is rather easy to setup, so start out with this
+editor. When writing messages you will sometimes see :-) or :-( - these
+signs have a special meaning:
+
+         :-)      Smiley, don't take this seriously
+         :-(      Unhappy comment
+
+Please get some help setting up these programs, normally your Boss will
+help you do this, because as a new member of FidoNet you will have to learn
+many new words and terms. Don't EVER let yourself get confused by all the
+systems and new programs you will learn. Many programs are impossible to
+use without a little experience, but we try to keep things as simple as
+possible in Terminate, so stay with Terminate.
+
+Bo Bendtsen, Author of Terminate
+

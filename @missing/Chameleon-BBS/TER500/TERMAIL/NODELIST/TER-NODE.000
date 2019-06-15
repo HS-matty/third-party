@@ -1,0 +1,150 @@
+;
+; Nodelist of Terminate Registration Sites
+;
+; = ZONE 1 = North America ====================================================
+;
+Zone,1
+;
+; 1:109/921, Regsite in USA
+;
+Host,109
+,921,TSR_TERMINATE_SUPPORT_REGISTRATIONS,Luray_VA,Andy_Roberts,1-540-743-2865,9600,CM,XA,HST,V32b,V42b,V32T,VFC,V34
+;
+; 1:163/312 Regsite in Canada
+;
+Host,163
+,312,TERMINATE_REGSITE,Ottawa_ON,Wayne_Terry,1-613-739-5672,9600,XA,CM,V34
+;
+; = ZONE 2 = Europa & more ====================================================
+;
+Zone,2
+;
+; 2:236/111 Regsite in Denmark
+;
+Host,236
+,111,DAN_BBS,Bagsvaerd_DK,Erik_Andersen,45-43430062,9600,CM,XA,V34,VFC
+Point,9999,Test_point,All_over_the_world,Your_name_here,-Unpublished-,9600,MO
+;
+; 2:293/2009 Regsite in Belgium
+;
+Host,293
+,2009,Programmer's_Paradise,Jodoigne,Eric_Vaneberck,32-10-813088,9600,CM,XX,H16,V32T,VFC,V34
+;
+; 2:205/422 Regsite in Sweden
+;
+Host,205
+,422,Computer_Security_Center_1,Skelleftea,Mikael_Winterkvist,46-910-52214,9600,CM,XA,V32B,V34,VFC
+;
+; 2:210/20 Regsite in Norway
+;
+Host,210
+,20,BarCode,Nittedal_NO,Rune_Johansen,47-67060007,9600,V32B,V42B,V34,VFC,XX,CM,U,NEC,ENC
+
+; 2:2453/750           German registration site
+;
+Host,2453
+,750,TEAM_TERMINATE_GERMANY_1,Bonn,Andreas_Streit,49-228-7669911,9600,CM,MO,XA,V42B,VFC,V34
+,751,TEAM_TERMINATE_GERMANY_2,Bonn,Andreas_Streit,49-228-7669912,9600,CM,XA,V42B,V34
+,752,TEAM_TERMINATE_GERMANY_ISDN,Bonn,Andreas_Streit,49-228-7669913,300,CM,XA,U,X75
+,753,TEAM_TERMINATE_GERMANY_ISDN,Bonn,Andreas_Streit,49-228-7669912,300,CM,MO,XA,U,X75
+;
+; 2:320/201 Regsite in France
+;
+Host,320
+,201,Hermes_Center_BBS,Quincy_Sous_Senart,Philippe_Cheve,33-1-69-007672,9600,CM,XA,V32B,ZYX,UFAX
+;
+; 2:443/888 UK-EIRE registration site
+;
+Host,443
+,888,The_Snow_Cave,Omagh,Steve_Stacher,44-1662-252228,9600,H16,V34,V32T,VFC,CM
+;
+; 2:220/470 Regsite in Finland
+;
+Host,220
+,470,FINCOMM_SYSTEMS,Riihim{ki,Thomas_Raehalme,358-19-724298,9600,CM,V32B,V42B,XA
+,471,FINCOMM_SYSTEMS_ISDN,Riihim{ki,Thomas_Raehalme,358-19-724234,300,CM,XA,U,X75
+;
+; 2:283/531  Dutch registration site
+;
+Host,283
+,531,The_Owl's_Nest_Support_BBS,Soest,Arthur_Mol,31-35-6023219,9600,CM,XA,H16,V32T,V34,VFC
+,535,The_Owl's_Nest_BBS_#8/10,Soest,Arthur_Mol,31-35-6029691,9600,CM,XA,V32B,V42B,U,X75
+;
+; 2:301/414 Regsite in Schweiz
+;
+Host,301
+,414,SH-Live,Beringen,Michael_Dreier,41-52-6870779,9600,CM,ZYX,V34,XA,U,V110H,X75
+;
+; 2:403/100 Israel registration site
+;
+Host,403
+,100,Online_Today,Ramat_Hasharon_Israel,Danny_Ruff,972-3-5470266,9600,CM,XA,V34
+;
+; 2:332/103 Italy registration site
+;
+Host,332
+,103,Utopia,Pistoia_I,Daniele_Di_Marzo,39-573-368164,9600,CM,V34,VFC,XX,HST
+;
+; 2:340/24 Spain registration site
+;
+Host,340
+,24,Infoservicios_BBS,Las_Palmas,Ricardo_Curto,34-28-260795,9600,XA,CM,V32B,V42B
+;
+; = ZONE 3 = Australia     ====================================================
+;
+Zone,3
+;
+; 3:634/382 & 3:690/442 Regsite in Australia
+;
+Host,634
+,382,Freds_Corner,Carnegie_Victoria,Maurice_Melrose,61-3-9569-4130,9600,V32b,V42b,MNP,CM,XA
+Host,690
+,442,Land_of_OZ_BBS,Australind_WA,Michael_Doyle,61-8-97971-964,9600,VFC,V32b,V42b,XA,CM
+;
+; 3:772/185 New Zealand registration site
+;
+Host,772
+,185,Arrow,Auckland,Selwyn_Arrow,64-9-488-0769,9600,V32b,V42b,CM,XA
+;
+; = ZONE 4 = Latin America ====================================================
+;
+Zone,4
+;
+; 4:901/100 Regsite in Argentina
+;
+Host,901
+,124,New_Age,Olivos_BA,Rodolfo_Bordenave,54-1-797-9713,9600,V32b,V42b,ZYX,XA,CM
+;
+; 4:805/4   Regsite in Brazil
+;
+Host,805
+,4,RS-Net_BBS_N#1,Novo_Hamburgo_RS,Fabio_Becker,55-51-594-3720,9600,XA,V42B,V32B,V34
+
+; = ZONE 5 = Africa        ====================================================
+;
+Zone,5
+;
+; None
+;
+; = ZONE 6 = Asia          ====================================================
+;
+Zone,6
+;
+; None
+;
+; ================================================================ EXAMPLE =
+;
+; 99:999/9999  Dummy node, does not exist only example
+;
+Zone,99,Luna's_landing,The_moon,Spork,999-9-9999999,9600,CM,MO,V32b,HST,V42b,XA
+Host,999,DaneNet,Denmark,Dan_Danny,45-31223912,9600,V32B,CSP,MNP,CM,XA
+,9999,MegaSystems,Classified_location,Jane_Doe,45-99999999,9600,V32B,V42B,CM,XA
+;
+;
+; Example of a pointlist
+;
+Boss,2:236/111
+,9998,Test_point,All_over_the_world,Your_name_here,-Unpublished-,9600,MO
+Point,9999,Test_point,All_over_the_world,Your_name_here,-Unpublished-,9600,MO
+;
+;

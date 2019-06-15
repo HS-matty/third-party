@@ -1,0 +1,36 @@
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ °°°° NEWS.TXT documentation °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+The format of the news file is very easy, just follow the simple rules below
+and you will be making headline news in no time. :-)
+
+The format is important to follow exactly like shown in the example NEWS.TXT.
+
+Line
+1      : Date..                        Max 6 characters   Today/01-Jan/010194
+2      : Short description             Max 29 characters
+3      : News text
+4      : News text
+5      : News text
+6      : News text
+X      : /***/                         End of news marker
+
+Example:
+
+01-Jan                               <---------- Line 1 in NEWS.TXT
+Happy New Year
+
+  We wish you a Happy New Year
+
+/***/
+                 <------------- Next news item starts on this line
+
+In the News text you can insert colour codes like this.
+
+  We wish you a %014Happy%007 New Year
+
+This would make 'Happy' turn yellow. The codes can be obtained from the
+color selection menu inside Terminate.
+

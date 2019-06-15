@@ -1,0 +1,110 @@
+%
+% ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+% ³ °°°° TerMail Conference Definitions °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+% ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+%
+% All the areas you are connected to will be defined using this file. TerMail
+% will of course automatically adopt new areas and insert all the correct
+% information, so you only need to make modifications if special requirements
+% are needed.
+
+% Max 1000 areas can be defined in the same configuration
+
+%
+% Path
+% ====
+%
+% All path names without full drive+path will be expanded to the TerMail-path
+%
+% MSG: ECHO\TERMINAT\      -=> C:\TERMINAT\TERMAIL\ECHO\TERMINAT\
+% JAM: ECHO\TERMINAT       -=> C:\TERMINAT\TERMAIL\ECHO\TERMINAT.JHR
+%
+% Please note that when using MSG areas you must specify the complete path
+% to the directory holding the *.MSG files. When using JAM you must specify
+% both the directory and the name of the JAM-base. Only JAM-base can share
+% the same directory for several message-bases.
+%
+
+%
+% EchoID
+% ======
+%
+% A conference-message has a EchoID (also called Tagname or conference-name).
+% It is a special word like "TERMINAT" which is specified inside the messages
+% to enable TerMail and other tossers of importing the message to the
+% right area. Some QWK-systems use spaces inside the tagnames, which we
+% always recommend to avoid since some software is not able of handling this.
+% In this file spaces will be replaced with ^.
+% TerMail handles EchoID's up to a length of max. 60 characters.
+%
+% Flags
+% =====
+%
+% The flags determine how the conferences are stored/imported/export/
+% maintained. You must at least define a format flag and a type flag.
+%
+%  Messagebase format
+%  ==================
+%  MSG       This area is stored in a MSG message base [DEFAULT]
+%  JAM       This area is stored in a JAM message base
+%
+%  Import/export type
+%  ==================
+%  FIDO      This is a Fidonet-style echomail area     [DEFAULT]
+%            Fido-style packages will be imported and exported.
+%  QWK       This is a QWK area (Quick packet format)
+%            It must be suffixed with a packet name and areanumber
+%            Example: QWK DANBBS 2000 will import from DANBBS.QWK and export
+%            to DANBBS.REP (your replies).
+%
+%  Optional flags
+%  ==============
+%  HOLD      If the HOLD flag is set then no messages will ever be exported
+%            from this area. Use this for special areas where you are not
+%            allowed to write in or just do not ever want mail to be
+%            exported from.
+%  NOSCAN    Do not scan at startup; only when entering area the first time
+%  NOLINK    Do not link this area
+%  HIDE      Hide area-description, groupname and tagname from area selection
+%
+%  Other functions
+%  ===============
+%  @LINE     Make a separator between two areas, used to group areas with a
+%            common subject / group. You can use mixed case and up to 25
+%            characters with several words.
+%            Example: @LINE My Favorite mailareas
+%
+
+% Path                       EchoID                                        Flags
+%--------------------------- --------------------------------------------> |--->--------------------------------------|
+SAVE\NETSAVE                 NETMAILSAVE                                   JAM FIDO HOLD NOLINK
+SAVE\SAVEAREA                SAVEAREA                                      JAM FIDO HOLD NOLINK
+SAVE\YOUWROTE                YOUWROTE                                      JAM FIDO HOLD NOLINK
+SAVE\REMEMBER                REMEMBER                                      JAM FIDO HOLD NOLINK
+
+@LINE Terminate conferences
+
+ECHO\TERMINAT                TERMINAT                                      JAM FIDO
+ECHO\TER_GER                 TERMINATE.GER                                 JAM FIDO
+ECHO\TER_UK                  TERMINATE_UK                                  JAM FIDO
+ECHO\TER_DK                  TERMINAT_R23.PUB                              JAM FIDO
+ECHO\TER_FM                  FM-TERMINATE                                  JAM FIDO
+ECHO\TER_SK                  SK_TERMINAT                                   JAM FIDO
+ECHO\TER_ITA                 TERMINATE.39                                  JAM FIDO
+ECHO\TER_FIN                 TERMINAT.FIN                                  JAM FIDO
+ECHO\TER_SWE                 R20_TERMINATE                                 JAM FIDO
+ECHO\TER_DUT                 TERMINAT.028                                  JAM FIDO
+ECHO\TER_SPA                 R34.TERMINATE                                 JAM FIDO
+ECHO\TER_BRA                 TERMINATE.BR                                  JAM FIDO
+
+@LINE Other conferences
+ECHO\FIDO2INT                FIDO2INT                                      JAM FIDO
+ECHO\TEST                    TEST                                          JAM FIDO
+
+@LINE New conferences
+
+%
+% This is where TerMail will auto adopt new areas
+%
+% Path                       EchoID                                        Flags
+%--------------------------- --------------------------------------------- ---------------------------------------

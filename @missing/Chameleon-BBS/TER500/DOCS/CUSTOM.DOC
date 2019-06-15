@@ -1,0 +1,90 @@
+
+Super textmodes
+
+Terminate will allow you to set up your preferred video mode at startup.
+When leaving Terminate, you can reset another mode if you like. Normally
+you will reset to 80x25, but you can do whatever you like. If all register
+values are zero, nothing will change - so you don't have to reset everytime
+you leave Terminate.
+
+SCANMODE in the UTILS\ subdirectory should find all the available
+videomodes for you, but some graphics adapters may need some extra
+information, such as the ones below:
+
+Video Seven FastWrite VGA & 1024i VGA
+
+Col/Rows  AX   BX
+ 80x25   6F05 0003   (Reset)
+ 80x43   6F05 0040   (Set)
+ 80x60   6F05 0043   (Set)
+100x60   6F05 0044   (Set)
+132x25   6F05 0041   (Set)
+132x28   6F05 0045   (Set)
+132x43   6F05 0042   (Set)
+
+TRIDENT TVGA BIOS C.2.1 1024K VGA MODE
+
+Col/Rows AX+BX+CX+DX must be the same
+ 80x25   0003 (Reset)
+ 80x30   0050 (Set)
+ 80x43   0051 (Set)
+ 80x60   0052 (Set)
+132x25   0053 (Set)
+132x30   0058 (Set)
+132x43   0059 (Set)
+132x60   0056 (Set)
+
+TSENG ET-4000
+
+Col/Rows  AX
+ 80x25   0003  (Reset)
+ 80x60   0026  (Set)
+100x40   002A  (Set)
+132x25   0023  (Set)
+132x28   0024  (Set)
+132x44   0022  (Set)
+
+ATI VGA Wonder, ATI VGA Wonder+
+
+Col/Rows  AX
+ 80x25   0003  (Reset)
+132x25   0023  (Set)
+132x44   0033  (Set)
+
+OAK OTI-037, 800 x 600
+
+Col/Rows  AX
+ 80x25   0003  (Reset)
+132x25   0050  (Set)
+132x43   0051  (Set)
+132x60   004F  (Set)
+
+XGA
+
+Col/Rows  AX
+ 80x25   0003  (Reset)
+132x25   0014  (Set)
+
+Orchid Prodesigner VGA
+
+Col/Rows  AX
+ 80x25   0003 (Reset)
+ 80x60   0026 (Set)
+100x40   002A (Set)
+132x25   0024 (Set)
+132x28   0023 (Set)
+132x44   0022 (Set)
+
+Tecmar VGA/AD
+
+Col/Rows  AX
+ 80x25   0003 (Reset)
+132x25   0017 (Set)
+
+Paradise VGA & S3
+
+Col/Rows  AX
+ 80x25   0003 (Reset)
+132x25   0055 (Set)
+132x43   0054 (Set)
+

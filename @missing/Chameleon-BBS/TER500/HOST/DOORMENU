@@ -1,0 +1,30 @@
+
+                       зддTERMINATEдDOORWAYдMENUдд©
+ здддддддддддддддддддддадддддддддIMPORTANTддддддддадддддддддддддддддддддддддд©
+ Ё    Ctrl-U to toggle BIOS or direct screen writes or to refresh screen     Ё
+ цдддбддддддддддддддддбдддддддбддддддддбддддддддбдддддддддддддбдддддддддддддд╢
+ ЁKeyЁ Program        Ё Sound Ё Screen Ё Reboot Ё Fast cursor Ё Print Remote Ё
+ цдддеддддддддддддддддедддддддеддддддддеддддддддедддддддддддддедддддддддддддд╢
+ Ё 1 Ё DOS shell      Ё Yes   Ё Direct Ё Yes    Ё No          Ё Yes          Ё
+ Ё 2 Ё TerMail        Ё Yes   Ё Direct Ё Yes    Ё No          Ё Yes          Ё
+ Ё 3 Ё Filemanager    Ё Yes   Ё Direct Ё Yes    Ё No          Ё Yes          Ё
+ Ё 4 Ё User editor    Ё Yes   Ё Direct Ё Yes    Ё No          Ё Yes          Ё
+ Ё 5 Ё DOS shell      Ё No    Ё Direct Ё Yes    Ё No          Ё Yes          Ё
+ Ё 6 Ё DOS shell      Ё Yes   Ё BIOS   Ё Yes    Ё No          Ё Yes          Ё
+ Ё 7 Ё DOS shell      Ё No    Ё BIOS   Ё No     Ё No          Ё No           Ё
+ Ё 8 Ё DOS shell      Ё Yes   Ё Direct Ё Yes    Ё Yes         Ё Disabled     Ё
+ Ё 9 Ё Return to host Ё       Ё        Ё        Ё             Ё              Ё
+ цдддаддддддддддддддддадддддддаддддддддаддддддддадддддддддддддадддддддддддддд╢
+ Ё   For additional options and documentation, download the Doorway archive  Ё
+ юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+M: Please enter 1-9:
+
+/C:DOS /Y:R /A:ON /V:D^U /RB
+/A:ON /Y:R /V:D^U /RB /P:TERMAIL\TM.EXE
+/A:ON /Y:R /V:D^U /RB /P:TERMINAT.EXE /F
+/A:ON /Y:R /V:D^U /RB /P:TERMINAT.EXE /USER
+/C:DOS /Y:R /A:OFF /V:D^U /RB
+/C:DOS /Y:R /A:ON /V:B^U /RB
+/C:DOS /Y:R /A:OFF /V:B^U
+/C:DOS /Y: /A:ON /F:ON /V:D^U /RB

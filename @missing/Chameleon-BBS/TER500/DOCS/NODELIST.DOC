@@ -1,0 +1,32 @@
+
+NOTES ON USING NODELISTS, POINTLISTS
+
+Terminate supports normal raw nodelists, since a point rarely needs to
+have a compiled nodelist. The only reason for using a compiled nodelist
+is that searching is faster, and since points only search once in a
+while, it is not worth having 2-3 MB of compiled nodelist on your disk.
+As a new feature, Terminate creates a superfast small index file to
+retrieve the entries from the nodelists faster if you know the address.
+
+Terminate supports normal nodelists and is also able to use point lists.
+Note the 'Point,9999' line in the example. Look below for the point list
+formats supported by Terminate.
+
+As a special feature, Terminate also supports the UBOSS: flag. If a line
+starts with "Host", Terminate will look for this flag and grab the net/node
+number and switch to pointlist format. This is used in a list called
+DK-POINT.LST here in Denmark.
+
+-------POINTLIST-------   2:231/40.1 + 2:231/40.555
+
+Zone,2,Europe_etc,Finland,Ron_Dwight,358-0-2983308,9600,CM,MO,H14,V32B,XA
+Host,23140,DataBanken,Maribo,Viki_Smith,45-53911503,9600,CM,XA,UBOSS:231/40
+,1,SysoPoint,Lolland,Bjoern_Loendahl,-Unpublished-,9600,MO,UCHG
+,555,Viking_Point,Lolland,Viki_Smith,-Unpublished-,9600,MO,UCHG
+
+-------POINTLIST-------   2:231/111.9998 + 2:231/111.9998
+
+Boss,2:231/111
+,9998,Test_point,All_over_the_world,Your_name_here,-Unpublished-,9600,MO
+Point,9999,Test_point,All_over_the_world,Your_name_here,-Unpublished-,9600,MO
+

@@ -1,0 +1,75 @@
+-------------------------------------------------------------------------------
+|                          Problem or bug report                              |
+-------------------------------------------------------------------------------
+
+If you find a problem with Terminate or something you believe to be wrong,
+please give us as much information as possible. The more information we
+get, the better the chance of a solution. You may use as many lines as you
+need. Please remove any information in the document that is not necessary
+to solve your problem with Terminate, such as these lines here at the top.
+
+Your information:
+
+Todays date   : _____________
+
+Name (& Firm) : ____________________________________________________________
+Address 1     : ____________________________________________________________
+Address 2     : ____________________________________________________________
+Country       : ____________________________________________________________
+Voice phone   : _________________  Hours: 00:00-24:00 GMT
+Fax phone     : _________________  Hours: 00:00-24:00 GMT
+Modem phone   : _________________  Hours: 00:00-24:00 GMT Fido: ____________
+
+If you are using a PROFESSIONAL version, where did you purchase your keyfile:
+Dealer        : ____________________________________________________________
+
+Terminate Version       : ____
+Multitasker (& version) : _________________ (None/Win/Dos/OS2/other)
+Processor               : Intel ___ (8086,286,386,486,Pentium) Speed: ___ MHz
+                          Other ________________________
+Total RAM memory        : ___ MB
+File System             : FAT _ (DOS)  HPFS _ (OS/2)
+Hard disk type          : IDE _  SCSI _  MFM _  RLL _  Unknown _
+Video card manufacturer : Model: __________________________ RAM: ____ KB
+Modem type              : Manufacturer: ____________________________________
+                          Model       : ____________________________________
+                          Modem Init  : ____________________________________
+
+CONFIG.SYS
+----------------------------------------------------------------------------
+Insert your CONFIG.SYS here.
+----------------------------------------------------------------------------
+
+AUTOEXEC.BAT
+----------------------------------------------------------------------------
+Insert your AUTOEXEC.BAT here.
+----------------------------------------------------------------------------
+
+Modem configuration dump: Enable capture and send the config command which
+you will find in your manual. AT&V for most modems. ATI4 for USRobotics.
+----------------------------------------------------------------------------
+Insert the captured configuration here.
+----------------------------------------------------------------------------
+
+YOUR Problem. Be SPECIFIC and GIVE EXAMPLES OF HOW TO REPRODUCE THE PROBLEM:
+(Use as many lines as you need):
+
+___________________________________________________________________________
+___________________________________________________________________________
+___________________________________________________________________________
+___________________________________________________________________________
+
+PLEASE TRY TO CHECK THE PROBLEM REPEATEDLY AND SEE IF SOMETHING IN YOUR
+SETUP WAS WRONG. TRY CREATING A NEW CONFIGURATION AND SEE IF THE PROBLEM
+GOES AWAY, THEN TRY TO EXPORT BOTH CONFIGURATIONS WITH T-CFGxx.EXE AND
+COMPARE THE DIFFERENCES. THIS NORMALLY SOLVES MANY PROBLEMS.
+
+Please do NOT expect a personalised answer since we already get so many
+letters that it is impossible to answer them all - but all bugs are,
+of course, corrected as fast as possible.
+
+   DAN BBS ApS
+   Vaerebrovej 98 1.sal doer 5
+   2660 Bagsvaerd
+   Denmark
+

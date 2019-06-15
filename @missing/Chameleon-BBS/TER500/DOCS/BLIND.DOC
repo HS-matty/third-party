@@ -1,0 +1,189 @@
+
+The name of this document is BLIND.DOC. It can be found in the DOCS
+directory of Terminate.
+
+This file contains only information for people who cannot see.
+
+Because we got a lot of personal requests from blind people, we decided to
+create a few extra features which will help you to use Terminate even
+faster and with far more ease than any other terminal program we know.
+
+Most of you use some kind of speech device which only can detect BIOS
+writes. Terminate will use direct screen writes in menus and BIOS calls in
+terminal mode. You can also choose to use BIOS calls all the time.
+
+If you select Blind Support during installation the following options will
+be selected:
+
+Sound is turned on giving you a sound when popping up or closing a window
+Key click is turned on giving you a click noise every time you press a key
+Only menus will use direct screen writes
+The hardware cursor will be forced on all the time so your helper can see
+the cursor
+All sounds are turned on
+Passwords will not be hidden
+No automatic passwords will be generated
+The Blind Transfer window will be used for file transfers
+The File Manager will default to only one window
+Some extra sounds have been added
+In submenus all the background windows will be removed before displaying a
+new window.
+
+With blind support enabled, Terminate will always turn on the hardware
+cursor so if you have a helper he/she can tell you if the cursor position
+was wrong and report this error to me, the author of Terminate. This
+function also allows you to press CONTROL ENTER and then move the cursor.
+This will move the cursor position to the first position in the helpline at
+the bottom of the screen, allowing you faster speech access. If no help is
+found in a menu, when the menuline selector is used, then a beep will be
+played: a high tone followed by a low tone.
+
+To make things easier when transferring files, instead of the normal full
+screen file transfer menu yours have been cut down to the actual
+information needed. A sample picture is shown below. This window starts at
+the position 1,1 (upper left corner) and the cursor is placed just before
+the bytes transferred.
+
+The menu looks like the following lines:
+
+ีออออออออออออต Blind transfer ฦธ
+ณ Filename      DANBBS.ARJ     ณ
+ณ Filesize            2153297  ณ
+ณ 75%                    8192  ณ
+ณ CPS/Errors   3340            ณ
+ณ H Hangup No     S Skip file  ณ
+ิออออออออออออออออออออออออออออออพ
+
+Menu finished.
+
+Line 1: The name of the file.
+Line 2: The size of the file.
+Line 3: How many percent and how many bytes have been transfered.
+Line 4: Characters per second, speed of transfer and error count if any.
+Line 5: H to hang up after transfer. S to skip the rest of file.
+
+The message reader for Terminate is called TerMail. When starting up this
+editor you could use the parameter /BLIND to enable special sounds and
+features. If you call up TerMail from Terminate Alt-F7,L then this
+parameter will automatically be added if you have enabled blind support in
+the Terminate toggles menu. TerMail has a lot of sounds, as you will
+quickly learn. Also, when reading messages, you can press Ctrl-Enter to
+change the cursor location in the following order: To, Msg, From, Subject.
+Just try it and you will quickly get used to it.
+
+In the Terminate file manager you can press Q for Quiet, which will disable
+the entire left side and make it easier to view the files.
+
+List of available hot-keys in Terminate:
+
+change configuration (alt-o)
+
+S = Screen and colors
+C = Communications setup
+G = General options
+T = Toggles
+M = Modem and dialing
+F = Filenames and paths
+P = Protocol options
+E = Emulation/keyboard setup
+H = Host settings
+L = Login strings/scripts
+U = Users/iemsi/security
+N = Point system
+A = Cost management
+R = Registration info
+X = Fax configuration
+
+Phonebook (alt-d)
+
+Ins = Insert entry
+Del = Delete entry
+A = Add entry
+E = Edit/view
+D = Dial numbers
+M = Manual dial
+F = Find
+S = Sort entries
+I = Import
+P = Change phonebooks
+O = Other functions
+G = Global change
+V = Save now
+L = Voice call
+C = Copy or move entries
+T = Edit capture file
+N = Edit note file
+W = Show warn days
+Tagging = space, plus (+), minus (-), stat (*)
+
+phonebook edit (alt-d,e)
+
+S = System name
+P = Phonenumber
+D = Device
+U = User profile
+W = Password
+O = Opening hours
+T = Terminal
+X = Dial prefix
+F = Dial suffix
+C = Com information
+A = Autologin
+L = Downloadpath
+N = Notefile
+
+Pointsystem (Alt-F7)
+
+C = Call boss
+M = Call system
+S = Send files
+R = File request
+K = Kill mail
+T = Auto requests
+Z = Zoom mail
+E = Mail address
+N = Send messager
+H = Change mail
+L = Mail editor
+I = Import
+X = Export
+O = Configuration
+
+TerMail (Alt-F7, L)
+
+Alt-F = Areafix
+DEl = Delete
+Alt-E = Edit
+Esc = Exit
+Enter = Area
+
+These features were made possible thanks to the input and help from many
+blind persons. In the future, we will have a blind contact person who will
+help us to support even more of these features. If you have any special
+needs, please send a letter to the following person and he will help us
+enabling what you want or need. He is also the person you should thank for
+giving us the initial many suggestions for improving Terminate.
+
+H.C. Andersen
+Fregatten 14
+5330 Munkebo
+Denmark
+Internet hca@login.dknet.dk
+
+Please do not use handwriting. Send your letters on disk or in printed from
+a printer, so you can be sure I can read your information.
+
+                                                 / Hans Christian Andersen
+
+Special thank you's for helping with the blind test go to:
+
+H.C. Andersen
+Bue Vester-Andersen
+Raul Gallegos
+Martin Kirchner
+Marco Zehe
+
+and all the other people that have helped us improve the blind features.
+
+                                                 / Bo Bendtsen
+

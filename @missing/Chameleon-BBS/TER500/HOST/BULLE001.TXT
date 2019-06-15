@@ -1,0 +1,21 @@
+[2J[36;40m
+This is just an example of how easily you can enter information that will be
+available in the bulletin menu.
+
+Use an ANSI editor to edit/save BULLETIN.ANS and save it afterwards as
+BULLETIN.ASC without colour codes. If you don't care about colours, just
+erase all the .ANS files, then only the .ASC files will be displayed no
+matter what.
+
+The bulletin files should be named 'BULLExxx.TXT', where xxx is the number
+the user has to enter in the menu to view the text. After viewing a
+bulletin, the user will be asked if he/she wants to download the file or all
+the bulletins. If everything is selected then BULLETIN.ASC will also be
+downloaded, so the user can get a fast overview of the different bulletin
+files.
+
+The BULLExxx.TXT file can contain any type of information you want and in
+whatever format you like. Just make sure that the other end is able of
+viewing it. We recommand that only Avatar, ANSI and plain ASCII codes are
+used.
+

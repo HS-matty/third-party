@@ -1,0 +1,110 @@
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ °°°° Terminate history °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+Terminate start date          : 2. april 1992
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ °°°° How to read this document °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ +  = New feature
+ -  = Removed feature
+ *  = Changed feature for the better
+ !  = Fixed feature
+ #  = Information
+{+} = Registered feature activated in Professional version only
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ °°°° 5.00 Release date: 30-Jul-1997 °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+# Distribution archive packed using ACE compressor for maximum compression.
+
+* Upgrade *
+
++ 400TO500.EXE will upgrade from Terminate 4 (PROFESSIONAL ONLY)
+
+* HOSTMODE *
+
++ EMSI Fidonet style Front-end Mailer included
++ BBSnext will allow users that enable BBSnext to log into the BBS after the
+  mailsession without hanging up and redialling.
++ File requests can now be processed
++ Event handling allows you to call systems,
+  run programs or exit with errorlevel
++ IEMSI logins are now supported. Including screen length and ANSI.
++ External protocols can be used for uploading/downloading
++ Mark files for download in several areas and download at once
++ Monitor 2 devices for incoming calls
++ /TIME:n will now force user of in n minutes
++ /SPEED:n will set connectspeed (used for calculating download time left)
++ CLOSED.ANS/ASC now shown if system is closed and new user logs on
++ Mouse support in Filemanager, help, lister etc.
++ Run program or script before news, public menu and/or main menu
++ 10 ways of sorting to user-database
++ Message system now included, also user-to-user messages and sysop to
+  file-attach. In usereditor press M to send message.
++ Public menus can now have up to 5 levels of sub-menus
++ T-HOTKEY.BBS will now allow you to define the main menu and other keys
++ T-TEXT.BBS allow you to define all user texts
++ FILES.BBS will now be wrapped correctly and FILE_ID.DIZ inserted at
+  column 35 will get the comment color as well.
++ Keyboard will timeout after 30 seconds in hostmode locked keyboard
++ Host expire date now reset when changing user
++ 9 extra privileged access levels can now be used, also in T-FILES.BBS
+* Door files now has different access levels
+  Normal=1, Privileged=10-19, CoSysop=50, Sysop=100
+* Improved incoming call handling in hostmode, 60 seconds timeout and
+  handling of NO CARRIER responses.
+! Rings are now reset to zero on incomplete incoming calls
+* Paths in T-FILES.BBS can now be up to 79 characters
+# HOSTMODE.MSG changed name to T-MSG.TXT
+
+* SCRIPTS *
+
+* Increased script autoloader from 32k to 40k, allowing faster large scripts
++ Complete 2-dimensional array support for 32 arrays.
+  Following commands was added: InitArray, PutArray, GetArray, FreeArray
++ New functions VarNum, VarSeg and VarOfs to access variables in memory
+! FreeMem now returning correct value
+! Fixed a problem with empty strings ""
+
+* CAPI *
+
++ &E can now be used to select outgoing EAZ (&E0 = EAZ0 default)
++ CAPI disconnect error codes now returned
++ Answering improved
+
+* POINTSYSTEM *
+
++ BBSnext. Press B in point system and you can log into the BBS of a system
+  after the mailsession without redialing/reconnecting (if supported by mailer)
++ New keywords in PASSWORD.TXT @DEVICE @DIALPREFIX @PHONE
++ Support for new ISDN nodelist flags. V110L, V110H, V120L, V120H, X75
++ Call all function allows you to send all waiting mail by one keypress
+! Point system, last called was fixed when more than 20 systems was called
++ Point system, call system has now a favourites menu
++ Now up to 100 AKA's will be handled in mailsessions
++ Dial own addresses can be disabled in the Call all function
+
+* OTHER *
+
++ New baudrates supported (X2/56k flex):
+  32000,33333,34000,36000,37333,38000,40000,41333,42000,42666,44000,45333,
+  46000,46666,48000,49333,50000,50666,52000,53333,54000,54666,56000,57333,
+  58666,60000,61333
+
++ F10/Alt-F10 while transfering files will give you the CD-player
++ @PRINT and @PRINTSCR can be used in the keyboard editor to either start
+  capturing directly to printer or print the entire screen.
+! IEMSI handle/alias send additional string, which made TAG BBS think it was
+  a wrong alias and therefore it could not find it in the userbase. However
+  this did not effect other BBS's.
+# Possible date conflict function was removed
+
+* TERMAIL *
+
+# Please read the seperate file TERMAIL\WHATSNEW.500 for details
+

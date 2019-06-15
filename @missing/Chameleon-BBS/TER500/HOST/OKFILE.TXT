@@ -1,0 +1,45 @@
+%
+% ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+% ³ °°°° TERMINATE Request definitions °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+% ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+%
+
+%
+% Files always to send.
+% If you want these to be send after the requested files,
+% move these entries to the end of this file.
+% (Must start with +)
+%
+
+% +C:\BBS\FILES\FILELIST.ZIP
+
+%
+% Magic filenames.
+% (Must start with @)
+%
+
+% @FILES         FILES\AREA1\FILELIST.ZIP
+% @FILES         K:\BBS\OUT\REQUEST\FACTORY.*
+% @TERMINAT      GIVEAWAY\???TER.ZIP
+% @TERMINATE     GIVEAWAY\???TER.ZIP
+% @500TER.ZIP    GIVEAWAY\???TER.ZIP
+
+%
+% If password is required to request file, use the format !password
+%
+
+% @CONFIDENTIAL  C:\PRIVATE\LIST.ZIP                 !PASSWORD
+
+%
+% Directories to other files available for request
+%
+
+% K:\BBS\OUT\REQUEST\
+% K:\BBS\OUT\REQUEST\UTILS\
+
+%
+% If password is required to request from an entire directory
+%
+
+% K:\BBS\OUT\REQUEST\TERWEB                          !PASSWORD
+

@@ -1,0 +1,52 @@
+
+WHICH FILES CAN I ERASE
+
+This document will simply tell you what to erase if you don't need it.
+
+You can delete the directory structures which you don't want to use anymore
+with the Terminate file commander (Alt-F from the main terminal screen).
+
+If you do not use Windows nor want to use Terminate under Windows at a
+later time:
+  Delete the directory TERMINAT\WINDOWS\
+
+If you do not use OS/2 nor want to use Terminate under OS/2 at a later
+point:
+  Delete the directory TERMINAT\OS2\
+
+If you do not have a fax modem or think you will ever get a faxmodem:
+  Delete the directory TERMINAT\FAX\
+
+If you do not have any filelists or think you will ever get some filelists:
+  Delete the directory TERMINAT\FILELIST\
+
+If you do not want to be able of calling home from a remote computer:
+  Delete the directory TERMINAT\HOST\
+
+If you have more than one directory starting with TLAN_???, you can delete
+directories which contain online manuals in languages different than your
+own. The number after TLAN_ corresponds to the country code for which this
+online manual is created.
+Therefore, TLAN_001 will contain the English language online help, TLAN_049
+will contain the German manuals and so on. Delete the directory with the
+language files you don't want.
+Remember that the path to your language files must be configured in the
+Alt-O menu, if it was not done automatically.
+
+The DOCS\ directory contains a lot of rather small and useful documents.
+Read the documents and delete the ones you don't need anymore.
+
+If you only use normal BBS's with ANSI or AVATAR you could delete almost
+all keyboard mappings in TERMINAT\PHONE\. Just keep AVATAR.KBD and
+SITES.FON and delete all other files, not your own phonebooks of course.
+
+The UTILS\ directory contains a lot of small and useful utilities, so I do
+not recommend that you delete this directory. None of the files are taking
+up much space anyway and you might need them later.
+
+You must _not_ delete the TERMINAT\REGISTER\ directory until after you have
+registered. If you do, you delete all the forms which you will need later
+and might not have the original files anymore. However it makes good sense
+to keep the registration forms for later reference anyway, so you should at
+least keep your national form.
+

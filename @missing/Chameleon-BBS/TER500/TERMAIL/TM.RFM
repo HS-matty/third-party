@@ -1,0 +1,125 @@
+%
+% TerMail quote-reformatting
+% ==========================
+%
+% This file determines how to reformat quoted messages
+% using various commands.
+%
+
+%
+% Set right margin. How many characters should
+% be on each line when quoting.
+%
+
+@Margin   72
+
+%
+% If you like a more compressed quoting you can remove all blank lines
+% with this command.
+%
+
+% @RemoveEmptyLines
+
+%
+% Notes
+% =====
+%
+% If strings contain starts/ends with spaces use
+% double-quotes in front/end " example "
+%
+% Maximum 200 strings in this file
+%
+% Strings must start on position 3
+%
+
+% ===
+%  R  Remove line if string is found in beginning of line
+% ===
+
+R 
+R @
+R "--- "
+R "-!- "
+R "... "
+R ".!. "
+R "___ "
+R " -=>"
+R " * Origin:"
+R " - Origin:"
+R SEEN-BY
+R SEEN!BY
+
+% ===
+%  D  Remove line if string is exactly the same as line
+% ===
+
+% ===
+%  M  Remove line if string matches anywhere in line
+% ===
+
+M * Replying to a message in :
+M * Copied from:
+M * Copied from:
+
+% ===
+%  N  No reformatting if string is found in beginning of line
+% ===
+
+N =============================
+N * Forwarded by
+N * Area :
+N * From :
+N * To   :
+N * Subj :
+
+% ===
+%  A  No reformatting if string matches anywhere in line
+% ===
+
+A ** QUOTE **
+
+% ===
+%  T  Do not reformat until end of block marker found
+% === TerMail will popup and ask you if you want to skip until a End-of-block
+%     marker is found.
+
+T /*
+T [BEGIN TABLE]
+T [START TABLE]
+T (BEGIN TABLE)
+T (START TABLE)
+T [FMT OFF]
+T (FMT OFF)
+T [LISTING ON]
+T (LISTING ON)
+T [BEGIN LISTING]
+T (BEGIN LISTING)
+T [TABEL ON]
+T (TABEL ON)
+T [QUOTE MODE ON]
+T (QUOTE MODE ON)
+T -----BEGIN PGP SIGNATURE-----
+T -----BEGIN PGP MESSAGE-----
+T -----BEGIN PGP PUBLIC KEY BLOCK-----
+T begin 644
+
+% ===
+%  E  Start reformatting again when line start with these strings
+% ===
+
+E */
+E (END TABLE)
+E [END TABLE]
+E [QUOTE MODE OFF]
+E (QUOTE MODE OFF)
+E [FMT ON]
+E (FMT ON)
+E [LISTING OFF]
+E (LISTING OFF)
+E [END LISTING]
+E (END LISTING)
+E -----END PGP SIGNATURE-----
+E -----END PGP MESSAGE-----
+E -----END PGP PUBLIC KEY BLOCK-----
+E end
+

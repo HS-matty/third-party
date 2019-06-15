@@ -1,0 +1,35 @@
+
+INSTALLATION NOTES
+
+Terminate will import configurations from the following programs in the
+order of priority listed below. Remember that ALL configurations will be
+searched, so remove old configuration files you do not use them anymore or
+remove the environment variable from your AUTOEXEC.BAT before installing.
+If you do not want to automatically import, call up Terminate with the
+following parameter:
+
+TERMINAT /NOIMPORT
+
+Program                        Conditions
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                             ³
+Frontdoor       2.02-2.3x    ³ Needed: SET FD=Path-to-SETUP.FD
+                             ³
+Portal of Power 0.61-1.??    ³ Needed: PORTAL.CFG in Terminate dir
+                             ³
+RemoteAccess 1.11,2.xx       ³ Needed: SET RA=Path-to-CONFIG.RA
+                             ³
+Binkley      All versions    ³ Needed: SET BINKLEY(or BT)=Path-to BINKLEY.CFG
+             (Text)          ³         or BINKLEY.CFG in Terminate dir
+                             ³
+Golded       All versions    ³ Needed: SET GOLDED=Path-to GOLDED.CFG or
+             (Text)          ³         GOLDED.CFG in Terminate dir
+                             ³
+Telix        3.15-3.50       ³ Needed: TELIX.CNF in Terminate dir
+             (Text)          ³
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+You must remove TERMINAT.CFG first if you want to try importing. Only some
+information is imported - all depends on what information is contained in
+the configuration file.
+

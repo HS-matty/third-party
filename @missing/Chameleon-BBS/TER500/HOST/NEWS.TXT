@@ -1,0 +1,28 @@
+Today
+New Terminate available
+
+  A new version of Terminate has just been released. Please ask your sysop
+  if you can have a copy at once.
+
+/***/
+24-Dec
+Merry Christmas
+
+  We wish all our customers a Merry Christmas.
+
+/***/
+01-Jan
+Happy New Year
+
+  We wish all our customers a Happy New Year.
+
+/***/
+01-Jun
+Away on holiday
+
+  The company is closed during the holidays, please leave a message if you
+  have some important information for me.
+
+/***/
+
+

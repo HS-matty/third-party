@@ -1,0 +1,52 @@
+%
+% ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+% ³ °°°° Terminate hostmode area definition °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+% ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+%
+%  Access-levels
+%  ----------------
+%   N = Normal                A higher access-level will have access to
+%   P = Privileged 0          all level below as well. Co-Sysop will have
+%   1 = Privileged 1          access to Normal, Privileged and Co-Sysop areas
+%   2 = Privileged 2
+%   3 = Privileged 3
+%   4 = Privileged 4
+%   5 = Privileged 5
+%   6 = Privileged 6
+%   7 = Privileged 7
+%   8 = Privileged 8
+%   9 = Privileged 9
+%   C = Co-Sysop              
+%   S = Supervisor
+%  ----------------
+%
+%  Areanum = 1-99999   You can only have up to 100.000 file areas
+%                      Note that area 0 is used for private path
+%
+%  If a path does not exist, it will simply just be skipped.
+%
+%  Syntax: Access-level Area-number Path Description
+%
+% Area#  Directory (Up to 79 chars)   Description (Up to 70 chars)
+% |---|  |--------------------------| |---------------------------------------|
+N     1  UPLOAD\                      Public area
+N     2  GIVEAWAY\                    Terminate, The Final Terminal
+N     3  HOST\FREE\                   Free utilities
+N     4  HOST\MODEM\                  Modem utilities
+N     5  HOST\PRICES\                 Newest pricelists
+N     6  HOST\LIST\                   Newest filelists
+P     7  HOST\PRIV0\                  Only privileged 0 users
+1     8  HOST\PRIV1\                  Only privileged 1 users
+2     9  HOST\PRIV2\                  Only privileged 2 users
+3    10  HOST\PRIV3\                  Only privileged 3 users
+4    11  HOST\PRIV4\                  Only privileged 4 users
+5    12  HOST\PRIV5\                  Only privileged 5 users
+6    13  HOST\PRIV6\                  Only privileged 6 users
+7    14  HOST\PRIV7\                  Only privileged 7 users
+8    15  HOST\PRIV8\                  Only privileged 8 users
+9    16  HOST\PRIV9\                  Only privileged 9 users
+C    17  HOST\COSYSOP\                Only co-sysop users
+S    18  DOWNLOAD\                    My personal downloads
+S    19  C:\PRIVATE\                  My private files
+% |----------------------------------------------------END-OF-FILE------------|
+

@@ -1,0 +1,75 @@
+
+ERRORS/PROBLEMS AND HOW TO SOLVE THEM
+
+- First try this -
+
+If you are using QEMM386, 386MAX or a similar memory management program and
+Terminate hangs when exiting to DOS or shelling or if you have any other
+problem, then try renaming your autoexec.bat and config.sys first and then
+reboot the computer.
+
+  REN AUTOEXEC.BAT A.BAT <Ù
+  REN CONFIG.SYS C.SYS <Ù
+
+After this, your computer is totally clean of any device drivers and other
+things that might mess things up. Now run Terminate and see if it still
+hangs when exiting or shelling.
+
+When using MS-DOS 6.0 or above, you can also press the F5 key on your
+keyboard to bypass AUTOEXEC.BAT and CONFIG.SYS. Refer to your DOS manual
+for more detailed information.
+
+If it works perfectly, there is a conflict with your DOS configuration. Try
+installing one device-driver at a time, reboot the machine and see if you
+get the error message again. If it turns out to be QEMM or other memory
+manager try excluding X=B000-FFFF. This worked on a PS/2 33MHz. If this
+works, try X=B000-EFFF and proceed until Terminate hangs again. Other
+programs which use XMS/EMS or high memory could also have problems, if you
+did not exclude the correct area. You may want to say "but all my other
+programs work", but the reason for your problems could be that as Terminate
+is a very advanced program, it uses all the resources it can get to
+increase the performance.
+
+- Messy screen -
+
+If your screen messes up when moving the mouse, try installing a newer
+mouse driver. Download LMOUSE61.ARJ from DAN BBS: it also works with 100
+and 132 column screen mode.
+
+- XMS problems on old 286-machines -
+
+If you have a 286 with an old BIOS and use HIMEM.SYS, there could be some
+problems. Try getting the newest HIMEM.SYS from your DOS manufacturer or
+use the /NOXMS command on the Terminate command line.
+
+- PS/2 problem -
+
+The mouse driver MOUSE.COM will sometimes conflict with EMS when using
+Terminate. The solution is not to load the mouse driver into high memory.
+If you use MOUSE.EXE 9.0 from MicroSoft, use the /E parameter to force the
+driver to use convential memory.
+
+- Real time-clock problems on XT-machines -
+
+If Terminate detects that you are using an XT-machine (8088, 80186, 8086,
+NEC V20, NEC V30), the soundcard check will be turned off by default. The
+reason for this is that on some machines with a special realtime card
+installed, the soundcard check sets off the date/time. If you want to try
+to use the sound card anyway, start Terminate with a /YESCARD parameter on
+the commandline.
+
+- Terminate stops and nothing happens after a BBS login using IEMSI -
+
+This is a common problem which appears when using IEMSI and enabling Avatar
+codes at the same time. Avatar has the problem that it uses codes which are
+identical to Xon/Xoff, which is something used for software flowcontrol.
+The solution is easy: Make sure that your modem only uses hardware
+flowcontrol (CTS/RTS) and turn off software flowcontrol. On some modems
+this is done by typing:
+
+ AT&H3  Enter
+ AT&W   Enter       (Save setup in modem)
+
+Please look up these parameters in your modem manual, if Terminate should
+not support your modem directly.
+

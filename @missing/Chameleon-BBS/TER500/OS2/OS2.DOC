@@ -1,0 +1,43 @@
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ °°°° OS/2 & TERMINATE °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ To use Terminate at the present moment, please use the newest COM drivers
+ for OS/2. The new SIOxxx.ZIP drivers seem to perform very well with
+ Terminate. Get the file from DAN BBS or nearest registration site.
+
+ Please note that you do not need to have VX00.SYS when using Terminate and
+ SIO. VX00.SYS is a fossil simulation driver, which is not needed since
+ Terminate communicates with SIO directly. You can even risk hang problems,
+ if you load VX00.SYS and use port 1 since Terminate will then detect a
+ fossil driver on COM1 and OS/2 will immediately complain that someone is
+ trying to use the mouseport.
+
+          This is how Terminate accesses to ports under DOS
+
+               Terminate  ---> Direct ---> Comports
+
+         This is how Terminate accesses to ports under OS/2
+
+   Terminate  ---> OS/2 port simulation driver (SIO) ----> Comports
+
+ In other words Terminate thinks that it has access to the hardware
+ ports directly. Terminate does not even need to know that SIO is installed.
+
+ Terminate runs without problems in a DOS box, it will detect OS/2 and
+ release timeslices as needed.
+
+ Terminate has even been tested under OS/2 running ISDN channel bundling
+ with 15000 CPS without any problems using cFos.
+
+ In this directory:
+
+ INSTALL.CMD     Creates folder and icons under OS/2
+ OS2.DOC         Notes about running OS/2
+ INSTALL.CMD     Command file that will make a Terminate folder and icons
+ T-OS2.ICO       Icon for Terminate
+ T-DOC.ICO       Icon for Terminate DOC's
+ TM-OS2.ICO      Icon for TerMail
+ T-OS2.BMP       Terminate-bitmap for background in the Terminate-folder
+

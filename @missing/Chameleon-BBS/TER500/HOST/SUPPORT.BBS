@@ -1,0 +1,14 @@
+
+%
+% Demonstration public sub-menu
+%
+
+% Key  File to download or wildcard             Description (only for your use)
+% |-|  |--------------------------------------| |-----------------------------|
+   1   SUBMENU:S-TERM                           Terminate support
+   2   SUBMENU:S-VIDEO                          Video drivers
+   3   SUBMENU:S-PRINT                          Printer drivers
+   4   SUBMENU:S-HARD                           Hardware support
+   5   SUBMENU:S-SOFT                           Software support
+% |--------------------------------------------------END-OF-FILE--------------|
+

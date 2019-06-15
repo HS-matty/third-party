@@ -1,0 +1,114 @@
+
+FILE REQUESTING WITH TERMINATE
+
+File Requesting is an easy and efficient way to pick up files from a
+FidoNet node without first having to go online in the BBS. This saves phone
+costs and the hassle of having to log in for the first time, filling out an
+user questionnaire etc.
+
+You will find detailed information about how to request files in the online
+help for TerMail and the Point System.
+
+To know what files you can request from a system, you will either need a
+file list from this system or you will have found the filename you want in
+a message.
+
+To get a filelist from a node, you should always be able to request the
+magic name FILES and you will receive a file list. Be aware that some large
+systems might send you file lists that are several MegaBytes large!
+On big systems, you might want to request some information about the node
+first. This can be done with the magic name ABOUT.
+
+ Note: A "magic name" is a name which stands for one or more files which
+       have a common "alias". For example, when you request TERMINAT at
+       DAN BBS, you will not get a file named TERMINAT, but the latest
+       version of Terminate, a file called XXXTER.ZIP where XXX stands
+       for the current version number.
+
+You might also find the name of a file which you can request when reading
+a FidoNet conference, such as a request area (where people ask for files
+and others offer new files in the file base of their BBS). TerMail offers
+the possibility of easily requesting one or more files from a message using
+Ctrl-F.
+
+When you quit TerMail, you will find a file request package in your
+outbound window. Now you can call that system and pick up the files you
+wanted.
+
+Sometimes, a file request will fail and you will not receive what you
+wanted. Instead, you will probably get a netmail telling you about the
+reason why your file request has failed.
+
+Possible reasons for a failed file request are:
+
+- You entered the wrong file name. Check whether you entered the correct
+  file name in your request.
+
+- The BBS where you tried to request files from re-packs the archives that
+  arrive on his/her system. Therefore, the file might have been announced
+  as GREATPRG.ZIP but it has been re-packed into GREATPRG.ARJ. Try
+  requesting the file again, using a wildcard instead of the file
+  extension. In our example, that would be GREATPRG.*
+
+- The BBS where you tried to request only accepts requests from listed
+  systems. If your point or node number cannot be found in its nodelist
+  and/or point list, the system might not even give you a netmail reply but
+  just hang up. Not nice, but some BBS SysOps are very strict about these
+  things.
+
+- The BBS where you tried to request files doesn't accept requests from
+  points. Try getting the file(s) online instead, by logging into the BBS
+  normally.
+
+- The BBS where you tried to request files doesn't accept requests from
+  Terminate users. This is rather unusual, but in Germany and other
+  countries some SysOps have started to use special tools to keep Terminate
+  users away.
+  These SysOps claim that Terminate users are often using false node
+  numbers and names to download a lot of files from their systems while
+  blocking the line for other users.
+
+Please, when requesting files with Terminate, be aware that you are asking
+for a favor of the SysOp who offers these files. For most SysOps, these
+files don't come free of charge, they have to request these files or
+download them using so-called "file nets".
+
+When requesting files, please observe the following unwirtten rules of
+proper behavior:
+
+- Never request under a false name or a false address.
+
+- Never, NEVER request under the name and/or address of somebody else!
+
+- Never try to request beyond the time/kbyte limits of that BBS by changing
+  your name or address.
+
+- Never try to request files during the so-called zone mail hour (ZMH) !
+  The ZMH lasts from 2:30 to 3:30 GMT; it's purpose is to make it possible
+  worldwide to crash mail to another node.
+  A FidoNet node must fill this one minimum requirement: being online
+  during the Zone Mail Hour. So if you do a file request during that time
+  period, the system would not be able to send or receive important mail.
+
+  Note: To find out what time the ZMH is in your country, from the Terminal
+        screen in Terminate check Alt-M, GMT & time zones for information.
+
+- If a request has failed for whatever reason, never write an angry message
+  to the SysOp! It is unlikely that he/she will be better-disposed towards
+  you if you behave in such a manner.
+
+Some SysOps have become very irritated about file requesters using
+Terminate. They send mean ASCII pictures to you if they see that you are
+using Terminate. Just don't mind them and see whether you can get the files
+somewhere else.
+
+Should you be unable to get a file from one node, simply try another BBS.
+Most files that are publicly available arrive through file nets, so it's
+likely that not just the node you wanted to request the file from initially
+will have it.
+
+   Always keep in mind that file requests are not a right, they are a
+   privilege! Some SysOps allow you that privilege, while others don't.
+
+Good luck and have fun with the File Request feature of Terminate!
+

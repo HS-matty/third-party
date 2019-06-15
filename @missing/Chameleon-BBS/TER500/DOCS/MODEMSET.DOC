@@ -1,0 +1,67 @@
+
+MODEM SETTINGS INFORMATION
+
+If you want your own modem to be included inside the TERMINAT.MOD modem data
+file, you can create a file containing data about how to setup your modem.
+
+Please send your modem information to your nearest registration site and
+we will make sure it is included with the next version of Terminate.
+
+Line  Description
+컴컴  컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+  1   Name that will be shown in menu
+  2   Baudrate to use
+  3   Initstring 1
+  4   Dial prefix 1
+  5   Dial suffix 1
+  6   Connect string
+  7   No connect string 1
+  8   No connect string 2
+  9   No connect string 3
+ 10   No connect string 4
+ 11   Dial cancel string
+ 12   Hangup string  DTR = Toggle DTR, else use string like ATH0
+ 13   Ring string
+ 14   Auto-answer string
+ 15   Ok string
+ 16   CTS/RTS hardware flow control   0=Off  1=On
+ 17   Xon/Xoff software flow control  0=Off  1=On
+
+ 18-  Lines starting with:
+      $ Information shown before sending commands to modem
+      ^ Commands to send to modem
+      * Information shown after sending commands to modem
+
+You can use up to 10 lines for the $,^,* statements, but they MUST come in
+the order specified above, see the following example.
+
+Just use this as a model and then change the options you need, removing
+the line and numbers to the right:
+                                                                        Line
+                                                                        ----
+@ZyXEL U-1496, U-1496B, U-1496E V.32bis V.42bis                           1
+57600                                                                     2
+ATZ^M                                                                     3
+ATDT                                                                      4
+^M                                                                        5
+CONNECT                                                                   6
+NO DIAL TONE                                                              7
+NO CARRIER                                                                8
+BUSY                                                                      9
+VOICE                                                                    10
+^M                                                                       11
+DTR                                                                      12
+RING                                                                     13
+ATA^M                                                                    14
+OK                                                                       15
+1                                                                        16
+0                                                                        17
+$There is no switch to set, just let the program write the
+$setting to V-RAM.  If you do not have a 16650 UART installed in
+$your I/O card, please use 38400 buad for reliable operation.
+^AT&F^M
+^ATQ0M1X6V1S7=60^M
+^AT&K4&B1&C1&D2&H3*E0&N0&W^M
+*Your ZyXEL is now configured.  To get the most out of it,
+*be sure to set all your dialing directory entries to 57600 baud.
+

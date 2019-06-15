@@ -1,0 +1,1395 @@
+
+   ‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹           ‹‹‹‹‹‹‹‹‹‹‹    ‹‹‹‹‹‹    ‹‹‹‹ ‹‹‹‹
+   ∞                     ﬂ‹         ∞          ﬂ‹  ∞     ﬂ‹  ∞  € ∞  €
+   ﬂﬂﬂ€  €ﬂﬂﬂﬂﬂﬂ€ﬂﬂﬂﬂﬂﬂﬂ‹  ≤        ﬂﬂﬂ€ﬂ€  €ﬂ‹  € ﬂﬂﬂ€ﬂ€  € ﬂﬂﬂ€ ﬂﬂﬂ€
+      ∞  € ∞    ≤  ∞ﬂﬂﬂﬂﬂ ‹ﬂ     ‹  ∞  € ∞  € ∞  € ∞  €‹∞  € ∞  € ∞  €
+      ∞  € ∞  €ﬂﬂ  ∞    ‹ﬂ    €ﬂﬂﬂ  ∞  € ∞  € ∞  € ±  €    € ±  € ±  €
+      ±  € ±  ﬂ‹‹‹ ±  ‹‹ ﬂ‹         ±  € ±  € ±  € ±  €ﬂ±  € ±  € ±  €‹‹‹‹
+      ≤  € ≤     ≤ ≤  ≤ € ≤         ≤  € ≤  € ≤  € ≤  € ≤  € ≤  € ≤      ≤
+      ﬂﬂﬂﬂ ﬂﬂﬂﬂﬂﬂﬂ ﬂﬂﬂﬂ ﬂﬂﬂ         ﬂﬂﬂﬂ ﬂﬂﬂﬂ ﬂﬂﬂﬂ ﬂﬂﬂﬂ ﬂﬂﬂﬂ ﬂﬂﬂﬂ ﬂﬂﬂﬂﬂﬂﬂﬂ
+
+                             T E R M A I L
+                             ƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                             Version  5.00
+
+                  The Automatic Point System for Terminate
+            Copyright (C) 1993,97 by Strathrory Systems Limited
+                     Worldwide distributor SerWiz Comm
+
+
+ ^hTerMail Overview^n
+
+  TerMail is an E-Mail-System for Terminate. It enables you to send and
+  receive mail from other people through a variety of networks and systems.
+  TerMail supports both Fidonet messages and offline mail (also called
+  QWK-Mail or "Quick Packets"). When installed with Terminate, TerMail is
+  ready to run out of the box without hardly any additional setup.
+
+  As soon as you have a network address, you are basically set to go. As
+  usual in the data-communication world, there will be a lot of new words
+  for you to learn, but don't let this confuse you. If you just fail to
+  understand something, don't change it or ask someone whether you need it.
+  With TerMail, we have tried to create a powerful mail reader while keeping
+  it as simple as possible. TerMail will practically do all the maintenance
+  for you without you having to think about it. If you want special settings
+  simply just edit the configuration files and follow the instructions.
+
+  Without further ado, lets get started and get into E-Mailing...
+
+                                                                /Bo Bendtsen
+
+ ^hBLIND SUPPORT^n
+
+  TerMail has, like Terminate, special Blind Support features which are
+  designed for the Visually Impaired.
+
+  When starting TerMail with the command line parameter /BLIND or the
+  BlindSupport toggle, some extra sounds will be enabled. Furthermore, other
+  special functions will be active such as the removal of unneeded windows,
+  the change of some High ASCII special characters to Low ASCII and the
+  hardware cursor will be enabled. This will make it easier to navigate
+  through the screens.
+
+  When reading messages, the cursor will always be placed at the position of
+  the To-Name. With Ctrl-ENTER you can cycle between the message text body,
+  from-name and subject. There are additional improvements which you will
+  notice in daily use.
+
+ ^hMain menu keys^n
+
+  ^hF1 This help file^n
+
+   Here you will find help for most of TerMail's functions.
+
+  ^hF2 List of external utilities^n
+
+   This displays a pop-up list of user-definable external utilities. You can
+   scroll through the list, select and execute the tool you want to use.
+
+  ^hF6 Forms^n
+
+   Predefined forms that you can include in your messages. This could be
+   your details, reports or if you are a moderator for a conference you
+   could put the rules in a form file.
+
+  ^hF7 Show/create groups^n
+
+   Displays a list of the current Groups and allows you to change the group
+   for the current area or to create a new one.
+
+  ^hF8 Nodelist lookup^n
+
+   Displays the nodelist(s) set up in TM.CFG and allows you to search
+   through it (them) using the arrow keys.
+
+  ^hF11 Nodelist search^n
+
+   Search for any address or keyword in all nodelists
+
+  ^hENTER Enter message area^n
+
+   Area 1 is always the Netmail area. Netmail is used to send messages to
+   other users. Only the receiving users will get them.
+
+   Area 2 is the default area, where mail written to your user name in a
+   conference is stored. Therefore if you have 200 areas, you can always
+   check this area first and see if there is any new messages written to
+   you.
+
+   Area 3 will save all mail you have written. Sometimes it can be
+   important to remember what you have told to whom at a certain time.
+
+  ^hFast area selection^n
+
+   When pressing either A-Z 0-9 . _ these characters will be appended to a
+   searchword and leap to an area that matches the search string. Therefore
+   you can get faster to areas of which you know the name. Only the EchoID
+   will be searched for matches.
+
+  ^hEsc Exit TerMail^n
+
+   Exit TerMail. A window will pop up, asking you whether you really want to
+   quit.
+
+  ^hAlt-X Exit TerMail without asking^n
+
+   Exit quickly, without asking.
+
+  ^Alt-0..5^n
+
+   Exit directly with errorlevel 0,1,2,3,4,5 without packing/cleaning
+
+  ^hAlt-V View log^n
+
+   Use a list tool to view the logfile. If you use the internal list
+   function, at startup the list tool will immediately display the latest
+   entries to the logfile.
+
+  ^hAlt-P PID serial number check^n
+
+   Check all messages for PID serial codes. With this function you can
+   find people that are using the same keyfiles or keyfiles made with
+   pirate generators. You can also use this program to find pirate-users
+   of other programs like Golded (GED) or Frontdoor (FM).
+
+  ^hAlt-Z Mega search^n
+
+   Search all areas for keywords. Results are saved for the next time you
+   enter the search.
+
+  ^hAlt-J Shell to DOS^n
+
+   This allows you to run external programs without quitting TerMail. Do not
+   attempt to load TSR's since this will cause your machine to hang when you
+   exit the DOS-Shell.
+
+   Type EXIT to return to TerMail.
+
+  ^hAlt-E Edit configuration and external files^n
+
+   This menu will allow you to edit the configuration files directly.
+   Please be very careful: Avoid changing or removing things you don't
+   understand. Generally, TerMail works "out of the box" without the need
+   to make manual changes.
+
+   ^bTM.CFG^n
+
+    This is the configuration file. Here you can set up everything. The
+    configuration file also contains additional information about TerMail.
+
+   ^bTM.BBS^n
+
+    This is the area file. It contains all the TAG NAMES (or conference
+    names) that you have. TerMail will automatically create new areas for
+    you and place the entries in this file.
+
+   ^bTM.NAM^n
+
+    TM.NAM is a list of the people you often write to. If you have a friend
+    called Steve Stacher, you could insert the following line:
+
+    Steve,Steve Stacher,2:443/888,Nice weather today
+
+    If you then just write "Steve" in the TO-name when you want to write a
+    message to him, the information would be grabbed from this file and
+    inserted, relieving you of the neccessity of remembering his address.
+    If you always want to crash mail your messages to Steve, add a ",Crash"
+    after the subject.
+
+   ^bTM.LST^n
+
+    This conference list is used by the Areafix manager. To get more
+    information about this topic, press F1 in the Areafix manager.
+
+   ^bTM.LOG^n
+
+    This log file contains information about all the mail tossed and
+    scanned by TerMail. Toss means import and scan means export. Here you
+    can check where your mail has come from and where it went.
+
+   ^bWHATSNEW^n
+
+    The TerMail History file contains information about the latest updates
+    and enhancements to TerMail.
+
+   ^bTM.PIC^n
+
+    The TM.PIC file is a text file with file names of the picture(s) you
+    have on your hard disk of the people whom you are writing to.
+
+   ^bTM.CC^n
+
+    Used for carbon copies group or mailing lists
+
+   ^bTM.RFM^n
+
+    Used for reformatting messages when quote-replying
+
+   ^bTM.SIG^n
+
+    Used for inserting signatures in the internal editor on F5
+
+   ^bTM.CRT^n
+
+    Used for correcting commonly spelled word
+
+   ^bOther file^n
+
+    With this option you can edit any other file, using an external editor.
+
+  ^hAlt-F File/Areafix manager^n
+
+   The File/Areafix manager is a function that will connect you to
+   conferences (the areas you receive mail in) and file-echoes where you
+   can receive files. Think of Areafix as a friend of your SysOp who checks
+   his/her netmails to see if you want to get connected to certain
+   conferences. Normally you would have to write a manual netmail, but with
+   the help of this unique feature in TerMail, you don't have to do
+   anything other than tag the conferences and send the message. You will
+   always get a reply from Areafix which will tell you if your request was
+   successful.
+
+   ^hThese special functions are available:^n
+
+   ^b%LIST^n
+
+    First you should always request a list of all the conferences that are
+    available to you. Then you can create a TM.LST from this message. Look
+    in TM.LST for more information about how to do this.
+
+   ^b%QUERY^n
+
+    Request a small list of the areas you are connected to.
+
+   ^b%RESCAN^n
+
+    All newly connected areas will be rescanned, so you will receive all
+    the messages that are immediately available from your uplink. If your
+    uplink does not keep the area you choose in his message base
+    ("passthrough"), you will not receive any old messages, but you will
+    receive messages in the future, perhaps tomorrow. You are not always
+    allowed to rescan, but it will never hurt to try.
+
+    Beware if you are a new user and you try to rescan 50 areas - if you
+    should do this, you will be flooded with plenty of old messages.
+
+   ^b%HELP^n
+
+    Request help information from Areafix. Not all Areafix programs
+    understand the same commands and requests, so getting this message back
+    should be the first thing for you to try.
+
+   ^b%PAUSE^n
+
+    Temporarily suspend all connected areas. When you go on vacation, for
+    example, you might not want to have to get all echomail saved up at
+    your boss. Netmails will still be saved and stored for you.
+
+   ^b%RESUME^n
+
+    Resume all temporarily suspended areas.
+
+   ^hEchofile^n
+
+    Select which echofile you want to use for area tagging. By default an
+    echofile is attached to your user record, but you can select another
+    echofile for the current user if necessary.
+
+   ^hSelect areas^n
+
+    Press ^bSPACE^n to toggle a single area.
+    ^b+^n Connect to this conference.
+    ^b-^n Disconnect from this conference.
+    ^bA^n Add this area to list.
+    ^bE^n Edit the area list using the external editor.
+
+    Gray keys (numeric keypad)
+
+    ^b+^n Connect to all conferences.
+    ^b-^n Disconnect from all conferences.
+    ^b*^n Toggle the connect/disconnect mark on all conferences.
+
+  ^hAlt-M Message base maintenance^n
+
+   TerMail uses the external tool TMUTIL.EXE to perform maintenance work on
+   the message base. This utility was written using the highly optimized
+   Gecho technology created by Gerard J. van der Land.
+
+   ^m⁄ƒ¥^t Message base maintenance ^m√ø
+   ≥ ^nPack area(s)                ^m≥
+   ≥ ^nPurge messages              ^m≥
+   ≥ ^nLink area(s)                ^m≥
+   ≥ ^nUnlink area(s)              ^m≥
+   ≥^r Index JAM area(s)           ^m≥
+   ≥ ^nUndelete JAM area(s)        ^m≥
+   ≥ ^nSecure area                 ^m≥
+   ≥ ^nConvert area to JAM         ^m≥
+   ≥ ^nTranslation editor          ^m≥
+   ¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ^n
+
+   ^hPack area(s)^n
+
+    Remove deleted messages from the message bases.
+
+   ^hPurge messages^n
+
+    Delete messages from message bases, depending on the age and the
+    maximum number of messages allowed in the areas.
+
+   ^hLink area(s)^n
+
+    Update the reply links, this is also called "message threading".
+
+   ^hUnlink area(s)^n
+
+    Remove all reply links.
+
+   ^hIndex JAM area(s)^n
+
+    Create new index files for all JAM areas.
+
+   ^hUndelete JAM area(s)^n
+
+    If you purged, but didn't pack some JAM areas, you can restore the
+    message(s) with this command.
+
+   ^hSecure area^n
+
+    Protect this area with a password, so no one can access the area
+    without entering the password first. With this menu entry you can also
+    remove the protection from the area.
+
+   ^hConvert area to JAM^n
+
+    Convert a MSG area to JAM message base. JAM message bases can help you
+    save a lot of harddisk space since they only consist of 4 files each.
+    MSG areas use 1 file per message and are much slower. If you use 8k
+    clusters on your harddisk, an MSG area can use up to 6-8 times the
+    space needed by a JAM area. If you want to convert a JAM area to MSG
+    you first create a new area, mark all messages and select the MOVE
+    command (M).
+
+  ^hDELete Remove messages or entire area^n
+
+   You cannot remove the Netmail area, so if you press DEL while the
+   Netmail area is active, you will only be asked whether you want to
+   delete all messages. When you press DEL with any other conference, you
+   will be given three options.
+
+   ^bRemove area completely^n
+
+   This will delete the messagebase and remove the area entry in TM.BBS.
+   Warning this will delete all messages even locked messages.
+   TerMail will also send an Areafix message to unlink the area.
+
+   ^bDelete all messages^n
+
+   This option erases all messages from the area.
+
+   ^bDisconnect with Areafix^n
+
+   You can automatically send an Areafix request to your uplink to inform
+   him that you don't want to receive mail in this conference anymore. You
+   should choose this option before removing an area.
+
+  ^hAlt-S Scan all areas^n
+
+   If you are using a network or if you have pressed ENTER while the areas
+   were being scanned, you might want to scan all areas again to check
+   whether new messages have arrived since you started TerMail.
+
+
+ ^hMessage reader^n
+
+  ^m⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¬ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒø
+  ≥^bF1               ^m≥ ^hHelp^n system                                            ^m≥
+  ≥^bF2               ^m≥ ^nSelect and run ^hexternal utilities^n                      ^m≥
+  ≥^bF6               ^m≥ ^nView and edit ^hforms^n available                          ^m≥
+  ≥^bF7               ^m≥ ^nTemporarily change ^hgroup^n or create new group           ^m≥
+  ≥^bF8               ^m≥ ^hNodelist^n lookup                                        ^m≥
+  ≥^bF10              ^m≥ ^hAddress^n book system                                    ^m≥
+  ≥^bA, Esc           ^m≥ ^hLeave^n area                                             ^m≥
+  ≥^bB, Ctrl-R        ^m≥ ^nClean or ^hpurge^n area                                    ^m≥
+  ≥^bC, Alt-C         ^m≥ ^hChange^n message or send local message again             ^m≥
+  ≥^bD, Alt-D, DELete ^m≥ ^hDelete^n message or marked messages                      ^m≥
+  ≥^bE, Alt-E, INSert ^m≥ ^nEnter ^hnew message^n in area                              ^m≥
+  ≥^bF, Alt-F, Ctrl-F ^m≥ ^hFind^n all files in msg/select/make request in outbound  ^m≥
+  ≥^bG, Alt-G         ^m≥ ^nQuote-reply to message (^hTO-name^n)                       ^m≥
+  ≥^bH                ^m≥ ^nUU-^hencoding^n/^hdecoding^n                                   ^m≥
+  ≥^bI                ^m≥ ^n^hKludges^n and other network information                  ^m≥
+  ≥^bJ, Alt-J, Alt-O  ^m≥ ^nJump to ^hDOS^n                                            ^m≥
+  ≥^bK, Ctrl-K        ^m≥ ^nToggle ^hkludge^n information shown in messages            ^m≥
+  ≥^bL, Alt-L, F9     ^m≥ ^hList^n area, 1 message per line                          ^m≥
+  ≥^bM, Alt-M         ^m≥ ^hForward^n message in another area or Copy/Move message(s)^m≥
+  ≥^bN, Alt-N, F5     ^m≥ ^hReply^n to this message in another area                  ^m≥
+  ≥^bO, Ctrl-O        ^m≥ ^nTemporarily change ^horigin^n for group                    ^m≥
+  ≥^bP, Ctrl-S        ^m≥ ^nChange ^hattributes^n of message                           ^m≥
+  ≥^bQ, R, F4         ^m≥ ^nQuote-^hreply^n to message (FROM-name) (Alt-Q)             ^m≥
+  ≥^bS, Alt-S         ^m≥ ^nExtensive ^hsearch^n and mark menu                         ^m≥
+  ≥^bT, Ctrl-T        ^m≥ ^nTemporarily change ^htemplate^n for group                  ^m≥
+  ≥^bU, Ctrl-U        ^m≥ ^nTemporarily change ^huser^n for group                      ^m≥
+  ≥^bV                ^m≥ ^nView ^hnodelists^n using the external lister               ^m≥
+  ≥^bW, Ctrl-W        ^m≥ ^hExport^n message or marked messages                      ^m≥
+  ≥^bX                ^m≥ ^nArea ^hstatistics^n, message tracking and address finding  ^m≥
+  ≥^bY                ^m≥ ^nMessage ^hstatistics^n                                     ^m≥
+  ≥^bZ                ^m≥ ^nZap to ^hnext area^n at once                               ^m≥
+  ≥^bAlt-A            ^m≥ ^hSmartnote^n, saves all your notes easily                 ^m≥
+  ≥^bAlt-B            ^m≥ ^hBossKey^n, start BOSSKEY.COM/EXE when your boss walks in ^m≥
+  ≥^bAlt-I            ^m≥ ^nSelect ^hwww-pages^n in message and call web-browser       ^m≥
+  ≥^bAlt-K            ^m≥ ^hGrab^n, Shift+cursors to change size of string grabber   ^m≥
+  ≥^bAlt-P            ^m≥ ^nView ^hpicture^n of sender if available                    ^m≥
+  ≥^bAlt-R, F3        ^m≥ ^hReply^n without quoting                                  ^m≥
+  ≥^bAlt-T            ^m≥ ^hEdit^n message text                                      ^m≥
+  ≥^bAlt-U, Ctrl-F3   ^m≥ ^hROT-13^n simple encryption/decryption                    ^m≥
+  ≥^bAlt-V            ^m≥ ^nView all available ^hpictures^n                            ^m≥
+  ≥^bAlt-W            ^m≥ ^hTranslation^n editor                                     ^m≥
+  ≥^bAlt-X            ^m≥ ^hExit^n TerMail                                           ^m≥
+  ≥^bAlt-Z            ^m≥ ^hMega^n search                                            ^m≥
+  ≥^bAlt-F10          ^m≥ ^hCDROM^n player                                           ^m≥
+  ≥^bAlt-1            ^m≥ ^nToggle ^hsound^n on/off                                    ^m≥
+  ≥^bAlt-2            ^m≥ ^nToggle ^hstylecodes^n                                      ^m≥
+  ≥^bAlt-3            ^m≥ ^nToggle strip ^hstylecodes^n                                ^m≥
+  ≥^bAlt-4            ^m≥ ^nToggle ^hhighlighting^n                                    ^m≥
+  ≥^bAlt-5            ^m≥ ^nToggle ^hreformatting^n quotes                             ^m≥
+  ≥^bAlt-6            ^m≥ ^nClear searchstring                                     ^m≥
+  ≥^bAlt-7            ^m≥ ^nToggle StartListArea                                   ^m≥
+  ≥^bAlt-8            ^m≥ ^nToggle Mouse support                                   ^m≥
+  ≥^bSpace, +, -, *   ^m≥ ^hMark^n/^hUnmark^n message (+-*=All)                          ^m≥
+  ≥^bLeft, Right      ^m≥ ^hNext^n/previous message                                  ^m≥
+  ≥^b<> ,.            ^m≥ ^nJump to ^hnext^n/previous marked msg                       ^m≥
+  ≥^bCtrl-Lft/Rght/Up ^m≥ ^hNext^n/previous/first reply, also Shift-Left/Right       ^m≥
+  ≥^bMsg movement     ^m≥ ^nUp/Down/Home/End/PgDn/PgUp/Enter: ^hView^n current message ^m≥
+  ≥^bCtrl-Home        ^m≥ ^hGoto first^n message in area                             ^m≥
+  ≥^bCtrl-End         ^m≥ ^hGoto last^n message in area                              ^m≥
+  ≥^b0,1,2..9         ^m≥ ^hGo^n directly to entered message ^hnumber^n                  ^m≥
+  ≥^bShift F1..F10    ^m≥ ^nRun ^hexternal utilities^n directly                        ^m≥
+  ≥^bShift-Esc        ^m≥ ^nRuntime ^hinformation^n                                    ^m≥
+  ≥^bTAB              ^m≥ ^nSet ^hbookmark^n. Press Shift-TAB or Backspace to return   ^m≥
+  ¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¡ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ^n
+
+  ^hMouse support^n
+
+   TerMail has full mouse support, just click the left mouse button on most
+   places in the screens. When reading a message you can press several places
+   for an immediate action or to call up the mouse menu. Click the mouse on
+   the statusbar over /=Menu and the fast menu will pop up. To navigate
+   to previous message / page up / page down / next message click the mouse
+   in the "<=- ^ v -=>" signs in the statusbar.
+
+  ^hF1 Help system^n
+
+   Activate the online help you are reading right now.
+
+  ^hF2 (Shift F1..F12) External utilities^n
+
+   When pressing F2, you will see all the available external utilities. You
+   can either select one from this menu or you can activate the utility
+   directly by pressing a key combination between Shift-F1 and Shift-F12
+
+  ^hF6 Forms^n
+
+   When writing a message you can include a form in your message.
+
+  ^hF7 Show/create groups^n
+
+   View the groups that have been defined in the configuration.
+
+   Press the INSERT (INS) key to create a new group. Groups are used to
+   control which user and what template should be used, how many messages
+   should be kept and other defaults for the areas assigned to a group.
+
+  ^hF8 Nodelist lookup^n
+
+   Search easily through the nodelist.
+
+  ^hF10 Address book system^n
+
+   TerMail's address book feature allows you to keep a list of your friends
+   and their addresses. It also registers when you wrote to them for the
+   first and last times and how often you have written to them. In the
+   address book, you can also keep information such as their phone number
+   and snail mail address.
+
+   It is also possible to import sections or single addresses from the
+   nodelist into the address book.
+
+   ^m⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¬ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¥^t Record 1 ^m√ø
+   ≥^r Name            ^m≥ ^bBo Bendtsen                                         ^m≥
+   ≥ ^nFidon^be^nt         ^m≥ ^b2:236/111                ^bC^nrash   ^bYes^n                ^m≥
+   ≥ ^bI^nnternet        ^m≥                                                     ^m≥
+   ≥ ^bO^nrganisation    ^m≥ ^bDAN BBS ApS                                         ^m≥
+   ≥ ^bA^nddress         ^m≥ ^bKastanie alle 14                                    ^m≥
+   ≥ ^nA^bd^ndress         ^m≥ ^b2620 Albertslund                                    ^m≥
+   ≥ ^nAdd^br^ness         ^m≥ ^bDenmark                                             ^m≥
+   ≥ ^nComment ^b1       ^m≥                                                     ≥
+   ≥ ^nComment ^b2       ^m≥ ^bHome of Terminate                                   ^m≥
+   ≥ ^nComment ^b3       ^m≥ ^bDenmarks biggest and friendliest BBS                ^m≥
+   ≥ ^nComment ^b4       ^m≥                                                     ≥
+   ≥ ^nComment ^b5       ^m≥                                                     ≥
+   ≥ ^nDa^bt^na phone      ^m≥ ^b+45 43623990                                        ^m≥
+   ≥ ^bV^noice phone     ^m≥ ^b+45 43623331                                        ^m≥
+   ≥ ^bF^nirst date      ^m≥ ^b12-Jul-1995       4 days ago                        ^m≥
+   ≥ ^bL^nast date       ^m≥ ^b14-Jul-1995       2 days ago    16.29               ^m≥
+   ≥ ^nTimes ^bw^nritten   ^m≥ ^b3                                                   ^m≥
+   ≥ ^bC^nharset         ^m≥ ^bLATIN-1                                             ^m≥
+   ≥ ^bH^nomepage        ^m≥                                                     ^m≥
+   ≥ ^bG^nroup           ^m≥ ^bFriends                                             ^m≥
+   ¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¡ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ^n
+
+   ^hName^n
+
+    Name of the receiver.
+
+   ^hFidonet^n
+
+    The receiver's address in a Fidonet-style format.
+
+    ^hCrash^n
+
+     Send the message with a crash flag when creating mail for this
+     receiver by default.
+     Crash means you call directly to a system to deliver your mail and
+     don't send it through your Boss. Sometimes this is faster and more
+     reliable, but it also is more expensive.
+
+   ^hInternet^n
+
+    An Internet-style address. The Fidonet address must point to the UUCP
+    gateway you are using. You can, however, just specify an UUCP gate or a
+    non-Fidonet address. Then the nodelists will be searched and you can
+    choose between the gate you wish to use. When you have found a node
+    where the gating works, you can replace UUCP with the Fidonet address
+    and the nodelists will not be searched.
+
+    The Internet field can only be inserted when the address book entry
+    actually points to an Internet address. If you just want to save an
+    Internet address for an entry, save it in one of the comment fields.
+    Look in the nodelist for an UUCP or GUUCP-flag and contact these nodes
+    for further instructions. Please note that some UUCP gates require an
+    agreement before you can send mail through them, so please ask before
+    you start sending through gates.
+
+    Sending mail to an Internet address:
+
+     You -----> Crash or           -----> UUCP Gateway -----> Receiver
+     (Fidonet)  Routed via Fidonet                            (Internet)
+
+       You can either crash or route a message to the UUCP Gate. The
+       TO-field in the message header should be UUCP. The First line in the
+       message has to be "To:internet@address.here". The UUCP Gateway will
+       automatically send your mail to the correct receiver on the
+       Internet.
+
+    Receiving mail from an Internet address:
+
+     Sender ---------> fidonet.org -----> Routed via Fidonet -----> You
+
+       Simply ask people to send mail to the Internet address which every
+       FidoNet user has.
+
+       The format of your address is as follows:
+
+       Bo Bendtsen, 2:236/111.3 :
+
+       Name Spaces Point  Node Net  Zone Domain Organisation
+          ≥ |          ≥  ≥    ≥    ≥    ≥      ≥
+          bo_bendtsen@p3.f111.n236.z2.fidonet.org = 2:236/111.3
+
+       If you are a node you can remove the "p0."
+
+       That means that you can tell any people on the Internet to send mail
+       to your Internet address using in the format described above. The
+       sender will address his/her message to a normal Internet mail-server
+       called fidonet.org. This server converts the message to a Fidonet
+       style address and routes it like a normal Fidonet netmail. You will
+       receive the mail faster or slower depending on how close you are to
+       the gate that has been used.
+
+    Replying to a mail from Internet:
+
+       When you receive a netmail from an Internet address it will always
+       to gated through an UUCP gate. This gate will insert two kludges
+       called "REPLYADDR" and "REPLYTO". TerMail will grab these kludges -
+       they hold the information needed for a reply. However, should these
+       kludges not be found, TerMail will try and grab the "From: " string
+       in the second line in the message header. A "From: " line has no
+       information on where to gate the message back to Internet, so you
+       will have to find a gate that works.
+
+       A "From: " line could look like this:
+
+         From: bo@serwiz.thegap.com
+
+       The special kludges used for Internet replies (this is only an
+       example!) are:
+
+         @REPLYADDR bo@serwiz.thegap.com
+         @REPLYTO 2:25/25 Bo Bendtsen
+         (@ = ASCII 1)
+
+   ^hOrganisation^n
+
+    The name of the organisation or company which maintains the Internet
+    domain.
+
+   ^hAddress^n
+
+    The address of the receiver.
+
+   ^hComment 1^n ^hComment 2^n ^hComment 3^n ^hComment 4^n ^hComment 5^n
+
+    Any comments you might want to remember about this entry.
+
+   ^hData phone^n
+
+    The data phone number of the receiver (modem).
+
+   ^hVoice phone^n
+
+    The voice phone number of the receiver.
+
+   ^hFax phone^n
+
+    The fax phone number of the receiver.
+
+   ^hFirst date^n
+
+    The date when you sent your first message to this receiver.
+
+   ^hLast date^n
+
+    The last time you sent a message to this receiver.
+
+   ^hTimes written^n
+
+    How many messages you have written to this receiver.
+
+   ^hCharset^n
+
+    What charset to translate to when writing a NETMAIL to this user.
+    If you write LATIN-1 you must have the LATIN-1.850 if you use codepage
+    850 or LATIN-1.865 if you use codepage 865 etc.
+
+   ^hHomepage^n
+
+    If WebBrowser specified in TM.CFG then you can enter web-pages here
+    and when you press you will be asked to view page.
+
+   ^hGroup^n
+
+    What group does this person belong to
+
+  ^hA Leave area (Esc)^n
+
+   Exit the area and return to the area selection window.
+
+  ^hB Clean/renumber (Ctrl-R)^n
+
+   Either clean up an area using the group settings or just renumber
+   messages.
+
+  ^hC Change message (Alt-C)^n
+
+   Change the header and/or contents of the message or re-send a local
+   message.
+
+  ^hD Delete message(s) (Alt-D, DELete)^n
+
+   Delete either the current message or all marked messages. If a message
+   is locked, you will not be able to delete it. First you have to remove
+   the lock flag by pressing first P, then O.
+
+  ^hE Create new message (Alt-E, INSert)^n
+
+   Write a new message to someone - anyone.
+
+   ^hInternal message editor^n
+
+    ^bQedit   WordStar^n
+
+    ^bESC                  ^hSave^n menu, save, continue, abort
+    ^bF2                   ^hSave^n message
+    ^b                     ^nAlternate keys: Alt-S Alt-X Ctrl-Z Ctrl-F2
+    ^bF3      Ctrl-K-R     ^hImport^n file into message at cursor position
+    ^b                     ^nAlternate keys: Alt-I Alt-R
+
+    ^bF5                   ^hInsert^n signature from TM.SIG
+    ^bF9                   ^nRun ^hspellchecker^n or other external program
+    ^bF10                  ^hAddress^n book
+    ^bF11                  ^nSearch ^hnodelist^n
+    ^bAlt-F1               ^hExternal utilities^n
+    ^bAlt-F2               ^hAbandon^n file
+    ^bAlt-F9               ^nSwitch to ^hexternal editor^n
+    ^bAlt-F10              ^hCDROM^n player
+    ^bAlt-A                ^hSmartnote^n, press Ctrl-Enter to copy line to clipboard
+    ^bAlt-J                ^hDOS^n-shell
+    ^bAlt-K                ^hGrab^n lines, Alt-G in smartnote=insert, Alt-Z in msg
+    ^bAlt-Z                ^hInsert^n lines from clipboard in message
+
+    ^bAlt-D   Ctrl-Y       ^hDelete^n line
+    ^b        Ctrl-T       ^hDelete^n word
+    ^bF6      Ctrl-Q-Y     ^hDelete^n from cursor to end of line
+    ^b        Ctrl-U       ^hUndelete^n from the kill buffer
+    ^bF4                   ^hDuplicate^n line
+    ^b        Ctrl-J-L     ^hJump^n to line number
+    ^b        Ctrl-P       ^nInsert ^hcontrol character^n
+    ^bF7      Ctrl-K-B     ^hBegin^n block
+    ^bF8      Ctrl-K-K     ^hEnd^n block
+    ^b        Ctrl-K-T     ^hMark current word^n as a block
+    ^b        Ctrl-Q-B     ^nJump to the beginning of the currently marked block.
+    ^b        Ctrl-Q-K     ^nJump to the end of the block
+    ^bAlt-U   Ctrl-K-H     ^nToggle the display of blocks
+    ^bAlt-C   Ctrl-K-C     ^hCopy^n block to cursor position
+    ^b                     ^nAlternate keys: Ctrl-Insert Shift-Insert
+    ^b        Ctrl-K-V     ^hMove^n block to cursor position
+    ^bAlt-G   Ctrl-K-Y     ^hDelete^n the currently displayed block.
+    ^b                     ^nAlternate keys: Ctrl-Delete
+    ^bSh-F8   Ctrl-K-I     ^nIndent the currently displayed block by 1
+    ^bSh-F7   Ctrl-K-U     ^nUnindent the block by 1
+    ^bAlt-T                ^nInsert character from ^hASCII selector^n
+    ^bAlt-1   Ctrl-O-U     ^nConvert block to ^huppercase^n
+    ^bAlt-2   Ctrl-O-R     ^nConvert block to ^hlowercase^n
+    ^bAlt-3   Ctrl-O-O     ^hToggle^n the case of all characters in block
+    ^bAlt-W   Ctrl-K-W     ^hWrite block^n to file
+    ^b        Ctrl-Q-F     ^hSearch^n for string
+    ^b                     ^nOption: B=Backward, G=Globally,
+    ^b                     ^n        L=Locally in block, U=ignore case
+    ^b        Ctrl-Q-A     ^hFind and replace^n, same options as Search,
+    ^b                     ^nOption: N=Ask for each match to replace
+    ^b        Ctrl-L       ^nRepeat the last search or replace operation
+    ^b        Ctrl-B       ^hReformat^n the current paragraph if word wrap on
+    ^bAlt-B                ^hReformat^n the current marked block if word wrap on
+    ^b        Ctrl-K-G     ^hReformat^n the entire text buffer. Use with caution!
+    ^b        Ctrl-O-C     ^nCenter the current line
+    ^bAlt-Y                ^nInsert color style
+    ^bInsert  Ctrl-V       ^nToggle insert mode
+    ^b        Ctrl-O-I     ^nToggle auto-indent mode on/off
+    ^b        Ctrl-O-W     ^nToggle word wrap on/off
+    ^b        Ctrl-O-F     ^nToggle the tab mode between smart tabs and fixed tabs
+    ^b        Ctrl-O-T     ^nSet number of columns between tab stops (1-10).
+    ^b        Ctrl-O-B     ^nSet number of spaces to indent/unindent marked blocks
+    ^b        Ctrl-Q-L     ^hRestore^n original contents of the current line
+
+    ^bShift-Cursor         ^hMark block^n in all directions
+
+  ^hF Request files (Alt-F, Ctrl-F)^n
+
+   Find all the filenames contained in a message and request these files
+   directly from the network address where the message originated.
+
+   List all filenames in a message and select the file(s) you want. A
+   message will be created automatically, requesting the marked files from
+   the network address from which the message originated.
+
+   Since people announce programs in many different ways, sometimes TerMail
+   might not recognize all the filenames. If this happens simply edit the
+   filename manually.
+
+  ^hG Quote-reply to message (TO-name) (Alt-G)^n
+
+   Quote the entire message and start editing your reply. This function
+   sends your reply to the TO-name of the quoted message.
+
+  ^hH UU-encoding/decoding^n
+
+   Convert binary files into a 7-bit ascii format which can be inserted
+   into messages and extracted by the receiver to its original binary form.
+   Please be advised that some networks have restrictions on sending routed
+   uu-encoded files. If the file is important, I would suggest that you
+   crash the file directly to the receiver or the receiver's uplink (a.k.a.
+   "Boss").
+
+  ^hI Fidonet kludges^n (Special keywords in messages)^n
+
+   ^bINTL   ^nInter-zone, kludge to assure a direction to the correct address
+   ^bFMPT   ^nFrom point. Tells other systems which point wrote the message
+   ^bTOPT   ^nTo point. Will tell nodes to direct mail to this point number
+   ^bMSGID: ^nOrigin address and an unique checksum for your system
+   ^b        ^nThis is mostly used to ensure that the message came from the
+   ^b        ^nright place and will sometimes be used for dupe-checking
+   ^bREPLY: ^nInserted by editors when replying to msgs with a MSGID kludge
+   ^bPID    ^nEditor ID and version number, sometimes registration codes
+   ^bTID    ^nTosser ID and version number, sometimes registration codes
+   ^bVIA    ^nA line inserted by some utilities, for information use only
+   ^bAREA    ^nEchomail area name: such as TERMINAT or TERMINATE.GER. If the
+   ^b        ^nmsg has no AREA-kludge, it's a netmail/matrix message
+   ^bSEEN-BY ^nUsed to display all the systems that have got this message
+   ^b        ^nbefore you. Shows the systems through which the msg was routed
+   ^b        ^nas well as their respective downlinks
+   ^bPATH   ^nUsed to see exactly where the message is from and the route
+   ^b        ^nit travelled to your system. Also used to detect duplicates
+   ^bEID:   ^nEchomail dupe checksums, used for tracking down duplicates
+   ^bFLAGS: ^nThe status of the message: CRA,IMM,HLD,DIR,CFM,A/S,FRQ etc
+   ^bTZ     ^nTimezones; Denmark = GMT+1
+   ^bCHRS   ^nor ^bCHARSET^n, which charset was used to write the message
+   ^bSPLIT  ^nKludge used by some systems to split up large messages
+   ^bENC    ^nMessage is encrypted
+   ^bMOOD   ^nSpecial TerMail kludge to display the mood of the msg writer
+   ^bOrigin  ^nA line with info/address of the system where the msg came from
+   ^b---     ^nTearline, a small advertising line for the mail editor
+
+  ^hJ Jump to DOS (Alt-J, Alt-O)^n
+
+   Start a DOS-shell to run an external programs.
+   Note: You can't load a TSR in a DOS-shell and return to TerMail - you
+   have to remove the TSR first.
+
+  ^hK Toggle kludge information (Ctrl-K)^n
+
+   Display special mail information in messages. You can disable this by
+   default in the configuration, but generally for more advanced users the
+   kludges can provide some extra information and give you a better view
+   and understanding of the E-Mail kludges.
+
+  ^hL List area (Alt-L, F9)^n
+
+   This option displays a list of all messages of the current area, showing
+   one line per message, so you can select and read messages faster. Press
+   TAB to toggle between a view of selected messages or all messages.
+
+  ^hM Forward/Copy/Move (Alt-M)^n
+
+   Forward a message to other people or to another conferences. You can
+   also copy or move message(s) to another area.
+
+  ^hN Reply to this message in another area (Alt-N, F5)^n
+
+   Use this option for example when you want to reply to an echomail in
+   netmail (private mail).
+
+  ^hO Change origin for group (Ctrl-O)^n
+
+   Temporarily change the origin line for the group to which this area
+   belongs. The default origin lines can be modified in the group settings
+   of the configuration file.
+
+  ^hP Change attributes (Ctrl-S)^n
+
+   ^b⁄ƒƒƒƒƒƒƒƒ¥^t Mail Attributes ^b√ø
+   ^b≥ ^hC ^b(Cra) Crash             ≥  ^nSend message directly to receiver
+   ^b≥ ^hS ^b(Snt) Sent              ≥  ^nMessage has been sent from your system
+   ^b≥ ^hA ^b(Att) File attach       ≥  ^nSubject has a filename attached
+   ^b≥ ^hK ^b(K/s) Kill/sent         ≥  ^nMessage will be deleted after packing
+   ^b≥ ^hL ^b(Loc) Local             ≥  ^nMessage is written locally
+   ^b≥ ^hH ^b(Hld) Hold              ≥  ^nMessage is placed on hold
+   ^b≥ ^hF ^b(Frq) File request      ≥  ^nSubject contains requested files
+   ^b≥ ^hR ^b(Rrq) Request Receipt   ≥  ^nGet a confirmation msg from the receiver
+   ^b≥ ^hE ^b(Kfs) Erase file/sent   ≥  ^nErase the attached file after sending
+   ^b≥ ^hP ^b(Pvt) Private           ≥  ^nMessage is private
+   ^b≥ ^hV ^b(Rcv) Received          ≥  ^nYou've read this message
+   ^b≥ ^hO ^b(Lck) Locked            ≥  ^nMessage is protected from deletion (JAM)
+   ^b¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ^n
+
+  ^hQ Quote-reply to message (FROM-name) (R, F4, Alt-R, Alt-Q)^n
+
+   Quote the entire message and start editing your reply. This function
+   sends your message to the FROM-name of the quoted message.
+
+  ^hS Search/Mark menu (Alt-S)^n
+
+   ^m⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¥^t Search/Mark Menu ^m√ø
+   ≥ ^nMessage ^bR^nange:     3 -   101       ^m≥
+   ≥ ^nSet range to last ^b5^n00 messages     ^m≥
+   ≥ ^nSearch onl^by^n marked   ^bNo^n            ^m≥
+   √ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¥
+   ≥ ^bH^neader From/To/Subject             ^m≥
+   ≥ ^nHeader ^bF^nrom                        ^m≥
+   ≥ ^nHeader ^bT^no                          ^m≥
+   ≥ ^nHe^ba^nder and text                    ^m≥
+   ≥ ^bP^nersonal mail                      ^m≥
+   ≥ ^nRea^bd^n mail                          ^m≥
+   √ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¥
+   ≥ ^nMark all messages   ^b+^n              ^m≥
+   ≥ ^nUnmark all messages ^b-^n              ^m≥
+   ≥ ^nToggle marks        ^b*^n              ^m≥
+   ≥ ^nMark me^bs^nsages 3-101                ^m≥
+   ≥ ^nMark m^be^nssages 101-101              ^m≥
+   ≥ ^nMark c^bu^nrrent range                 ^m≥
+   ¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ^n
+
+   ^hMessage Range^n
+
+    Set the range in which messages will be searched or marked.
+
+   ^hSet range to last 500 messages^n
+
+    Quickly set a range of the last 500 messages, can be useful if you have
+    a large save area where you keep all you mail and you only want to
+    search the latest messages.
+
+   ^hSearch only marked^n
+
+    To narrow down number of found messages, you can search only those
+    messages that have already been marked. Assuming that you have already
+    found all messages containing the key word "Terminate" and now you want
+    to search only these messages for the keyword "point system", this
+    will unmark all tagged messages that do not contain the keyword "point
+    system" and only those messages which contain both "Terminate" and
+    "point system" would stay marked.
+
+   ^hHeader From/To/Subject^n
+
+    Check the header for a matching searchstring.
+
+   ^hHeader From^n
+
+    Check only the From-name for a matching searchstring.
+
+   ^hHeader To^n
+
+    Check only the To-name for a matching searchstring.
+
+   ^hHeader and text^n
+
+    Check the entire message for a matching searchstring.
+
+   ^hPersonal mail^n
+
+    Only search mail addressed to one of your usernames.
+
+   ^hRead mail^n
+
+    Only search mail that has the received flag.
+
+   ^hMark all messages^n
+
+    Set the "marked" flag on all messages.
+
+   ^hUnmark all messages^n
+
+    Remove the "marked" flag from all messages in range.
+
+   ^hToggle marks^n
+
+    Toggles marks on the messages in range.
+
+   ^hMark messages first->current^n
+
+    Mark all messages starting with the first message in the area and ending
+    with the current message.
+
+   ^hMark messages current->last^n
+
+    Mark all messages from the current message in the area to last message.
+
+   ^hMark current range^n
+
+    Mark all the messages in the range currently selected.
+
+  ^hT Change template for group (Ctrl-T)^n
+
+   Temporarily change the template for the group to which this area
+   belongs. The default templates can be modified in the group settings
+   section of the configuration file.
+
+  ^hU Temporarily change user for group (Ctrl-U)^n
+
+   Temporarily change the user name for the group to which this area
+   belongs. The default users can be modified in the group settings section
+   of the configuration file.
+
+  ^hV View nodelists^n
+
+   View the raw nodelists defined in the configuration file.
+
+  ^hW Export message(s) (Alt-W)^n
+
+   Export or print a message or all marked messages. You can also launch an
+   external print utility for special print jobs.
+
+  ^hX Area statistics, message tracking and address finding^n
+
+   Gather extensive statistics about the current message area or track down
+   the route taken by a message before you received it.
+   TerMail can check an entire area for any Fidonet, Internet or CompuServe
+   addresses contained therein and save them in an export file.
+
+  ^hY Message statistics^n
+
+   Display a simple message statistic.
+
+  ^hZ Zap to next area^n
+
+   This will make TerMail go to the following area immediately, without
+   first having to leave the current area manually and then choosing the
+   next one.
+
+  ^hAlt-A^n SmartNote
+
+   If you use The Internet or some other network where you have to remember
+   hundreds of different strings or note down lots of information, then you
+   cannot live any longer without SmartNote!
+   The SmartNote function is better than writing long addresses down on
+   paper because it is always ready for noting down anything needed at a
+   later time. Backups will be made automatically.
+
+   For example, if you see something on the screen that you wish to note
+   down:
+
+     1. Press Alt-K, mark and grab the text with the string grabber - the
+        grabber can be adjusted in size and position with SHIFT and
+        cursor-keys.
+     2. Now you enter SmartNote by pressing Alt-A and import the grabbed
+        information by pressing Alt-G exactly where you want the text to
+        appear.
+
+   NB: It does not matter where you see something on the screen as long as
+   you still are inside TerMail or Terminate. The Alt-K string grabber will
+   work everywhere.
+   If, for example, you want to copy something to another note file, just
+   follow the procedure above. If you want to test this powerful feature,
+   enter Terminate, press Alt-O, press Alt-K and grab a part of some menu.
+   Then start up SmartNote with Alt-A and insert the grabbed text with
+   Alt-G. (You can grab information from the Online Manual and insert in a
+   note file.)
+   You can adjust the grabbers' size by holding down SHIFT and then
+   resizing the window to be grabbed with the cursor movement keys (Arrow
+   up, down, right or left). Z will Zoom the grabber to maximum size.
+   Once you try this out, you will soon understand how powerful and useful
+   this feature can be!
+
+   The SmartNote editor offers the following functions:
+
+   ^hSmartNote commands^n
+
+    (Many of these commands are the same as the ones used by the Qedit
+     editor by SEMWARE)
+
+    ^bAlt-1^n          Uppercase line
+    ^bAlt-2^n          Lowercase line
+    ^bAlt-A^n          Select character from ASCII-selector
+    ^bAlt-C^n          Clear screen/erase all lines
+    ^bAlt-E^n          Edit this file with an external editor
+    ^bAlt-F^n          Search after keyword
+    ^bAlt-G^n          Import the last block you grabbed with Alt-K
+    ^bAlt-I^n          Import all history strings at the cursor position
+    ^bAlt-J^n          Jump to DOS
+    ^bAlt-K^n          String grabber
+    ^bAlt-L^n          Load another SmartNote file
+    ^bAlt-U^n          Import a textfile at the cursor position
+    ^bAlt-Z^n          Perform Turbo Search in all note files
+
+    ^m⁄ƒƒƒƒƒƒƒƒƒƒ¬ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¥^t Searching for 'YOU' ^m√ø
+    ≥ ^nINTERNET ^m≥^h   Here you can place any command ^byou^h like or just want to r ^m≥
+    ≥ ^nINTERNET ^m≥^h   The following lines are only examples of what ^byou^h could s ^m≥
+    ≥ ^nSMARTNOT ^m≥^h  used by default. If ^byou^h want to use another note file with ^m≥
+    ≥ ^nSMARTNOT ^m≥^h  it will be used when ^byou^h are online at that system.        ^m≥
+    ¿ƒƒƒƒƒƒƒƒƒƒ¡ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ^n
+
+    Turbo Search will allow you to search through all note files very
+    quickly, allow you to choose your match and jump to the position in the
+    notefile where the match was found. If several matches have been found,
+    you will be asked which match to use, as in the above example.
+
+    ^bCtrl-Enter^n     Send a line to device, followed by a carriage ^breturn^n (#13)
+    ^bCtrl-Y^n         Delete current line
+    ^bCtrl-T^n         Delete word to the right of the cursor position
+    ^bF2^n             Add a line
+    ^bF4^n             Duplicate line
+    ^bF6^n             Delete from the cursor position to the end of line
+
+   ^hSmartNote cursor-movement commands^n
+
+    ^bHome^n           Go to start of line
+    ^bEnd^n            Go to end of line
+    ^bCtrl-Home^n      Go to first screen line
+    ^bCtrl-End^n       Go to last screen line
+    ^bCursor Up^n      Move one line up
+    ^bCursor Down^n    Move one line down
+    ^bCursor Left^n    Move one position left
+    ^bCursor Right^n   Move one position right
+    ^bCtrl-Left^n      Move one word to the left
+    ^bCtrl-Right^n     Move one word to the right
+    ^bPageUp^n         Go 1 page down
+    ^bPageDown^n       Go 1 page up
+    ^bCtrl-PageUp^n    Go to top of file
+    ^bCtrl-PageDown^n  Go to bottom of file
+    ^bInsert^n         Toggle Insert/Overwrite
+    ^bDelete^n         Delete character under cursor
+    ^bBackspace^n      Delete character before cursor
+
+  ^hAlt-B BossKey^n
+
+   Start BOSSKEY.COM/EXE whenever you want to pretend that you are actually
+   working so you don't have to admit that you are reading private mail
+   during work-hours.
+
+  ^hAlt-K String grabber^n
+
+   Grab strings using the cursor keys. Use SHIFT + the cursor keys to
+   change size of string grabber. Whenever you are in an editing field, you
+   can press cursor-up to recall the grabbed strings.
+
+  ^hAlt-P View picture of sender^n
+
+   If a picture is available of the person who wrote the message, the word
+   "PIC" will appear on the message header and you can press Alt-P to call
+   up a picture viewer.
+
+  ^hAlt-V View all pictures^n
+
+   View all the pictures you have available.
+
+  ^hAlt-X Exit TerMail^n
+
+   Exit TerMail without asking for confirmation.
+
+  ^hAlt-F10 CDROM player^n
+
+   What could be more natural than listening to your favorite music while
+   reading/writing your daily mail. The CDROM player can be called up with
+   Alt-F10 from everywhere.
+
+   This is a record by the world famous Danish heavy metal band "D.A.D.".
+
+   ^hPlay^n
+
+    Starts playing the track number entered, followed by the rest of the
+    album.
+
+   ^hStop^n
+
+    Stop playing (mute).
+
+   ^hResume^n
+
+    Resume playing the track from where you stopped it.
+
+   ^hNext^n
+
+    Skip the rest of the current track and play the next.
+
+   ^hPrevious^n
+
+    Play the previous track.
+
+   ^hEject^n
+
+    Eject the CD from your CDROM drive.
+
+   ^hClose tray^n
+
+    Close your CDROM drive and start playing.
+
+   ^hLock CD door^n
+
+    Lock/unlock the CD inside the CDROM, so nobody can "borrow" the CD.
+
+   ^hMSCDEX Version^n
+
+    MSCDEX.EXE is a program supplied by MicroSoft for making standard calls
+    to CDROMs from DOS. MSCDEX stands for MicroSoft CD extension.
+    You need version 2.00 or later for this player to work. The current
+    version of MSCDEX is 2.24.
+
+   ^hCD in drive^n
+
+    Did TerMail detect a CD in the drive?
+
+   ^hDoor locked^n
+
+    Is the CDROM door locked?
+
+   ^hRaw and cooked^n
+
+    Does your drive support raw and cooked reading modes? (Uh?)
+
+   ^hData and Audio^n
+
+    Does your CD have both audio and data tracks (mixed mode CD)?
+
+   ^hHSG and Red book^n
+
+    Does your CDROM conform to the High Sierra May 28th standard and the
+    ISO-9660 version of the High Sierra format (Red Book)?
+
+   ^hAudiomanipulation^n
+
+    Does your CDROM support audio channel manipulation?
+
+   ^hVolume size^n
+
+    This is the total playing time of the CD.
+
+   ^hTrack^n
+
+    Which track is currently being played.
+
+   ^hTrack start^n
+
+    Where the track starts on the CD.
+
+   ^hTotal track time^n
+
+    How long the track is.
+
+   ^hTrack time^n
+
+    How much of the track has been played.
+
+   ^hTrack time left^n
+
+    How much playing time is left of the track.
+
+   ^hCopyrighted track^n
+
+    Is the track copyrighted?
+
+   ^bIndex^n
+
+    All music CD's have index marks when starting and stopping a track,
+    TerMail will flash the ^bIndex^n indicator when it passes an index.
+
+
+  ^hMarking messages^n
+
+   Press SPACE to toggle the "marked" status on a message.
+   ^b+^n Mark all messages in the current area.
+   ^b-^n Remove the "marked" status from all messages in this area.
+   ^b*^n Toggle the "marked" status on all marked messages in the area.
+
+  ^hCursor LEFT/RIGHT Next/previous message^n
+
+   Go to the next or previous message.
+
+  ^hJump to next/previous marked message ^b< >^n
+
+   When some messages have been marked, you can quickly jump to the
+   messages by pressing the more-than (>) or less-than (<) keys on your
+   keyboard.
+
+  ^hReading reply links^n
+
+   TerMail uses something called reply links to connect messages which are
+   related. In MSG areas linking by subject is supported. In JAM areas,
+   links are made through the MSGID kludge. Both are handled by an external
+   maintenance utility contained in the TerMail package, called TMUTIL.EXE.
+
+   Ctrl-Left Cursor     Read the previous reply           <=120
+   Ctrl-Right Cursor    Read the following reply          150=>
+   Ctrl-Up Cursor       Read the first reply (JAM only)   ^
+
+   The SHIFT + Cursor combination can also be used instead of the Ctrl key.
+
+  ^hMsg movement^n
+
+   Cursor Up        Move up through the message text
+   Cursor Down      Move down through message text
+   Home             Move to the top of a message
+   End              Move to the bottom of a message
+   PgDn             Move one screen page down in message text
+   PgUp             Move one screen page up in message text
+   Enter            Move down one page. When TerMail has arrived at the end
+                    of a message, RETURN will jump to the next message
+                    (this is disabled if you have enabled blind support).
+
+  ^hCtrl-Home Go to first message^n
+
+   Go to the first message in an area.
+
+  ^hCtrl-End Go to last message^n
+
+   Go to the last message in an area.
+
+  ^h0,1,2..9 Go directly to a specific message^n
+
+   Simply type in the message number and press RETURN: TerMail will jump
+   directly to the message you want.
+
+  ^hShift-Esc Runtime information^n
+
+   Information which is only used for testing purposes.
+
+  ^hTAB Bookmark^n
+
+   Set a bookmark. Press either SHIFT-TAB or the BACKSPACE key to return to
+   the Bookmarked message.
+
+ ^hCross-posting^n
+
+  Cross-posting is a special way of writing a message once and
+  automatically posting it in several areas without having to copy the
+  message manually. It is very simple to use and only requires you to know
+  the name of the conference where you want to copy the message to.
+
+  Enter on any line in the message:
+
+  XP: TERMINAT,TERMINATE.GER
+
+  If the example above were written in the netmail area, your message would
+  be saved in three folders: the Netmail folder, the international TERMINAT
+  conference and in the German Terminate support conference TERMINATE.GER.
+  The following lines would be inserted at the top of the message:
+
+  * Crossposted in NETMAIL
+  * Crossposted in TERMINAT
+  * Crossposted in TERMINATE.GER
+
+  If you need to cross-post a mail to more areas, just use several XP:
+  lines.
+
+  For compatibility reasons the abbreviation XC: will also be accepted.
+
+ ^hCarbon Copy^n
+
+  In your netmail area you can make copies of messages to multiple
+  receivers. For this purpose you can use the cc: or bc: keywords directly
+  in your messages. bc: is for blind copy or "Do not show in letter"
+  otherwise the flags have the same function.
+
+  Syntax:
+
+    cc: address or group or searchstring, address or searchstring
+
+  Each parameter must be seperated by a comma ,
+
+  Examples:
+
+  Send to the first 3 numbers and search entire nodelists for first
+  match on Bo Bendtsen.
+
+    cc: 2:254/261, 2:236/2000, 2:236/111, Bo Bendtsen
+
+  Send to NC236, 2:236/111 and to the points 13 and 17 of 2:236/111
+
+    cc: 2:236/0 , 111 , .13 , .17
+
+  Send to first match in nodelists on Bo Bendtsen and to 2:236/111
+  and remove all bc: lines in letter.
+
+    bc: Bo Bendtsen, 2:236/111
+
+  You can have as many cc: or bc: lines in your letters as you like, you
+  should start the cc: line before anything else to make it look as good
+  as possible. If you have a list of people that you always send messages
+  to please look in TM.CC where you can create groups/mailing lists.
+
+  Group example:
+
+    cc: 2:236/0, &Customers
+
+  If you want always to send crash to certain nodes, you can use the 'C'
+  option.
+
+    cc: 2:236/0, C2:236/111
+
+ ^hTranslation editor^n ^hAlt-W^n
+
+  When you receive messages in other character sets TerMail is able of
+  translating these messages to your system. TerMail will assume that
+  you are using IBMPC charset and translate to and from this set.
+  If a CHRS: kludge in a message is LATIN-1, TerMail will load
+  LATIN-1.850 if your codepage is 850. Whenever you reply to a message
+  with a LATIN-1 kludge your message will automatically be translated
+  back to LATIN-1 after you created the message. You can press Alt-W
+  on a message and change the translation and see the how the characters
+  are translated at once.
+
+ ^hSemaphore files^n
+
+  ^hTMRESCAN.NOW^n
+
+  Create this file in the TerMail directory and all areas will be assumed
+  unscanned and the next time you enter an area it will be rescanned. This
+  file will be deleted afterwards.
+
+  ^hTMFREEZE.NOW^n
+
+  On a network you can freeze all TerMail editors, to prevent users to do
+  anything with the databases. When the file is removed, users are again
+  allowed to use TerMail.
+
+  ^hTMNOTE.NOW^n
+
+  Send note to user, that will pop up as a window and make a sound.
+
+ ^hErrorlevels^n
+
+  When TerMail exits the errorlevels will be set as follows:
+
+  255   An error occured
+    3   Netmail and echomail was written
+    2   Echomail was written
+    1   Netmail was written
+    0   No mail was written
+
