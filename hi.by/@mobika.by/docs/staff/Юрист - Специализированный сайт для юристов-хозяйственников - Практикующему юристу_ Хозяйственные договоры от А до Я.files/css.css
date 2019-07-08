@@ -1,0 +1,198 @@
+A.navpic {
+	BACKGROUND: #d1d1d1
+}
+A.navpic:hover {
+	BACKGROUND: #ffffff
+}
+IMG.navpic {
+	BACKGROUND: #9b9b9b
+}
+IMG.w {
+	BACKGROUND: #ffffff
+}
+IMG.b {
+	BACKGROUND: #000000
+}
+IMG.line {
+	BACKGROUND: #e0e0e0
+}
+IMG.line2 {
+	BACKGROUND: #545454
+}
+IMG.line3 {
+	BACKGROUND: #666666
+}
+A {
+	COLOR: black
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A.noline {
+	TEXT-DECORATION: none
+}
+A.w {
+	COLOR: white
+}
+A.sm_w {
+	FONT-SIZE: 10px; COLOR: white
+}
+A.sd_w {
+	FONT-SIZE: 12px; COLOR: white
+}
+A.nav1 {
+	FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+A.nav1:hover {
+	COLOR: #999999
+}
+.txt_fix_s {
+	COLOR: black; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.txt_fix_m {
+	COLOR: black; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.txt_fix_l {
+	COLOR: black; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.txt_fix_xl {
+	COLOR: black; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.txt_fix_s {
+	FONT-SIZE: 10px; FONT-FAMILY: arial
+}
+.txt_fix_m {
+	FONT-SIZE: 11px
+}
+.txt_fix_l {
+	FONT-SIZE: 12px
+}
+.txt_fix_xl {
+	FONT-SIZE: 16px
+}
+.txt_fix_s_w {
+	COLOR: white; TEXT-DECORATION: none
+}
+.txt_fix_m_w {
+	COLOR: white; TEXT-DECORATION: none
+}
+.txt_fix_l_w {
+	COLOR: white; TEXT-DECORATION: none
+}
+.txt_fix_h3_w {
+	COLOR: white; TEXT-DECORATION: none
+}
+.txt_fix_xl_w {
+	COLOR: white; TEXT-DECORATION: none
+}
+.txt_fix_s_w {
+	FONT-SIZE: 10px
+}
+.txt_fix_m_w {
+	FONT-SIZE: 11px
+}
+.txt_fix_l_w {
+	FONT-SIZE: 12px
+}
+.txt_fix_xl_w {
+	FONT-SIZE: 16px
+}
+.txt_fix_h3_w {
+	FONT-SIZE: 17px
+}
+.txt_dyn_s_g {
+	COLOR: #777777; TEXT-DECORATION: none
+}
+.txt_dyn_m_g {
+	COLOR: #777777; TEXT-DECORATION: none
+}
+.txt_dyn_l_g {
+	COLOR: #777777; TEXT-DECORATION: none
+}
+.txt_dyn_xl_g {
+	COLOR: #777777; TEXT-DECORATION: none
+}
+.txt_dyn_s_g {
+	FONT-SIZE: 75%
+}
+.txt_dyn_m_g {
+	FONT-SIZE: 85%
+}
+.txt_dyn_l_g {
+	FONT-SIZE: 100%
+}
+.txt_dyn_xl_g {
+	FONT-SIZE: 120%
+}
+.txt_dyn_s {
+	TEXT-DECORATION: none
+}
+.txt_dyn_m {
+	TEXT-DECORATION: none
+}
+.txt_dyn_l {
+	TEXT-DECORATION: none
+}
+.txt_dyn_xl {
+	TEXT-DECORATION: none
+}
+.txt_dyn_s {
+	
+}
+.txt_dyn_m {
+	
+}
+.txt_dyn_l {
+	
+}
+.txt_dyn_xl {
+	
+}
+.txt_dyn_s_r {
+	COLOR: #e20101; TEXT-DECORATION: none
+}
+.txt_dyn_s_r {
+	FONT-SIZE: 75%
+}
+SPAN.date {
+	FONT: 10px arial; COLOR: #999999
+}
+LI {
+	LIST-STYLE-IMAGE: url(i/li.gif)
+}
+HR {
+	COLOR: #808080; HEIGHT: 1px
+}
+HR.2 {
+	COLOR: #e0e0e0; HEIGHT: 1px
+}
+INPUT {
+	FONT: 11px arial
+}
+SELECT {
+	FONT: 11px arial
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-FAMILY: arial
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-FAMILY: arial
+}
+H3 {
+	FONT-WEIGHT: normal; FONT-FAMILY: arial
+}
+H4 {
+	FONT-WEIGHT: normal; FONT-FAMILY: arial
+}
+H5 {
+	FONT-WEIGHT: normal; FONT-FAMILY: arial
+}
+DIV.issue_top {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 11px; BACKGROUND: #000000; PADDING-BOTTOM: 5px; WIDTH: 100%; COLOR: white; PADDING-TOP: 5px
+}
+.top-bg {
+	BACKGROUND: url(/i/image.gif)
+}
+.light-menu-item-text {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #003399
+}
