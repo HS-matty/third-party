@@ -1,0 +1,58 @@
+<?
+session_start();
+define('IN_SHOP', true);
+include('../cfg/conf.inc');
+
+require_once "../class.Template.php";
+$tpl = new Template("./tpl");
+$msg="";
+
+if (session_is_registered("login")) header("Location: index.php");;
+
+
+if(isset($login) && !(empty($login)) && isset($pass) && !(empty($pass)) ){
+
+	$db = mysql_connect() or die (mysql_error());		//if we have  login and password,
+	mysql_select_db("$db_name") or die (mysql_error()); //we compare it with
+														// database data
+	//quering db
+	$q = mysql_query("SELECT * from users WHERE login='$login' AND pass='$pass'") or die (mysql_error());
+	if ( mysql_num_rows($q) ){	//if we have such login and password...
+		$user_array = mysql_fetch_array($q) or die (mysql_error());
+		$user_rights = $user_array['rights'];
+		$ses_id =  $PHPSESSID;
+		session_register("ses_id");
+		session_register("login");
+		session_register("user_rights");
+		header("Location: index.php");
+		
+	}
+	else  $msg = "bad login or password!";
+				
+	
+	
+}
+
+
+
+
+
+
+if(!session_is_registered("login")) {
+eval("print \"".$tpl->get("login")."\";"); // Parsing and displaying login template.
+}
+
+else {
+	
+	//header("Location: index.php");
+	
+
+
+}	
+
+
+
+
+
+
+?>

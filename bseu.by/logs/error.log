@@ -1,0 +1,241 @@
+[Thu Mar 07 20:40:28 2002] [error] [client 127.0.0.2] File does not exist: home/bseu/www/
+[Fri Mar 08 09:56:31 2002] [error] [client 127.0.0.2] (2)No such file or directory: script not found or unable to stat: e:/work/root/home/bseu/cgi-bintest.pl
+[Fri Mar 08 09:56:34 2002] [error] [client 127.0.0.2] (2)No such file or directory: script not found or unable to stat: e:/work/root/home/bseu/cgi-bintest.pl
+[Fri Mar 08 09:56:51 2002] [error] [client 127.0.0.2] (2)No such file or directory: script not found or unable to stat: e:/work/root/home/bseu/cgi-bintest.pl
+[Fri Mar 08 10:01:13 2002] [error] [client 127.0.0.2] attempt to invoke directory as script: e:/work/root/home/bseu/cgi
+[Fri Mar 08 10:14:07 2002] [error] [client 127.0.0.2] Options ExecCGI is off in this directory: e:/work/root/home/bseu/www/where.cgi
+[Fri Mar 08 10:15:14 2002] [error] [client 127.0.0.2] Options ExecCGI is off in this directory: e:/work/root/home/bseu/www/where.cgi
+[Fri Mar 08 10:15:50 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/work/root/home/bseu/cgi-bin/where.cgi
+[Fri Mar 08 10:15:50 2002] [error] [client 127.0.0.2] Can't locate integer.pm in @INC (@INC contains: .) at e:\WORK\ROOT\HOME\BSEU\CGI-BIN\WHERE.CGI line 27.
+
+[Fri Mar 08 10:15:50 2002] [error] [client 127.0.0.2] BEGIN failed--compilation aborted at e:\WORK\ROOT\HOME\BSEU\CGI-BIN\WHERE.CGI line 27.
+
+[Fri Mar 08 10:17:52 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/work/root/home/bseu/cgi-bin/where.cgi
+[Fri Mar 08 10:17:52 2002] [error] [client 127.0.0.2] Can't locate integer.pm in @INC (@INC contains: .) at e:\WORK\ROOT\HOME\BSEU\CGI-BIN\WHERE.CGI line 27.
+
+[Fri Mar 08 10:17:52 2002] [error] [client 127.0.0.2] BEGIN failed--compilation aborted at e:\WORK\ROOT\HOME\BSEU\CGI-BIN\WHERE.CGI line 27.
+
+[Fri Mar 08 10:19:33 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/work/root/home/bseu/cgi-bin/where.cgi
+[Fri Mar 08 10:19:33 2002] [error] [client 127.0.0.2] Can't locate integer.pm in @INC (@INC contains: .) at e:\WORK\ROOT\HOME\BSEU\CGI-BIN\WHERE.CGI line 27.
+
+[Fri Mar 08 10:19:33 2002] [error] [client 127.0.0.2] BEGIN failed--compilation aborted at e:\WORK\ROOT\HOME\BSEU\CGI-BIN\WHERE.CGI line 27.
+
+[Fri Mar 08 10:20:14 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/work/root/home/bseu/cgi-bin/where.cgi
+[Fri Mar 08 10:20:14 2002] [error] [client 127.0.0.2] Can't locate integer.pm in @INC (@INC contains: .) at e:\WORK\ROOT\HOME\BSEU\CGI-BIN\WHERE.CGI line 26.
+
+[Fri Mar 08 10:20:14 2002] [error] [client 127.0.0.2] BEGIN failed--compilation aborted at e:\WORK\ROOT\HOME\BSEU\CGI-BIN\WHERE.CGI line 26.
+
+[Fri Mar 08 10:20:52 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/html/entertainment.html
+[Fri Mar 08 10:20:55 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/html/entertainment.html
+[Fri Mar 08 11:38:31 2002] [error] [client 127.0.0.2] (2)No such file or directory: couldn't spawn child process: e:/work/root/home/bseu/cgi-bin/admin/admin.cgi
+[Fri Mar 08 11:42:54 2002] [error] [client 127.0.0.2] (2)No such file or directory: couldn't spawn child process: e:/work/root/home/bseu/cgi-bin/admin/nph-build.cgi
+[Fri Mar 08 11:44:18 2002] [error] [client 127.0.0.2] (2)No such file or directory: couldn't spawn child process: e:/work/root/home/bseu/cgi-bin/admin/nph-build.cgi
+[Fri Mar 08 11:44:19 2002] [error] [client 127.0.0.2] (2)No such file or directory: couldn't spawn child process: e:/work/root/home/bseu/cgi-bin/admin/nph-build.cgi
+[Fri Mar 08 11:48:28 2002] [error] [client 127.0.0.2] (2)No such file or directory: couldn't spawn child process: e:/work/root/home/bseu/cgi-bin/admin/admin.cgi
+[Fri Mar 08 11:48:32 2002] [error] [client 127.0.0.2] (2)No such file or directory: couldn't spawn child process: e:/work/root/home/bseu/cgi-bin/admin/admin.cgi
+[Fri Mar 08 11:48:33 2002] [error] [client 127.0.0.2] (2)No such file or directory: couldn't spawn child process: e:/work/root/home/bseu/cgi-bin/admin/admin.cgi
+[Fri Mar 08 11:48:33 2002] [error] [client 127.0.0.2] (2)No such file or directory: couldn't spawn child process: e:/work/root/home/bseu/cgi-bin/admin/admin.cgi
+[Fri Mar 08 11:48:34 2002] [error] [client 127.0.0.2] (2)No such file or directory: couldn't spawn child process: e:/work/root/home/bseu/cgi-bin/admin/admin.cgi
+[Fri Mar 08 11:48:34 2002] [error] [client 127.0.0.2] (2)No such file or directory: couldn't spawn child process: e:/work/root/home/bseu/cgi-bin/admin/admin.cgi
+[Fri Mar 08 11:57:42 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/admin/
+[Fri Mar 08 11:57:52 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/admin/admin.cgi
+[Fri Mar 08 11:57:58 2002] [error] [client 127.0.0.2] (2)No such file or directory: couldn't spawn child process: e:/work/root/home/bseu/cgi-bin/admin/admin.cgi
+[Fri Mar 08 12:04:32 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:04:58 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:05:00 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:05:02 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:05:03 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:05:04 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:06:24 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:06:26 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:06:29 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:06:31 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:06:32 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:08:59 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:09:01 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:09:07 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:09:09 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:09:29 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:10:56 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:11:08 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:11:26 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:11:29 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:12:02 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:12:04 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:12:09 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:12:19 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:12:23 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:12:25 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:12:29 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:12:31 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:12:36 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:12:38 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:12:39 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:18:52 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:18:54 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:18:55 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 12:18:57 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 17:27:45 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Mar 08 18:27:48 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Sun Mar 10 15:44:30 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:45:05 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:45:26 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:48:03 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:49:16 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:49:50 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:50:05 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:50:07 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:50:10 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:50:15 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/admin/
+[Sun Mar 10 15:50:24 2002] [error] [client 127.0.0.2] attempt to invoke directory as script: e:/work/root/home/bseu/cgi-bin/admin
+[Sun Mar 10 15:51:07 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:51:10 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:51:11 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:51:12 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:51:13 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:52:17 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:52:21 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:52:24 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:52:24 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:52:25 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:53:41 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:53:46 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:53:47 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:53:48 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:53:49 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:53:52 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:54:00 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:54:02 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:54:04 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:54:36 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:54:38 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:54:39 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:54:47 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:55:34 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:55:34 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:55:35 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:55:37 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:55:46 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:56:49 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:56:50 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:56:58 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:57:06 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:57:09 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:57:09 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:57:13 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:57:14 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:57:16 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 15:57:23 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 16:00:23 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 16:00:29 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 16:02:04 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 16:02:15 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 16:02:29 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 16:11:41 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Sun Mar 10 16:24:56 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 14:40:25 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 14:42:33 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 14:42:56 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 14:42:58 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 20:01:07 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 20:35:18 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 20:43:26 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 20:54:28 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/gossamer threads links
+[Tue Mar 12 20:55:31 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 21:02:11 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 21:02:21 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 21:02:24 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 21:04:58 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 21:06:30 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 21:12:44 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/gossamer threads links
+[Tue Mar 12 21:25:52 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 21:25:54 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 21:28:58 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 21:29:35 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/banking/images/for_bseu3_01.jpg
+[Tue Mar 12 21:29:36 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/banking/images/for_bseu3_05.jpg
+[Tue Mar 12 21:29:36 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/banking/images/for_bseu3_06.jpg
+[Tue Mar 12 21:29:36 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/banking/images/for_bseu3_02.jpg
+[Tue Mar 12 21:29:36 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/banking/images/for_bseu3_03.jpg
+[Tue Mar 12 21:29:36 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/banking/images/for_bseu3_04.jpg
+[Tue Mar 12 21:33:13 2002] [error] [client 127.0.0.2] Filename is not valid: e:/work/root/home/bseu/www/images/for_bseu3_01.jpg"
+[Tue Mar 12 21:33:13 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/banking/images/for_bseu3_06.jpg
+[Tue Mar 12 21:33:26 2002] [error] [client 127.0.0.2] Filename is not valid: e:/work/root/home/bseu/www/images/for_bseu3_01.jpg"
+[Tue Mar 12 21:34:10 2002] [error] [client 127.0.0.2] Filename is not valid: e:/work/root/home/bseu/www/images/for_bseu3_01.jpg"
+[Tue Mar 12 21:44:42 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 21:44:51 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Tue Mar 12 21:55:22 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/links.css
+[Fri Jul 19 21:19:27 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/test
+[Wed Nov 06 15:46:59 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/favicon.ico
+[Mon Nov 11 16:12:53 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/favicon.ico
+[Mon Nov 11 16:18:24 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/favicon.ico
+[Fri Nov 15 13:45:56 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:46:24 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:49:27 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:50:37 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:50:55 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:51:34 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:53:10 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:55:24 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:55:42 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:55:57 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:57:40 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:59:19 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 13:59:31 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 14:00:23 2002] [error] [client 127.0.0.2] File does not exist: e:/work/root/home/bseu/www/images/no_image.jpg
+[Fri Nov 15 14:00:30 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:01:05 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:02:19 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:03:07 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:03:30 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:03:58 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:04:08 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:04:15 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:04:26 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:05:08 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:06:20 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:07:41 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:08:02 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:08:04 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:08:05 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:08:07 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:08:15 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:08:16 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:08:20 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:08:21 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:10:35 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:11:24 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:11:40 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:11:43 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:11:45 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:11:57 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:12:01 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:12:17 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:13:54 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:13:55 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:13:56 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:14:21 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:14:22 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:15:20 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:26:30 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:26:31 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:26:32 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 14:26:32 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:09:41 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:10:35 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:10:39 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:11:10 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:11:12 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:11:13 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:11:14 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:11:15 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:11:16 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:11:17 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:12:24 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:14:59 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:15:02 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:15:27 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:16:15 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:16:35 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 15:25:54 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 19:31:20 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe
+[Fri Nov 15 19:31:31 2002] [error] [client 127.0.0.2] Premature end of script headers: e:/stuff/php/php.exe

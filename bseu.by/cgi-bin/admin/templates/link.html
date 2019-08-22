@@ -1,0 +1,18 @@
+
+<ul><li><a class="link" href="<%db_cgi_url%>/jump.cgi?ID=<%ID%>"><%Title%></a>
+
+<%if Description%>
+  <span class="descript">- <%Description%></span>
+<%endif%>
+
+<%if isNew%>
+  <small><sup class="new">new</sup></small>
+<%endif%>
+
+<%if isPopular%>
+  <small><sup class="pop">pop</sup></small>
+<%endif%>
+
+<small class="date">(Added: <%Date%> Hits: <%Hits%>  Rating: <%Rating%> Votes: <%Votes%>) <a href="<%db_cgi_url%>/rate.cgi?ID=<%ID%>">Rate It</a></small>
+
+</ul>

@@ -1,0 +1,109 @@
+#               -------------
+#                   Links
+#               -------------
+#               Links Manager
+#
+#         File: links.def
+#  Description: Contains the database definition for links.
+#       Author: Alex Krohn
+#        Email: alex@gossamer-threads.com
+#          Web: http://www.gossamer-threads.com/
+#      Version: 2.01
+#
+# (c) 1998 Gossamer Threads Inc. 
+#
+# This script is not freeware! Please read the README for full details
+# on registration and terms of use. 
+# =====================================================================
+
+# Database Definition: LINKS
+# --------------------------------------------------------
+# Definition of your database file.
+    %db_def = (
+            ID              => [0,  'numer',     5,     8,  1,  '',          ''],
+            Title           => [1,  'alpha',     40,   75,  1,  '',          ''],
+            URL             => [2,  'alpha',     40,   75,  1,  'http://',   '^http|news|mailto|ftp'],
+            Date            => [3,  'date',      15,   15,  1,  \&get_date,  ''],
+            Category        => [4,  'alpha',      0,  150,  1,  '',          ''],
+            Description     => [5,  'alpha', '40x3',  500,  0,  '',          ''],
+            'Contact Name'  => [6,  'alpha',     40,   75,  1,  '',          ''],
+            'Contact Email' => [7,  'alpha',     40,   75,  1,  '',          '.+@.+\..+'],
+            Hits            => [8,  'numer',      10,  10,  1,  '0',         '\d+'],        
+            isNew           => [9,  'alpha',      0,    5,  0,  'No',        ''],
+            isPopular       => [10, 'alpha',      0,    5,  0,  'No',        ''],
+            Rating          => [11, 'numer',      10,  10,  1,  0,           '^[\d\.]+$'],
+            Votes           => [12, 'numer',      10,  10,  1,  0,           '^\d+$'],
+            ReceiveMail     => [13, 'alpha',      10,  10,  1,  'Yes',       'No|Yes']
+    );
+                           
+# Database file to use -- defined in links.cfg.
+    $db_file_name    = $db_links_name;
+# Counter file to use  -- defined in links.cfg.
+    $db_id_file_name = $db_links_id_file_name;
+# The column name for the database key. 
+    $db_key             = 'ID'; 
+# Database delimeter.   
+    $db_delim           = '|';
+# Title used in admin output.
+    $html_title         = 'Links Database';
+    $html_object        = 'Link';
+
+# Field Number of some important fields. The number is from %db_def above
+# where the first field equals 0.
+    $db_category = 4;       $db_modified = 3;   $db_url = 2; 
+    $db_hits = 8;           $db_isnew = 9;      $db_ispop = 10;
+    $db_contact_name = 6;   $db_contact_email = 7; $db_title = 1;
+    $db_votes = 12;         $db_rating = 11;    $db_mail = 13;
+
+# Field number to sort links by:
+    $db_sort_links = 1;
+
+# Field names you want to allow visitors to search on:
+    @search_fields = (1,2,5);   
+
+# System defaults. When adding new links or modifying links, these fields
+# can not be overwritten by a user.
+%add_system_fields = ( 
+                         isNew       => 'No',
+                         isPopular   => 'No',
+                         Hits        => '0',
+                         Rating      => 0,
+                         Votes       => 0,
+                         ReceiveMail => 'Yes'
+                  );
+
+# Hash of column names to possible options. If you want to use a select form
+# field, you can use &build_select_field in your HTML page. This routine will
+# make a <SELECT> input tag using the following values:
+%db_select_fields   = ( 
+                        isNew     => 'Yes,No',
+                        isPopular => 'Yes,No',
+                        ReceiveMail => 'Yes,No'
+                    );
+
+# Hash of column names to radio values. If you use &build_radio_field, it will
+# make a <INPUT TYPE="RADIO"> tag for you using the options specified in the hash.
+    %db_radio_fields    = ( );
+
+# Maximum number of hits returned in a search. Can be overridden in the search
+# options.
+    $db_max_hits        = 10;
+
+# Use the built in key tracker.
+    $db_key_track = 1;
+
+# ===========================================================================
+# Build up some variables from your definitions. Internal use only.
+@db_cols = ();
+foreach (sort { $db_def{$a}[0] <=> $db_def{$b}[0] } keys %db_def) {
+    push (@db_cols, $_);
+    $db_sort{$_}            = $db_def{$_}[1];
+    $db_form_len{$_}        = $db_def{$_}[2];
+    $db_lengths{$_}         = $db_def{$_}[3];
+    $db_not_null{$_}        = $db_def{$_}[4];
+    $db_defaults{$_}        = $db_def{$_}[5];
+    $db_valid_types{$_}     = $db_def{$_}[6];
+    ($_ eq $db_key)       and $db_key_pos = $db_def{$_}[0];
+}
+
+1;

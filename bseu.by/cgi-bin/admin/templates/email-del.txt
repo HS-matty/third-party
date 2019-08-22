@@ -1,0 +1,13 @@
+Your link:
+
+	<%URL%>
+
+that was submitted on <%Date%> has been rejected
+for one of the following reasons:
+
+	1. Unsuitable content.
+	2. Duplicate URL.
+
+If you have any questions, please don't hesitate to ask.
+
+Links Manager

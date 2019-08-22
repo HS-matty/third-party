@@ -1,0 +1,64 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<HTML>
+<HEAD>
+<TITLE>for_bseu3</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<style type="text/css">
+<!--
+a:link {  text-decoration: none}
+a:hover {  text-decoration: underline}
+a:visited {  color: #999999}
+a:active {  text-decoration: none}
+.links {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; color: #999999; text-decoration: none}
+-->
+</style>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<TABLE WIDTH=689 BORDER=0 CELLPADDING=0 CELLSPACING=0 align="center">
+  <TR>
+		<TD>
+			<IMG SRC="images/for_bseu3_01.jpg" WIDTH=100 HEIGHT=17></TD>
+		<TD ROWSPAN=3>
+			<IMG SRC="images/for_bseu3_02.jpg" WIDTH=147 HEIGHT=144></TD>
+		<TD>
+			<IMG SRC="images/for_bseu3_03.jpg" WIDTH=442 HEIGHT=17></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/for_bseu3_04.jpg" WIDTH=100 HEIGHT=70></TD>
+		<TD>
+			<IMG SRC="images/for_bseu3_05.jpg" WIDTH=442 HEIGHT=70></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/for_bseu3_06.jpg" WIDTH=100 HEIGHT=57></TD>
+		
+    <TD>
+      <div align="center"><a href="http://bseu" class="links">главная</a> /<a href="http://bseu/cgi-bin/add.cgi" class="links"> 
+        добавить сайт</a> /<a href="http://bseu/cgi-bin/search.cgi" class="links"> 
+        поиск</a></div>
+    </TD>
+	</TR>
+</TABLE>
+
+
+<table width="689" border="0" align="center">
+  <tr>
+    <td>
+      <div align="center"><b>Категории</b></div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div align="center">
+        <div class="margin"><table width="80%" border="0" cellspacing="0" cellpadding="0"><tr><td class="catlist" valign="top">
+<dl><dt><strong><a class="link" href="http://bseu/Banking/">Banking</a></strong> <small class="numlinks">(1)</small> <small><sup class="new">new</sup></small></dt><dd><span class="descript">Сайты посвященные банковскому делу </span></dd></dl></td><td class="catlist" valign="top">
+<dl><dt><strong><a class="link" href="http://bseu/Testing1/">Testing1</a></strong> <small class="numlinks">(3)</small> <small><sup class="new">new</sup></small></dt><dd><span class="descript">яяяяяяяяяяяяяяяяяяяяяя </span></dd></dl></td></tr></table></div>
+
+      </div>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</BODY>
+</HTML>

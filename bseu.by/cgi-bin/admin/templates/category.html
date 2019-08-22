@@ -1,0 +1,113 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<HTML>
+<HEAD>
+<TITLE><%site_title%>: <%category_name%></TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<%if meta_name%>
+    <meta name="description" content="<%meta_name%>">
+<%endif%>
+<if meta_keywords%>
+    <meta name="keywords" content="<%meta_keywords%>">
+<%endif%>
+<style type="text/css">
+<!--
+a:link {  text-decoration: none}
+a:hover {  text-decoration: underline}
+a:visited {  color: #999999}
+a:active {  text-decoration: none}
+.links {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; color: #999999; text-decoration: none}
+-->
+</style>
+
+<TABLE WIDTH=689 BORDER=0 CELLPADDING=0 CELLSPACING=0 align="center">
+  <TR>
+		<TD>
+			<IMG SRC="<%build_root_url%>/images/for_bseu3_01.jpg" WIDTH=100 HEIGHT=17></TD>
+		<TD ROWSPAN=3>
+			<IMG SRC="<%build_root_url%>/images/for_bseu3_02.jpg" WIDTH=147 HEIGHT=144></TD>
+		<TD>
+			<IMG SRC="<%build_root_url%>/images/for_bseu3_03.jpg" WIDTH=442 HEIGHT=17></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="<%build_root_url%>/images/for_bseu3_04.jpg" WIDTH=100 HEIGHT=70></TD>
+		<TD>
+			<IMG SRC="<%build_root_url%>/images/for_bseu3_05.jpg" WIDTH=442 HEIGHT=70></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="<%build_root_url%>/images/for_bseu3_06.jpg" WIDTH=100 HEIGHT=57></TD>
+		
+    <TD>
+      <div align="center"><a href="<%build_root_url%>" class="links">главная</a> /<a href="<%db_cgi_url%>/add.cgi" class="links"> 
+        добавить сайт</a> /<a href="<%db_cgi_url%>/search.cgi" class="links"> 
+        поиск</a></div>
+    </TD>
+	</TR>
+</TABLE>
+
+
+<table width="689" border="0" align="center">
+  <tr>
+    <td>
+      <div align="center"><strong class="title"> 
+        <%title_linked%>
+        </strong></div>
+    </td>
+  </tr>
+  <tr>
+    <td align="left"> 
+      <div align="left">
+        <p><strong class="title"> </strong></p>
+
+<h1><%site_title%>: <%category_clean%></h1>
+        
+        <p>&nbsp;</p>
+
+    <!-- Subcategories-->
+    <%if category%>
+        <h3>Categories:</h3>
+        <%category%>
+        <%endif%>
+        <!-- Links in this category. -->
+        <%if links%>
+        <h3>Ссылки</h3>
+        <%links%>
+        <%endif%>
+        <!-- Next/Previous links if spanning pages. -->
+        <p align=center>
+    <%if prev%>
+        <small><a href="<%prev%>">Prev <%build_links_per_page%></a></small>
+    <%endif%>
+    <%if next%>
+        <small><a href="<%next%>">Next <%build_links_per_page%></a></small>
+    <%endif%>   
+    </p>
+    
+    <!-- Related Categories -->
+    <%if related%>
+        <h2>Related Categories:</h2>
+        <ul><%related%></ul>
+    <%endif%>
+
+    <!-- Search Bar -->
+    <form action="<%db_cgi_url%>/search.cgi" method="GET">
+        <h2>Search</h2>
+            <div class="margin">
+                <table border="0" cellspacing="0" cellpadding="0">
+                <tr><td><strong class="search">Looking for something in particular?</strong></td></tr>
+                <tr><td><input type="text" size=15 name="query"> <input type=submit value="Search!"></td></tr>
+                <tr><td><small class="more"><a href="<%db_cgi_url%>/search.cgi">More search options</a></small></td></tr>
+                </table>
+        </div>
+    </form>
+
+    <p><small class="update">Pages Updated On: <%date%> - <%time%><br>
+    Links Engine 2.0 By: <a href="http://www.gossamer-threads.com/">Gossamer Threads Inc.</a></small></p>       
+      </div>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</BODY>
+</HTML>

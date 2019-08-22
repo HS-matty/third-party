@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+
+<head>
+<title><%site_title%>: <%category_name%></title>
+
+<%if meta_name%>
+    <meta name="description" content="<%meta_name%>">
+<%endif%>
+<if meta_keywords%>
+    <meta name="keywords" content="<%meta_keywords%>">
+<%endif%>
+
+<link rel=stylesheet href="<%build_root_url%>/links.css" type="text/css" title="<%site_title%> style sheet">
+</head>
+<body>
+
+<p><strong class="title"> <%title_linked%> </strong></p>
+
+<h1><%site_title%>: <%category_clean%></h1>
+        
+    <p><small class="menu">|
+        <a class="menulink" href="<%build_root_url%>">Home</a> |
+        <a class="menulink" href="<%db_cgi_url%>/add.cgi">Add a Site</a> |
+        <a class="menulink" href="<%db_cgi_url%>/modify.cgi">Modify a Site</a> |
+        <a class="menulink" href="<%build_root_url%>/New">What's New</a> |
+        <a class="menulink" href="<%build_root_url%>/Cool">What's Cool</a> |
+        <a class="menulink" href="<%build_root_url%>/Ratings">Top Rated</a> |
+        <a class="menulink" href="<%db_cgi_url%>/jump.cgi?ID=random">Random Link</a> |
+        <a class="menulink" href="<%db_cgi_url%>/search.cgi">Search</a> |
+    </small></p>
+
+    <!-- Subcategories-->
+    <%if category%>
+        <h2>Categories:</h2>
+        <%category%>
+    <%endif%>
+
+    <!-- Links in this category. -->
+    <%if links%>
+        <h2>Links: </h2>
+        <%links%>
+    <%endif%>          
+
+    <!-- Next/Previous links if spanning pages. -->
+    <p align=center>
+    <%if prev%>
+        <small><a href="<%prev%>">Prev <%build_links_per_page%></a></small>
+    <%endif%>
+    <%if next%>
+        <small><a href="<%next%>">Next <%build_links_per_page%></a></small>
+    <%endif%>   
+    </p>
+    
+    <!-- Related Categories -->
+    <%if related%>
+        <h2>Related Categories:</h2>
+        <ul><%related%></ul>
+    <%endif%>
+
+    <!-- Search Bar -->
+    <form action="<%db_cgi_url%>/search.cgi" method="GET">
+        <h2>Search</h2>
+            <div class="margin">
+                <table border="0" cellspacing="0" cellpadding="0">
+                <tr><td><strong class="search">Looking for something in particular?</strong></td></tr>
+                <tr><td><input type="text" size=15 name="query"> <input type=submit value="Search!"></td></tr>
+                <tr><td><small class="more"><a href="<%db_cgi_url%>/search.cgi">More search options</a></small></td></tr>
+                </table>
+        </div>
+    </form>
+
+    <p><small class="update">Pages Updated On: <%date%> - <%time%><br>
+    Links Engine 2.0 By: <a href="http://www.gossamer-threads.com/">Gossamer Threads Inc.</a></small></p>       
+    
+</body>
+</html>

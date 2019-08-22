@@ -1,0 +1,52 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+
+<head>
+<title><%site_title%></title>
+<meta name="description" content="put your description here">
+<meta name="keywords" content="put your keywords here">
+<link rel=stylesheet href="<%build_root_url%>/links.css" type="text/css" title="<%site_title%> style sheet">
+</head>
+
+<body>
+
+<h1 class="home"><%site_title%></h1>
+
+    
+<p><small class="menu">|
+    <a class="menulink" href="<%build_root_url%>">Home</a> |
+    <a class="menulink" href="<%db_cgi_url%>/add.cgi">Add a Site</a> |
+    <a class="menulink" href="<%db_cgi_url%>/modify.cgi">Modify a Site</a> |
+    <a class="menulink" href="<%build_root_url%>/New">What's New</a> |
+    <a class="menulink" href="<%build_root_url%>/Cool">What's Cool</a> |
+    <a class="menulink" href="<%build_root_url%>/Ratings">Top Rated</a> |
+    <a class="menulink" href="<%db_cgi_url%>/jump.cgi?ID=random">Random Link</a> |
+    <a class="menulink" href="<%db_cgi_url%>/search.cgi">Search</a> |
+</small></p>
+
+
+    <p>Welcome to the Links online demo. Feel free to add your own link, modify another's or just play around!</p>
+
+        <h2>Categories:</h2>
+        
+        <%category%>
+        
+        <p class="grandtotal">There are <strong><%grand_total%></strong> links for you to choose from!</p>
+
+    
+    <form action="<%db_cgi_url%>/search.cgi" method="GET">
+        <h2>Search</h2>
+            <div class="margin">
+                <table border="0" cellspacing="0" cellpadding="0">
+                <tr><td><strong class="search">Looking for something in particular?</strong></td></tr>
+                <tr><td><input type="text" size=15 name="query"> <input type=submit value="Search!"></td></tr>
+                <tr><td><small class="more"><a href="<%db_cgi_url%>/search.cgi">More search options</a></small></td></tr>
+                </table>
+        </div>
+    </form>
+
+    
+        <p><small class="update">Pages Updated On: <%date%> - <%time%><br>
+        Links Engine 2.0 By: <a href="http://www.gossamer-threads.com/">Gossamer Threads Inc.</a></small></p>
+</body>
+</html>

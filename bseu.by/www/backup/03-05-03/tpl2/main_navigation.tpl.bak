@@ -1,0 +1,5 @@
+
+  <tr>
+    <td bgcolor='white'><div align=left class='menu_text'><a href=index.php?cid=$cid_>$name</a></div></td>
+  </tr>
+

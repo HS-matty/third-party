@@ -1,0 +1,214 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style type=text/css>
+body { font-family: Arial, sans-serif; font-size: 12px; }
+td { font-family: Arial, sans-serif; font-size: 12px; }
+ul { list-style: square; }
+</style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+
+Фуух, наконец-то я решил проблему шаблонов :). Я перепробовал многие классы, такие как, FastTemplate, IT[X] - IntegratedTemplate (PEAR), но большинство из них, либо слишком громоздкие (IT), либо с ошибками, например у меня не получилось использовать динамические шаблоны в FastTemplate. Мой класс, естесственно, не является сразу решением многих проблем шаблонов, но хотя бы, избавляет от некоторых из них, т.е. <b>отделение кода от представления</b>, что является очень важным для хотя бы более менее крупного сайта. Мне кажется приводить здесь весь класс не стоит, т.к. Вы можете его скачать и посмотреть, а здесь, я лишь привожу его описание с комментариями и примерами. Итак,
+<br /><br />
+
+<font style="font-size: 12pt;" color="#0000ff"><b>1. Описание класса.</b></font><br /><br />
+
+<u><b>1.1. Создание объекта.</b></u> При создании нового экземпляра класса нужно указать директорию, где хранятся файлы-шаблоны. Можно указывать как относительный путь, так и абсолютный. Расширение этих файлов должно быть <code>.tpl</code>.<br /><br />
+<code><font color="#0000CC">$tpl&nbsp;</font><font color="#006600">=&nbsp;new&nbsp;</font><font color="#0000CC">Template</font><font color="#006600">(</font><font color="#CC0000">"./templates"</font><font color="#006600">);</font></code>
+
+<br /><br />
+
+<u><b>1.2. Загрузка шаблонов.</b></u> Перед тем, как использовать шаблоны по назначению, их сначала необходимо загрузить (в память). Если требуется указать сразу несколько шаблонов, то здесь используется запятая. Для того, чтобы проверить, загружен ли шаблон, используется функция <code><font color="#0000CC">isLoaded</font><font color="#006600">(</font><font color="#0000CC">$name</font><font color="#006600">)</font></code>. Для удаления шаблона (из памяти!) - <code><font color="#0000CC">unload</font><font color="#006600">(</font><font color="#0000CC">$name</font><font color="#006600">)</font></code>. Где <code><font color="#0000CC">$name</font></code> - имя шаблона.<br /><br />
+
+<code><font color="#0000CC">$tpl</font><font color="#006600">-&gt;</font><font color="#0000CC">load</font><font color="#006600">(</font><font color="#CC0000">"main"</font><font color="#006600">);</font><br />
+<font color="#0000CC">$tpl</font><font color="#006600">-&gt;</font><font color="#0000CC">load</font><font color="#006600">(</font><font color="#CC0000">"banner,counter,menu"</font><font color="#006600">);</font>
+</code>
+<br /><br /><i>Примечание</i>: в более новой версии, подгружать шаблоны при старте скрипта необязательно, т.к. ф-я get проверяет загружен ли шаблон, если нет, то загружает. Это, на мой взгляд, лучше, т.к. загрузка лишних шаблонов при старте скрипта, понижает его скорость.
+<br /><br />
+
+<u><b>1.3. Получение содержимого шаблона.</b></u> Для его извлечения используется функция <code><font color="#0000CC">get</font><font color="#006600">(</font><font color="#0000CC">$name</font><font color="#006600">)</font></code>, где <code><font color="#0000CC">$name</font></code> - имя шаблона (без указания расширения, т.е. без <code>.tpl</code>).
+<br /><br />
+
+<font style="font-size: 12pt;" color="#0000ff"><b>2. Примеры.</b></font><br /><br />
+
+<u><b>2.1. Простой текст. Функции.</b></u><br /><br />
+
+<u>Шаблон.</u><br />
+<i>text.tpl:</i><br />
+<code>Hello world</code>
+<br />
+<u>Скрипт.</u><br />
+<br />
+<code>
+<font color="#006600">print&nbsp;</font><font color="#0000CC">$tpl</font><font color="#006600">-&gt;</font><font color="#0000CC">get</font><font color="#006600">(</font><font color="#CC0000">"text"</font><font color="#006600">);&nbsp;
+</font>
+</code>
+
+<br /><br />или например<br /><br />
+<code>
+<font color="#006600">function&nbsp;</font><font color="#0000CC">message</font><font color="#006600">(</font><font color="#0000CC">$str</font><font color="#006600">)&nbsp;{
+<br />&nbsp;&nbsp;&nbsp;print&nbsp;</font><font color="#0000CC">$str</font><font color="#006600">.</font><font color="#CC0000">"&lt;br /&gt;"</font><font color="#006600">;
+<br />}
+<br />eval(</font><font color="#CC0000">"message(\""</font><font color="#006600">.</font><font color="#0000CC">$tpl</font><font color="#006600">-&gt;</font><font color="#0000CC">get</font><font color="#006600">(</font><font color="#CC0000">"text"</font><font color="#006600">).</font><font color="#CC0000">"\");"</font><font color="#006600">);&nbsp;
+</font>
+<br /><br />
+</code>
+В браузере в обоих случаях появится:
+<br /><br />
+
+Hello world
+<br /><br />
+
+<u><b>2.2. Использование переменных.</b></u><br /><br />
+
+<u>Шаблон.</u><br />
+<i>vars.tpl:</i><br />
+<code>Welcome $name. now is $time&lt;br /&gt;</code>
+<br />
+<u>Скрипт.</u><br />
+<code>
+<font color="#0000CC">$name&nbsp;</font><font color="#006600">=&nbsp;</font><font color="#CC0000">"Your name"</font><font color="#006600">;
+<br /></font><font color="#0000CC">$time&nbsp;</font><font color="#006600">=&nbsp;</font><font color="#0000CC">date</font><font color="#006600">(</font><font color="#CC0000">"H:i"</font><font color="#006600">);
+<br />eval(</font><font color="#CC0000">"print \""</font><font color="#006600">.</font><font color="#0000CC">$tpl</font><font color="#006600">-&gt;</font><font color="#0000CC">get</font><font color="#006600">(</font><font color="#CC0000">"vars"</font><font color="#006600">).</font><font color="#CC0000">"\";"</font><font color="#006600">);
+<br /></font><font color="#0000CC">$name&nbsp;</font><font color="#006600">=&nbsp;</font><font color="#CC0000">"My name"</font><font color="#006600">;
+<br />eval(</font><font color="#CC0000">"\$str = \""</font><font color="#006600">.</font><font color="#0000CC">$tpl</font><font color="#006600">-&gt;</font><font color="#0000CC">get</font><font color="#006600">(</font><font color="#CC0000">"vars"</font><font color="#006600">).</font><font color="#CC0000">"\";"</font><font color="#006600">);
+<br /></font><font color="#0000CC">$str&nbsp;</font><font color="#006600">.=&nbsp;</font><font color="#CC0000">" another text"</font><font color="#006600">;
+<br />print&nbsp;</font><font color="#0000CC">$str</font><font color="#006600">;
+</font>
+<br /><br />
+</code>
+Результат:
+<br /><br />
+
+Welcome Your name. Now is 22:30<br />
+Welcome My Name. Now is 22:30 another text<br /><br />
+
+<u><b>2.3. Таблицы. Вывод результатов.</b></u><br /><br />
+
+<u>Шаблоны.</u><br />
+<i>table.tpl:</i><br />
+<code>
+&lt;table width="100" cellspacing="0" cellpadding="0" border="1"&gt;<br />
+&lt;tr&gt;<br />
+&lt;td&gt;Число&lt/td&gt;<br />
+&lt;td&gt;Квадрат&lt/td&gt;<br />
+&lt;/tr&gt;<br />
+$rows<br />
+&lt;/table&gt;<br /><br />
+</code>
+<i>table_row.tpl:</i><br />
+<code>
+&lt;tr&gt;<br />
+&lt;td&gt;$number&lt/td&gt;<br />
+&lt;td&gt;$square&lt/td&gt;<br />
+&lt;/tr&gt;<br />
+</code>
+
+<br />
+<u>Скрипт.</u><br />
+<code>
+<font color="#0000CC">$rows&nbsp;</font><font color="#006600">=&nbsp;</font><font color="#CC0000">""</font><font color="#006600">;
+<br />for(</font><font color="#0000CC">$i</font><font color="#006600">=</font><font color="#0000CC">0</font><font color="#006600">;</font><font color="#0000CC">$i</font><font color="#006600">&lt;</font><font color="#0000CC">10</font><font color="#006600">;</font><font color="#0000CC">$i</font><font color="#006600">++)&nbsp;{
+<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000CC">$number&nbsp;</font><font color="#006600">=&nbsp;</font><font color="#0000CC">$i</font><font color="#006600">;
+<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000CC">$square&nbsp;</font><font color="#006600">=&nbsp;</font><font color="#0000CC">$i</font><font color="#006600">*</font><font color="#0000CC">$i</font><font color="#006600">;
+<br />&nbsp;&nbsp;&nbsp;eval(</font><font color="#CC0000">"\$rows .= \""</font><font color="#006600">.</font><font color="#0000CC">$tpl</font><font color="#006600">-&gt;</font><font color="#0000CC">get</font><font color="#006600">(</font><font color="#CC0000">"table_row"</font><font color="#006600">).</font><font color="#CC0000">"\";"</font><font color="#006600">);
+<br />}
+<br />eval(</font><font color="#CC0000">"print \""</font><font color="#006600">.</font><font color="#0000CC">$tpl</font><font color="#006600">-&gt;</font><font color="#0000CC">get</font><font color="#006600">(</font><font color="#CC0000">"table"</font><font color="#006600">).</font><font color="#CC0000">"\";"</font><font color="#006600">);
+</font></code>
+<br /><br />Результат будет следующим:<br /><br />
+<table width="100" cellspacing="0" cellpadding="0" border="1">
+<tr>
+<td>Число</td>
+<td>Квадрат</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td>5</td>
+<td>25</td>
+</tr>
+<tr>
+<td>6</td>
+<td>36</td>
+</tr>
+<tr>
+<td>7</td>
+<td>49</td>
+</tr>
+<tr>
+<td>8</td>
+<td>64</td>
+</tr>
+<tr>
+<td>9</td>
+<td>81</td>
+</tr>
+</table><br />
+
+
+<u><b>2.4. Применение буферизации.</b></u><br /><br />
+Представляете, если уже есть большие участки кода (php/html), где идет прямой вывод в бразуер, т.е. такие функции, как <code>print/printf/echo</code>. Не переписывать же, например, целый скрипт. Есть решение - использование буферизации, т.е. перехват выходного потока. Пример:<br />
+<code>
+<br />
+<font color="#0000CC">ob_start</font><font color="#006600">();
+<br />....
+<br /></font><font color="#0000CC">$content&nbsp;</font><font color="#006600">=&nbsp;</font><font color="#0000CC">ob_get_contents</font><font color="#006600">();
+<br /></font><font color="#0000CC">ob_end_clean</font><font color="#006600">();</font>
+</code>
+<br /><br />или например
+<code>
+<br />
+<br /><font color="#0000CC">ob_start</font><font color="#006600">();
+<br />....
+<br />include&nbsp;</font><font color="#CC0000">"somefile.inc.php"</font><font color="#006600">;
+<br />include&nbsp;</font><font color="#CC0000">"somepage.html"</font><font color="#006600">;
+<br />....
+<br /></font><font color="#0000CC">$content&nbsp;</font><font color="#006600">=&nbsp;</font><font color="#0000CC">ob_get_contents</font><font color="#006600">();
+<br /></font><font color="#0000CC">ob_end_clean</font><font color="#006600">();</font>
+</code>
+<br /><br />
+
+<font style="font-size: 12pt;" color="#0000ff"><b>3. Приложения.</b></font><br /><br />
+
+<u><b>3.1. Редактор для шаблонов.</b></u><br /><br />
+
+Я также разработал онлайн редактор на мой взгляд довольно удобный, его можно установить в любую директорию на Вашем сайте. Настраивается он довольно просто, там можно поменять (необязательно) переменную <code><font color="#0000CC">$def_path</font></code>, в которой записана директория по умолчанию, откуда будет выводиться список всех шаблонов, при старте скрипта редактора. Можете ее поменять, например на <code><font color="#0000CC">$def_path&nbsp;</font><font color="#006600">=&nbsp;</font><font color="#0000CC">$DOCUMENT_ROOT</font><font color="#006600">.</font><font color="#CC0000">"/templates"</font><font color="#006600">;</font></code>. И не забудьте закрыть его .htaccess'ом, иначе любой зайдет и отредактирует все шаблоны Вашего сайта ;)
+
+<br /><br />
+<u><b>3.2. Замечания.</b></u><br /><br />
+
+<b>a)</b> Расширения для шаблонов. Измените в классе переменную <code><font color="#0000CC">$m_extension</font></code>, по умолчанию она равна <code>tpl</code><br />
+<b>b)</b> Win32/*nix. Если Вы используете операционную систему семейства *nix (Linux, Unix...), то значение переменной <code><font color="#0000CC">$m_win32</font></code> должно быть равно false. Если семейства win32 (windows 9x и т.д.), то true.<br />
+<b>c)</b> Обработка ошибок. Если возникла ошибка при загрузке шаблона, то возможны два варианта - 1) продолжить работу скрипта 2) немедленно остановить. В 1-ом случае переменная <code><font color="#0000CC">$m_die</font></code> должны быть установлена в <code>true</code>. Да, и еще есть возможность настройки вывода сообщений об ошибках на экран <code><font color="#0000CC">$m_showErrors</font></code> (также тип boolean)
+
+<br /><br />
+<u><b>3.3. Где скачать.</b></u><br /><br />
+
+<a href="http://webscript.ru/scripts/Detailed/344.php3">Каталог скриптов Webscript.Ru Network</a> (Здесь находится сам класс (class.Template.php), пример (/demo) и редактор (/editor))<br />
+
+<hr width="100%" size="1" noshade />
+Евгений А. Кучеров aka Razor, <a href="mailto:eugeny@webscript.ru">eugeny@webscript.ru</a>, <a href="http://eugeny.com" target="_blank">http://eugeny.com</a>
+
+</body>
+</html>

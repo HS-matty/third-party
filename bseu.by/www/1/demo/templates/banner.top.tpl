@@ -1,0 +1,1 @@
+<a href=""><img src="" height="60" width="468" border="0" alt="banner" /></a>

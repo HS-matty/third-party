@@ -1,0 +1,74 @@
+#               -------------
+#                   Links
+#               -------------
+#               Links Manager
+#
+#         File: category.def
+#  Description: Contains the database definition for categories.
+#       Author: Alex Krohn
+#        Email: alex@gossamer-threads.com
+#          Web: http://www.gossamer-threads.com/
+#      Version: 2.01
+#
+# (c) 1998 Gossamer Threads Inc. 
+#
+# This script is not freeware! Please read the README for full details
+# on registration and terms of use. 
+# =====================================================================
+
+# Database Definition: CATEGORIES
+# --------------------------------------------------------
+# Definition of your database file.
+    %db_def = (
+            ID                 => [0,  'numer',      5,    8,  1,  '',          ''],
+            Name               => [1,  'alpha',     40,   75,  1,  '',          '^[\w\d/_-]+$'],
+            Description        => [2,  'alpha', '40x3',  500,  0,  '',          ''],
+            Related            => [3,  'alpha',      0,  255,  0,  '',          ''],
+            'Meta Description' => [4,  'alpha',     40,   75,  0,  '',          ''],
+            'Meta Keywords'    => [5,  'alpha',     40,   75,  0,  '',          ''],
+            Header             => [6,  'alpha',     40,   75,  0,  '',          ''],
+            Footer             => [7,  'alpha',     40,   75,  0,  '',          '']
+    );
+            
+# Database file to use -- defined in links.cfg.
+    $db_file_name       = $db_category_name;
+# Counter file to use  -- defined in links.cfg.
+    $db_id_file_name    = $db_category_id_file_name;
+# The column name for the database key. MUST be the first column in the database.   
+    $db_key             = 'ID'; 
+# Database delimeter.   
+    $db_delim           = '|';
+# Title. 
+    $html_title         = 'Category Database';
+    $html_object        = 'Category';
+    
+# Hash of column names to possible options. If you want to use a select form
+# field, you can use &build_select_field in your HTML page. This routine will
+# make a <SELECT> input tag using the following values:
+    %db_select_fields   = ( );
+
+# Hash of column names to radio values. If you use &build_radio_field, it will
+# make a <INPUT TYPE="RADIO"> tag for you using the options specified in the hash.
+    %db_radio_fields    = ( );
+
+# Maximum number of hits returned in a search. Can be overridden in the search
+# options.
+    $db_max_hits        = '25';
+    
+# Use the built in key tracker.
+    $db_key_track       = 1; 
+    
+# ===========================================================================
+# Build up some variables from your definitions. Internal use only.
+@db_cols = ();
+foreach (sort { $db_def{$a}[0] <=> $db_def{$b}[0] } keys %db_def) {
+    push (@db_cols, $_);
+    $db_sort{$_}            = $db_def{$_}[1];
+    $db_form_len{$_}        = $db_def{$_}[2];
+    $db_lengths{$_}         = $db_def{$_}[3];
+    $db_not_null{$_}        = $db_def{$_}[4];
+    $db_defaults{$_}        = $db_def{$_}[5];
+    $db_valid_types{$_}     = $db_def{$_}[6];
+    ($_ eq $db_key)       and $db_key_pos = $db_def{$_}[0];
+}
+1;

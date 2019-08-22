@@ -1,0 +1,1 @@
+<tr><td>$nb</td><td>$name_added</td><td>$number</td><td>$price</td></tr>

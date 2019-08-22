@@ -1,0 +1,22 @@
+<?
+session_start();
+
+define('IN_SHOP', true);
+
+include ("../functions.php");
+include('../cfg/var.php');
+include('../cfg/conf.inc');
+require_once "../class.Template.php";
+$tpl = new Template("./tpl");
+
+//Проверка того, прошел ли пользователь авторизацию
+
+if (check_log()=='true') print "Logined"; //если да, то 
+else {
+	print "not logined, please <a href='login.php'>login</a> "; //если нет
+	exit;
+}
+
+
+
+?>
